@@ -1,0 +1,48 @@
+[     1.22s stdout] model /kaggle/input/datasets/<kaggle-user>/lfm3-1p7b-base data /kaggle/input/datasets/<kaggle-user>/p2000-deriver-sft-v2
+[    36.06s stdout] GPU Tesla T4 torch.float16
+[    44.98s stdout] train 1061/1115 dev 75 | example prompt tail: ' one sentence I most want to practise, so he knows what to listen for on the phone.\n</messages><|im_end|>\n<|im_start|>assistant\n<think></think>'
+[    44.99s stderr] [transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[   621.12s stderr] Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights:   0%|          | 1/286 [05:36<26:38:59, 336.63s/it]Loading weights:  48%|████▊     | 138/286 [05:38<04:15,  1.73s/it]  Loading weights:  50%|█████     | 144/286 [05:48<04:04,  1.72s/it]Loading weights:  51%|█████▏    | 147/286 [05:56<04:04,  1.76s/it]Loading weights:  55%|█████▌    | 158/286 [06:05<03:23,  1.59s/it]Loading weights:  56%|█████▌    | 160/286 [06:12<03:32,  1.69s/it]Loading weights:  56%|█████▋    | 161/286 [06:16<03:36,  1.73s/it]Loading weights:  57%|█████▋    | 162/286 [06:17<03:33,  1.72s/it]Loading weights:  58%|█████▊    | 167/286 [06:25<03:22,  1.70s/it]Loading weights:  59%|█████▊    | 168/286 [06:33<04:01,  2.04s/it]Loading weights:  59%|█████▉    | 169/286 [06:36<04:09,  2.13s/it]Loading weights:  64%|██████▎   | 182/286 [06:44<02:07,  1.22s/it]Loading weights:  64%|██████▍   | 184/286 [06:53<02:46,  1.63s/it]Loading weights:  65%|██████▍   | 185/286 [06:56<02:57,  1.75s/it]Loading weights:  65%|██████▌   | 186/286 [06:57<02:44,  1.65s/it]Loading weights:  67%|██████▋   | 191/286 [07:04<02:27,  1.55s/it]Loading weights:  67%|██████▋   | 192/286 [07:13<03:41,  2.35s/it]Loading weights:  67%|██████▋   | 193/286 [07:16<03:47,  2.44s/it]Loading weights:  72%|███████▏  | 206/286 [07:24<01:29,  1.12s/it]Loading weights:  73%|███████▎  | 208/286 [07:35<02:12,  1.69s/it]Loading weights:  73%|███████▎  | 209/286 [07:37<02:14,  1.75s/it]Loading weights:  73%|███████▎  | 210/286 [07:38<02:04,  1.63s/it]Loading weights:  75%|███████▌  | 215/286 [07:45<01:49,  1.54s/it]Loading weights:  76%|███████▌  | 216/286 [07:55<02:56,  2.52s/it]Loading weights:  76%|███████▌  | 217/286 [07:57<02:51,  2.49s/it]Loading weights:  80%|████████  | 230/286 [08:04<01:00,  1.08s/it]Loading weights:  81%|████████  | 232/286 [08:16<01:33,  1.73s/it]Loading weights:  81%|████████▏ | 233/286 [08:17<01:30,  1.71s/it]Loading weights:  82%|████████▏ | 234/286 [08:18<01:23,  1.61s/it]Loading weights:  84%|████████▎ | 239/286 [08:25<01:09,  1.47s/it]Loading weights:  84%|████████▍ | 240/286 [08:36<01:59,  2.59s/it]Loading weights:  84%|████████▍ | 241/286 [08:38<01:49,  2.44s/it]Loading weights:  89%|████████▉ | 254/286 [08:45<00:34,  1.09s/it]Loading weights:  90%|████████▉ | 256/286 [08:57<00:52,  1.76s/it]Loading weights:  90%|████████▉ | 257/286 [08:57<00:47,  1.64s/it]Loading weights:  90%|█████████ | 258/286 [08:58<00:44,  1.58s/it]Loading weights:  92%|█████████▏| 263/286 [09:06<00:34,  1.52s/it]Loading weights:  92%|█████████▏| 264/286 [09:17<00:57,  2.64s/it]Loading weights:  93%|█████████▎| 265/286 [09:18<00:49,  2.36s/it]Loading weights:  97%|█████████▋| 278/286 [09:24<00:08,  1.02s/it]Loading weights:  98%|█████████▊| 280/286 [09:34<00:09,  1.53s/it]Loading weights:  98%|█████████▊| 281/286 [09:34<00:07,  1.43s/it]Loading weights: 100%|██████████| 286/286 [09:34<00:00,  2.01s/it]
+[   621.41s stdout] loaded in 576s
+[   621.91s stdout] trainable params: 32,937,472 || all params: 1,761,739,008 || trainable%: 1.8696
+[   623.22s stdout] steps 399
+[   651.75s stderr] /kaggle/src/script.py:75: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+[   651.75s stderr]   scaler.step(opt); scaler.update(); opt.zero_grad(set_to_none=True); sched.step(); step += 1; log.append(tot)
+[   651.75s stdout] ep 0 step 1/399 loss 2.5359 29s
+[   667.36s stdout] ep 0 step 2/399 loss 2.1227 44s
+[   726.83s stdout] ep 0 step 5/399 loss 1.3497 104s
+[   761.18s stderr] Traceback (most recent call last):
+[   761.18s stderr]   File "/kaggle/src/script.py", line 73, in <module>
+[   761.18s stderr]     l = row_loss(*train[j]) / len(ch); scaler.scale(l).backward(); tot += l.item()
+[   761.18s stderr]                                        ~~~~~~~~~~~~~~~~~~~~~~~~^^
+[   761.18s stderr]   File "/usr/local/lib/python3.13/dist-packages/torch/_tensor.py", line 631, in backward
+[   761.18s stderr]     torch.autograd.backward(
+[   761.18s stderr]     ~~~~~~~~~~~~~~~~~~~~~~~^
+[   761.18s stderr]         self, gradient, retain_graph, create_graph, inputs=inputs
+[   761.18s stderr]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[   761.18s stderr]     )
+[   761.18s stderr]     ^
+[   761.18s stderr]   File "/usr/local/lib/python3.13/dist-packages/torch/autograd/__init__.py", line 381, in backward
+[   761.18s stderr]     _engine_run_backward(
+[   761.18s stderr]     ~~~~~~~~~~~~~~~~~~~~^
+[   761.18s stderr]         tensors,
+[   761.18s stderr]         ^^^^^^^^
+[   761.18s stderr]     ...<5 lines>...
+[   761.18s stderr]         accumulate_grad=True,
+[   761.18s stderr]         ^^^^^^^^^^^^^^^^^^^^^
+[   761.18s stderr]     )
+[   761.18s stderr]     ^
+[   761.18s stderr]   File "/usr/local/lib/python3.13/dist-packages/torch/autograd/graph.py", line 869, in _engine_run_backward
+[   761.18s stderr]     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[   761.18s stderr]            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[   761.18s stderr]         t_outputs, *args, **kwargs
+[   761.18s stderr]         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[   761.18s stderr]     )  # Calls into the C++ engine to run the backward pass
+[   761.18s stderr]     ^
+[   761.18s stderr] torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.58 GiB. GPU 0 has a total capacity of 14.56 GiB of which 1.78 GiB is free. Including non-PyTorch memory, this process has 12.78 GiB memory in use. Of the allocated memory 12.51 GiB is allocated by PyTorch, and 126.78 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+[   769.91s stderr] /usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+[   769.91s stderr]   cells[i][c] = re.sub('\\\\\|', '|', cell)
+[   770.21s stderr] /usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+[   770.21s stderr]   text = re.sub(r'_', '\_', text) # Escape underscores in display text
+[   771.07s stderr] [NbConvertApp] Converting notebook __script__.ipynb to html
+[   772.17s stderr] [NbConvertApp] Writing 325285 bytes to __results__.html

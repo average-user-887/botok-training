@@ -1,0 +1,67 @@
+{
+ "tokenizer": "LFM3-1.7B-Base tokenizer.json (tokenizers lib) + chat template rendered as '<|startoftext|><|im_start|>user\\n{u}<|im_end|>\\n<|im_start|>assistant\\n<think></think>'; completion + 1 EOS (<|im_end|>)",
+ "max_len": 7000,
+ "source": "computed locally with the tokenizers library; cross-checked row by row against the probe-kernel token_lengths_*.csv (identical totals for all 1115 train rows)",
+ "train": {
+  "rows": 1115,
+  "prompt": {
+   "min": 503,
+   "p50": 1442,
+   "p90": 5064,
+   "p99": 5923,
+   "max": 7073,
+   "mean": 2155.1
+  },
+  "completion": {
+   "min": 6,
+   "p50": 355,
+   "p90": 1323,
+   "p99": 2255,
+   "max": 2973,
+   "mean": 531.5
+  },
+  "total": {
+   "min": 509,
+   "p50": 1787,
+   "p90": 6402,
+   "p99": 7894,
+   "max": 8813,
+   "mean": 2686.6
+  },
+  "rows_over_7000": 54,
+  "rows_kept": 1061,
+  "total_tokens_kept": 2584193,
+  "supervised_tokens_kept": 484312
+ },
+ "dev": {
+  "rows": 75,
+  "prompt": {
+   "min": 510,
+   "p50": 1282,
+   "p90": 5032,
+   "p99": 5549,
+   "max": 5549,
+   "mean": 1794.4
+  },
+  "completion": {
+   "min": 6,
+   "p50": 152,
+   "p90": 1047,
+   "p99": 2010,
+   "max": 2010,
+   "mean": 375.6
+  },
+  "total": {
+   "min": 516,
+   "p50": 1288,
+   "p90": 6081,
+   "p99": 7549,
+   "max": 7549,
+   "mean": 2169.9
+  },
+  "rows_over_7000": 1,
+  "rows_kept": 74,
+  "total_tokens_kept": 155195,
+  "supervised_tokens_kept": 26157
+ }
+}

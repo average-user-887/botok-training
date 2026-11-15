@@ -1,0 +1,113 @@
+[     1.11s stdout] [2026-11-15T16:11:17.171Z] PHASE START setup_imports
+[     1.16s stdout] GPU 0: Tesla T4 (UUID: GPU-<uuid-redacted>)
+[     1.16s stdout] GPU 1: Tesla T4 (UUID: GPU-<uuid-redacted>)
+[     1.58s stdout] Sun Nov 15 16:11:17 2026       
+[     1.58s stdout] +-----------------------------------------------------------------------------------------+
+[     1.58s stdout] | NVIDIA-SMI 580.178.04             Driver Version: 580.178.04     CUDA Version: 13.0     |
+[     1.58s stdout] +-----------------------------------------+------------------------+----------------------+
+[     1.58s stdout] | GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+[    37.50s stdout] {"python": "3.13.16", "torch": "2.11.0+cu130", "torch_cuda": "13.0", "cudnn": 92700, "transformers": "5.20.2", "peft": "0.21.2", "accelerate": "1.15.0", "bitsandbytes": null, "tokenizers": "0.23.3", "numpy": "2.1.3", "device_count": 2, "devices": [{"index": 0, "name": "Tesla T4", "capability": [7, 5], "total_memory_gib": 14.56}, {"index": 1, "name": "Tesla T4", "capability": [7, 5], "total_memory_gib": 14.56}], "cuda_visible_devices_env": null, "world_size_env": null, "pytorch_cuda_alloc_conf": "expandable_segments:True", "platform": "Linux-6.18.55+-x86_64-with-glibc2.39"}
+[    37.50s stdout] [2026-11-15T16:11:53.563Z] PHASE END setup_imports 36.392s
+[    37.67s stdout] model /kaggle/input/datasets/<kaggle-user>/lfm3-1p7b-base data /kaggle/input/datasets/<kaggle-user>/p2000-deriver-sft-v2
+[    37.67s stdout] [2026-11-15T16:11:53.731Z] PHASE START hash_inputs
+[    39.03s stdout] [2026-11-15T16:11:55.086Z] PHASE END hash_inputs 1.355s
+[    39.03s stdout] GPU Tesla T4 torch.float16 device_count 2
+[    39.03s stdout] [2026-11-15T16:11:55.086Z] PHASE START tokenizer_load_and_tokenization
+[    47.99s stdout] train kept 1061/1115 dev 75
+[    47.99s stdout] [2026-11-15T16:12:04.048Z] PHASE END tokenizer_load_and_tokenization 8.961s
+[    47.99s stdout] sample {'n_rows': 96, 'alloc_by_bucket(<1k,1-3k,3-6k,6-7k excl. forced longest)': {0: 23, 1: 38, 2: 21, 3: 8}, 'forced_longest_row_indices': [482, 1077, 938, 704, 366, 415], 'sample_total_tokens': 262339, 'sample_mean_total_tokens': 2732.7, 'population_mean_total_tokens': 2435.6}
+[    47.99s stdout] [2026-11-15T16:12:04.052Z] PHASE START model_load
+[   814.64s stderr] Loading weights:   0%|          | 0/286 [00:00<?, ?it/s]Loading weights:   0%|          | 1/286 [07:32<35:50:13, 452.68s/it]Loading weights:  48%|████▊     | 138/286 [07:35<05:44,  2.33s/it]  Loading weights:  50%|█████     | 143/286 [07:45<05:29,  2.30s/it]Loading weights:  51%|█████     | 145/286 [07:59<05:42,  2.43s/it]Loading weights:  55%|█████▌    | 158/286 [08:10<04:31,  2.12s/it]Loading weights:  56%|█████▌    | 160/286 [08:20<04:41,  2.23s/it]Loading weights:  56%|█████▋    | 161/286 [08:25<04:47,  2.30s/it]Loading weights:  57%|█████▋    | 162/286 [08:27<04:43,  2.29s/it]Loading weights:  58%|█████▊    | 167/286 [08:38<04:31,  2.28s/it]Loading weights:  59%|█████▊    | 168/286 [08:47<05:19,  2.71s/it]Loading weights:  59%|█████▉    | 169/286 [08:52<05:33,  2.85s/it]Loading weights:  64%|██████▎   | 182/286 [09:02<02:47,  1.61s/it]Loading weights:  64%|██████▍   | 184/286 [09:14<03:38,  2.14s/it]Loading weights:  65%|██████▍   | 185/286 [09:18<03:52,  2.30s/it]Loading weights:  65%|██████▌   | 186/286 [09:19<03:36,  2.16s/it]Loading weights:  67%|██████▋   | 191/286 [09:28<03:06,  1.97s/it]Loading weights:  67%|██████▋   | 192/286 [09:39<04:35,  2.93s/it]Loading weights:  67%|██████▋   | 193/286 [09:43<04:46,  3.08s/it]Loading weights:  72%|███████▏  | 206/286 [09:52<01:51,  1.39s/it]Loading weights:  73%|███████▎  | 208/286 [10:06<02:49,  2.17s/it]Loading weights:  73%|███████▎  | 209/286 [10:09<02:53,  2.25s/it]Loading weights:  73%|███████▎  | 210/286 [10:11<02:41,  2.13s/it]Loading weights:  75%|███████▌  | 215/286 [10:19<02:18,  1.96s/it]Loading weights:  76%|███████▌  | 216/286 [10:32<03:40,  3.16s/it]Loading weights:  76%|███████▌  | 217/286 [10:35<03:38,  3.17s/it]Loading weights:  80%|████████  | 230/286 [10:44<01:17,  1.38s/it]Loading weights:  81%|████████  | 232/286 [10:59<02:00,  2.23s/it]Loading weights:  81%|████████▏ | 233/286 [11:02<01:58,  2.24s/it]Loading weights:  82%|████████▏ | 234/286 [11:03<01:49,  2.11s/it]Loading weights:  84%|████████▎ | 239/286 [11:12<01:32,  1.97s/it]Loading weights:  84%|████████▍ | 240/286 [11:27<02:38,  3.44s/it]Loading weights:  84%|████████▍ | 241/286 [11:29<02:30,  3.34s/it]Loading weights:  89%|████████▉ | 254/286 [11:39<00:46,  1.46s/it]Loading weights:  90%|████████▉ | 256/286 [11:55<01:10,  2.35s/it]Loading weights:  90%|████████▉ | 257/286 [11:56<01:04,  2.23s/it]Loading weights:  90%|█████████ | 258/286 [11:57<01:00,  2.15s/it]Loading weights:  92%|█████████▏| 263/286 [12:06<00:45,  1.96s/it]Loading weights:  92%|█████████▏| 264/286 [12:21<01:14,  3.41s/it]Loading weights:  93%|█████████▎| 265/286 [12:22<01:05,  3.11s/it]Loading weights:  97%|█████████▋| 278/286 [12:31<00:10,  1.36s/it]Loading weights:  98%|█████████▊| 280/286 [12:44<00:12,  2.06s/it]Loading weights:  98%|█████████▊| 281/286 [12:44<00:09,  1.91s/it]Loading weights: 100%|██████████| 286/286 [12:44<00:00,  2.67s/it]
+[   814.83s stdout] [2026-11-15T16:24:50.892Z] PHASE END model_load 766.84s
+[   814.83s stdout] [2026-11-15T16:24:50.892Z] PHASE START hash_weights_after_load (page cache warm, so this is NOT cold-read time)
+[   824.33s stdout] [2026-11-15T16:25:00.393Z] PHASE END hash_weights_after_load (page cache warm, so this is NOT cold-read time) 9.501s
+[   824.33s stdout] [2026-11-15T16:25:00.394Z] PHASE START peft_wrap_to_gpu
+[   824.85s stdout] trainable 32937472 of 1761739008
+[   826.18s stdout] [2026-11-15T16:25:02.237Z] PHASE END peft_wrap_to_gpu 1.842s
+[   826.18s stdout] [2026-11-15T16:25:02.243Z] PHASE START eval_baseline
+[   902.94s stdout] eval baseline row 0 gen_tokens 1800 76.8s valid False
+[   974.84s stdout] eval baseline row 1 gen_tokens 1800 71.9s valid False
+[  1049.30s stdout] eval baseline row 2 gen_tokens 1800 74.5s valid False
+[  1120.93s stdout] eval baseline row 3 gen_tokens 1800 71.6s valid False
+[  1192.92s stdout] eval baseline row 4 gen_tokens 1800 72.0s valid False
+[  1267.37s stdout] eval baseline row 5 gen_tokens 1800 74.4s valid False
+[  1338.91s stdout] eval baseline row 6 gen_tokens 1800 71.5s valid False
+[  1338.91s stdout] eval baseline cap hit after 7 rows
+[  1338.91s stdout] [2026-11-15T16:33:34.971Z] PHASE END eval_baseline 512.728s
+[  1338.92s stdout] [2026-11-15T16:33:34.978Z] PHASE START training_total
+[  1361.33s stdout] OOM skip row 482 len 6946 total_skipped 1
+[  1367.86s stderr] /kaggle/src/script.py:235: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+[  1367.86s stderr]   scaler.step(opt); scaler.update(); opt.zero_grad(set_to_none=True); sched.step(); step += 1
+[  1367.86s stdout] [2026-11-15T16:34:03.915Z] step 1/12 loss 1.8898 rows 7 tok 15483 sup 3241 28.9s
+[  1402.76s stdout] OOM skip row 555 len 6500 total_skipped 2
+[  1403.23s stdout] [2026-11-15T16:34:39.289Z] step 2/12 loss 1.3035 rows 7 tok 21341 sup 4567 35.4s
+[  1407.80s stdout] OOM skip row 1077 len 6915 total_skipped 3
+[  1420.17s stdout] OOM skip row 64 len 6613 total_skipped 4
+[  1425.15s stdout] OOM skip row 323 len 6846 total_skipped 5
+[  1427.38s stdout] [2026-11-15T16:35:03.439Z] step 3/12 loss 1.1900 rows 5 tok 7946 sup 1082 24.1s
+[  1444.78s stdout] OOM skip row 362 len 6615 total_skipped 6
+[  1445.25s stdout] [2026-11-15T16:35:21.308Z] step 4/12 loss 2.1350 rows 7 tok 10907 sup 1527 17.9s
+[  1467.32s stdout] [2026-11-15T16:35:43.377Z] step 5/12 loss 2.0157 rows 8 tok 16012 sup 2829 22.1s
+[  1488.00s stdout] OOM skip row 938 len 6897 total_skipped 7
+[  1489.50s stdout] [2026-11-15T16:36:05.564Z] step 6/12 loss 1.2742 rows 7 tok 13628 sup 2256 22.2s
+[  1494.08s stdout] OOM skip row 704 len 6894 total_skipped 8
+[  1509.25s stdout] OOM skip row 366 len 6890 total_skipped 9
+[  1518.20s stdout] [2026-11-15T16:36:34.258Z] step 7/12 loss 0.7685 rows 6 tok 13890 sup 2701 28.7s
+[  1542.99s stdout] [2026-11-15T16:36:59.045Z] step 8/12 loss 0.8011 rows 8 tok 17996 sup 3088 24.8s
+[  1565.14s stdout] [2026-11-15T16:37:21.198Z] step 9/12 loss 0.7112 rows 8 tok 15868 sup 2406 22.2s
+[  1591.66s stdout] [2026-11-15T16:37:47.717Z] step 10/12 loss 0.5559 rows 8 tok 19543 sup 3666 26.5s
+[  1628.53s stdout] [2026-11-15T16:38:24.594Z] step 11/12 loss 0.7913 rows 8 tok 25265 sup 4388 36.9s
+[  1653.99s stdout] OOM skip row 415 len 6883 total_skipped 10
+[  1654.53s stdout] [2026-11-15T16:38:50.585Z] step 12/12 loss 0.5725 rows 7 tok 16461 sup 3328 26.0s
+[  1654.53s stdout] [2026-11-15T16:38:50.585Z] PHASE END training_total 315.607s
+[  1654.53s stdout] max mem alloc per device {'0': 14307.3, '1': 0.0}
+[  1654.53s stdout] [2026-11-15T16:38:50.593Z] PHASE START eval_candidate
+[  1655.39s stdout] eval candidate row 0 gen_tokens 6 0.9s valid True
+[  1656.51s stdout] eval candidate row 1 gen_tokens 6 1.1s valid True
+[  1659.06s stdout] eval candidate row 2 gen_tokens 6 2.6s valid True
+[  1659.91s stdout] eval candidate row 3 gen_tokens 6 0.8s valid True
+[  1661.32s stdout] eval candidate row 4 gen_tokens 6 1.4s valid True
+[  1664.18s stdout] eval candidate row 5 gen_tokens 6 2.9s valid True
+[  1664.95s stdout] eval candidate row 6 gen_tokens 6 0.8s valid True
+[  1664.95s stdout] [2026-11-15T16:39:01.006Z] PHASE END eval_candidate 10.413s
+[  1665.26s stdout] [2026-11-15T16:39:01.318Z] PHASE START checkpoint_save
+[  1665.53s stdout] [2026-11-15T16:39:01.592Z] PHASE END checkpoint_save 0.275s
+[  1665.89s stdout] [2026-11-15T16:39:01.954Z] PHASE START resume_check
+[  1667.20s stderr] /kaggle/src/script.py:285: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+[  1667.20s stderr]   for _ in range(step): opt.step() if False else sched.step()
+[  1692.75s stderr] Traceback (most recent call last):
+[  1692.75s stderr]   File "/kaggle/src/script.py", line 288, in <module>
+[  1692.75s stderr]     l = row_loss(*encs[j]) / len(ch); scaler.scale(l).backward(); tot += l.item()
+[  1692.75s stderr]                                       ~~~~~~~~~~~~~~~~~~~~~~~~^^
+[  1692.75s stderr]   File "/usr/local/lib/python3.13/dist-packages/torch/_tensor.py", line 631, in backward
+[  1692.75s stderr]     torch.autograd.backward(
+[  1692.75s stderr]     ~~~~~~~~~~~~~~~~~~~~~~~^
+[  1692.75s stderr]         self, gradient, retain_graph, create_graph, inputs=inputs
+[  1692.75s stderr]         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[  1692.75s stderr]     )
+[  1692.75s stderr]     ^
+[  1692.75s stderr]   File "/usr/local/lib/python3.13/dist-packages/torch/autograd/__init__.py", line 381, in backward
+[  1692.75s stderr]     _engine_run_backward(
+[  1692.75s stderr]     ~~~~~~~~~~~~~~~~~~~~^
+[  1692.75s stderr]         tensors,
+[  1692.75s stderr]         ^^^^^^^^
+[  1692.75s stderr]     ...<5 lines>...
+[  1692.75s stderr]         accumulate_grad=True,
+[  1692.75s stderr]         ^^^^^^^^^^^^^^^^^^^^^
+[  1692.75s stderr]     )
+[  1692.75s stderr]     ^
+[  1692.75s stderr]   File "/usr/local/lib/python3.13/dist-packages/torch/autograd/graph.py", line 869, in _engine_run_backward
+[  1692.75s stderr]     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[  1692.75s stderr]            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[  1692.75s stderr]         t_outputs, *args, **kwargs
+[  1692.75s stderr]         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[  1692.75s stderr]     )  # Calls into the C++ engine to run the backward pass
+[  1692.75s stderr]     ^
+[  1692.75s stderr] torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.82 GiB. GPU 0 has a total capacity of 14.56 GiB of which 1.24 GiB is free. Including non-PyTorch memory, this process has 13.32 GiB memory in use. Of the allocated memory 13.06 GiB is allocated by PyTorch, and 121.75 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+[  1693.97s stdout] PROBE DONE 1692.9
+[  1702.65s stderr] /usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+[  1702.65s stderr]   cells[i][c] = re.sub('\\\\\|', '|', cell)
+[  1702.93s stderr] /usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+[  1702.93s stderr]   text = re.sub(r'_', '\_', text) # Escape underscores in display text
+[  1703.77s stderr] [NbConvertApp] Converting notebook __script__.ipynb to html
+[  1704.92s stderr] [NbConvertApp] Writing 414304 bytes to __results__.html

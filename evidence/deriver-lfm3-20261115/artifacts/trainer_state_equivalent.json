@@ -1,0 +1,93 @@
+{
+ "note": "custom training loop, not HF Trainer: this file is an equivalent of trainer_state.json (log_history only), probe steps only",
+ "global_step": 12,
+ "max_steps_probe": 12,
+ "max_steps_full_recipe": 399,
+ "num_train_epochs_planned": 3,
+ "log_history": [
+  {
+   "step": 1,
+   "loss": 1.88983,
+   "lr": 1.0526315789473684e-05,
+   "grad_norm": null,
+   "step_seconds": 28.937
+  },
+  {
+   "step": 2,
+   "loss": 1.30346,
+   "lr": 2.105233792177081e-05,
+   "grad_norm": null,
+   "step_seconds": 35.373
+  },
+  {
+   "step": 3,
+   "loss": 1.18999,
+   "lr": 3.157718545266931e-05,
+   "grad_norm": null,
+   "step_seconds": 24.149
+  },
+  {
+   "step": 4,
+   "loss": 2.13503,
+   "lr": 4.209997754717525e-05,
+   "grad_norm": null,
+   "step_seconds": 17.869
+  },
+  {
+   "step": 5,
+   "loss": 2.01566,
+   "lr": 5.261983357053697e-05,
+   "grad_norm": 8.647920608520508,
+   "step_seconds": 22.068
+  },
+  {
+   "step": 6,
+   "loss": 1.27415,
+   "lr": 6.313587317924207e-05,
+   "grad_norm": 6.966454029083252,
+   "step_seconds": 22.186
+  },
+  {
+   "step": 7,
+   "loss": 0.76848,
+   "lr": 7.364721641198989e-05,
+   "grad_norm": 3.3971645832061768,
+   "step_seconds": 28.693
+  },
+  {
+   "step": 8,
+   "loss": 0.80108,
+   "lr": 8.415298378063092e-05,
+   "grad_norm": 1.0046979188919067,
+   "step_seconds": 24.787
+  },
+  {
+   "step": 9,
+   "loss": 0.71121,
+   "lr": 9.465229636106594e-05,
+   "grad_norm": 1.3442175388336182,
+   "step_seconds": 22.153
+  },
+  {
+   "step": 10,
+   "loss": 0.55592,
+   "lr": 0.00010514427588409632,
+   "grad_norm": 1.7624062299728394,
+   "step_seconds": 26.518
+  },
+  {
+   "step": 11,
+   "loss": 0.79127,
+   "lr": 0.0001156280448262182,
+   "grad_norm": 0.8270877003669739,
+   "step_seconds": 36.877
+  },
+  {
+   "step": 12,
+   "loss": 0.57249,
+   "lr": 0.0001261027265003522,
+   "grad_norm": 0.7163760662078857,
+   "step_seconds": 25.99
+  }
+ ]
+}

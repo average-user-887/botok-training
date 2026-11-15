@@ -1,0 +1,49 @@
+[{"stream_name":"stdout","time":0.923590545,"data":"model /kaggle/input/datasets/<kaggle-user>/lfm3-1p7b-base data /kaggle/input/datasets/<kaggle-user>/p2000-deriver-sft-v2\n"}
+,{"stream_name":"stdout","time":28.295549459,"data":"GPU Tesla T4 torch.float16\n"}
+,{"stream_name":"stdout","time":37.872169688,"data":"train 1061/1115 dev 75 | example prompt tail: ' one sentence I most want to practise, so he knows what to listen for on the phone.\\n\u003c/messages\u003e\u003c|im_end|\u003e\\n\u003c|im_start|\u003eassistant\\n\u003cthink\u003e\u003c/think\u003e'\n"}
+,{"stream_name":"stderr","time":37.883373175,"data":"[transformers] `torch_dtype` is deprecated! Use `dtype` instead!\n"}
+,{"stream_name":"stderr","time":1505.732481999,"data":"\rLoading weights:   0%|          | 0/286 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 1/286 [14:00\u003c66:30:44, 840.16s/it]\rLoading weights:  48%|████▊     | 138/286 [14:05\u003c10:37,  4.31s/it]  \rLoading weights:  48%|████▊     | 138/286 [14:21\u003c10:37,  4.31s/it]\rLoading weights:  50%|█████     | 143/286 [14:22\u003c10:09,  4.27s/it]\rLoading weights:  50%|█████     | 144/286 [14:28\u003c10:09,  4.29s/it]\rLoading weights:  50%|█████     | 144/286 [14:41\u003c10:09,  4.29s/it]\rLoading weights:  51%|█████     | 145/286 [14:47\u003c10:44,  4.57s/it]\rLoading weights:  55%|█████▌    | 158/286 [15:07\u003c08:02,  3.77s/it]\rLoading weights:  56%|█████▌    | 160/286 [15:24\u003c08:28,  4.03s/it]\rLoading weights:  56%|█████▋    | 161/286 [15:31\u003c08:39,  4.16s/it]\rLoading weights:  57%|█████▋    | 162/286 [15:35\u003c08:34,  4.15s/it]\rLoading weights:  58%|█████▊    | 167/286 [15:54\u003c08:00,  4.04s/it]\rLoading weights:  59%|█████▊    | 168/286 [16:11\u003c09:48,  4.98s/it]\rLoading weights:  59%|█████▉    | 169/286 [16:19\u003c10:10,  5.21s/it]\rLoading weights:  64%|██████▎   | 182/286 [16:38\u003c04:57,  2.86s/it]\rLoading weights:  64%|██████▍   | 184/286 [17:01\u003c06:34,  3.87s/it]\rLoading weights:  65%|██████▍   | 185/286 [17:08\u003c06:58,  4.15s/it]\rLoading weights:  65%|██████▌   | 186/286 [17:10\u003c06:32,  3.93s/it]\rLoading weights:  67%|██████▋   | 191/286 [17:27\u003c05:54,  3.73s/it]\rLoading weights:  67%|██████▋   | 192/286 [17:49\u003c08:50,  5.64s/it]\rLoading weights:  67%|██████▋   | 193/286 [17:56\u003c09:08,  5.90s/it]\rLoading weights:  72%|███████▏  | 206/286 [18:13\u003c03:30,  2.64s/it]\rLoading weights:  73%|███████▎  | 208/286 [18:38\u003c05:08,  3.95s/it]\rLoading weights:  73%|███████▎  | 209/286 [18:44\u003c05:18,  4.13s/it]\rLoading weights:  73%|███████▎  | 210/286 [18:45\u003c04:48,  3.80s/it]\rLoading weights:  75%|███████▌  | 215/286 [19:03\u003c04:19,  3.66s/it]\rLoading weights:  76%|███████▌  | 216/286 [19:33\u003c07:46,  6.66s/it]\rLoading weights:  76%|███████▌  | 217/286 [19:41\u003c07:54,  6.88s/it]\rLoading weights:  80%|████████  | 230/286 [20:03\u003c02:53,  3.11s/it]\rLoading weights:  81%|████████  | 232/286 [20:37\u003c04:32,  5.05s/it]\rLoading weights:  81%|████████▏ | 233/286 [20:42\u003c04:28,  5.06s/it]\rLoading weights:  82%|████████▏ | 234/286 [20:44\u003c04:04,  4.70s/it]\rLoading weights:  84%|████████▎ | 239/286 [21:02\u003c03:17,  4.21s/it]\rLoading weights:  84%|████████▍ | 240/286 [21:32\u003c05:28,  7.14s/it]\rLoading weights:  84%|████████▍ | 241/286 [21:36\u003c05:01,  6.71s/it]\rLoading weights:  89%|████████▉ | 254/286 [22:00\u003c01:40,  3.16s/it]\rLoading weights:  90%|████████▉ | 256/286 [22:32\u003c02:28,  4.93s/it]\rLoading weights:  90%|████████▉ | 257/286 [22:33\u003c02:12,  4.58s/it]\rLoading weights:  90%|█████████ | 258/286 [22:36\u003c02:03,  4.39s/it]\rLoading weights:  92%|█████████▏| 263/286 [22:57\u003c01:40,  4.37s/it]\rLoading weights:  92%|█████████▏| 264/286 [23:34\u003c02:55,  7.98s/it]\rLoading weights:  93%|█████████▎| 265/286 [23:35\u003c02:27,  7.02s/it]\rLoading weights:  97%|█████████▋| 278/286 [23:55\u003c00:24,  3.09s/it]\rLoading weights:  98%|█████████▊| 280/286 [24:25\u003c00:28,  4.72s/it]\rLoading weights:  98%|█████████▊| 281/286 [24:26\u003c00:22,  4.41s/it]\rLoading weights: 100%|██████████| 286/286 [24:27\u003c00:00,  5.13s/it]\n"}
+,{"stream_name":"stdout","time":1506.027242826,"data":"loaded in 1468s\n"}
+,{"stream_name":"stdout","time":1506.568765867,"data":"trainable params: 32,937,472 || all params: 1,761,739,008 || trainable%: 1.8696\n"}
+,{"stream_name":"stdout","time":1507.878653565,"data":"steps 399\n"}
+,{"stream_name":"stdout","time":1536.293143372,"data":"ep 0 step 1/399 loss 2.5359 28s\n"}
+,{"stream_name":"stderr","time":1536.293150866,"data":"/kaggle/src/script.py:74: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate\n"}
+,{"stream_name":"stderr","time":1536.293193903,"data":"  scaler.step(opt); scaler.update(); opt.zero_grad(set_to_none=True); sched.step(); step += 1; log.append(tot)\n"}
+,{"stream_name":"stdout","time":1553.012103225,"data":"ep 0 step 2/399 loss 2.1227 45s\n"}
+,{"stream_name":"stdout","time":1619.950171648,"data":"ep 0 step 5/399 loss 1.3491 112s\n"}
+,{"stream_name":"stderr","time":1659.876458632,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":1659.877658692,"data":"  File \"/kaggle/src/script.py\", line 72, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":1659.877676499,"data":"    l = row_loss(*train[j]) / len(ch); scaler.scale(l).backward(); tot += l.item()\n"}
+,{"stream_name":"stderr","time":1659.877682825,"data":"                                       ~~~~~~~~~~~~~~~~~~~~~~~~^^\n"}
+,{"stream_name":"stderr","time":1659.877687875,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/_tensor.py\", line 631, in backward\n"}
+,{"stream_name":"stderr","time":1659.877693014,"data":"    torch.autograd.backward(\n"}
+,{"stream_name":"stderr","time":1659.877697178,"data":"    ~~~~~~~~~~~~~~~~~~~~~~~^\n"}
+,{"stream_name":"stderr","time":1659.87770154,"data":"        self, gradient, retain_graph, create_graph, inputs=inputs\n"}
+,{"stream_name":"stderr","time":1659.877707648,"data":"        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":1659.877715185,"data":"    )\n"}
+,{"stream_name":"stderr","time":1659.877718383,"data":"    ^\n"}
+,{"stream_name":"stderr","time":1659.877721412,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/autograd/__init__.py\", line 381, in backward\n"}
+,{"stream_name":"stderr","time":1659.877724377,"data":"    _engine_run_backward(\n"}
+,{"stream_name":"stderr","time":1659.877727135,"data":"    ~~~~~~~~~~~~~~~~~~~~^\n"}
+,{"stream_name":"stderr","time":1659.877729852,"data":"        tensors,\n"}
+,{"stream_name":"stderr","time":1659.877732637,"data":"        ^^^^^^^^\n"}
+,{"stream_name":"stderr","time":1659.877735363,"data":"    ...\u003c5 lines\u003e...\n"}
+,{"stream_name":"stderr","time":1659.87773891,"data":"        accumulate_grad=True,\n"}
+,{"stream_name":"stderr","time":1659.877777389,"data":"        ^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":1659.877783893,"data":"    )\n"}
+,{"stream_name":"stderr","time":1659.877787125,"data":"    ^\n"}
+,{"stream_name":"stderr","time":1659.877790248,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/autograd/graph.py\", line 869, in _engine_run_backward\n"}
+,{"stream_name":"stderr","time":1659.877793866,"data":"    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass\n"}
+,{"stream_name":"stderr","time":1659.877797319,"data":"           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":1659.877800773,"data":"        t_outputs, *args, **kwargs\n"}
+,{"stream_name":"stderr","time":1659.877804112,"data":"        ^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":1659.877812473,"data":"    )  # Calls into the C++ engine to run the backward pass\n"}
+,{"stream_name":"stderr","time":1659.87781515,"data":"    ^\n"}
+,{"stream_name":"stderr","time":1659.877817447,"data":"torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.58 GiB. GPU 0 has a total capacity of 14.56 GiB of which 1.33 GiB is free. Including non-PyTorch memory, this process has 13.23 GiB memory in use. Of the allocated memory 12.52 GiB is allocated by PyTorch, and 583.67 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)\n"}
+,{"stream_name":"stderr","time":1666.972982962,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1666.973029683,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1667.203012215,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1667.203038784,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1668.021780673,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1669.018056588,"data":"[NbConvertApp] Writing 325013 bytes to __results__.html\n"}
+]

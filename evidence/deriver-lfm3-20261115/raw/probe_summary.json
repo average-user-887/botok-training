@@ -1,0 +1,316 @@
+{
+ "probe_started_utc": "2026-11-15T16:11:17.166Z",
+ "nvidia_smi_L": "GPU 0: Tesla T4 (UUID: GPU-<uuid-redacted>)\nGPU 1: Tesla T4 (UUID: GPU-<uuid-redacted>)",
+ "nvidia_smi_header": "Sun Nov 15 16:11:17 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 580.178.04             Driver Version: 580.178.04     CUDA Version: 13.0     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |",
+ "driver_version": [
+  "580.178.04",
+  "580.178.04"
+ ],
+ "env": {
+  "python": "3.13.16",
+  "torch": "2.11.0+cu130",
+  "torch_cuda": "13.0",
+  "cudnn": 92700,
+  "transformers": "5.20.2",
+  "peft": "0.21.2",
+  "accelerate": "1.15.0",
+  "bitsandbytes": null,
+  "tokenizers": "0.23.3",
+  "numpy": "2.1.3",
+  "device_count": 2,
+  "devices": [
+   {
+    "index": 0,
+    "name": "Tesla T4",
+    "capability": [
+     7,
+     5
+    ],
+    "total_memory_gib": 14.56
+   },
+   {
+    "index": 1,
+    "name": "Tesla T4",
+    "capability": [
+     7,
+     5
+    ],
+    "total_memory_gib": 14.56
+   }
+  ],
+  "cuda_visible_devices_env": null,
+  "world_size_env": null,
+  "pytorch_cuda_alloc_conf": "expandable_segments:True",
+  "platform": "Linux-6.18.55+-x86_64-with-glibc2.39"
+ },
+ "input_files": {
+  "model_dir_listing": [
+   "LICENSE",
+   "README.md",
+   "chat_template.jinja",
+   "config.json",
+   "configuration_lfm3.py",
+   "generation_config.json",
+   "lfm3_conv.py",
+   "model.safetensors",
+   "modeling_lfm3.py",
+   "special_tokens_map.json",
+   "tokenizer.json",
+   "tokenizer_config.json"
+  ],
+  "data_dir_listing": [
+   "dev.jsonl",
+   "train.jsonl"
+  ],
+  "sha256": {
+   "LICENSE": {
+    "sha256": "4d28ca14dedc0b3d0fcc2b3339f0e79931faa33874f3d24f522183a8fc70068c",
+    "bytes": 10574
+   },
+   "README.md": {
+    "sha256": "a94e75bca59f8d7c6042bce41d8d811f4ea689367003df171c9e4311b36f10b5",
+    "bytes": 12078
+   },
+   "chat_template.jinja": {
+    "sha256": "f45005c50cd2a97329722bf3a2dee9f16c04cdf825a589b280fb7e99e6827818",
+    "bytes": 12129
+   },
+   "config.json": {
+    "sha256": "8c6ae8b8f6d88c87cfb98cf4b5e34e943d0ee07e24215c4121b3159a46e1399d",
+    "bytes": 1454
+   },
+   "configuration_lfm3.py": {
+    "sha256": "176cced35657aedfea7d7002221360582d1c05fcaca882c21508bc3a73b282e5",
+    "bytes": 6113
+   },
+   "generation_config.json": {
+    "sha256": "422ed8749f8849f763ffe836a709a2c58e1adcf3d32dfa4da48b3959e87ecce9",
+    "bytes": 241
+   },
+   "lfm3_conv.py": {
+    "sha256": "80d4a985382a22774212759248a6b4c737bfbf9c2a47b3dd7f797dda748e4bb4",
+    "bytes": 8532
+   },
+   "modeling_lfm3.py": {
+    "sha256": "e8cd5254ea99ce6bd731b57b10908c2e8b5010ce8315341f895a38484885eeab",
+    "bytes": 42359
+   },
+   "special_tokens_map.json": {
+    "sha256": "7946f864cbfb62a1b041bda937244210a1a87f4a6cab3a48b791131b2cd57f88",
+    "bytes": 92
+   },
+   "tokenizer.json": {
+    "sha256": "7e226e34bface23ccf6e495d157bf77186c1c30a7659880e1a8994db528c3701",
+    "bytes": 17908635
+   },
+   "tokenizer_config.json": {
+    "sha256": "bf028f813efc6137bc07ed045cafe71820df9a5e26a38e39954706ed1e30a457",
+    "bytes": 1545
+   },
+   "dev.jsonl": {
+    "sha256": "609c5e8a1cc71829aa326183d2cd860e4d0408920430c4482e27c3662985836b",
+    "bytes": 604982
+   },
+   "train.jsonl": {
+    "sha256": "5e36623780df280b3b5910f2793cc09115cc19126087c7c4c32b120bd5e976d3",
+    "bytes": 11096951
+   },
+   "model.safetensors": {
+    "sha256": "61a3f541d65b03a2180d08964bf0d55e349463a2706032814d455ae046bc8b59",
+    "bytes": 3457635448
+   }
+  }
+ },
+ "model_config_name_or_path": null,
+ "model_config_transformers_version": "5.12.1",
+ "model_config_dtype": "bfloat16",
+ "phases": {
+  "setup_imports": {
+   "start": "2026-11-15T16:11:17.171Z",
+   "end": "2026-11-15T16:11:53.563Z",
+   "seconds": 36.392
+  },
+  "hash_inputs": {
+   "start": "2026-11-15T16:11:53.731Z",
+   "end": "2026-11-15T16:11:55.086Z",
+   "seconds": 1.355
+  },
+  "tokenizer_load_and_tokenization": {
+   "start": "2026-11-15T16:11:55.086Z",
+   "end": "2026-11-15T16:12:04.048Z",
+   "seconds": 8.961
+  },
+  "model_load": {
+   "start": "2026-11-15T16:12:04.052Z",
+   "end": "2026-11-15T16:24:50.892Z",
+   "seconds": 766.84
+  },
+  "hash_weights_after_load (page cache warm, so this is NOT cold-read time)": {
+   "start": "2026-11-15T16:24:50.892Z",
+   "end": "2026-11-15T16:25:00.393Z",
+   "seconds": 9.501
+  },
+  "peft_wrap_to_gpu": {
+   "start": "2026-11-15T16:25:00.394Z",
+   "end": "2026-11-15T16:25:02.236Z",
+   "seconds": 1.842,
+   "cuda0_mem_allocated_mib": 3423.1
+  },
+  "eval_baseline": {
+   "start": "2026-11-15T16:25:02.243Z",
+   "end": "2026-11-15T16:33:34.971Z",
+   "seconds": 512.728,
+   "rows_done": 7
+  },
+  "training_total": {
+   "start": "2026-11-15T16:33:34.978Z",
+   "end": "2026-11-15T16:38:50.585Z",
+   "seconds": 315.607,
+   "steps": 12,
+   "oom_skipped_rows": 10
+  },
+  "eval_candidate": {
+   "start": "2026-11-15T16:38:50.593Z",
+   "end": "2026-11-15T16:39:01.006Z",
+   "seconds": 10.413,
+   "rows_done": 7
+  },
+  "checkpoint_save": {
+   "start": "2026-11-15T16:39:01.318Z",
+   "end": "2026-11-15T16:39:01.592Z",
+   "seconds": 0.275
+  },
+  "resume_check": {
+   "start": "2026-11-15T16:39:01.954Z"
+  }
+ },
+ "wall_seconds_so_far": 1692.9,
+ "data": {
+  "train_total": 1115,
+  "train_kept": 1061,
+  "dev": 75,
+  "max_len": 7000,
+  "tokenizer_class": "TokenizersBackend",
+  "tokenizer_vocab_size": 125033,
+  "eos_token_id": 124900,
+  "prompt_tail_example": " phone.\n</messages><|im_end|>\n<|im_start|>assistant\n<think></think>"
+ },
+ "sample": {
+  "n_rows": 96,
+  "alloc_by_bucket(<1k,1-3k,3-6k,6-7k excl. forced longest)": {
+   "0": 23,
+   "1": 38,
+   "2": 21,
+   "3": 8
+  },
+  "forced_longest_row_indices": [
+   482,
+   1077,
+   938,
+   704,
+   366,
+   415
+  ],
+  "sample_total_tokens": 262339,
+  "sample_mean_total_tokens": 2732.7,
+  "population_mean_total_tokens": 2435.6
+ },
+ "attn_implementation": "sdpa",
+ "lora": {
+  "r": 32,
+  "alpha": 64,
+  "dropout": 0.05,
+  "bias": "none",
+  "target_modules": "all-linear",
+  "trainable_params": 32937472,
+  "all_params": 1761739008,
+  "resolved_target_modules": [
+   "gate_proj",
+   "in_proj",
+   "k_proj",
+   "o_proj",
+   "out_proj",
+   "q_proj",
+   "v_proj",
+   "w1",
+   "w2",
+   "w3"
+  ]
+ },
+ "trainable_param_dtype_after_cast": "torch.float32",
+ "base_weight_dtype": "torch.float16",
+ "amp": "torch.autocast fp16 + GradScaler",
+ "schedule": {
+  "steps_per_epoch_full": 133,
+  "epochs_planned": 3,
+  "total_steps_full": 399,
+  "warmup_steps": 19,
+  "lr": 0.0002,
+  "optimizer": "AdamW wd0.0",
+  "grad_clip": 1.0,
+  "probe_steps": 12,
+  "probe_rows": 96
+ },
+ "baseline_agg": {
+  "n": 7,
+  "schema_valid_rate": 0.0,
+  "hard_fail_rate": 1.0,
+  "eos_rate": 0.0,
+  "pred_obs": 0,
+  "gold_obs": 163,
+  "precision_jaccard": 0.0,
+  "recall_jaccard": 0.0,
+  "f1": 0.0,
+  "mean_gen_seconds_per_row": 73.24571428571429,
+  "mean_gen_tokens": 1800.0
+ },
+ "max_memory_allocated_mib_per_device": {
+  "0": 14307.3,
+  "1": 0.0
+ },
+ "max_memory_reserved_mib_per_device": {
+  "0": 14762.0,
+  "1": 0.0
+ },
+ "oom_skipped_rows": 10,
+ "candidate_agg": {
+  "n": 7,
+  "schema_valid_rate": 1.0,
+  "hard_fail_rate": 0.0,
+  "eos_rate": 1.0,
+  "pred_obs": 0,
+  "gold_obs": 163,
+  "precision_jaccard": 0.0,
+  "recall_jaccard": 0.0,
+  "f1": 0.0,
+  "mean_gen_seconds_per_row": 1.4842857142857144,
+  "mean_gen_tokens": 6.0
+ },
+ "adapter_files": {
+  "README.md": {
+   "sha256": "03454c7e936ded60f000632acc2bae016d23fe6d7e1d08ddabcdf7b98f5d96ff",
+   "bytes": 5252
+  },
+  "adapter_config.json": {
+   "sha256": "3f0dcb523d6ed1d82e9afc958f25ffccfd119dc11c37b9189dee6a6bb7a34d9c",
+   "bytes": 1234
+  },
+  "adapter_model.safetensors": {
+   "sha256": "6ef81856fe011a3fcb3e0e2a1a2941db96aa6f29cee89692b3efc7f50fadf1d9",
+   "bytes": 131790920
+  }
+ },
+ "resume_trainable_params": 32937472,
+ "resume_error": "OutOfMemoryError('CUDA out of memory. Tried to allocate 2.82 GiB. GPU 0 has a total capacity of 14.56 GiB of which 1.24 GiB is free. Including non-PyTorch memory, this process has 13.32 GiB memory in use. Of the allocated memory 13.06 GiB is allocated by PyTorch, and 121.75 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)')",
+ "export_merge": "not measured in probe",
+ "probe_finished_utc": "2026-11-15T16:39:28.817Z",
+ "pip_freeze_subset": [
+  "accelerate==1.15.0",
+  "numpy==2.1.3",
+  "peft==0.21.2",
+  "safetensors==0.8.0",
+  "tokenizers==0.23.3",
+  "torch==2.11.0+cu130",
+  "transformers==5.20.2"
+ ]
+}
