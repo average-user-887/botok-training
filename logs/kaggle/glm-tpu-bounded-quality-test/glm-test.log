@@ -1,0 +1,36 @@
+[06:01:36] 
+[06:01:36] ======================================================================
+[06:01:36]  STEP 1/6  Runtime   (pre-flight, pinned libtpu + pip packages, cloudflared, the engine)   [0 min 00 s so far]
+[06:01:36] ======================================================================
+[06:02:28]    pre-flight OK: datasets attached, Internet on, 8 TPU chips (TPU v5 lite)
+[06:02:55]    pip packages: rc 0 in 26s
+[06:03:07]    libtpu==0.0.42.*: rc 0 in 13s
+/usr/local/lib/python3.12/site-packages/jax/_src/cloud_tpu_init.py:88: UserWarning: Transparent hugepages are not enabled. TPU runtime startup and shutdown time should be significantly improved on TPU v5e and newer. If not already set, you may need to enable transparent hugepages in your VM image (sudo sh -c "echo always > /sys/kernel/mm/transparent_hugepage/enabled")
+  warnings.warn(
+[06:03:44]    compile cache restored from /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/jax_cache in 31s
+WARNING: Logging before InitGoogle() is written to STDERR
+E0000 00:00:1792562627.215276      97 common_lib.cc:674] Could not set metric server port: INVALID_ARGUMENT: Could not find SliceBuilder port 8471 in any of the 0 ports provided in `tpu_process_addresses`="local"
+=== Source Location Trace: ===
+learning/45eac/tfrc/runtime/common_lib.cc:238
+[06:03:56]    jax 0.11.0, 8 devices, compile cache at /kaggle/working/jax_cache
+[06:03:57]    exported programs: 99 files in /kaggle/working/exported, /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/exported
+[06:03:57] 
+[06:03:57] ======================================================================
+[06:03:57]  STEP 2/6  Weights   (3-bit codebook experts + int8 non-expert weights onto the eight chips, ~9 min)   [2 min 20 s so far]
+[06:03:57] ======================================================================
+/usr/local/lib/python3.12/site-packages/torch_xla/experimental/gru.py:113: SyntaxWarning: invalid escape sequence '\_'
+  * **h_n**: tensor of shape :math:`(D * \text{num\_layers}, H_{out})` or
+/usr/local/lib/python3.12/site-packages/torch_xla/__init__.py:258: UserWarning: `tensorflow` can conflict with `torch-xla`. Prefer `tensorflow-cpu` when using PyTorch/XLA. To silence this warning, `pip uninstall -y tensorflow && pip install tensorflow-cpu`. If you are in a notebook environment such as Colab or Kaggle, restart your notebook runtime afterwards.
+  warnings.warn(
+[06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base
+[06:04:38] PHASE loading {"note": "weights"}
+[06:10:22]    base store read in 338s (45 layers)
+[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB
+https://symbolize.stripped_domain/r/?trace=7891c3e8572e,7891c3e2ad6f&map= 
+*** SIGTERM received by PID 97 (TID 97) on cpu 28, si_code=0, from PID 73; stack trace: ***
+PC: @     0x7891c3e8572e  (unknown)  (unknown)
+    @     0x78910680cfd3       1888  FailureSignalHandler()
+    @     0x7891c3e2ad70  (unknown)  (unknown)
+https://symbolize.stripped_domain/r/?trace=7891c3e8572e,78910680cfd2,7891c3e2ad6f&map= 
+E1021 07:01:37.002769      97 coredump_hook.cc:251] RAW: Remote crash gathering disabled for SIGTERM.
+E1021 07:01:37.437417      97 process_state.cc:708] RAW: Raising signal 15 with default behavior

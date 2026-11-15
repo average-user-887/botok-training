@@ -1,0 +1,14 @@
+{
+  "metrics": {
+    "train_runtime": 11136.6504,
+    "train_samples_per_second": 0.487,
+    "train_steps_per_second": 0.061,
+    "total_flos": 5.995630072468992e+16,
+    "train_loss": 0.13474820262555504,
+    "epoch": 1.3215339233038348
+  },
+  "steps": 448,
+  "effective_exposures": 3584,
+  "actual_epochs": 1.3215339233038348,
+  "stop_reason": "planned step cap reached"
+}

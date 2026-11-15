@@ -24,3 +24,15 @@ Failure and fix: v2a run1 died with CUDA OOM (tried to allocate 2.58 GiB) at ~st
 - Current v2 set: 1115 rows, ~2.6 M tokens/epoch -> 3 epochs ~ 7.9 M tokens, i.e. about 10.4 h at 210 tok/s or ~2.5 h at 880 tok/s.
 - Rows over MAX_LEN 7000 tokens are skipped; keep long windows <= ~5.5k message tokens.
 - Dot target: a synthetic set of ~1,000-1,500 additional rows (mean ~2.4k tokens, ~3-4 M tokens) per part keeps one part within one session.
+
+## Extra throughput data from other Kaggle kernels (logs/kaggle)
+Different models/tasks, so not directly comparable; useful as order-of-magnitude checks.
+
+| kernel | GPU | model / method | measured rate | notes |
+|---|---|---|---|---|
+| memreader-bounded-sft-pilot | Kaggle GPU (4-bit NF4, fp16 compute) | 4B model, LoRA SFT, 48 steps, 2 epochs, 23 cases | ~24.4-24.6 s/step; train_runtime 1179 s (0.326 samples/s) | baseline eval (23 generations) 1068 s, candidate eval ~1010 s; total run 2910 s |
+| kev-lab-native-calibration-and-pilot | Kaggle GPU, 1 device | ~4B hybrid model, LoRA + pointer head, 421 requests, 1 epoch | ~26.1-26.5 s/record (steady 26.0) | early local (Apple MPS) runs of the same recipe: 0.33-0.37 s/rec on a 0.6B model; local CUDA runs 0.09 s/rec |
+| qwen-27b / glm TPU kernels | TPU (8 chips) | inference benchmarks | no training throughput | GLM run stopped at its 60 min test limit during weight loading; no tok/s logged |
+
+## One T4 versus two
+Kaggle's "T4 x2" runtime provides TWO T4 GPUs, but our current training script is a single process on cuda:0, so every rate above is per single T4 and the second GPU is idle. A 2-GPU data-parallel run (e.g. accelerate/DDP, one process per GPU, each holding a full copy of base + LoRA, ~7 GiB for r=32 at 7k tokens) could roughly double throughput (about 1.8-2x after gradient sync). That would double the tokens per 12 h part (e.g. ~15.8 M instead of ~7.9 M at the 210 tok/s planning rate). Not yet tried; the per-session load times and the 3-epoch-per-part plan above assume one GPU.

@@ -1,0 +1,23 @@
+{
+  "status": "completed",
+  "model": "IAAR-Shanghai/MemReader-4B-thinking",
+  "revision": "3fcb57e5653ec5d733eea4df61f4b339d4ac0e92",
+  "steps": 448,
+  "planned_steps": 448,
+  "effective_example_exposures": 3584,
+  "cases": 37,
+  "baseline_schema_proxy": 32,
+  "candidate_schema_proxy": 31,
+  "baseline_instruction_leaks": 0,
+  "candidate_instruction_leaks": 0,
+  "dev_canary_count": 4,
+  "elapsed_s": 11976.597285289,
+  "production_qualified": false,
+  "semantic_review_required": true,
+  "precision": "NF4 weights, fp16 compute; adapter only; no merged/GGUF validation",
+  "optimizer_lineage": "continued from pinned recovered v1 adapter; no fresh LoRA initialization",
+  "training_targets": "tool-call JSON only; any rationale removed",
+  "worker_exit_code": 0,
+  "supervisor_stop_reason": null,
+  "supervisor_elapsed_s": 12006.27
+}

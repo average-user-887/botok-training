@@ -1,0 +1,63 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]
+Fetching 2 files:  50%|█████     | 1/2 [00:47<00:47, 47.23s/it]
+Fetching 2 files: 100%|██████████| 2/2 [00:47<00:00, 23.62s/it]
+
+Loading weights:   0%|          | 0/426 [00:00<?, ?it/s]
+Loading weights:  65%|██████▌   | 278/426 [00:00<00:00, 2753.84it/s]
+Loading weights: 100%|██████████| 426/426 [00:00<00:00, 3483.32it/s]
+
+Fetching 13 files:   0%|          | 0/13 [00:00<?, ?it/s]
+Fetching 13 files:  15%|█▌        | 2/13 [00:00<00:00, 14.73it/s]
+Fetching 13 files:  62%|██████▏   | 8/13 [00:00<00:00, 37.74it/s]
+Fetching 13 files: 100%|██████████| 13/13 [00:01<00:00,  6.51it/s]
+Fetching 13 files: 100%|██████████| 13/13 [00:01<00:00,  7.81it/s]
+delta: warm start from /root/.cache/huggingface/hub/models--jaredpalmer--kev-4b/snapshots/139fdd94f1b6a6ad80cc15e08fcb99cac885a101: 496 lora tensors and the pointer head loaded
+device=cuda world=1 trainable params=33.8M
+421 training requests (holdout=[]), questions by type {'choice': 421}
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+ep0 step 10/421 loss 0.569 kl 0.000 anchor 0.000 27.199s/rec
+ep0 step 20/421 loss 1.727 kl 0.000 anchor 0.000 25.814s/rec
+ep0 step 30/421 loss 1.008 kl 0.000 anchor 0.000 26.273s/rec
+ep0 step 40/421 loss 1.493 kl 0.000 anchor 0.000 25.665s/rec
+ep0 step 50/421 loss 0.580 kl 0.000 anchor 0.000 25.936s/rec
+ep0 step 60/421 loss 2.927 kl 0.000 anchor 0.000 25.638s/rec
+ep0 step 70/421 loss 0.248 kl 0.000 anchor 0.000 26.155s/rec
+ep0 step 80/421 loss 0.101 kl 0.000 anchor 0.000 25.775s/rec
+ep0 step 90/421 loss 2.125 kl 0.000 anchor 0.000 25.806s/rec
+ep0 step 100/421 loss 1.629 kl 0.000 anchor 0.000 25.550s/rec
+ep0 step 110/421 loss 0.757 kl 0.000 anchor 0.000 25.711s/rec
+ep0 step 120/421 loss 0.133 kl 0.000 anchor 0.000 25.883s/rec
+ep0 step 130/421 loss 1.867 kl 0.000 anchor 0.000 26.259s/rec
+ep0 step 140/421 loss 2.660 kl 0.000 anchor 0.000 26.491s/rec
+ep0 step 150/421 loss 1.307 kl 0.000 anchor 0.000 26.389s/rec
+ep0 step 160/421 loss 0.372 kl 0.000 anchor 0.000 26.206s/rec
+ep0 step 170/421 loss 0.120 kl 0.000 anchor 0.000 26.290s/rec
+ep0 step 180/421 loss 1.138 kl 0.000 anchor 0.000 26.359s/rec
+ep0 step 190/421 loss 1.007 kl 0.000 anchor 0.000 26.326s/rec
+ep0 step 200/421 loss 0.646 kl 0.000 anchor 0.000 26.296s/rec
+ep0 step 210/421 loss 1.131 kl 0.000 anchor 0.000 26.097s/rec
+ep0 step 220/421 loss 0.733 kl 0.000 anchor 0.000 26.073s/rec
+ep0 step 230/421 loss 0.291 kl 0.000 anchor 0.000 26.108s/rec
+ep0 step 240/421 loss 1.169 kl 0.000 anchor 0.000 26.046s/rec
+ep0 step 250/421 loss 0.000 kl 0.000 anchor 0.000 26.187s/rec
+ep0 step 260/421 loss 0.247 kl 0.000 anchor 0.000 26.159s/rec
+ep0 step 270/421 loss 1.950 kl 0.000 anchor 0.000 26.269s/rec
+ep0 step 280/421 loss 0.007 kl 0.000 anchor 0.000 26.208s/rec
+ep0 step 290/421 loss 0.187 kl 0.000 anchor 0.000 26.249s/rec
+ep0 step 300/421 loss 3.222 kl 0.000 anchor 0.000 26.270s/rec
+ep0 step 310/421 loss 2.009 kl 0.000 anchor 0.000 26.147s/rec
+ep0 step 320/421 loss 1.075 kl 0.000 anchor 0.000 26.107s/rec
+ep0 step 330/421 loss 1.374 kl 0.000 anchor 0.000 26.056s/rec
+ep0 step 340/421 loss 0.524 kl 0.000 anchor 0.000 26.069s/rec
+ep0 step 350/421 loss 0.009 kl 0.000 anchor 0.000 26.013s/rec
+ep0 step 360/421 loss 1.483 kl 0.000 anchor 0.000 26.032s/rec
+ep0 step 370/421 loss 0.000 kl 0.000 anchor 0.000 26.045s/rec
+ep0 step 380/421 loss 0.029 kl 0.000 anchor 0.000 26.163s/rec
+ep0 step 390/421 loss 0.002 kl 0.000 anchor 0.000 26.062s/rec
+ep0 step 400/421 loss 1.377 kl 0.000 anchor 0.000 26.028s/rec
+ep0 step 410/421 loss 0.129 kl 0.000 anchor 0.000 26.141s/rec
+ep0 step 420/421 loss 2.788 kl 0.000 anchor 0.000 26.072s/rec
+saved /kaggle/working/kev-full/checkpoint

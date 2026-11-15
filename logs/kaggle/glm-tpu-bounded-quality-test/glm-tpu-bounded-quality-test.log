@@ -1,0 +1,509 @@
+[{"stream_name":"stderr","time":16.190183357,"data":"[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.\n"}
+,{"stream_name":"stdout","time":17.402754401,"data":"Prepared pinned GLM test; execution has not started.\n"}
+,{"stream_name":"stdout","time":17.425892746,"data":"Started bounded GLM test; see glm-test.log. Maximum 60 minutes including setup.\n"}
+,{"stream_name":"stdout","time":47.436348485,"data":"elapsed 30 s: [06:01:36] \n"}
+,{"stream_name":"stdout","time":47.436405435,"data":"[06:01:36] ======================================================================\n"}
+,{"stream_name":"stdout","time":47.436410715,"data":"[06:01:36]  STEP 1/6  Runtime   (pre-flight, pinned libtpu + pip packages, cloudflared, the engine)   [0 min 00 s so far]\n"}
+,{"stream_name":"stdout","time":47.436414695,"data":"[06:01:36] ======================================================================\n"}
+,{"stream_name":"stdout","time":77.428593858,"data":"elapsed 60 s: [06:01:36] ======================================================================\n"}
+,{"stream_name":"stdout","time":77.428638818,"data":"[06:01:36]  STEP 1/6  Runtime   (pre-flight, pinned libtpu + pip packages, cloudflared, the engine)   [0 min 00 s so far]\n"}
+,{"stream_name":"stdout","time":77.428644518,"data":"[06:01:36] ======================================================================\n"}
+,{"stream_name":"stdout","time":77.428648948,"data":"[06:02:28]    pre-flight OK: datasets attached, Internet on, 8 TPU chips (TPU v5 lite)\n"}
+,{"stream_name":"stdout","time":107.437852694,"data":"elapsed 90 s: [06:01:36]  STEP 1/6  Runtime   (pre-flight, pinned libtpu + pip packages, cloudflared, the engine)   [0 min 00 s so far]\n"}
+,{"stream_name":"stdout","time":107.437903364,"data":"[06:01:36] ======================================================================\n"}
+,{"stream_name":"stdout","time":107.437908344,"data":"[06:02:28]    pre-flight OK: datasets attached, Internet on, 8 TPU chips (TPU v5 lite)\n"}
+,{"stream_name":"stdout","time":107.437912154,"data":"[06:02:55]    pip packages: rc 0 in 26s\n"}
+,{"stream_name":"stdout","time":137.430648565,"data":"elapsed 120 s: [06:02:55]    pip packages: rc 0 in 26s\n"}
+,{"stream_name":"stdout","time":137.430713445,"data":"[06:03:07]    libtpu==0.0.42.*: rc 0 in 13s\n"}
+,{"stream_name":"stdout","time":137.430721425,"data":"/usr/local/lib/python3.12/site-packages/jax/_src/cloud_tpu_init.py:88: UserWarning: Transparent hugepages are not enabled. TPU runtime startup and shutdown time should be significantly improved on TPU v5e and newer. If not already set, you may need to enable transparent hugepages in your VM image (sudo sh -c \"echo always \u003e /sys/kernel/mm/transparent_hugepage/enabled\")\n"}
+,{"stream_name":"stdout","time":137.430727515,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":167.440203999,"data":"elapsed 150 s: [06:03:57] \n"}
+,{"stream_name":"stdout","time":167.440235759,"data":"[06:03:57] ======================================================================\n"}
+,{"stream_name":"stdout","time":167.440240789,"data":"[06:03:57]  STEP 2/6  Weights   (3-bit codebook experts + int8 non-expert weights onto the eight chips, ~9 min)   [2 min 20 s so far]\n"}
+,{"stream_name":"stdout","time":167.440245029,"data":"[06:03:57] ======================================================================\n"}
+,{"stream_name":"stdout","time":197.432925529,"data":"elapsed 180 s: /usr/local/lib/python3.12/site-packages/torch_xla/experimental/gru.py:113: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stdout","time":197.432981779,"data":"  * **h_n**: tensor of shape :math:`(D * \\text{num\\_layers}, H_{out})` or\n"}
+,{"stream_name":"stdout","time":197.433002359,"data":"/usr/local/lib/python3.12/site-packages/torch_xla/__init__.py:258: UserWarning: `tensorflow` can conflict with `torch-xla`. Prefer `tensorflow-cpu` when using PyTorch/XLA. To silence this warning, `pip uninstall -y tensorflow \u0026\u0026 pip install tensorflow-cpu`. If you are in a notebook environment such as Colab or Kaggle, restart your notebook runtime afterwards.\n"}
+,{"stream_name":"stdout","time":197.433006269,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":227.441704748,"data":"elapsed 210 s: /usr/local/lib/python3.12/site-packages/torch_xla/__init__.py:258: UserWarning: `tensorflow` can conflict with `torch-xla`. Prefer `tensorflow-cpu` when using PyTorch/XLA. To silence this warning, `pip uninstall -y tensorflow \u0026\u0026 pip install tensorflow-cpu`. If you are in a notebook environment such as Colab or Kaggle, restart your notebook runtime afterwards.\n"}
+,{"stream_name":"stdout","time":227.441754128,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":227.441758958,"data":"[06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":227.441762878,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":257.435315842,"data":"elapsed 240 s: /usr/local/lib/python3.12/site-packages/torch_xla/__init__.py:258: UserWarning: `tensorflow` can conflict with `torch-xla`. Prefer `tensorflow-cpu` when using PyTorch/XLA. To silence this warning, `pip uninstall -y tensorflow \u0026\u0026 pip install tensorflow-cpu`. If you are in a notebook environment such as Colab or Kaggle, restart your notebook runtime afterwards.\n"}
+,{"stream_name":"stdout","time":257.435357152,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":257.435362092,"data":"[06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":257.435365832,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":287.445398598,"data":"elapsed 270 s: /usr/local/lib/python3.12/site-packages/torch_xla/__init__.py:258: UserWarning: `tensorflow` can conflict with `torch-xla`. Prefer `tensorflow-cpu` when using PyTorch/XLA. To silence this warning, `pip uninstall -y tensorflow \u0026\u0026 pip install tensorflow-cpu`. If you are in a notebook environment such as Colab or Kaggle, restart your notebook runtime afterwards.\n"}
+,{"stream_name":"stdout","time":287.445435438,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":287.445440098,"data":"[06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":287.445443838,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":317.437772256,"data":"elapsed 300 s: /usr/local/lib/python3.12/site-packages/torch_xla/__init__.py:258: UserWarning: `tensorflow` can conflict with `torch-xla`. Prefer `tensorflow-cpu` when using PyTorch/XLA. To silence this warning, `pip uninstall -y tensorflow \u0026\u0026 pip install tensorflow-cpu`. If you are in a notebook environment such as Colab or Kaggle, restart your notebook runtime afterwards.\n"}
+,{"stream_name":"stdout","time":317.437810866,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":317.437815556,"data":"[06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":317.437831306,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":347.447069236,"data":"elapsed 330 s: /usr/local/lib/python3.12/site-packages/torch_xla/__init__.py:258: UserWarning: `tensorflow` can conflict with `torch-xla`. Prefer `tensorflow-cpu` when using PyTorch/XLA. To silence this warning, `pip uninstall -y tensorflow \u0026\u0026 pip install tensorflow-cpu`. If you are in a notebook environment such as Colab or Kaggle, restart your notebook runtime afterwards.\n"}
+,{"stream_name":"stdout","time":347.447100656,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":347.447105016,"data":"[06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":347.447108996,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":377.440377343,"data":"elapsed 360 s: /usr/local/lib/python3.12/site-packages/torch_xla/__init__.py:258: UserWarning: `tensorflow` can conflict with `torch-xla`. Prefer `tensorflow-cpu` when using PyTorch/XLA. To silence this warning, `pip uninstall -y tensorflow \u0026\u0026 pip install tensorflow-cpu`. If you are in a notebook environment such as Colab or Kaggle, restart your notebook runtime afterwards.\n"}
+,{"stream_name":"stdout","time":377.440423673,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":377.440428473,"data":"[06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":377.440432683,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":407.449242127,"data":"elapsed 390 s: /usr/local/lib/python3.12/site-packages/torch_xla/__init__.py:258: UserWarning: `tensorflow` can conflict with `torch-xla`. Prefer `tensorflow-cpu` when using PyTorch/XLA. To silence this warning, `pip uninstall -y tensorflow \u0026\u0026 pip install tensorflow-cpu`. If you are in a notebook environment such as Colab or Kaggle, restart your notebook runtime afterwards.\n"}
+,{"stream_name":"stdout","time":407.449281787,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":407.449286307,"data":"[06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":407.449290137,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":437.442748884,"data":"elapsed 420 s: /usr/local/lib/python3.12/site-packages/torch_xla/__init__.py:258: UserWarning: `tensorflow` can conflict with `torch-xla`. Prefer `tensorflow-cpu` when using PyTorch/XLA. To silence this warning, `pip uninstall -y tensorflow \u0026\u0026 pip install tensorflow-cpu`. If you are in a notebook environment such as Colab or Kaggle, restart your notebook runtime afterwards.\n"}
+,{"stream_name":"stdout","time":437.442806134,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":437.442811804,"data":"[06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":437.442816324,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":467.452072725,"data":"elapsed 450 s: /usr/local/lib/python3.12/site-packages/torch_xla/__init__.py:258: UserWarning: `tensorflow` can conflict with `torch-xla`. Prefer `tensorflow-cpu` when using PyTorch/XLA. To silence this warning, `pip uninstall -y tensorflow \u0026\u0026 pip install tensorflow-cpu`. If you are in a notebook environment such as Colab or Kaggle, restart your notebook runtime afterwards.\n"}
+,{"stream_name":"stdout","time":467.452107625,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":467.452112174,"data":"[06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":467.452115934,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":497.44510249,"data":"elapsed 480 s: /usr/local/lib/python3.12/site-packages/torch_xla/__init__.py:258: UserWarning: `tensorflow` can conflict with `torch-xla`. Prefer `tensorflow-cpu` when using PyTorch/XLA. To silence this warning, `pip uninstall -y tensorflow \u0026\u0026 pip install tensorflow-cpu`. If you are in a notebook environment such as Colab or Kaggle, restart your notebook runtime afterwards.\n"}
+,{"stream_name":"stdout","time":497.4451534,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":497.44515854,"data":"[06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":497.44516255,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":527.454627943,"data":"elapsed 510 s: /usr/local/lib/python3.12/site-packages/torch_xla/__init__.py:258: UserWarning: `tensorflow` can conflict with `torch-xla`. Prefer `tensorflow-cpu` when using PyTorch/XLA. To silence this warning, `pip uninstall -y tensorflow \u0026\u0026 pip install tensorflow-cpu`. If you are in a notebook environment such as Colab or Kaggle, restart your notebook runtime afterwards.\n"}
+,{"stream_name":"stdout","time":527.454720943,"data":"  warnings.warn(\n"}
+,{"stream_name":"stdout","time":527.454730292,"data":"[06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":527.454736752,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":557.447295263,"data":"elapsed 540 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":557.447339463,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":557.447344303,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":557.447347893,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":587.457285219,"data":"elapsed 570 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":587.457314719,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":587.457319449,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":587.457340739,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":617.449711112,"data":"elapsed 600 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":617.449749822,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":617.449754582,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":617.449758392,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":647.459727642,"data":"elapsed 630 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":647.459780812,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":647.459786922,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":647.459791912,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":677.452486646,"data":"elapsed 660 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":677.452558066,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":677.452563126,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":677.452566816,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":707.462766197,"data":"elapsed 690 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":707.462797597,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":707.462802147,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":707.462806117,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":737.454816177,"data":"elapsed 720 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":737.454862577,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":737.454867707,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":737.454871507,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":767.464629164,"data":"elapsed 750 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":767.464724304,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":767.464734844,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":767.464740224,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":797.457543538,"data":"elapsed 780 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":797.457592948,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":797.457598718,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":797.457603338,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":827.468108316,"data":"elapsed 810 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":827.468157125,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":827.468163116,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":827.468167736,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":857.459706306,"data":"elapsed 840 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":857.459753096,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":857.459758426,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":857.459762376,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":887.469891801,"data":"elapsed 870 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":887.469926031,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":887.469931131,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":887.469934851,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":917.461970985,"data":"elapsed 900 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":917.462020165,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":917.462025535,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":917.462029175,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":947.473021613,"data":"elapsed 930 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":947.473069623,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":947.473075783,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":947.473080663,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":977.464078451,"data":"elapsed 960 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":977.464132091,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":977.464136931,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":977.464140501,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":1007.474553648,"data":"elapsed 990 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":1007.474586398,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":1007.474591898,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":1007.474595338,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":1037.466856078,"data":"elapsed 1020 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":1037.466900898,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":1037.466905798,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":1037.466909498,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":1067.477730005,"data":"elapsed 1050 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":1067.477767105,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":1067.477771975,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":1067.477775475,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":1097.469156512,"data":"elapsed 1080 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":1097.469187372,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":1097.469192012,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":1097.469196652,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":1127.479036998,"data":"elapsed 1110 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":1127.479074158,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":1127.479078929,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":1127.479082598,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":1157.470990571,"data":"elapsed 1140 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":1157.471045071,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":1157.471049361,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":1157.471052131,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":1187.482281524,"data":"elapsed 1170 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":1187.482314204,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":1187.482320595,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":1187.482325324,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":1217.473115748,"data":"elapsed 1200 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":1217.473149418,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":1217.473154078,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":1217.473157968,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":1247.483122851,"data":"elapsed 1230 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":1247.483156911,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":1247.483165691,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":1247.483169351,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":1277.475351045,"data":"elapsed 1260 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":1277.475401015,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":1277.475405845,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":1277.475409475,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":1307.486237373,"data":"elapsed 1290 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":1307.486269693,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":1307.486274283,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":1307.486278043,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":1337.477943887,"data":"elapsed 1320 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":1337.477975817,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":1337.477979657,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":1337.477982237,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":1367.48847279,"data":"elapsed 1350 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":1367.4885041,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":1367.48850879,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":1367.48851234,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":1397.480197964,"data":"elapsed 1380 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":1397.480252154,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":1397.480257394,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":1397.480261264,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":1427.491550161,"data":"elapsed 1410 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":1427.491589641,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":1427.491594681,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":1427.491598651,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":1457.482155833,"data":"elapsed 1440 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":1457.482186483,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":1457.482191693,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":1457.482195433,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":1487.492385964,"data":"elapsed 1470 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":1487.492434304,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":1487.492439074,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":1487.492442594,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":1517.483998236,"data":"elapsed 1500 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":1517.484054486,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":1517.484058256,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":1517.484060746,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":1547.495127861,"data":"elapsed 1530 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":1547.495166761,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":1547.495171431,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":1547.495174831,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":1577.486196459,"data":"elapsed 1560 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":1577.486232659,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":1577.486237419,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":1577.486241339,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":1607.497849538,"data":"elapsed 1590 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":1607.497882618,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":1607.497887168,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":1607.497890678,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":1637.488882946,"data":"elapsed 1620 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":1637.488935996,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":1637.488946316,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":1637.488950066,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":1667.500498919,"data":"elapsed 1650 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":1667.500535679,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":1667.500540299,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":1667.500543789,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":1697.491338494,"data":"elapsed 1680 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":1697.491387514,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":1697.491409794,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":1697.491414094,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":1727.503001083,"data":"elapsed 1710 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":1727.503032033,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":1727.503036633,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":1727.503040383,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":1757.49390838,"data":"elapsed 1740 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":1757.49395611,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":1757.493962321,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":1757.49396577,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":1787.506213349,"data":"elapsed 1770 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":1787.506257609,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":1787.506262259,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":1787.506265759,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":1817.496179757,"data":"elapsed 1800 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":1817.496233437,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":1817.496238817,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":1817.496243217,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":1847.508214935,"data":"elapsed 1830 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":1847.508259255,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":1847.508264535,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":1847.508268285,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":1877.498153834,"data":"elapsed 1860 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":1877.498209314,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":1877.498214644,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":1877.498235474,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":1907.510741102,"data":"elapsed 1890 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":1907.510796882,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":1907.510803242,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":1907.510807962,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":1937.500210554,"data":"elapsed 1920 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":1937.500255994,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":1937.500260884,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":1937.500264474,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":1967.511971148,"data":"elapsed 1950 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":1967.512008068,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":1967.512013928,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":1967.512018638,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":1997.502524522,"data":"elapsed 1980 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":1997.502572152,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":1997.502577122,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":1997.502581062,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":2027.514536445,"data":"elapsed 2010 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":2027.514568325,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":2027.514573895,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":2027.514578275,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":2057.505345879,"data":"elapsed 2040 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":2057.505397909,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":2057.505403859,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":2057.505408319,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":2087.516263232,"data":"elapsed 2070 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":2087.516306172,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":2087.516311152,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":2087.516314772,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":2117.506602346,"data":"elapsed 2100 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":2117.506646296,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":2117.506651206,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":2117.506654716,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":2147.51874751,"data":"elapsed 2130 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":2147.51879779,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":2147.51880395,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":2147.51880842,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":2177.508550554,"data":"elapsed 2160 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":2177.508600034,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":2177.508607224,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":2177.508611854,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":2207.520356247,"data":"elapsed 2190 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":2207.520394797,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":2207.520399857,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":2207.520403877,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":2237.510561184,"data":"elapsed 2220 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":2237.510611434,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":2237.510617304,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":2237.510621684,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":2267.52261481,"data":"elapsed 2250 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":2267.52270822,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":2267.52271534,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":2267.52271879,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":2297.513110708,"data":"elapsed 2280 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":2297.513167838,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":2297.513175188,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":2297.513180048,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":2327.525096394,"data":"elapsed 2310 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":2327.525144294,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":2327.525150164,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":2327.525154424,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":2357.51483759,"data":"elapsed 2340 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":2357.51487851,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":2357.51488536,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":2357.51489077,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":2387.527710107,"data":"elapsed 2370 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":2387.527752447,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":2387.527758427,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":2387.527763127,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":2417.516773734,"data":"elapsed 2400 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":2417.516813243,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":2417.516819663,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":2417.516824194,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":2447.52890367,"data":"elapsed 2430 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":2447.52894302,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":2447.52894783,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":2447.52895123,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":2477.519057754,"data":"elapsed 2460 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":2477.519083503,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":2477.519087983,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":2477.519091574,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":2507.531651321,"data":"elapsed 2490 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":2507.531713801,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":2507.531719652,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":2507.531724212,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":2537.521271089,"data":"elapsed 2520 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":2537.521318249,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":2537.521323958,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":2537.521328458,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":2567.532862886,"data":"elapsed 2550 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":2567.532914726,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":2567.532920806,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":2567.532925436,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":2597.523418333,"data":"elapsed 2580 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":2597.523454764,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":2597.523460704,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":2597.523465013,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":2627.535971452,"data":"elapsed 2610 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":2627.536021172,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":2627.536025602,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":2627.536028832,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":2657.525771139,"data":"elapsed 2640 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":2657.525829409,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":2657.525835669,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":2657.525840059,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":2687.537864086,"data":"elapsed 2670 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":2687.537918817,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":2687.537924566,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":2687.537928337,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":2717.527985623,"data":"elapsed 2700 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":2717.528038663,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":2717.528044503,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":2717.528048953,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":2747.539937273,"data":"elapsed 2730 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":2747.539966453,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":2747.539972184,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":2747.539977104,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":2777.529595224,"data":"elapsed 2760 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":2777.529625534,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":2777.529630534,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":2777.529635104,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":2807.542568055,"data":"elapsed 2790 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":2807.542624875,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":2807.542629485,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":2807.542632785,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":2837.532581316,"data":"elapsed 2820 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":2837.532612916,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":2837.532619256,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":2837.532623906,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":2867.544526256,"data":"elapsed 2850 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":2867.544564446,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":2867.544570226,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":2867.544574546,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":2897.533844037,"data":"elapsed 2880 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":2897.533905187,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":2897.533911047,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":2897.533915347,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":2927.547246578,"data":"elapsed 2910 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":2927.547302328,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":2927.547308758,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":2927.547313138,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":2957.536186409,"data":"elapsed 2940 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":2957.536213979,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":2957.536218699,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":2957.536222099,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":2987.549263629,"data":"elapsed 2970 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":2987.549299799,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":2987.549314219,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":2987.549317079,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":3017.53841131,"data":"elapsed 3000 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":3017.53847381,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":3017.53848744,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":3017.53849402,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":3047.552209341,"data":"elapsed 3030 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":3047.552240111,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":3047.552245951,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":3047.552250441,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":3077.540916842,"data":"elapsed 3060 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":3077.540961351,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":3077.540967451,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":3077.540972071,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":3107.553093812,"data":"elapsed 3090 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":3107.553126392,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":3107.553132052,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":3107.553136692,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":3137.543347003,"data":"elapsed 3120 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":3137.543382103,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":3137.543391633,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":3137.543395923,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":3167.556143807,"data":"elapsed 3150 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":3167.556186667,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":3167.556194207,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":3167.556208987,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":3197.545329765,"data":"elapsed 3180 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":3197.545385425,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":3197.545393985,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":3197.545400225,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":3227.558266686,"data":"elapsed 3210 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":3227.558316536,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":3227.558322976,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":3227.558327716,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":3257.547554943,"data":"elapsed 3240 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":3257.547612123,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":3257.547618232,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":3257.547622883,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":3287.561158908,"data":"elapsed 3270 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":3287.561204878,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":3287.561211058,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":3287.561215798,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":3317.549405664,"data":"elapsed 3300 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":3317.549444884,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":3317.549450915,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":3317.549455335,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":3347.562389661,"data":"elapsed 3330 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":3347.562419641,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":3347.56242427,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":3347.562427721,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":3377.551617957,"data":"elapsed 3360 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":3377.551657807,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":3377.551694987,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":3377.551698587,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":3407.564459093,"data":"elapsed 3390 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":3407.564499283,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":3407.564503923,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":3407.564507673,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":3437.553358609,"data":"elapsed 3420 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":3437.553417949,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":3437.553424179,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":3437.553428909,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":3467.566268945,"data":"elapsed 3450 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":3467.566313805,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":3467.566319885,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":3467.566324255,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":3497.555287721,"data":"elapsed 3480 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":3497.555320351,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":3497.555325111,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":3497.555329701,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":3527.569083367,"data":"elapsed 3510 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":3527.569112647,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":3527.569117597,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":3527.569121297,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":3557.557177855,"data":"elapsed 3540 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":3557.557240005,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":3557.557244645,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":3557.557248185,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":3587.570452269,"data":"elapsed 3570 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":3587.570489399,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":3587.570496539,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":3587.570501909,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":3617.559795346,"data":"elapsed 3600 s: [06:04:38]    experts from ['/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-1', '/kaggle/input/datasets/<third-party-owner>/glm53-flash-iq3xxs-2']; the rest from the base store /kaggle/input/datasets/<third-party-owner>/glm53-flash-serve-v3/base\n"}
+,{"stream_name":"stdout","time":3617.559832126,"data":"[06:04:38] PHASE loading {\"note\": \"weights\"}\n"}
+,{"stream_name":"stdout","time":3617.559836976,"data":"[06:10:22]    base store read in 338s (45 layers)\n"}
+,{"stream_name":"stdout","time":3617.559840826,"data":"[06:10:22]    layer 1/45 (0s) | HBM chip0 0.00 GB\n"}
+,{"stream_name":"stdout","time":3630.900474258,"data":"Model process stopped. Stop Kaggle session separately to release accelerator.\n"}
+,{"stream_name":"stderr","time":3631.306016574,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":3631.306044114,"data":"  File \"\u003cstring\u003e\", line 1, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":3631.306050834,"data":"  File \"/usr/local/lib/python3.12/site-packages/papermill/execute.py\", line 131, in execute_notebook\n"}
+,{"stream_name":"stderr","time":3631.306055454,"data":"    raise_for_execution_errors(nb, output_path)\n"}
+,{"stream_name":"stderr","time":3631.306059663,"data":"  File \"/usr/local/lib/python3.12/site-packages/papermill/execute.py\", line 251, in raise_for_execution_errors\n"}
+,{"stream_name":"stderr","time":3631.306134494,"data":"    raise error\n"}
+,{"stream_name":"stderr","time":3631.306171403,"data":"papermill.exceptions.PapermillExecutionError: \n"}
+,{"stream_name":"stderr","time":3631.306181134,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":3631.306188394,"data":"Exception encountered at \"In [2]\":\n"}
+,{"stream_name":"stderr","time":3631.306195034,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":3631.306201643,"data":"TimeoutError                              Traceback (most recent call last)\n"}
+,{"stream_name":"stderr","time":3631.306208323,"data":"Cell In[2], line 21\n"}
+,{"stream_name":"stderr","time":3631.306215274,"data":"     17             os.killpg(process.pid,signal.SIGTERM)\n"}
+,{"stream_name":"stderr","time":3631.306221554,"data":"     18             try: process.wait(timeout=15)\n"}
+,{"stream_name":"stderr","time":3631.306228703,"data":"     19             except subprocess.TimeoutExpired: os.killpg(process.pid,signal.SIGKILL);process.wait()\n"}
+,{"stream_name":"stderr","time":3631.306252234,"data":"     20         Path(\"process-stop-receipt.json\").write_text(json.dumps({\"returncode\":process.returncode,\"elapsed_seconds\":time.time()-started,\"process_stopped\":process.poll() is not None}))\n"}
+,{"stream_name":"stderr","time":3631.306258063,"data":"---\u003e 21         print(\"Model process stopped. Stop Kaggle session separately to release accelerator.\")\n"}
+,{"stream_name":"stderr","time":3631.306263454,"data":"\n"}
+,{"stream_name":"stderr","time":3631.306267843,"data":"TimeoutError: 60-minute test limit\n"}
+,{"stream_name":"stderr","time":3631.306330354,"data":"\n"}
+,{"stream_name":"stderr","time":3634.218997349,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":3634.322622968,"data":"[NbConvertApp] Writing 677514 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":3636.66074659,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":3639.173285141,"data":"[NbConvertApp] Writing 1420037 bytes to __results__.html\n"}
+]

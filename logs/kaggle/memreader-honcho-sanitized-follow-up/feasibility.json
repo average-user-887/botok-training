@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "elapsed_s": 131.55869883899993,
+  "forward_backward_s": 3.610792978000063,
+  "training_parameters": 33030144,
+  "max_sequence_length": 863,
+  "rationale_blocks_stripped": 2712,
+  "torch": "2.11.0+cu128",
+  "device": "cuda:0"
+}

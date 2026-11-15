@@ -1,0 +1,40 @@
+[{"stream_name":"stderr","time":7.432666427,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.432714206,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.432721229,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.432725349,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.056358195,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.056396242,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.056402037,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.056406082,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":2927.416940944,"data":"{\n"}
+,{"stream_name":"stdout","time":2927.416995541,"data":"  \"started_at\": 1792765191.6909149,\n"}
+,{"stream_name":"stdout","time":2927.417000702,"data":"  \"quota_cap_s\": 16200,\n"}
+,{"stream_name":"stdout","time":2927.417008585,"data":"  \"commands_completed\": 2,\n"}
+,{"stream_name":"stdout","time":2927.417011697,"data":"  \"exit_code\": 0,\n"}
+,{"stream_name":"stdout","time":2927.41701461,"data":"  \"stop_reason\": null,\n"}
+,{"stream_name":"stdout","time":2927.417017445,"data":"  \"finished_at\": 1792768101.8230956,\n"}
+,{"stream_name":"stdout","time":2927.417020869,"data":"  \"elapsed_s\": 2910.132180929184,\n"}
+,{"stream_name":"stdout","time":2927.417023867,"data":"  \"worker_exited\": true\n"}
+,{"stream_name":"stdout","time":2927.417027153,"data":"}\n"}
+,{"stream_name":"stdout","time":2927.417042495,"data":"{\n"}
+,{"stream_name":"stdout","time":2927.417047158,"data":"  \"status\": \"completed\",\n"}
+,{"stream_name":"stdout","time":2927.417051965,"data":"  \"model\": \"IAAR-Shanghai/MemReader-4B-thinking\",\n"}
+,{"stream_name":"stdout","time":2927.417057497,"data":"  \"revision\": \"3fcb57e5653ec5d733eea4df61f4b339d4ac0e92\",\n"}
+,{"stream_name":"stdout","time":2927.417062236,"data":"  \"steps\": 48,\n"}
+,{"stream_name":"stdout","time":2927.417066445,"data":"  \"baseline_schema_proxy\": 22,\n"}
+,{"stream_name":"stdout","time":2927.417070657,"data":"  \"candidate_schema_proxy\": 23,\n"}
+,{"stream_name":"stdout","time":2927.417074885,"data":"  \"cases\": 23,\n"}
+,{"stream_name":"stdout","time":2927.417078998,"data":"  \"elapsed_s\": 2871.0622119903564,\n"}
+,{"stream_name":"stdout","time":2927.417083167,"data":"  \"production_qualified\": false,\n"}
+,{"stream_name":"stdout","time":2927.417087236,"data":"  \"semantic_review_required\": true,\n"}
+,{"stream_name":"stdout","time":2927.417091599,"data":"  \"precision\": \"NF4 weights, fp16 compute; adapter only; no merged/GGUF validation\"\n"}
+,{"stream_name":"stdout","time":2927.417095881,"data":"}\n"}
+,{"stream_name":"stderr","time":2929.800616502,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":2929.800658158,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":2929.973737177,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":2929.973770309,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":2930.786108196,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":2930.865109521,"data":"[NbConvertApp] Writing 244433 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":2933.36499489,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":2933.987004392,"data":"[NbConvertApp] Writing 1097159 bytes to __results__.html\n"}
+]

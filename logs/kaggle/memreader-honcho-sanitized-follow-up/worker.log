@@ -1,0 +1,409 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files:  50%|█████     | 1/2 [00:43<00:43, 43.36s/it]Fetching 2 files: 100%|██████████| 2/2 [00:43<00:00, 21.68s/it]
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]/usr/local/lib/python3.13/dist-packages/bitsandbytes/backends/cuda/ops.py:212: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.03s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:10<00:00,  5.07s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:10<00:00,  5.21s/it]
+/usr/local/lib/python3.13/dist-packages/torch/_dynamo/eval_frame.py:1263: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. Starting in PyTorch 2.9, calling checkpoint without use_reentrant will raise an exception. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+{"phase": "feasibility_passed", "elapsed_s": 131.6, "measured_step_s": 3.610792978000063}
+{"phase": "verified_baseline_reused", "elapsed_s": 131.6, "source_run": 361568625, "cases": 37}
+{"phase": "training_start", "elapsed_s": 136.1, "initial_steps": 10}
+  0%|          | 0/678 [00:00<?, ?it/s]{"phase": "training", "elapsed_s": 156.0, "step": 1, "planned_steps": 678}
+  0%|          | 1/678 [00:19<3:37:22, 19.27s/it]  0%|          | 2/678 [00:38<3:39:46, 19.51s/it]{"phase": "training", "elapsed_s": 196.4, "step": 3, "planned_steps": 678}
+  0%|          | 3/678 [00:59<3:45:31, 20.05s/it]  1%|          | 4/678 [01:21<3:53:46, 20.81s/it]                                                 {'loss': 2.4205, 'grad_norm': 8.02023696899414, 'learning_rate': 1.5e-06, 'epoch': 0.01}
+  1%|          | 4/678 [01:21<3:53:46, 20.81s/it]{"phase": "training", "elapsed_s": 242.0, "step": 5, "planned_steps": 678}
+  1%|          | 5/678 [01:45<4:04:45, 21.82s/it]  1%|          | 6/678 [02:10<4:17:19, 22.98s/it]{"phase": "training", "elapsed_s": 292.0, "step": 7, "planned_steps": 678}
+  1%|          | 7/678 [02:35<4:23:54, 23.60s/it]  1%|          | 8/678 [02:59<4:25:35, 23.79s/it]                                                 {'loss': 2.3721, 'grad_norm': 7.363863945007324, 'learning_rate': 3.5e-06, 'epoch': 0.02}
+  1%|          | 8/678 [02:59<4:25:35, 23.79s/it]{"phase": "training", "elapsed_s": 340.5, "step": 9, "planned_steps": 678}
+  1%|▏         | 9/678 [03:23<4:26:50, 23.93s/it]  1%|▏         | 10/678 [03:48<4:29:55, 24.24s/it]{"phase": "training", "elapsed_s": 390.3, "step": 11, "planned_steps": 448}
+  2%|▏         | 11/678 [04:13<4:31:34, 24.43s/it]  2%|▏         | 12/678 [04:38<4:31:19, 24.44s/it]                                                  {'loss': 2.126, 'grad_norm': 5.490840435028076, 'learning_rate': 5.500000000000001e-06, 'epoch': 0.04}
+  2%|▏         | 12/678 [04:38<4:31:19, 24.44s/it]{"phase": "training", "elapsed_s": 439.0, "step": 13, "planned_steps": 448}
+  2%|▏         | 13/678 [05:02<4:30:13, 24.38s/it]  2%|▏         | 14/678 [05:26<4:29:39, 24.37s/it]{"phase": "training", "elapsed_s": 487.8, "step": 15, "planned_steps": 448}
+  2%|▏         | 15/678 [05:51<4:29:44, 24.41s/it]  2%|▏         | 16/678 [06:15<4:30:02, 24.48s/it]                                                  {'loss': 1.9309, 'grad_norm': 4.632199287414551, 'learning_rate': 7.500000000000001e-06, 'epoch': 0.05}
+  2%|▏         | 16/678 [06:15<4:30:02, 24.48s/it]{"phase": "training", "elapsed_s": 537.5, "step": 17, "planned_steps": 448}
+  3%|▎         | 17/678 [06:40<4:31:24, 24.64s/it]  3%|▎         | 18/678 [07:05<4:30:34, 24.60s/it]{"phase": "training", "elapsed_s": 586.9, "step": 19, "planned_steps": 448}
+  3%|▎         | 19/678 [07:30<4:31:22, 24.71s/it]  3%|▎         | 20/678 [07:54<4:30:28, 24.66s/it]                                                  {'loss': 1.657, 'grad_norm': 4.052961826324463, 'learning_rate': 9.5e-06, 'epoch': 0.06}
+  3%|▎         | 20/678 [07:54<4:30:28, 24.66s/it]{"phase": "training", "elapsed_s": 635.9, "step": 21, "planned_steps": 448}
+  3%|▎         | 21/678 [08:19<4:29:05, 24.58s/it]  3%|▎         | 22/678 [08:43<4:28:54, 24.59s/it]{"phase": "training", "elapsed_s": 685.2, "step": 23, "planned_steps": 448}
+  3%|▎         | 23/678 [09:08<4:28:42, 24.61s/it]  4%|▎         | 24/678 [09:32<4:27:21, 24.53s/it]                                                  {'loss': 1.35, 'grad_norm': 3.697444438934326, 'learning_rate': 9.954407294832828e-06, 'epoch': 0.07}
+  4%|▎         | 24/678 [09:32<4:27:21, 24.53s/it]{"phase": "training", "elapsed_s": 734.0, "step": 25, "planned_steps": 448}
+  4%|▎         | 25/678 [09:57<4:26:47, 24.51s/it]  4%|▍         | 26/678 [10:21<4:25:51, 24.46s/it]{"phase": "training", "elapsed_s": 782.7, "step": 27, "planned_steps": 448}
+  4%|▍         | 27/678 [10:45<4:25:10, 24.44s/it]  4%|▍         | 28/678 [11:10<4:25:01, 24.46s/it]                                                  {'loss': 1.0664, 'grad_norm': 3.4977073669433594, 'learning_rate': 9.893617021276596e-06, 'epoch': 0.08}
+  4%|▍         | 28/678 [11:10<4:25:01, 24.46s/it]{"phase": "training", "elapsed_s": 832.0, "step": 29, "planned_steps": 448}
+  4%|▍         | 29/678 [11:35<4:25:43, 24.57s/it]  4%|▍         | 30/678 [11:59<4:25:14, 24.56s/it]{"phase": "training", "elapsed_s": 881.4, "step": 31, "planned_steps": 448}
+  5%|▍         | 31/678 [12:24<4:25:35, 24.63s/it]  5%|▍         | 32/678 [12:49<4:26:16, 24.73s/it]                                                  {'loss': 0.8013, 'grad_norm': 3.574799060821533, 'learning_rate': 9.832826747720365e-06, 'epoch': 0.09}
+  5%|▍         | 32/678 [12:49<4:26:16, 24.73s/it]{"phase": "training", "elapsed_s": 930.9, "step": 33, "planned_steps": 448}
+  5%|▍         | 33/678 [13:14<4:25:15, 24.68s/it]  5%|▌         | 34/678 [13:38<4:25:20, 24.72s/it]{"phase": "training", "elapsed_s": 980.2, "step": 35, "planned_steps": 448}
+  5%|▌         | 35/678 [14:03<4:24:08, 24.65s/it]  5%|▌         | 36/678 [14:27<4:23:09, 24.59s/it]                                                  {'loss': 0.5602, 'grad_norm': 3.0257673263549805, 'learning_rate': 9.772036474164135e-06, 'epoch': 0.11}
+  5%|▌         | 36/678 [14:27<4:23:09, 24.59s/it]{"phase": "training", "elapsed_s": 1029.3, "step": 37, "planned_steps": 448}
+  5%|▌         | 37/678 [14:52<4:22:58, 24.62s/it]  6%|▌         | 38/678 [15:17<4:22:31, 24.61s/it]{"phase": "training", "elapsed_s": 1078.4, "step": 39, "planned_steps": 448}
+  6%|▌         | 39/678 [15:41<4:21:33, 24.56s/it]  6%|▌         | 40/678 [16:06<4:20:30, 24.50s/it]                                                  {'loss': 0.3413, 'grad_norm': 2.2439684867858887, 'learning_rate': 9.711246200607904e-06, 'epoch': 0.12}
+  6%|▌         | 40/678 [16:06<4:20:30, 24.50s/it]{"phase": "training", "elapsed_s": 1127.2, "step": 41, "planned_steps": 448}
+  6%|▌         | 41/678 [16:30<4:20:01, 24.49s/it]  6%|▌         | 42/678 [16:54<4:18:51, 24.42s/it]{"phase": "training", "elapsed_s": 1176.0, "step": 43, "planned_steps": 448}
+  6%|▋         | 43/678 [17:19<4:18:43, 24.45s/it]  6%|▋         | 44/678 [17:43<4:18:41, 24.48s/it]                                                  {'loss': 0.1894, 'grad_norm': 1.725785255432129, 'learning_rate': 9.650455927051672e-06, 'epoch': 0.13}
+  6%|▋         | 44/678 [17:43<4:18:41, 24.48s/it]{"phase": "training", "elapsed_s": 1225.2, "step": 45, "planned_steps": 448}
+  7%|▋         | 45/678 [18:08<4:18:47, 24.53s/it]  7%|▋         | 46/678 [18:32<4:17:57, 24.49s/it]{"phase": "training", "elapsed_s": 1274.2, "step": 47, "planned_steps": 448}
+  7%|▋         | 47/678 [18:57<4:18:00, 24.53s/it]  7%|▋         | 48/678 [19:21<4:17:13, 24.50s/it]                                                  {'loss': 0.082, 'grad_norm': 1.5893813371658325, 'learning_rate': 9.589665653495441e-06, 'epoch': 0.14}
+  7%|▋         | 48/678 [19:21<4:17:13, 24.50s/it]{"phase": "training", "elapsed_s": 1322.9, "step": 49, "planned_steps": 448}
+  7%|▋         | 49/678 [19:46<4:16:01, 24.42s/it]  7%|▋         | 50/678 [20:11<4:19:12, 24.76s/it]{"phase": "training", "elapsed_s": 1373.2, "step": 51, "planned_steps": 448}
+  8%|▊         | 51/678 [20:36<4:18:54, 24.78s/it]  8%|▊         | 52/678 [21:01<4:19:14, 24.85s/it]                                                  {'loss': 0.0383, 'grad_norm': 0.9801480770111084, 'learning_rate': 9.528875379939211e-06, 'epoch': 0.15}
+  8%|▊         | 52/678 [21:01<4:19:14, 24.85s/it]{"phase": "training", "elapsed_s": 1422.8, "step": 53, "planned_steps": 448}
+  8%|▊         | 53/678 [21:26<4:17:52, 24.76s/it]  8%|▊         | 54/678 [21:50<4:16:45, 24.69s/it]{"phase": "training", "elapsed_s": 1471.8, "step": 55, "planned_steps": 448}
+  8%|▊         | 55/678 [22:15<4:15:42, 24.63s/it]  8%|▊         | 56/678 [22:39<4:14:44, 24.57s/it]                                                  {'loss': 0.0189, 'grad_norm': 0.8550739884376526, 'learning_rate': 9.46808510638298e-06, 'epoch': 0.17}
+  8%|▊         | 56/678 [22:39<4:14:44, 24.57s/it]{"phase": "training", "elapsed_s": 1520.6, "step": 57, "planned_steps": 448}
+  8%|▊         | 57/678 [23:03<4:13:41, 24.51s/it]  9%|▊         | 58/678 [23:28<4:14:19, 24.61s/it]{"phase": "training", "elapsed_s": 1569.7, "step": 59, "planned_steps": 448}
+  9%|▊         | 59/678 [23:53<4:12:51, 24.51s/it]  9%|▉         | 60/678 [24:17<4:13:31, 24.61s/it]                                                  {'loss': 0.0147, 'grad_norm': 0.43191757798194885, 'learning_rate': 9.407294832826749e-06, 'epoch': 0.18}
+  9%|▉         | 60/678 [24:17<4:13:31, 24.61s/it]{"phase": "training", "elapsed_s": 1618.9, "step": 61, "planned_steps": 448}
+  9%|▉         | 61/678 [24:42<4:12:08, 24.52s/it]  9%|▉         | 62/678 [25:06<4:11:01, 24.45s/it]{"phase": "training", "elapsed_s": 1667.4, "step": 63, "planned_steps": 448}
+  9%|▉         | 63/678 [25:30<4:09:53, 24.38s/it]  9%|▉         | 64/678 [25:54<4:09:07, 24.34s/it]                                                  {'loss': 0.0036, 'grad_norm': 0.04942725971341133, 'learning_rate': 9.346504559270517e-06, 'epoch': 0.19}
+  9%|▉         | 64/678 [25:54<4:09:07, 24.34s/it]{"phase": "training", "elapsed_s": 1716.2, "step": 65, "planned_steps": 448}
+ 10%|▉         | 65/678 [26:19<4:09:18, 24.40s/it] 10%|▉         | 66/678 [26:43<4:08:21, 24.35s/it]{"phase": "training", "elapsed_s": 1765.1, "step": 67, "planned_steps": 448}
+ 10%|▉         | 67/678 [27:08<4:09:00, 24.45s/it] 10%|█         | 68/678 [27:32<4:08:11, 24.41s/it]                                                  {'loss': 0.0016, 'grad_norm': 0.053050655871629715, 'learning_rate': 9.285714285714288e-06, 'epoch': 0.2}
+ 10%|█         | 68/678 [27:32<4:08:11, 24.41s/it]{"phase": "training", "elapsed_s": 1813.9, "step": 69, "planned_steps": 448}
+ 10%|█         | 69/678 [27:57<4:07:51, 24.42s/it] 10%|█         | 70/678 [28:21<4:07:42, 24.44s/it]{"phase": "training", "elapsed_s": 1863.1, "step": 71, "planned_steps": 448}
+ 10%|█         | 71/678 [28:46<4:08:00, 24.52s/it] 11%|█         | 72/678 [29:11<4:08:15, 24.58s/it]                                                  {'loss': 0.0016, 'grad_norm': 0.027507217600941658, 'learning_rate': 9.224924012158054e-06, 'epoch': 0.21}
+ 11%|█         | 72/678 [29:11<4:08:15, 24.58s/it]{"phase": "training", "elapsed_s": 1912.4, "step": 73, "planned_steps": 448}
+ 11%|█         | 73/678 [29:35<4:07:50, 24.58s/it] 11%|█         | 74/678 [29:59<4:06:36, 24.50s/it]{"phase": "training", "elapsed_s": 1961.3, "step": 75, "planned_steps": 448}
+ 11%|█         | 75/678 [30:24<4:06:33, 24.53s/it] 11%|█         | 76/678 [30:48<4:05:24, 24.46s/it]                                                  {'loss': 0.004, 'grad_norm': 0.0507209412753582, 'learning_rate': 9.164133738601825e-06, 'epoch': 0.22}
+ 11%|█         | 76/678 [30:48<4:05:24, 24.46s/it]{"phase": "training", "elapsed_s": 2010.5, "step": 77, "planned_steps": 448}
+ 11%|█▏        | 77/678 [31:13<4:06:18, 24.59s/it] 12%|█▏        | 78/678 [31:38<4:07:35, 24.76s/it]{"phase": "training", "elapsed_s": 2060.1, "step": 79, "planned_steps": 448}
+ 12%|█▏        | 79/678 [32:03<4:06:12, 24.66s/it] 12%|█▏        | 80/678 [32:27<4:05:09, 24.60s/it]                                                  {'loss': 0.003, 'grad_norm': 0.01717911846935749, 'learning_rate': 9.103343465045593e-06, 'epoch': 0.24}
+ 12%|█▏        | 80/678 [32:27<4:05:09, 24.60s/it]{"phase": "training", "elapsed_s": 2108.7, "step": 81, "planned_steps": 448}
+ 12%|█▏        | 81/678 [32:51<4:03:27, 24.47s/it] 12%|█▏        | 82/678 [33:16<4:02:59, 24.46s/it]{"phase": "training", "elapsed_s": 2157.3, "step": 83, "planned_steps": 448}
+ 12%|█▏        | 83/678 [33:40<4:01:41, 24.37s/it] 12%|█▏        | 84/678 [34:04<4:00:45, 24.32s/it]                                                  {'loss': 0.0007, 'grad_norm': 0.020952310413122177, 'learning_rate': 9.042553191489362e-06, 'epoch': 0.25}
+ 12%|█▏        | 84/678 [34:04<4:00:45, 24.32s/it]{"phase": "training", "elapsed_s": 2205.7, "step": 85, "planned_steps": 448}
+ 13%|█▎        | 85/678 [34:28<4:00:07, 24.30s/it] 13%|█▎        | 86/678 [34:53<4:00:51, 24.41s/it]{"phase": "training", "elapsed_s": 2255.1, "step": 87, "planned_steps": 448}
+ 13%|█▎        | 87/678 [35:18<4:01:14, 24.49s/it] 13%|█▎        | 88/678 [35:43<4:02:04, 24.62s/it]                                                  {'loss': 0.0008, 'grad_norm': 0.07610674947500229, 'learning_rate': 8.98176291793313e-06, 'epoch': 0.26}
+ 13%|█▎        | 88/678 [35:43<4:02:04, 24.62s/it]{"phase": "training", "elapsed_s": 2304.6, "step": 89, "planned_steps": 448}
+ 13%|█▎        | 89/678 [36:07<4:01:41, 24.62s/it] 13%|█▎        | 90/678 [36:32<4:00:34, 24.55s/it]{"phase": "training", "elapsed_s": 2353.5, "step": 91, "planned_steps": 448}
+ 13%|█▎        | 91/678 [36:56<3:59:55, 24.52s/it] 14%|█▎        | 92/678 [37:21<3:59:53, 24.56s/it]                                                  {'loss': 0.0008, 'grad_norm': 0.0781935602426529, 'learning_rate': 8.920972644376901e-06, 'epoch': 0.27}
+ 14%|█▎        | 92/678 [37:21<3:59:53, 24.56s/it]{"phase": "training", "elapsed_s": 2402.5, "step": 93, "planned_steps": 448}
+ 14%|█▎        | 93/678 [37:45<3:58:59, 24.51s/it] 14%|█▍        | 94/678 [38:10<3:59:44, 24.63s/it]{"phase": "training", "elapsed_s": 2451.8, "step": 95, "planned_steps": 448}
+ 14%|█▍        | 95/678 [38:35<3:58:31, 24.55s/it] 14%|█▍        | 96/678 [38:59<3:58:05, 24.55s/it]                                                  {'loss': 0.0007, 'grad_norm': 0.015401540324091911, 'learning_rate': 8.86018237082067e-06, 'epoch': 0.28}
+ 14%|█▍        | 96/678 [38:59<3:58:05, 24.55s/it]{"phase": "training", "elapsed_s": 2500.6, "step": 97, "planned_steps": 448}
+ 14%|█▍        | 97/678 [39:23<3:56:51, 24.46s/it] 14%|█▍        | 98/678 [39:48<3:55:54, 24.40s/it]{"phase": "training", "elapsed_s": 2549.7, "step": 99, "planned_steps": 448}
+ 15%|█▍        | 99/678 [40:12<3:56:40, 24.53s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+/usr/local/lib/python3.13/dist-packages/bitsandbytes/backends/cuda/ops.py:464: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+{"phase": "canary_step_100", "elapsed_s": 2586.7, "completed": 1, "total": 4}
+{"phase": "canary_step_100", "elapsed_s": 2597.6, "completed": 2, "total": 4}
+{"phase": "canary_step_100", "elapsed_s": 2609.1, "completed": 3, "total": 4}
+{"phase": "canary_step_100", "elapsed_s": 2620.6, "completed": 4, "total": 4}
+ 15%|█▍        | 100/678 [41:28<6:24:45, 39.94s/it]                                                   {'loss': 0.0021, 'grad_norm': 0.015760285779833794, 'learning_rate': 8.799392097264438e-06, 'epoch': 0.29}
+ 15%|█▍        | 100/678 [41:28<6:24:45, 39.94s/it]{"phase": "training", "elapsed_s": 2651.6, "step": 101, "planned_steps": 448}
+ 15%|█▍        | 101/678 [41:54<5:43:56, 35.76s/it] 15%|█▌        | 102/678 [42:19<5:10:43, 32.37s/it]{"phase": "training", "elapsed_s": 2699.8, "step": 103, "planned_steps": 448}
+ 15%|█▌        | 103/678 [42:43<4:45:29, 29.79s/it] 15%|█▌        | 104/678 [43:07<4:29:11, 28.14s/it]                                                   {'loss': 0.0005, 'grad_norm': 0.01448071002960205, 'learning_rate': 8.738601823708207e-06, 'epoch': 0.31}
+ 15%|█▌        | 104/678 [43:07<4:29:11, 28.14s/it]{"phase": "training", "elapsed_s": 2748.7, "step": 105, "planned_steps": 448}
+ 15%|█▌        | 105/678 [43:31<4:18:28, 27.07s/it] 16%|█▌        | 106/678 [43:56<4:10:30, 26.28s/it]{"phase": "training", "elapsed_s": 2797.4, "step": 107, "planned_steps": 448}
+ 16%|█▌        | 107/678 [44:20<4:04:34, 25.70s/it] 16%|█▌        | 108/678 [44:45<4:00:12, 25.29s/it]                                                   {'loss': 0.0004, 'grad_norm': 0.0124622518196702, 'learning_rate': 8.677811550151977e-06, 'epoch': 0.32}
+ 16%|█▌        | 108/678 [44:45<4:00:12, 25.29s/it]{"phase": "training", "elapsed_s": 2846.0, "step": 109, "planned_steps": 448}
+ 16%|█▌        | 109/678 [45:09<3:56:46, 24.97s/it] 16%|█▌        | 110/678 [45:33<3:54:40, 24.79s/it]{"phase": "training", "elapsed_s": 2894.5, "step": 111, "planned_steps": 448}
+ 16%|█▋        | 111/678 [45:57<3:52:30, 24.60s/it] 17%|█▋        | 112/678 [46:21<3:50:53, 24.48s/it]                                                   {'loss': 0.0004, 'grad_norm': 0.010197320021688938, 'learning_rate': 8.617021276595746e-06, 'epoch': 0.33}
+ 17%|█▋        | 112/678 [46:21<3:50:53, 24.48s/it]{"phase": "training", "elapsed_s": 2943.3, "step": 113, "planned_steps": 448}
+ 17%|█▋        | 113/678 [46:46<3:50:42, 24.50s/it] 17%|█▋        | 114/678 [47:10<3:50:08, 24.48s/it]{"phase": "training", "elapsed_s": 2992.1, "step": 115, "planned_steps": 448}
+ 17%|█▋        | 115/678 [47:35<3:49:29, 24.46s/it] 17%|█▋        | 116/678 [48:00<3:50:01, 24.56s/it]                                                   {'loss': 0.0005, 'grad_norm': 0.041831761598587036, 'learning_rate': 8.556231003039514e-06, 'epoch': 0.34}
+ 17%|█▋        | 116/678 [48:00<3:50:01, 24.56s/it]{"phase": "training", "elapsed_s": 3041.3, "step": 117, "planned_steps": 448}
+ 17%|█▋        | 117/678 [48:24<3:49:13, 24.52s/it] 17%|█▋        | 118/678 [48:49<3:50:56, 24.74s/it]{"phase": "training", "elapsed_s": 3091.1, "step": 119, "planned_steps": 448}
+ 18%|█▊        | 119/678 [49:14<3:49:45, 24.66s/it] 18%|█▊        | 120/678 [49:38<3:48:51, 24.61s/it]                                                   {'loss': 0.001, 'grad_norm': 0.025817804038524628, 'learning_rate': 8.495440729483283e-06, 'epoch': 0.35}
+ 18%|█▊        | 120/678 [49:38<3:48:51, 24.61s/it]{"phase": "training", "elapsed_s": 3140.0, "step": 121, "planned_steps": 448}
+ 18%|█▊        | 121/678 [50:03<3:47:54, 24.55s/it] 18%|█▊        | 122/678 [50:27<3:47:34, 24.56s/it]{"phase": "training", "elapsed_s": 3189.2, "step": 123, "planned_steps": 448}
+ 18%|█▊        | 123/678 [50:52<3:47:34, 24.60s/it] 18%|█▊        | 124/678 [51:16<3:46:07, 24.49s/it]                                                   {'loss': 0.0071, 'grad_norm': 0.009378602728247643, 'learning_rate': 8.434650455927053e-06, 'epoch': 0.37}
+ 18%|█▊        | 124/678 [51:16<3:46:07, 24.49s/it]{"phase": "training", "elapsed_s": 3238.1, "step": 125, "planned_steps": 448}
+ 18%|█▊        | 125/678 [51:41<3:46:13, 24.55s/it] 19%|█▊        | 126/678 [52:05<3:45:50, 24.55s/it]{"phase": "training", "elapsed_s": 3287.0, "step": 127, "planned_steps": 448}
+ 19%|█▊        | 127/678 [52:30<3:44:46, 24.48s/it] 19%|█▉        | 128/678 [52:54<3:44:01, 24.44s/it]                                                   {'loss': 0.0005, 'grad_norm': 0.008914388716220856, 'learning_rate': 8.37386018237082e-06, 'epoch': 0.38}
+ 19%|█▉        | 128/678 [52:54<3:44:01, 24.44s/it]{"phase": "training", "elapsed_s": 3335.7, "step": 129, "planned_steps": 448}
+ 19%|█▉        | 129/678 [53:18<3:43:13, 24.40s/it] 19%|█▉        | 130/678 [53:43<3:42:21, 24.35s/it]{"phase": "training", "elapsed_s": 3384.2, "step": 131, "planned_steps": 448}
+ 19%|█▉        | 131/678 [54:07<3:41:50, 24.33s/it] 19%|█▉        | 132/678 [54:31<3:41:01, 24.29s/it]                                                   {'loss': 0.0009, 'grad_norm': 0.033202964812517166, 'learning_rate': 8.31306990881459e-06, 'epoch': 0.39}
+ 19%|█▉        | 132/678 [54:31<3:41:01, 24.29s/it]{"phase": "training", "elapsed_s": 3432.8, "step": 133, "planned_steps": 448}
+ 20%|█▉        | 133/678 [54:56<3:40:54, 24.32s/it] 20%|█▉        | 134/678 [55:20<3:41:31, 24.43s/it]{"phase": "training", "elapsed_s": 3481.7, "step": 135, "planned_steps": 448}
+ 20%|█▉        | 135/678 [55:44<3:40:31, 24.37s/it] 20%|██        | 136/678 [56:09<3:39:37, 24.31s/it]                                                   {'loss': 0.0165, 'grad_norm': 0.008682606741786003, 'learning_rate': 8.252279635258359e-06, 'epoch': 0.4}
+ 20%|██        | 136/678 [56:09<3:39:37, 24.31s/it]{"phase": "training", "elapsed_s": 3530.8, "step": 137, "planned_steps": 448}
+ 20%|██        | 137/678 [56:34<3:41:02, 24.51s/it] 20%|██        | 138/678 [56:58<3:40:49, 24.54s/it]{"phase": "training", "elapsed_s": 3579.7, "step": 139, "planned_steps": 448}
+ 21%|██        | 139/678 [57:22<3:39:44, 24.46s/it] 21%|██        | 140/678 [57:47<3:38:38, 24.38s/it]                                                   {'loss': 0.0005, 'grad_norm': 0.009421588853001595, 'learning_rate': 8.191489361702128e-06, 'epoch': 0.41}
+ 21%|██        | 140/678 [57:47<3:38:38, 24.38s/it]{"phase": "training", "elapsed_s": 3628.1, "step": 141, "planned_steps": 448}
+ 21%|██        | 141/678 [58:11<3:37:41, 24.32s/it] 21%|██        | 142/678 [58:35<3:36:50, 24.27s/it]{"phase": "training", "elapsed_s": 3676.7, "step": 143, "planned_steps": 448}
+ 21%|██        | 143/678 [58:59<3:36:52, 24.32s/it] 21%|██        | 144/678 [59:24<3:37:34, 24.45s/it]                                                   {'loss': 0.0004, 'grad_norm': 0.010410736314952374, 'learning_rate': 8.130699088145896e-06, 'epoch': 0.42}
+ 21%|██        | 144/678 [59:24<3:37:34, 24.45s/it]{"phase": "training", "elapsed_s": 3725.7, "step": 145, "planned_steps": 448}
+ 21%|██▏       | 145/678 [59:48<3:36:44, 24.40s/it] 22%|██▏       | 146/678 [1:00:13<3:36:01, 24.36s/it]{"phase": "training", "elapsed_s": 3774.5, "step": 147, "planned_steps": 448}
+ 22%|██▏       | 147/678 [1:00:37<3:36:04, 24.42s/it] 22%|██▏       | 148/678 [1:01:02<3:35:40, 24.42s/it]                                                     {'loss': 0.0004, 'grad_norm': 0.007557116448879242, 'learning_rate': 8.069908814589667e-06, 'epoch': 0.44}
+ 22%|██▏       | 148/678 [1:01:02<3:35:40, 24.42s/it]{"phase": "training", "elapsed_s": 3823.6, "step": 149, "planned_steps": 448}
+ 22%|██▏       | 149/678 [1:01:26<3:35:46, 24.47s/it] 22%|██▏       | 150/678 [1:01:52<3:39:08, 24.90s/it]{"phase": "training", "elapsed_s": 3873.6, "step": 151, "planned_steps": 448}
+ 22%|██▏       | 151/678 [1:02:16<3:36:46, 24.68s/it] 22%|██▏       | 152/678 [1:02:41<3:35:25, 24.57s/it]                                                     {'loss': 0.0009, 'grad_norm': 0.00803622230887413, 'learning_rate': 8.009118541033435e-06, 'epoch': 0.45}
+ 22%|██▏       | 152/678 [1:02:41<3:35:25, 24.57s/it]{"phase": "training", "elapsed_s": 3922.3, "step": 153, "planned_steps": 448}
+ 23%|██▎       | 153/678 [1:03:05<3:34:29, 24.51s/it] 23%|██▎       | 154/678 [1:03:30<3:34:37, 24.58s/it]{"phase": "training", "elapsed_s": 3971.5, "step": 155, "planned_steps": 448}
+ 23%|██▎       | 155/678 [1:03:54<3:33:48, 24.53s/it] 23%|██▎       | 156/678 [1:04:19<3:33:18, 24.52s/it]                                                     {'loss': 0.0003, 'grad_norm': 0.0064340694807469845, 'learning_rate': 7.948328267477204e-06, 'epoch': 0.46}
+ 23%|██▎       | 156/678 [1:04:19<3:33:18, 24.52s/it]{"phase": "training", "elapsed_s": 4020.4, "step": 157, "planned_steps": 448}
+ 23%|██▎       | 157/678 [1:04:43<3:32:46, 24.50s/it] 23%|██▎       | 158/678 [1:05:08<3:33:04, 24.59s/it]{"phase": "training", "elapsed_s": 4069.7, "step": 159, "planned_steps": 448}
+ 23%|██▎       | 159/678 [1:05:32<3:32:29, 24.56s/it] 24%|██▎       | 160/678 [1:05:57<3:31:57, 24.55s/it]                                                     {'loss': 0.0003, 'grad_norm': 0.015822695568203926, 'learning_rate': 7.887537993920973e-06, 'epoch': 0.47}
+ 24%|██▎       | 160/678 [1:05:57<3:31:57, 24.55s/it]{"phase": "training", "elapsed_s": 4118.7, "step": 161, "planned_steps": 448}
+ 24%|██▎       | 161/678 [1:06:21<3:31:20, 24.53s/it] 24%|██▍       | 162/678 [1:06:46<3:31:54, 24.64s/it]{"phase": "training", "elapsed_s": 4168.1, "step": 163, "planned_steps": 448}
+ 24%|██▍       | 163/678 [1:07:11<3:31:04, 24.59s/it] 24%|██▍       | 164/678 [1:07:36<3:31:25, 24.68s/it]                                                     {'loss': 0.0003, 'grad_norm': 0.008051916025578976, 'learning_rate': 7.826747720364743e-06, 'epoch': 0.48}
+ 24%|██▍       | 164/678 [1:07:36<3:31:25, 24.68s/it]{"phase": "training", "elapsed_s": 4217.9, "step": 165, "planned_steps": 448}
+ 24%|██▍       | 165/678 [1:08:01<3:31:36, 24.75s/it] 24%|██▍       | 166/678 [1:08:25<3:30:19, 24.65s/it]{"phase": "training", "elapsed_s": 4266.9, "step": 167, "planned_steps": 448}
+ 25%|██▍       | 167/678 [1:08:50<3:29:40, 24.62s/it] 25%|██▍       | 168/678 [1:09:14<3:28:22, 24.51s/it]                                                     {'loss': 0.0003, 'grad_norm': 0.006263144314289093, 'learning_rate': 7.765957446808511e-06, 'epoch': 0.5}
+ 25%|██▍       | 168/678 [1:09:14<3:28:22, 24.51s/it]{"phase": "training", "elapsed_s": 4315.4, "step": 169, "planned_steps": 448}
+ 25%|██▍       | 169/678 [1:09:38<3:27:21, 24.44s/it] 25%|██▌       | 170/678 [1:10:02<3:26:37, 24.40s/it]{"phase": "training", "elapsed_s": 4363.9, "step": 171, "planned_steps": 448}
+ 25%|██▌       | 171/678 [1:10:27<3:25:42, 24.34s/it] 25%|██▌       | 172/678 [1:10:51<3:25:37, 24.38s/it]                                                     {'loss': 0.0004, 'grad_norm': 0.005419266410171986, 'learning_rate': 7.70516717325228e-06, 'epoch': 0.51}
+ 25%|██▌       | 172/678 [1:10:51<3:25:37, 24.38s/it]{"phase": "training", "elapsed_s": 4413.1, "step": 173, "planned_steps": 448}
+ 26%|██▌       | 173/678 [1:11:16<3:26:00, 24.48s/it] 26%|██▌       | 174/678 [1:11:40<3:24:51, 24.39s/it]{"phase": "training", "elapsed_s": 4461.2, "step": 175, "planned_steps": 448}
+ 26%|██▌       | 175/678 [1:12:04<3:23:13, 24.24s/it] 26%|██▌       | 176/678 [1:12:28<3:23:11, 24.29s/it]                                                     {'loss': 0.0003, 'grad_norm': 0.020856540650129318, 'learning_rate': 7.644376899696049e-06, 'epoch': 0.52}
+ 26%|██▌       | 176/678 [1:12:28<3:23:11, 24.29s/it]{"phase": "training", "elapsed_s": 4510.0, "step": 177, "planned_steps": 448}
+ 26%|██▌       | 177/678 [1:12:53<3:23:17, 24.35s/it] 26%|██▋       | 178/678 [1:13:17<3:22:13, 24.27s/it]{"phase": "training", "elapsed_s": 4558.7, "step": 179, "planned_steps": 448}
+ 26%|██▋       | 179/678 [1:13:41<3:22:37, 24.36s/it] 27%|██▋       | 180/678 [1:14:07<3:24:16, 24.61s/it]                                                     {'loss': 0.0004, 'grad_norm': 0.0546749010682106, 'learning_rate': 7.583586626139818e-06, 'epoch': 0.53}
+ 27%|██▋       | 180/678 [1:14:07<3:24:16, 24.61s/it]{"phase": "training", "elapsed_s": 4608.6, "step": 181, "planned_steps": 448}
+ 27%|██▋       | 181/678 [1:14:31<3:24:04, 24.64s/it] 27%|██▋       | 182/678 [1:14:56<3:24:23, 24.73s/it]{"phase": "training", "elapsed_s": 4657.8, "step": 183, "planned_steps": 448}
+ 27%|██▋       | 183/678 [1:15:21<3:22:55, 24.60s/it] 27%|██▋       | 184/678 [1:15:45<3:21:29, 24.47s/it]                                                     {'loss': 0.0003, 'grad_norm': 0.007742817513644695, 'learning_rate': 7.522796352583587e-06, 'epoch': 0.54}
+ 27%|██▋       | 184/678 [1:15:45<3:21:29, 24.47s/it]{"phase": "training", "elapsed_s": 4706.3, "step": 185, "planned_steps": 448}
+ 27%|██▋       | 185/678 [1:16:09<3:20:38, 24.42s/it] 27%|██▋       | 186/678 [1:16:33<3:19:42, 24.35s/it]{"phase": "training", "elapsed_s": 4754.7, "step": 187, "planned_steps": 448}
+ 28%|██▊       | 187/678 [1:16:57<3:18:50, 24.30s/it] 28%|██▊       | 188/678 [1:17:22<3:18:19, 24.28s/it]                                                     {'loss': 0.0004, 'grad_norm': 0.005966446362435818, 'learning_rate': 7.462006079027356e-06, 'epoch': 0.55}
+ 28%|██▊       | 188/678 [1:17:22<3:18:19, 24.28s/it]{"phase": "training", "elapsed_s": 4803.1, "step": 189, "planned_steps": 448}
+ 28%|██▊       | 189/678 [1:17:46<3:17:34, 24.24s/it] 28%|██▊       | 190/678 [1:18:10<3:17:27, 24.28s/it]{"phase": "training", "elapsed_s": 4852.0, "step": 191, "planned_steps": 448}
+ 28%|██▊       | 191/678 [1:18:35<3:17:44, 24.36s/it] 28%|██▊       | 192/678 [1:18:59<3:16:52, 24.31s/it]                                                     {'loss': 0.0003, 'grad_norm': 0.00513611501082778, 'learning_rate': 7.401215805471125e-06, 'epoch': 0.57}
+ 28%|██▊       | 192/678 [1:18:59<3:16:52, 24.31s/it]{"phase": "training", "elapsed_s": 4900.3, "step": 193, "planned_steps": 448}
+ 28%|██▊       | 193/678 [1:19:23<3:16:06, 24.26s/it] 29%|██▊       | 194/678 [1:19:47<3:15:30, 24.24s/it]{"phase": "training", "elapsed_s": 4948.7, "step": 195, "planned_steps": 448}
+ 29%|██▉       | 195/678 [1:20:12<3:15:04, 24.23s/it] 29%|██▉       | 196/678 [1:20:36<3:14:53, 24.26s/it]                                                     {'loss': 0.0003, 'grad_norm': 0.008590533398091793, 'learning_rate': 7.340425531914894e-06, 'epoch': 0.58}
+ 29%|██▉       | 196/678 [1:20:36<3:14:53, 24.26s/it]{"phase": "training", "elapsed_s": 4997.4, "step": 197, "planned_steps": 448}
+ 29%|██▉       | 197/678 [1:21:00<3:14:37, 24.28s/it] 29%|██▉       | 198/678 [1:21:24<3:13:59, 24.25s/it]{"phase": "training", "elapsed_s": 5045.9, "step": 199, "planned_steps": 448}
+ 29%|██▉       | 199/678 [1:21:49<3:13:53, 24.29s/it]{"phase": "canary_step_200", "elapsed_s": 5082.7, "completed": 1, "total": 4}
+{"phase": "canary_step_200", "elapsed_s": 5093.5, "completed": 2, "total": 4}
+{"phase": "canary_step_200", "elapsed_s": 5104.9, "completed": 3, "total": 4}
+{"phase": "canary_step_200", "elapsed_s": 5116.4, "completed": 4, "total": 4}
+ 29%|██▉       | 200/678 [1:23:04<5:15:59, 39.66s/it]                                                     {'loss': 0.0014, 'grad_norm': 1.004495620727539, 'learning_rate': 7.279635258358663e-06, 'epoch': 0.59}
+ 29%|██▉       | 200/678 [1:23:04<5:15:59, 39.66s/it]{"phase": "training", "elapsed_s": 5147.5, "step": 201, "planned_steps": 448}
+ 30%|██▉       | 201/678 [1:23:30<4:42:49, 35.57s/it] 30%|██▉       | 202/678 [1:23:55<4:15:43, 32.23s/it]{"phase": "training", "elapsed_s": 5195.4, "step": 203, "planned_steps": 448}
+ 30%|██▉       | 203/678 [1:24:18<3:54:18, 29.60s/it] 30%|███       | 204/678 [1:24:43<3:41:37, 28.05s/it]                                                     {'loss': 0.0003, 'grad_norm': 0.005191798321902752, 'learning_rate': 7.218844984802432e-06, 'epoch': 0.6}
+ 30%|███       | 204/678 [1:24:43<3:41:37, 28.05s/it]{"phase": "training", "elapsed_s": 5245.1, "step": 205, "planned_steps": 448}
+ 30%|███       | 205/678 [1:25:08<3:34:30, 27.21s/it] 30%|███       | 206/678 [1:25:32<3:26:54, 26.30s/it]{"phase": "training", "elapsed_s": 5293.3, "step": 207, "planned_steps": 448}
+ 31%|███       | 207/678 [1:25:56<3:21:00, 25.61s/it] 31%|███       | 208/678 [1:26:21<3:17:58, 25.27s/it]                                                     {'loss': 0.0003, 'grad_norm': 0.007527210749685764, 'learning_rate': 7.158054711246201e-06, 'epoch': 0.61}
+ 31%|███       | 208/678 [1:26:21<3:17:58, 25.27s/it]{"phase": "training", "elapsed_s": 5342.3, "step": 209, "planned_steps": 448}
+ 31%|███       | 209/678 [1:26:45<3:15:47, 25.05s/it] 31%|███       | 210/678 [1:27:09<3:13:36, 24.82s/it]{"phase": "training", "elapsed_s": 5390.9, "step": 211, "planned_steps": 448}
+ 31%|███       | 211/678 [1:27:34<3:12:01, 24.67s/it] 31%|███▏      | 212/678 [1:27:58<3:10:10, 24.49s/it]                                                     {'loss': 0.0003, 'grad_norm': 0.018590539693832397, 'learning_rate': 7.0972644376899704e-06, 'epoch': 0.63}
+ 31%|███▏      | 212/678 [1:27:58<3:10:10, 24.49s/it]{"phase": "training", "elapsed_s": 5439.6, "step": 213, "planned_steps": 448}
+ 31%|███▏      | 213/678 [1:28:22<3:10:13, 24.54s/it] 32%|███▏      | 214/678 [1:28:47<3:09:01, 24.44s/it]{"phase": "training", "elapsed_s": 5488.2, "step": 215, "planned_steps": 448}
+ 32%|███▏      | 215/678 [1:29:11<3:08:21, 24.41s/it] 32%|███▏      | 216/678 [1:29:35<3:07:23, 24.34s/it]                                                     {'loss': 0.0003, 'grad_norm': 0.004043071996420622, 'learning_rate': 7.036474164133738e-06, 'epoch': 0.64}
+ 32%|███▏      | 216/678 [1:29:35<3:07:23, 24.34s/it]{"phase": "training", "elapsed_s": 5536.5, "step": 217, "planned_steps": 448}
+ 32%|███▏      | 217/678 [1:29:59<3:06:40, 24.30s/it] 32%|███▏      | 218/678 [1:30:24<3:06:13, 24.29s/it]{"phase": "training", "elapsed_s": 5585.3, "step": 219, "planned_steps": 448}
+ 32%|███▏      | 219/678 [1:30:48<3:06:10, 24.34s/it] 32%|███▏      | 220/678 [1:31:12<3:05:54, 24.35s/it]                                                     {'loss': 0.0002, 'grad_norm': 0.005131416488438845, 'learning_rate': 6.9756838905775085e-06, 'epoch': 0.65}
+ 32%|███▏      | 220/678 [1:31:12<3:05:54, 24.35s/it]{"phase": "training", "elapsed_s": 5634.3, "step": 221, "planned_steps": 448}
+ 33%|███▎      | 221/678 [1:31:37<3:06:04, 24.43s/it] 33%|███▎      | 222/678 [1:32:01<3:05:37, 24.42s/it]{"phase": "training", "elapsed_s": 5683.4, "step": 223, "planned_steps": 448}
+ 33%|███▎      | 223/678 [1:32:26<3:05:54, 24.52s/it] 33%|███▎      | 224/678 [1:32:51<3:06:02, 24.59s/it]                                                     {'loss': 0.0211, 'grad_norm': 0.875126302242279, 'learning_rate': 6.914893617021278e-06, 'epoch': 0.66}
+ 33%|███▎      | 224/678 [1:32:51<3:06:02, 24.59s/it]{"phase": "training", "elapsed_s": 5732.5, "step": 225, "planned_steps": 448}
+ 33%|███▎      | 225/678 [1:33:15<3:05:00, 24.50s/it] 33%|███▎      | 226/678 [1:33:39<3:04:03, 24.43s/it]{"phase": "training", "elapsed_s": 5781.1, "step": 227, "planned_steps": 448}
+ 33%|███▎      | 227/678 [1:34:04<3:03:34, 24.42s/it] 34%|███▎      | 228/678 [1:34:28<3:02:41, 24.36s/it]                                                     {'loss': 0.0002, 'grad_norm': 0.004158826544880867, 'learning_rate': 6.854103343465046e-06, 'epoch': 0.67}
+ 34%|███▎      | 228/678 [1:34:28<3:02:41, 24.36s/it]{"phase": "training", "elapsed_s": 5830.2, "step": 229, "planned_steps": 448}
+ 34%|███▍      | 229/678 [1:34:53<3:03:20, 24.50s/it] 34%|███▍      | 230/678 [1:35:17<3:02:11, 24.40s/it]{"phase": "training", "elapsed_s": 5878.8, "step": 231, "planned_steps": 448}
+ 34%|███▍      | 231/678 [1:35:42<3:01:53, 24.42s/it] 34%|███▍      | 232/678 [1:36:06<3:01:03, 24.36s/it]                                                     {'loss': 0.0003, 'grad_norm': 0.0224938802421093, 'learning_rate': 6.793313069908816e-06, 'epoch': 0.68}
+ 34%|███▍      | 232/678 [1:36:06<3:01:03, 24.36s/it]{"phase": "training", "elapsed_s": 5927.5, "step": 233, "planned_steps": 448}
+ 34%|███▍      | 233/678 [1:36:30<3:00:51, 24.39s/it] 35%|███▍      | 234/678 [1:36:55<3:00:45, 24.43s/it]{"phase": "training", "elapsed_s": 5976.2, "step": 235, "planned_steps": 448}
+ 35%|███▍      | 235/678 [1:37:19<2:59:55, 24.37s/it] 35%|███▍      | 236/678 [1:37:43<2:59:45, 24.40s/it]                                                     {'loss': 0.0003, 'grad_norm': 0.023051049560308456, 'learning_rate': 6.732522796352584e-06, 'epoch': 0.7}
+ 35%|███▍      | 236/678 [1:37:43<2:59:45, 24.40s/it]{"phase": "training", "elapsed_s": 6024.9, "step": 237, "planned_steps": 448}
+ 35%|███▍      | 237/678 [1:38:08<2:58:57, 24.35s/it] 35%|███▌      | 238/678 [1:38:32<2:59:04, 24.42s/it]{"phase": "training", "elapsed_s": 6073.7, "step": 239, "planned_steps": 448}
+ 35%|███▌      | 239/678 [1:38:56<2:58:14, 24.36s/it] 35%|███▌      | 240/678 [1:39:21<2:57:35, 24.33s/it]                                                     {'loss': 0.0003, 'grad_norm': 0.02234633080661297, 'learning_rate': 6.671732522796353e-06, 'epoch': 0.71}
+ 35%|███▌      | 240/678 [1:39:21<2:57:35, 24.33s/it]{"phase": "training", "elapsed_s": 6122.3, "step": 241, "planned_steps": 448}
+ 36%|███▌      | 241/678 [1:39:45<2:57:08, 24.32s/it] 36%|███▌      | 242/678 [1:40:09<2:56:18, 24.26s/it]{"phase": "training", "elapsed_s": 6170.5, "step": 243, "planned_steps": 448}
+ 36%|███▌      | 243/678 [1:40:33<2:55:34, 24.22s/it] 36%|███▌      | 244/678 [1:40:57<2:55:03, 24.20s/it]                                                     {'loss': 0.0002, 'grad_norm': 0.0070691900327801704, 'learning_rate': 6.610942249240122e-06, 'epoch': 0.72}
+ 36%|███▌      | 244/678 [1:40:57<2:55:03, 24.20s/it]{"phase": "training", "elapsed_s": 6218.8, "step": 245, "planned_steps": 448}
+ 36%|███▌      | 245/678 [1:41:22<2:54:30, 24.18s/it] 36%|███▋      | 246/678 [1:41:46<2:54:46, 24.28s/it]{"phase": "training", "elapsed_s": 6267.5, "step": 247, "planned_steps": 448}
+ 36%|███▋      | 247/678 [1:42:10<2:54:10, 24.25s/it] 37%|███▋      | 248/678 [1:42:34<2:53:34, 24.22s/it]                                                     {'loss': 0.0003, 'grad_norm': 0.006446484476327896, 'learning_rate': 6.550151975683891e-06, 'epoch': 0.73}
+ 37%|███▋      | 248/678 [1:42:34<2:53:34, 24.22s/it]{"phase": "training", "elapsed_s": 6315.9, "step": 249, "planned_steps": 448}
+ 37%|███▋      | 249/678 [1:42:59<2:53:17, 24.24s/it] 37%|███▋      | 250/678 [1:43:24<2:55:37, 24.62s/it]{"phase": "training", "elapsed_s": 6365.7, "step": 251, "planned_steps": 448}
+ 37%|███▋      | 251/678 [1:43:48<2:54:27, 24.51s/it] 37%|███▋      | 252/678 [1:44:13<2:53:43, 24.47s/it]                                                     {'loss': 0.0002, 'grad_norm': 0.005270830355584621, 'learning_rate': 6.48936170212766e-06, 'epoch': 0.74}
+ 37%|███▋      | 252/678 [1:44:13<2:53:43, 24.47s/it]{"phase": "training", "elapsed_s": 6414.5, "step": 253, "planned_steps": 448}
+ 37%|███▋      | 253/678 [1:44:37<2:53:12, 24.45s/it] 37%|███▋      | 254/678 [1:45:02<2:52:37, 24.43s/it]{"phase": "training", "elapsed_s": 6463.0, "step": 255, "planned_steps": 448}
+ 38%|███▊      | 255/678 [1:45:26<2:51:39, 24.35s/it] 38%|███▊      | 256/678 [1:45:51<2:52:25, 24.51s/it]                                                     {'loss': 0.0003, 'grad_norm': 0.03322985768318176, 'learning_rate': 6.4285714285714295e-06, 'epoch': 0.76}
+ 38%|███▊      | 256/678 [1:45:51<2:52:25, 24.51s/it]{"phase": "training", "elapsed_s": 6512.0, "step": 257, "planned_steps": 448}
+ 38%|███▊      | 257/678 [1:46:15<2:51:08, 24.39s/it] 38%|███▊      | 258/678 [1:46:39<2:50:15, 24.32s/it]{"phase": "training", "elapsed_s": 6561.1, "step": 259, "planned_steps": 448}
+ 38%|███▊      | 259/678 [1:47:04<2:50:59, 24.49s/it] 38%|███▊      | 260/678 [1:47:28<2:50:26, 24.47s/it]                                                     {'loss': 0.0007, 'grad_norm': 0.2201981097459793, 'learning_rate': 6.367781155015198e-06, 'epoch': 0.77}
+ 38%|███▊      | 260/678 [1:47:28<2:50:26, 24.47s/it]{"phase": "training", "elapsed_s": 6609.7, "step": 261, "planned_steps": 448}
+ 38%|███▊      | 261/678 [1:47:52<2:49:30, 24.39s/it] 39%|███▊      | 262/678 [1:48:17<2:48:57, 24.37s/it]{"phase": "training", "elapsed_s": 6658.1, "step": 263, "planned_steps": 448}
+ 39%|███▉      | 263/678 [1:48:41<2:48:05, 24.30s/it] 39%|███▉      | 264/678 [1:49:05<2:48:00, 24.35s/it]                                                     {'loss': 0.0002, 'grad_norm': 0.00978451780974865, 'learning_rate': 6.3069908814589675e-06, 'epoch': 0.78}
+ 39%|███▉      | 264/678 [1:49:05<2:48:00, 24.35s/it]{"phase": "training", "elapsed_s": 6707.1, "step": 265, "planned_steps": 448}
+ 39%|███▉      | 265/678 [1:49:30<2:47:56, 24.40s/it] 39%|███▉      | 266/678 [1:49:54<2:47:03, 24.33s/it]{"phase": "training", "elapsed_s": 6755.3, "step": 267, "planned_steps": 448}
+ 39%|███▉      | 267/678 [1:50:18<2:46:03, 24.24s/it] 40%|███▉      | 268/678 [1:50:42<2:45:27, 24.21s/it]                                                     {'loss': 0.0002, 'grad_norm': 0.006221748888492584, 'learning_rate': 6.246200607902736e-06, 'epoch': 0.79}
+ 40%|███▉      | 268/678 [1:50:42<2:45:27, 24.21s/it]{"phase": "training", "elapsed_s": 6803.6, "step": 269, "planned_steps": 448}
+ 40%|███▉      | 269/678 [1:51:06<2:44:50, 24.18s/it] 40%|███▉      | 270/678 [1:51:31<2:44:30, 24.19s/it]{"phase": "training", "elapsed_s": 6853.2, "step": 271, "planned_steps": 448}
+ 40%|███▉      | 271/678 [1:51:56<2:46:29, 24.55s/it] 40%|████      | 272/678 [1:52:20<2:45:32, 24.47s/it]                                                     {'loss': 0.0003, 'grad_norm': 0.006115842144936323, 'learning_rate': 6.185410334346506e-06, 'epoch': 0.8}
+ 40%|████      | 272/678 [1:52:20<2:45:32, 24.47s/it]{"phase": "training", "elapsed_s": 6901.7, "step": 273, "planned_steps": 448}
+ 40%|████      | 273/678 [1:52:44<2:44:46, 24.41s/it] 40%|████      | 274/678 [1:53:09<2:44:34, 24.44s/it]{"phase": "training", "elapsed_s": 6950.8, "step": 275, "planned_steps": 448}
+ 41%|████      | 275/678 [1:53:34<2:44:24, 24.48s/it] 41%|████      | 276/678 [1:53:58<2:43:45, 24.44s/it]                                                     {'loss': 0.0002, 'grad_norm': 0.007117008790373802, 'learning_rate': 6.124620060790274e-06, 'epoch': 0.81}
+ 41%|████      | 276/678 [1:53:58<2:43:45, 24.44s/it]{"phase": "training", "elapsed_s": 6999.7, "step": 277, "planned_steps": 448}
+ 41%|████      | 277/678 [1:54:22<2:43:33, 24.47s/it] 41%|████      | 278/678 [1:54:47<2:43:07, 24.47s/it]{"phase": "training", "elapsed_s": 7048.6, "step": 279, "planned_steps": 448}
+ 41%|████      | 279/678 [1:55:11<2:42:34, 24.45s/it] 41%|████▏     | 280/678 [1:55:36<2:41:54, 24.41s/it]                                                     {'loss': 0.0002, 'grad_norm': 0.008126497268676758, 'learning_rate': 6.063829787234044e-06, 'epoch': 0.83}
+ 41%|████▏     | 280/678 [1:55:36<2:41:54, 24.41s/it]{"phase": "training", "elapsed_s": 7097.6, "step": 281, "planned_steps": 448}
+ 41%|████▏     | 281/678 [1:56:00<2:42:03, 24.49s/it] 42%|████▏     | 282/678 [1:56:25<2:41:13, 24.43s/it]{"phase": "training", "elapsed_s": 7146.1, "step": 283, "planned_steps": 448}
+ 42%|████▏     | 283/678 [1:56:49<2:40:27, 24.37s/it] 42%|████▏     | 284/678 [1:57:13<2:40:23, 24.43s/it]                                                     {'loss': 0.0003, 'grad_norm': 0.00565597228705883, 'learning_rate': 6.003039513677812e-06, 'epoch': 0.84}
+ 42%|████▏     | 284/678 [1:57:13<2:40:23, 24.43s/it]{"phase": "training", "elapsed_s": 7195.2, "step": 285, "planned_steps": 448}
+ 42%|████▏     | 285/678 [1:57:38<2:40:11, 24.46s/it] 42%|████▏     | 286/678 [1:58:02<2:39:19, 24.39s/it]{"phase": "training", "elapsed_s": 7243.9, "step": 287, "planned_steps": 448}
+ 42%|████▏     | 287/678 [1:58:27<2:39:13, 24.43s/it] 42%|████▏     | 288/678 [1:58:51<2:38:56, 24.45s/it]                                                     {'loss': 0.0002, 'grad_norm': 0.0060347761027514935, 'learning_rate': 5.942249240121582e-06, 'epoch': 0.85}
+ 42%|████▏     | 288/678 [1:58:51<2:38:56, 24.45s/it]{"phase": "training", "elapsed_s": 7292.7, "step": 289, "planned_steps": 448}
+ 43%|████▎     | 289/678 [1:59:16<2:38:16, 24.41s/it] 43%|████▎     | 290/678 [1:59:40<2:38:06, 24.45s/it]{"phase": "training", "elapsed_s": 7341.8, "step": 291, "planned_steps": 448}
+ 43%|████▎     | 291/678 [2:00:05<2:37:50, 24.47s/it] 43%|████▎     | 292/678 [2:00:29<2:37:19, 24.45s/it]                                                     {'loss': 0.0002, 'grad_norm': 0.008677062578499317, 'learning_rate': 5.8814589665653495e-06, 'epoch': 0.86}
+ 43%|████▎     | 292/678 [2:00:29<2:37:19, 24.45s/it]{"phase": "training", "elapsed_s": 7390.8, "step": 293, "planned_steps": 448}
+ 43%|████▎     | 293/678 [2:00:54<2:37:11, 24.50s/it] 43%|████▎     | 294/678 [2:01:18<2:37:24, 24.60s/it]{"phase": "training", "elapsed_s": 7440.0, "step": 295, "planned_steps": 448}
+ 44%|████▎     | 295/678 [2:01:43<2:36:33, 24.53s/it] 44%|████▎     | 296/678 [2:02:07<2:35:41, 24.45s/it]                                                     {'loss': 0.0002, 'grad_norm': 0.004962886683642864, 'learning_rate': 5.820668693009119e-06, 'epoch': 0.87}
+ 44%|████▎     | 296/678 [2:02:07<2:35:41, 24.45s/it]{"phase": "training", "elapsed_s": 7489.0, "step": 297, "planned_steps": 448}
+ 44%|████▍     | 297/678 [2:02:32<2:35:48, 24.54s/it] 44%|████▍     | 298/678 [2:02:56<2:34:56, 24.46s/it]{"phase": "training", "elapsed_s": 7537.6, "step": 299, "planned_steps": 448}
+ 44%|████▍     | 299/678 [2:03:20<2:34:07, 24.40s/it]{"phase": "canary_step_300", "elapsed_s": 7574.6, "completed": 1, "total": 4}
+{"phase": "canary_step_300", "elapsed_s": 7585.5, "completed": 2, "total": 4}
+{"phase": "canary_step_300", "elapsed_s": 7597.1, "completed": 3, "total": 4}
+{"phase": "canary_step_300", "elapsed_s": 7608.6, "completed": 4, "total": 4}
+ 44%|████▍     | 300/678 [2:04:36<4:11:04, 39.85s/it]                                                     {'loss': 0.0002, 'grad_norm': 0.003416898660361767, 'learning_rate': 5.759878419452888e-06, 'epoch': 0.88}
+ 44%|████▍     | 300/678 [2:04:36<4:11:04, 39.85s/it]{"phase": "training", "elapsed_s": 7639.8, "step": 301, "planned_steps": 448}
+ 44%|████▍     | 301/678 [2:05:03<3:44:54, 35.79s/it] 45%|████▍     | 302/678 [2:05:27<3:23:07, 32.41s/it]{"phase": "training", "elapsed_s": 7687.7, "step": 303, "planned_steps": 448}
+ 45%|████▍     | 303/678 [2:05:51<3:05:41, 29.71s/it] 45%|████▍     | 304/678 [2:06:15<2:55:03, 28.08s/it]                                                     {'loss': 0.0233, 'grad_norm': 0.004192618653178215, 'learning_rate': 5.699088145896657e-06, 'epoch': 0.9}
+ 45%|████▍     | 304/678 [2:06:15<2:55:03, 28.08s/it]{"phase": "training", "elapsed_s": 7736.6, "step": 305, "planned_steps": 448}
+ 45%|████▍     | 305/678 [2:06:39<2:48:08, 27.05s/it] 45%|████▌     | 306/678 [2:07:03<2:42:10, 26.16s/it]{"phase": "training", "elapsed_s": 7784.6, "step": 307, "planned_steps": 448}
+ 45%|████▌     | 307/678 [2:07:27<2:37:34, 25.48s/it] 45%|████▌     | 308/678 [2:07:52<2:34:41, 25.09s/it]                                                     {'loss': 0.0002, 'grad_norm': 0.005175322759896517, 'learning_rate': 5.638297872340426e-06, 'epoch': 0.91}
+ 45%|████▌     | 308/678 [2:07:52<2:34:41, 25.09s/it]{"phase": "training", "elapsed_s": 7833.2, "step": 309, "planned_steps": 448}
+ 46%|████▌     | 309/678 [2:08:16<2:33:05, 24.89s/it] 46%|████▌     | 310/678 [2:08:41<2:32:28, 24.86s/it]{"phase": "training", "elapsed_s": 7882.8, "step": 311, "planned_steps": 448}
+ 46%|████▌     | 311/678 [2:09:06<2:31:49, 24.82s/it] 46%|████▌     | 312/678 [2:09:30<2:30:47, 24.72s/it]                                                     {'loss': 0.002, 'grad_norm': 1.2919197082519531, 'learning_rate': 5.577507598784195e-06, 'epoch': 0.92}
+ 46%|████▌     | 312/678 [2:09:30<2:30:47, 24.72s/it]{"phase": "training", "elapsed_s": 7931.4, "step": 313, "planned_steps": 448}
+ 46%|████▌     | 313/678 [2:09:54<2:29:18, 24.54s/it] 46%|████▋     | 314/678 [2:10:18<2:28:10, 24.43s/it]{"phase": "training", "elapsed_s": 7979.6, "step": 315, "planned_steps": 448}
+ 46%|████▋     | 315/678 [2:10:42<2:27:12, 24.33s/it] 47%|████▋     | 316/678 [2:11:06<2:26:18, 24.25s/it]                                                     {'loss': 0.0002, 'grad_norm': 0.0035237681586295366, 'learning_rate': 5.516717325227964e-06, 'epoch': 0.93}
+ 47%|████▋     | 316/678 [2:11:06<2:26:18, 24.25s/it]{"phase": "training", "elapsed_s": 8027.7, "step": 317, "planned_steps": 448}
+ 47%|████▋     | 317/678 [2:11:31<2:25:31, 24.19s/it] 47%|████▋     | 318/678 [2:11:55<2:25:39, 24.28s/it]{"phase": "training", "elapsed_s": 8076.9, "step": 319, "planned_steps": 448}
+ 47%|████▋     | 319/678 [2:12:20<2:26:01, 24.41s/it] 47%|████▋     | 320/678 [2:12:44<2:25:22, 24.37s/it]                                                     {'loss': 0.0004, 'grad_norm': 0.004800683818757534, 'learning_rate': 5.455927051671733e-06, 'epoch': 0.94}
+ 47%|████▋     | 320/678 [2:12:44<2:25:22, 24.37s/it]{"phase": "training", "elapsed_s": 8125.5, "step": 321, "planned_steps": 448}
+ 47%|████▋     | 321/678 [2:13:08<2:24:49, 24.34s/it] 47%|████▋     | 322/678 [2:13:33<2:24:53, 24.42s/it]{"phase": "training", "elapsed_s": 8174.5, "step": 323, "planned_steps": 448}
+ 48%|████▊     | 323/678 [2:13:57<2:24:27, 24.41s/it] 48%|████▊     | 324/678 [2:14:22<2:23:56, 24.40s/it]                                                     {'loss': 0.0002, 'grad_norm': 0.013226257637143135, 'learning_rate': 5.395136778115502e-06, 'epoch': 0.96}
+ 48%|████▊     | 324/678 [2:14:22<2:23:56, 24.40s/it]{"phase": "training", "elapsed_s": 8223.5, "step": 325, "planned_steps": 448}
+ 48%|████▊     | 325/678 [2:14:46<2:23:57, 24.47s/it] 48%|████▊     | 326/678 [2:15:11<2:23:27, 24.45s/it]{"phase": "training", "elapsed_s": 8273.6, "step": 327, "planned_steps": 448}
+ 48%|████▊     | 327/678 [2:15:36<2:25:14, 24.83s/it] 48%|████▊     | 328/678 [2:16:01<2:24:47, 24.82s/it]                                                     {'loss': 0.0025, 'grad_norm': 0.005232220981270075, 'learning_rate': 5.334346504559271e-06, 'epoch': 0.97}
+ 48%|████▊     | 328/678 [2:16:01<2:24:47, 24.82s/it]{"phase": "training", "elapsed_s": 8323.4, "step": 329, "planned_steps": 448}
+ 49%|████▊     | 329/678 [2:16:26<2:24:39, 24.87s/it] 49%|████▊     | 330/678 [2:16:51<2:23:45, 24.79s/it]{"phase": "training", "elapsed_s": 8372.5, "step": 331, "planned_steps": 448}
+ 49%|████▉     | 331/678 [2:17:15<2:22:52, 24.71s/it] 49%|████▉     | 332/678 [2:17:39<2:21:34, 24.55s/it]                                                     {'loss': 0.0003, 'grad_norm': 0.0040999059565365314, 'learning_rate': 5.27355623100304e-06, 'epoch': 0.98}
+ 49%|████▉     | 332/678 [2:17:39<2:21:34, 24.55s/it]{"phase": "training", "elapsed_s": 8421.3, "step": 333, "planned_steps": 448}
+ 49%|████▉     | 333/678 [2:18:04<2:21:17, 24.57s/it] 49%|████▉     | 334/678 [2:18:29<2:20:37, 24.53s/it]{"phase": "training", "elapsed_s": 8469.9, "step": 335, "planned_steps": 448}
+ 49%|████▉     | 335/678 [2:18:53<2:19:32, 24.41s/it] 50%|████▉     | 336/678 [2:19:17<2:19:14, 24.43s/it]                                                     {'loss': 0.0009, 'grad_norm': 0.013898053206503391, 'learning_rate': 5.212765957446809e-06, 'epoch': 0.99}
+ 50%|████▉     | 336/678 [2:19:17<2:19:14, 24.43s/it]{"phase": "training", "elapsed_s": 8518.7, "step": 337, "planned_steps": 448}
+ 50%|████▉     | 337/678 [2:19:41<2:18:41, 24.40s/it] 50%|████▉     | 338/678 [2:20:06<2:17:45, 24.31s/it]{"phase": "training", "elapsed_s": 8567.1, "step": 339, "planned_steps": 448}
+ 50%|█████     | 339/678 [2:20:30<2:17:20, 24.31s/it] 50%|█████     | 340/678 [2:20:54<2:16:34, 24.24s/it]                                                     {'loss': 0.0002, 'grad_norm': 0.0067926920019090176, 'learning_rate': 5.151975683890578e-06, 'epoch': 1.0}
+ 50%|█████     | 340/678 [2:20:54<2:16:34, 24.24s/it]{"phase": "training", "elapsed_s": 8615.6, "step": 341, "planned_steps": 448}
+ 50%|█████     | 341/678 [2:21:18<2:16:32, 24.31s/it] 50%|█████     | 342/678 [2:21:43<2:15:47, 24.25s/it]{"phase": "training", "elapsed_s": 8663.8, "step": 343, "planned_steps": 448}
+ 51%|█████     | 343/678 [2:22:07<2:15:07, 24.20s/it] 51%|█████     | 344/678 [2:22:31<2:14:27, 24.15s/it]                                                     {'loss': 0.0002, 'grad_norm': 0.0033179372549057007, 'learning_rate': 5.0911854103343475e-06, 'epoch': 1.01}
+ 51%|█████     | 344/678 [2:22:31<2:14:27, 24.15s/it]{"phase": "training", "elapsed_s": 8712.0, "step": 345, "planned_steps": 448}
+ 51%|█████     | 345/678 [2:22:55<2:14:02, 24.15s/it] 51%|█████     | 346/678 [2:23:20<2:14:34, 24.32s/it]{"phase": "training", "elapsed_s": 8761.0, "step": 347, "planned_steps": 448}
+ 51%|█████     | 347/678 [2:23:44<2:14:07, 24.31s/it] 51%|█████▏    | 348/678 [2:24:08<2:13:22, 24.25s/it]                                                     {'loss': 0.0002, 'grad_norm': 0.0035695882979780436, 'learning_rate': 5.030395136778115e-06, 'epoch': 1.03}
+ 51%|█████▏    | 348/678 [2:24:08<2:13:22, 24.25s/it]{"phase": "training", "elapsed_s": 8809.4, "step": 349, "planned_steps": 448}
+ 51%|█████▏    | 349/678 [2:24:32<2:12:58, 24.25s/it] 52%|█████▏    | 350/678 [2:24:58<2:14:53, 24.68s/it]{"phase": "training", "elapsed_s": 8859.2, "step": 351, "planned_steps": 448}
+ 52%|█████▏    | 351/678 [2:25:22<2:13:32, 24.50s/it] 52%|█████▏    | 352/678 [2:25:46<2:12:49, 24.45s/it]                                                     {'loss': 0.0002, 'grad_norm': 0.003563969163224101, 'learning_rate': 4.9696048632218856e-06, 'epoch': 1.04}
+ 52%|█████▏    | 352/678 [2:25:46<2:12:49, 24.45s/it]{"phase": "training", "elapsed_s": 8907.8, "step": 353, "planned_steps": 448}
+ 52%|█████▏    | 353/678 [2:26:11<2:12:12, 24.41s/it] 52%|█████▏    | 354/678 [2:26:35<2:11:51, 24.42s/it]{"phase": "training", "elapsed_s": 8956.7, "step": 355, "planned_steps": 448}
+ 52%|█████▏    | 355/678 [2:26:59<2:11:28, 24.42s/it] 53%|█████▎    | 356/678 [2:27:24<2:10:52, 24.39s/it]                                                     {'loss': 0.0001, 'grad_norm': 0.002961057238280773, 'learning_rate': 4.908814589665654e-06, 'epoch': 1.05}
+ 53%|█████▎    | 356/678 [2:27:24<2:10:52, 24.39s/it]{"phase": "training", "elapsed_s": 9005.2, "step": 357, "planned_steps": 448}
+ 53%|█████▎    | 357/678 [2:27:48<2:10:16, 24.35s/it] 53%|█████▎    | 358/678 [2:28:12<2:09:39, 24.31s/it]{"phase": "training", "elapsed_s": 9053.7, "step": 359, "planned_steps": 448}
+ 53%|█████▎    | 359/678 [2:28:36<2:09:12, 24.30s/it] 53%|█████▎    | 360/678 [2:29:01<2:08:57, 24.33s/it]                                                     {'loss': 0.0002, 'grad_norm': 0.0039787692949175835, 'learning_rate': 4.848024316109423e-06, 'epoch': 1.06}
+ 53%|█████▎    | 360/678 [2:29:01<2:08:57, 24.33s/it]{"phase": "training", "elapsed_s": 9102.4, "step": 361, "planned_steps": 448}
+ 53%|█████▎    | 361/678 [2:29:25<2:08:29, 24.32s/it] 53%|█████▎    | 362/678 [2:29:50<2:08:29, 24.40s/it]{"phase": "training", "elapsed_s": 9151.4, "step": 363, "planned_steps": 448}
+ 54%|█████▎    | 363/678 [2:30:14<2:08:03, 24.39s/it] 54%|█████▎    | 364/678 [2:30:39<2:07:40, 24.40s/it]                                                     {'loss': 0.0003, 'grad_norm': 0.003668655874207616, 'learning_rate': 4.787234042553192e-06, 'epoch': 1.07}
+ 54%|█████▎    | 364/678 [2:30:39<2:07:40, 24.40s/it]{"phase": "training", "elapsed_s": 9199.8, "step": 365, "planned_steps": 448}
+ 54%|█████▍    | 365/678 [2:31:03<2:06:42, 24.29s/it] 54%|█████▍    | 366/678 [2:31:27<2:05:59, 24.23s/it]{"phase": "training", "elapsed_s": 9248.2, "step": 367, "planned_steps": 448}
+ 54%|█████▍    | 367/678 [2:31:51<2:05:38, 24.24s/it] 54%|█████▍    | 368/678 [2:32:16<2:06:27, 24.48s/it]                                                     {'loss': 0.0002, 'grad_norm': 0.00808908510953188, 'learning_rate': 4.726443768996961e-06, 'epoch': 1.09}
+ 54%|█████▍    | 368/678 [2:32:16<2:06:27, 24.48s/it]{"phase": "training", "elapsed_s": 9297.7, "step": 369, "planned_steps": 448}
+ 54%|█████▍    | 369/678 [2:32:40<2:06:02, 24.47s/it] 55%|█████▍    | 370/678 [2:33:05<2:05:34, 24.46s/it]{"phase": "training", "elapsed_s": 9346.4, "step": 371, "planned_steps": 448}
+ 55%|█████▍    | 371/678 [2:33:29<2:04:50, 24.40s/it] 55%|█████▍    | 372/678 [2:33:53<2:04:19, 24.38s/it]                                                     {'loss': 0.0002, 'grad_norm': 0.004165943246334791, 'learning_rate': 4.66565349544073e-06, 'epoch': 1.1}
+ 55%|█████▍    | 372/678 [2:33:53<2:04:19, 24.38s/it]{"phase": "training", "elapsed_s": 9394.9, "step": 373, "planned_steps": 448}
+ 55%|█████▌    | 373/678 [2:34:18<2:03:44, 24.34s/it] 55%|█████▌    | 374/678 [2:34:42<2:03:27, 24.37s/it]{"phase": "training", "elapsed_s": 9443.7, "step": 375, "planned_steps": 448}
+ 55%|█████▌    | 375/678 [2:35:06<2:02:59, 24.36s/it] 55%|█████▌    | 376/678 [2:35:31<2:02:38, 24.36s/it]                                                     {'loss': 0.0002, 'grad_norm': 0.0035862906370311975, 'learning_rate': 4.604863221884499e-06, 'epoch': 1.11}
+ 55%|█████▌    | 376/678 [2:35:31<2:02:38, 24.36s/it]{"phase": "training", "elapsed_s": 9492.9, "step": 377, "planned_steps": 448}
+ 56%|█████▌    | 377/678 [2:35:56<2:02:58, 24.51s/it] 56%|█████▌    | 378/678 [2:36:21<2:03:01, 24.60s/it]{"phase": "training", "elapsed_s": 9542.3, "step": 379, "planned_steps": 448}
+ 56%|█████▌    | 379/678 [2:36:45<2:02:31, 24.59s/it] 56%|█████▌    | 380/678 [2:37:09<2:01:51, 24.54s/it]                                                     {'loss': 0.0008, 'grad_norm': 0.003761101048439741, 'learning_rate': 4.544072948328268e-06, 'epoch': 1.12}
+ 56%|█████▌    | 380/678 [2:37:09<2:01:51, 24.54s/it]{"phase": "training", "elapsed_s": 9591.1, "step": 381, "planned_steps": 448}
+ 56%|█████▌    | 381/678 [2:37:34<2:01:15, 24.50s/it] 56%|█████▋    | 382/678 [2:37:58<2:00:40, 24.46s/it]{"phase": "training", "elapsed_s": 9639.8, "step": 383, "planned_steps": 448}
+ 56%|█████▋    | 383/678 [2:38:23<2:00:04, 24.42s/it] 57%|█████▋    | 384/678 [2:38:47<1:59:36, 24.41s/it]                                                     {'loss': 0.0002, 'grad_norm': 0.009684570133686066, 'learning_rate': 4.483282674772037e-06, 'epoch': 1.13}
+ 57%|█████▋    | 384/678 [2:38:47<1:59:36, 24.41s/it]{"phase": "training", "elapsed_s": 9688.6, "step": 385, "planned_steps": 448}
+ 57%|█████▋    | 385/678 [2:39:11<1:59:06, 24.39s/it] 57%|█████▋    | 386/678 [2:39:36<1:58:46, 24.40s/it]{"phase": "training", "elapsed_s": 9737.5, "step": 387, "planned_steps": 448}
+ 57%|█████▋    | 387/678 [2:40:00<1:58:31, 24.44s/it] 57%|█████▋    | 388/678 [2:40:24<1:57:44, 24.36s/it]                                                     {'loss': 0.0002, 'grad_norm': 0.024627678096294403, 'learning_rate': 4.422492401215806e-06, 'epoch': 1.14}
+ 57%|█████▋    | 388/678 [2:40:24<1:57:44, 24.36s/it]{"phase": "training", "elapsed_s": 9786.1, "step": 389, "planned_steps": 448}
+ 57%|█████▋    | 389/678 [2:40:49<1:57:23, 24.37s/it] 58%|█████▊    | 390/678 [2:41:13<1:56:41, 24.31s/it]{"phase": "training", "elapsed_s": 9834.4, "step": 391, "planned_steps": 448}
+ 58%|█████▊    | 391/678 [2:41:37<1:56:05, 24.27s/it] 58%|█████▊    | 392/678 [2:42:01<1:55:25, 24.22s/it]                                                     {'loss': 0.0002, 'grad_norm': 0.003406265052035451, 'learning_rate': 4.361702127659575e-06, 'epoch': 1.16}
+ 58%|█████▊    | 392/678 [2:42:01<1:55:25, 24.22s/it]{"phase": "training", "elapsed_s": 9882.9, "step": 393, "planned_steps": 448}
+ 58%|█████▊    | 393/678 [2:42:26<1:55:10, 24.25s/it] 58%|█████▊    | 394/678 [2:42:50<1:54:55, 24.28s/it]{"phase": "training", "elapsed_s": 9931.3, "step": 395, "planned_steps": 448}
+ 58%|█████▊    | 395/678 [2:43:14<1:54:17, 24.23s/it] 58%|█████▊    | 396/678 [2:43:38<1:53:41, 24.19s/it]                                                     {'loss': 0.0002, 'grad_norm': 0.00412544421851635, 'learning_rate': 4.300911854103344e-06, 'epoch': 1.17}
+ 58%|█████▊    | 396/678 [2:43:38<1:53:41, 24.19s/it]{"phase": "training", "elapsed_s": 9979.5, "step": 397, "planned_steps": 448}
+ 59%|█████▊    | 397/678 [2:44:02<1:53:04, 24.15s/it] 59%|█████▊    | 398/678 [2:44:26<1:52:30, 24.11s/it]{"phase": "training", "elapsed_s": 10027.8, "step": 399, "planned_steps": 448}
+ 59%|█████▉    | 399/678 [2:44:51<1:52:21, 24.16s/it]{"phase": "canary_step_400", "elapsed_s": 10064.5, "completed": 1, "total": 4}
+{"phase": "canary_step_400", "elapsed_s": 10075.4, "completed": 2, "total": 4}
+{"phase": "canary_step_400", "elapsed_s": 10087.0, "completed": 3, "total": 4}
+{"phase": "canary_step_400", "elapsed_s": 10098.5, "completed": 4, "total": 4}
+ 59%|█████▉    | 400/678 [2:46:06<3:03:34, 39.62s/it]                                                     {'loss': 0.0002, 'grad_norm': 0.003100272035226226, 'learning_rate': 4.240121580547113e-06, 'epoch': 1.18}
+ 59%|█████▉    | 400/678 [2:46:06<3:03:34, 39.62s/it]{"phase": "training", "elapsed_s": 10129.9, "step": 401, "planned_steps": 448}
+ 59%|█████▉    | 401/678 [2:46:33<2:44:41, 35.67s/it] 59%|█████▉    | 402/678 [2:46:57<2:28:10, 32.21s/it]{"phase": "training", "elapsed_s": 10177.7, "step": 403, "planned_steps": 448}
+ 59%|█████▉    | 403/678 [2:47:20<2:15:52, 29.64s/it] 60%|█████▉    | 404/678 [2:47:45<2:08:05, 28.05s/it]                                                     {'loss': 0.0002, 'grad_norm': 0.0029668211936950684, 'learning_rate': 4.179331306990882e-06, 'epoch': 1.19}
+ 60%|█████▉    | 404/678 [2:47:45<2:08:05, 28.05s/it]{"phase": "training", "elapsed_s": 10226.7, "step": 405, "planned_steps": 448}
+ 60%|█████▉    | 405/678 [2:48:09<2:02:58, 27.03s/it] 60%|█████▉    | 406/678 [2:48:34<1:58:56, 26.24s/it]{"phase": "training", "elapsed_s": 10275.8, "step": 407, "planned_steps": 448}
+ 60%|██████    | 407/678 [2:48:59<1:56:30, 25.79s/it] 60%|██████    | 408/678 [2:49:23<1:53:43, 25.27s/it]                                                     {'loss': 0.0002, 'grad_norm': 0.0027220977935940027, 'learning_rate': 4.118541033434651e-06, 'epoch': 1.2}
+ 60%|██████    | 408/678 [2:49:23<1:53:43, 25.27s/it]{"phase": "training", "elapsed_s": 10324.1, "step": 409, "planned_steps": 448}
+ 60%|██████    | 409/678 [2:49:47<1:51:50, 24.95s/it] 60%|██████    | 410/678 [2:50:11<1:50:43, 24.79s/it]{"phase": "training", "elapsed_s": 10372.8, "step": 411, "planned_steps": 448}
+ 61%|██████    | 411/678 [2:50:36<1:49:37, 24.64s/it] 61%|██████    | 412/678 [2:51:00<1:48:30, 24.48s/it]                                                     {'loss': 0.0002, 'grad_norm': 0.0028655712958425283, 'learning_rate': 4.05775075987842e-06, 'epoch': 1.22}
+ 61%|██████    | 412/678 [2:51:00<1:48:30, 24.48s/it]{"phase": "training", "elapsed_s": 10421.6, "step": 413, "planned_steps": 448}
+ 61%|██████    | 413/678 [2:51:24<1:48:25, 24.55s/it] 61%|██████    | 414/678 [2:51:49<1:47:57, 24.54s/it]{"phase": "training", "elapsed_s": 10470.4, "step": 415, "planned_steps": 448}
+ 61%|██████    | 415/678 [2:52:13<1:47:15, 24.47s/it] 61%|██████▏   | 416/678 [2:52:37<1:46:18, 24.35s/it]                                                     {'loss': 0.0006, 'grad_norm': 0.003360148286446929, 'learning_rate': 3.9969604863221885e-06, 'epoch': 1.23}
+ 61%|██████▏   | 416/678 [2:52:37<1:46:18, 24.35s/it]{"phase": "training", "elapsed_s": 10518.5, "step": 417, "planned_steps": 448}
+ 62%|██████▏   | 417/678 [2:53:01<1:45:27, 24.24s/it] 62%|██████▏   | 418/678 [2:53:25<1:45:02, 24.24s/it]{"phase": "training", "elapsed_s": 10567.0, "step": 419, "planned_steps": 448}
+ 62%|██████▏   | 419/678 [2:53:50<1:44:39, 24.25s/it] 62%|██████▏   | 420/678 [2:54:14<1:44:22, 24.27s/it]                                                     {'loss': 0.0003, 'grad_norm': 0.004405609332025051, 'learning_rate': 3.936170212765958e-06, 'epoch': 1.24}
+ 62%|██████▏   | 420/678 [2:54:14<1:44:22, 24.27s/it]{"phase": "training", "elapsed_s": 10615.7, "step": 421, "planned_steps": 448}
+ 62%|██████▏   | 421/678 [2:54:38<1:44:07, 24.31s/it] 62%|██████▏   | 422/678 [2:55:03<1:43:35, 24.28s/it]{"phase": "training", "elapsed_s": 10664.2, "step": 423, "planned_steps": 448}
+ 62%|██████▏   | 423/678 [2:55:27<1:43:14, 24.29s/it] 63%|██████▎   | 424/678 [2:55:51<1:42:45, 24.27s/it]                                                     {'loss': 0.0002, 'grad_norm': 0.004664742853492498, 'learning_rate': 3.875379939209727e-06, 'epoch': 1.25}
+ 63%|██████▎   | 424/678 [2:55:51<1:42:45, 24.27s/it]{"phase": "training", "elapsed_s": 10712.8, "step": 425, "planned_steps": 448}
+ 63%|██████▎   | 425/678 [2:56:16<1:42:23, 24.28s/it] 63%|██████▎   | 426/678 [2:56:40<1:41:57, 24.27s/it]{"phase": "training", "elapsed_s": 10761.3, "step": 427, "planned_steps": 448}
+ 63%|██████▎   | 427/678 [2:57:04<1:41:35, 24.29s/it] 63%|██████▎   | 428/678 [2:57:28<1:41:07, 24.27s/it]                                                     {'loss': 0.0001, 'grad_norm': 0.00267951306886971, 'learning_rate': 3.814589665653496e-06, 'epoch': 1.26}
+ 63%|██████▎   | 428/678 [2:57:28<1:41:07, 24.27s/it]{"phase": "training", "elapsed_s": 10810.1, "step": 429, "planned_steps": 448}
+ 63%|██████▎   | 429/678 [2:57:53<1:40:59, 24.33s/it] 63%|██████▎   | 430/678 [2:58:17<1:40:37, 24.35s/it]{"phase": "training", "elapsed_s": 10859.0, "step": 431, "planned_steps": 448}
+ 64%|██████▎   | 431/678 [2:58:42<1:40:32, 24.42s/it] 64%|██████▎   | 432/678 [2:59:06<1:40:13, 24.44s/it]                                                     {'loss': 0.0002, 'grad_norm': 0.013515772297978401, 'learning_rate': 3.7537993920972647e-06, 'epoch': 1.27}
+ 64%|██████▎   | 432/678 [2:59:06<1:40:13, 24.44s/it]{"phase": "training", "elapsed_s": 10908.6, "step": 433, "planned_steps": 448}
+ 64%|██████▍   | 433/678 [2:59:31<1:40:38, 24.65s/it] 64%|██████▍   | 434/678 [2:59:56<1:39:47, 24.54s/it]{"phase": "training", "elapsed_s": 10956.7, "step": 435, "planned_steps": 448}
+ 64%|██████▍   | 435/678 [3:00:19<1:38:25, 24.30s/it] 64%|██████▍   | 436/678 [3:00:44<1:37:57, 24.29s/it]                                                     {'loss': 0.0002, 'grad_norm': 0.0031271702609956264, 'learning_rate': 3.6930091185410337e-06, 'epoch': 1.29}
+ 64%|██████▍   | 436/678 [3:00:44<1:37:57, 24.29s/it]{"phase": "training", "elapsed_s": 11005.6, "step": 437, "planned_steps": 448}
+ 64%|██████▍   | 437/678 [3:01:08<1:38:01, 24.41s/it] 65%|██████▍   | 438/678 [3:01:32<1:37:07, 24.28s/it]{"phase": "training", "elapsed_s": 11054.1, "step": 439, "planned_steps": 448}
+ 65%|██████▍   | 439/678 [3:01:57<1:36:56, 24.34s/it] 65%|██████▍   | 440/678 [3:02:21<1:36:34, 24.35s/it]                                                     {'loss': 0.0002, 'grad_norm': 0.003454652614891529, 'learning_rate': 3.6322188449848027e-06, 'epoch': 1.3}
+ 65%|██████▍   | 440/678 [3:02:21<1:36:34, 24.35s/it]{"phase": "training", "elapsed_s": 11103.2, "step": 441, "planned_steps": 448}
+ 65%|██████▌   | 441/678 [3:02:46<1:36:41, 24.48s/it] 65%|██████▌   | 442/678 [3:03:11<1:36:32, 24.54s/it]{"phase": "training", "elapsed_s": 11152.0, "step": 443, "planned_steps": 448}
+ 65%|██████▌   | 443/678 [3:03:35<1:35:37, 24.41s/it] 65%|██████▌   | 444/678 [3:03:59<1:35:08, 24.39s/it]                                                     {'loss': 0.0002, 'grad_norm': 0.005195504054427147, 'learning_rate': 3.5714285714285718e-06, 'epoch': 1.31}
+ 65%|██████▌   | 444/678 [3:03:59<1:35:08, 24.39s/it]{"phase": "training", "elapsed_s": 11200.5, "step": 445, "planned_steps": 448}
+ 66%|██████▌   | 445/678 [3:04:23<1:34:22, 24.30s/it] 66%|██████▌   | 446/678 [3:04:47<1:33:53, 24.28s/it]{"phase": "training", "elapsed_s": 11249.0, "step": 447, "planned_steps": 448}
+ 66%|██████▌   | 447/678 [3:05:12<1:33:27, 24.28s/it] 66%|██████▌   | 448/678 [3:05:36<1:33:12, 24.32s/it]                                                     {'loss': 0.0048, 'grad_norm': 0.009384035132825375, 'learning_rate': 3.510638297872341e-06, 'epoch': 1.32}
+ 66%|██████▌   | 448/678 [3:05:36<1:33:12, 24.32s/it]                                                     {'train_runtime': 11136.6504, 'train_samples_per_second': 0.487, 'train_steps_per_second': 0.061, 'train_loss': 0.13474820262555504, 'epoch': 1.32}
+ 66%|██████▌   | 448/678 [3:05:36<1:33:12, 24.32s/it] 66%|██████▌   | 448/678 [3:05:36<1:35:17, 24.86s/it]
+{"phase": "candidate", "elapsed_s": 11289.2, "completed": 1, "total": 37}
+{"phase": "candidate", "elapsed_s": 11327.0, "completed": 2, "total": 37}
+{"phase": "candidate", "elapsed_s": 11344.1, "completed": 3, "total": 37}
+{"phase": "candidate", "elapsed_s": 11357.6, "completed": 4, "total": 37}
+{"phase": "candidate", "elapsed_s": 11369.9, "completed": 5, "total": 37}
+{"phase": "candidate", "elapsed_s": 11383.7, "completed": 6, "total": 37}
+{"phase": "candidate", "elapsed_s": 11397.0, "completed": 7, "total": 37}
+{"phase": "candidate", "elapsed_s": 11409.2, "completed": 8, "total": 37}
+{"phase": "candidate", "elapsed_s": 11544.8, "completed": 9, "total": 37}
+{"phase": "candidate", "elapsed_s": 11557.6, "completed": 10, "total": 37}
+{"phase": "candidate", "elapsed_s": 11572.5, "completed": 11, "total": 37}
+{"phase": "candidate", "elapsed_s": 11585.7, "completed": 12, "total": 37}
+{"phase": "candidate", "elapsed_s": 11598.5, "completed": 13, "total": 37}
+{"phase": "candidate", "elapsed_s": 11612.0, "completed": 14, "total": 37}
+{"phase": "candidate", "elapsed_s": 11625.2, "completed": 15, "total": 37}
+{"phase": "candidate", "elapsed_s": 11639.4, "completed": 16, "total": 37}
+{"phase": "candidate", "elapsed_s": 11653.8, "completed": 17, "total": 37}
+{"phase": "candidate", "elapsed_s": 11668.5, "completed": 18, "total": 37}
+{"phase": "candidate", "elapsed_s": 11683.0, "completed": 19, "total": 37}
+{"phase": "candidate", "elapsed_s": 11697.4, "completed": 20, "total": 37}
+{"phase": "candidate", "elapsed_s": 11711.7, "completed": 21, "total": 37}
+{"phase": "candidate", "elapsed_s": 11725.9, "completed": 22, "total": 37}
+{"phase": "candidate", "elapsed_s": 11740.2, "completed": 23, "total": 37}
+{"phase": "candidate", "elapsed_s": 11752.9, "completed": 24, "total": 37}
+{"phase": "candidate", "elapsed_s": 11787.6, "completed": 25, "total": 37}
+{"phase": "candidate", "elapsed_s": 11803.1, "completed": 26, "total": 37}
+{"phase": "candidate", "elapsed_s": 11813.7, "completed": 27, "total": 37}
+{"phase": "candidate", "elapsed_s": 11825.9, "completed": 28, "total": 37}
+{"phase": "candidate", "elapsed_s": 11837.6, "completed": 29, "total": 37}
+{"phase": "candidate", "elapsed_s": 11849.5, "completed": 30, "total": 37}
+{"phase": "candidate", "elapsed_s": 11860.7, "completed": 31, "total": 37}
+{"phase": "candidate", "elapsed_s": 11871.9, "completed": 32, "total": 37}
+{"phase": "candidate", "elapsed_s": 11885.4, "completed": 33, "total": 37}
+{"phase": "candidate", "elapsed_s": 11896.6, "completed": 34, "total": 37}
+{"phase": "candidate", "elapsed_s": 11908.6, "completed": 35, "total": 37}
+{"phase": "candidate", "elapsed_s": 11920.0, "completed": 36, "total": 37}
+{"phase": "candidate", "elapsed_s": 11931.4, "completed": 37, "total": 37}
+{"phase": "canary_final", "elapsed_s": 11942.7, "completed": 1, "total": 4}
+{"phase": "canary_final", "elapsed_s": 11953.6, "completed": 2, "total": 4}
+{"phase": "canary_final", "elapsed_s": 11965.2, "completed": 3, "total": 4}
+{"phase": "canary_final", "elapsed_s": 11976.6, "completed": 4, "total": 4}
+{"phase": "completed", "elapsed_s": 11976.6, "steps": 448}

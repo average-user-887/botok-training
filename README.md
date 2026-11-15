@@ -3,6 +3,8 @@
 Training logs, speed measurements and sanitized SYNTHETIC examples for small LoRA specialist models (Honcho deriver, tool-output pruner, judge). Purpose: let an external assistant read the logs, estimate T4 training speed, and generate a large synthetic training set that fits a 12 h Kaggle session. No model weights and no real/private text are in this repo.
 
 ## Map
+- `GOALS.md` - project goal, roles, acceptance gate, status, and the ask for the data generator.
+- `logs/INDEX.md` - table of every Kaggle kernel log kept (and what was dropped).
 - `speed.md` - measured seconds/step, tokens/s, wall times, T4 settings, and a formula for how many tokens fit in 12 h.
 - `logs/kaggle/<kernel>/` - run logs (`*.log` are Kaggle JSON log streams), `dev_metrics.json`, `train_log.json`, kernel metadata. `p2000-deriver-lfm3-v2a/run1_oom.log` is the failed first v2 run.
 - `results/` - deriver leaderboard (10+ candidate models), tuned deriver/pruner summaries and the production gate (`summary.md`), per-run score lines.
