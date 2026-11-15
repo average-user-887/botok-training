@@ -1,0 +1,17 @@
+{
+  "status": "DDP_NOT_VERIFIED_CRASH_BEFORE_STEP_1",
+  "world_size": 2,
+  "known_distinct_uuids": true,
+  "steps": [
+    0,
+    0
+  ],
+  "rows_processed": [
+    0,
+    0
+  ],
+  "oom_steps_skipped": 0,
+  "nan_grad_steps_skipped": 0,
+  "skips_clean": false,
+  "error": "RecursionError: maximum recursion depth exceeded during CurriculumCompletionTrainer.__init__"
+}

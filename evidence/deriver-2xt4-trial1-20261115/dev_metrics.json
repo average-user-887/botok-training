@@ -1,0 +1,8 @@
+{
+  "status": "unreached_due_to_init_error",
+  "schema_valid": null,
+  "f1": null,
+  "token_f1": null,
+  "non_empty_rate": null,
+  "error": "RecursionError: maximum recursion depth exceeded during CurriculumCompletionTrainer.__init__"
+}

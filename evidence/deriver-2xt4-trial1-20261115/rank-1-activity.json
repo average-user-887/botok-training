@@ -1,0 +1,20 @@
+{
+  "rank": 1,
+  "local_rank": 1,
+  "world_size": 2,
+  "gpu_uuid": "<gpu-1-uuid>",
+  "device_name": "Tesla T4",
+  "steps_completed": 0,
+  "rows_processed": 0,
+  "non_pad_tokens": 0,
+  "supervised_tokens": 0,
+  "peak_allocated_mib": 3579.0,
+  "peak_reserved_mib": 3579.0,
+  "nan_grad_steps_skipped": 0,
+  "oom_steps_skipped": 0,
+  "effective_optimizer_steps": 0,
+  "logical_device": 1,
+  "optimizer_steps_seen": 0,
+  "status": "failed_before_step_1",
+  "error": "RecursionError: maximum recursion depth exceeded during CurriculumCompletionTrainer.__init__"
+}

@@ -1,0 +1,476 @@
+[{"stream_name":"stderr","time":8.220431354,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.220490383,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.220497296,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.220501458,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.817382068,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.817410854,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.817416265,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.817420056,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":16.480449567,"data":"Visible GPUs: 2 ['Tesla T4', 'Tesla T4']\n"}
+,{"stream_name":"stdout","time":17.152287842,"data":"SRC_MODEL_DIR: /kaggle/input/datasets/<kaggle-user>/lfm3-1p7b-base\n"}
+,{"stream_name":"stdout","time":17.152330536,"data":"PAYLOAD_DIR: /kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload\n"}
+,{"stream_name":"stdout","time":26.090810296,"data":"Staged model to /tmp/lfm3_base_staged in 9.1s\n"}
+,{"stream_name":"stdout","time":26.09181198,"data":"Active MODEL_DIR: /tmp/lfm3_base_staged\n"}
+,{"stream_name":"stdout","time":26.109182607,"data":"=== Launching Trial Run 1 (sprint_a1, budget=1100s) ===\n"}
+,{"stream_name":"stdout","time":26.110233985,"data":"CMD: torchrun --standalone --nproc_per_node=2 /kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py --model-dir /tmp/lfm3_base_staged --role deriver --train-file /kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/v15_train_272.sft.jsonl --dev-file /kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/dev_24.sft.jsonl --out /kaggle/working/trial_a1 --mode train --max-seq-len 5600 --epochs 2 --max-steps 24 --effective-batch 8 --microbatch 1 --checkpoint-steps 10 --lora-r 16 --lora-alpha 32 --target-modules all-linear --lr 2e-4 --stress-longest-first --milestones 25,50,75 --milestone-probe-rows 8 --milestone-max-new-tokens 600 --eval-max-new-tokens 1800 --time-budget-s 1100\n"}
+,{"stream_name":"stderr","time":32.46949422,"data":"W1115 19:54:27.555000 47 torch/distributed/run.py:851] \n"}
+,{"stream_name":"stderr","time":32.469521258,"data":"W1115 19:54:27.555000 47 torch/distributed/run.py:851] *****************************************\n"}
+,{"stream_name":"stderr","time":32.469526176,"data":"W1115 19:54:27.555000 47 torch/distributed/run.py:851] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. \n"}
+,{"stream_name":"stderr","time":32.469531124,"data":"W1115 19:54:27.555000 47 torch/distributed/run.py:851] *****************************************\n"}
+,{"stream_name":"stderr","time":32.671917443,"data":"W1115 19:54:27.555000 47 torch/distributed/run.py:851] \n"}
+,{"stream_name":"stderr","time":32.671945198,"data":"W1115 19:54:27.555000 47 torch/distributed/run.py:851] *****************************************\n"}
+,{"stream_name":"stderr","time":32.671949508,"data":"W1115 19:54:27.555000 47 torch/distributed/run.py:851] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. \n"}
+,{"stream_name":"stderr","time":32.671988987,"data":"W1115 19:54:27.555000 47 torch/distributed/run.py:851] *****************************************\n"}
+,{"stream_name":"stderr","time":32.671993607,"data":"\n"}
+,{"stream_name":"stderr","time":32.671996832,"data":"W1115 19:54:27.555000 47 torch/distributed/run.py:851] \n"}
+,{"stream_name":"stderr","time":32.672000223,"data":"W1115 19:54:27.555000 47 torch/distributed/run.py:851] *****************************************\n"}
+,{"stream_name":"stderr","time":32.672003685,"data":"W1115 19:54:27.555000 47 torch/distributed/run.py:851] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. \n"}
+,{"stream_name":"stderr","time":32.672007616,"data":"W1115 19:54:27.555000 47 torch/distributed/run.py:851] *****************************************\n"}
+,{"stream_name":"stderr","time":69.197802193,"data":"\rLoading weights:   0%|          | 0/286 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 0/286 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 0/286 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 0/286 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stderr","time":70.965481623,"data":"\rLoading weights:   0%|          | 0/286 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 0/286 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 1/286 [00:01\u003c08:26,  1.78s/it]\rLoading weights:  48%|████▊     | 137/286 [00:01\u003c00:01, 99.04it/s]\rLoading weights:   0%|          | 1/286 [00:01\u003c08:57,  1.89s/it]\rLoading weights:   0%|          | 1/286 [00:01\u003c08:26,  1.78s/it]\rLoading weights:  48%|████▊     | 137/286 [00:01\u003c00:01, 99.04it/s]\rLoading weights:   0%|          | 1/286 [00:01\u003c08:57,  1.89s/it]\n"}
+,{"stream_name":"stderr","time":71.325529814,"data":"\rLoading weights:   0%|          | 1/286 [00:01\u003c08:26,  1.78s/it]\rLoading weights:  48%|████▊     | 137/286 [00:01\u003c00:01, 99.04it/s]\rLoading weights:   0%|          | 1/286 [00:01\u003c08:57,  1.89s/it]\rLoading weights:  50%|█████     | 143/286 [00:02\u003c00:01, 96.30it/s]\rLoading weights:  50%|█████     | 143/286 [00:02\u003c00:01, 96.30it/s]\n"}
+,{"stream_name":"stderr","time":71.86442269,"data":"\rLoading weights:  50%|█████     | 143/286 [00:02\u003c00:01, 96.30it/s]\rLoading weights:  69%|██████▉   | 197/286 [00:02\u003c00:00, 89.89it/s]\rLoading weights:  68%|██████▊   | 195/286 [00:02\u003c00:00, 94.90it/s]\rLoading weights:  69%|██████▉   | 197/286 [00:02\u003c00:00, 89.89it/s]\rLoading weights:  68%|██████▊   | 195/286 [00:02\u003c00:00, 94.90it/s]\n"}
+,{"stream_name":"stderr","time":72.181575046,"data":"\rLoading weights:  69%|██████▉   | 197/286 [00:02\u003c00:00, 89.89it/s]\rLoading weights:  68%|██████▊   | 195/286 [00:02\u003c00:00, 94.90it/s]\rLoading weights:  80%|███████▉  | 228/286 [00:02\u003c00:00, 98.74it/s]\rLoading weights:  81%|████████▏ | 233/286 [00:03\u003c00:00, 86.71it/s]\rLoading weights:  80%|███████▉  | 228/286 [00:02\u003c00:00, 98.74it/s]\rLoading weights:  81%|████████▏ | 233/286 [00:03\u003c00:00, 86.71it/s]\n"}
+,{"stream_name":"stderr","time":72.491677504,"data":"\rLoading weights:  80%|███████▉  | 228/286 [00:02\u003c00:00, 98.74it/s]\rLoading weights:  81%|████████▏ | 233/286 [00:03\u003c00:00, 86.71it/s]\rLoading weights:  90%|█████████ | 258/286 [00:03\u003c00:00, 92.14it/s]\rLoading weights:  88%|████████▊ | 253/286 [00:03\u003c00:00, 91.37it/s]\rLoading weights:  98%|█████████▊| 279/286 [00:03\u003c00:00, 99.50it/s]\rLoading weights: 100%|██████████| 286/286 [00:03\u003c00:00, 81.42it/s]\n"}
+,{"stream_name":"stderr","time":72.523682051,"data":"\rLoading weights:  95%|█████████▍| 271/286 [00:03\u003c00:00, 91.84it/s]\rLoading weights:  90%|█████████ | 258/286 [00:03\u003c00:00, 92.14it/s]\rLoading weights:  88%|████████▊ | 253/286 [00:03\u003c00:00, 91.37it/s]\rLoading weights:  98%|█████████▊| 279/286 [00:03\u003c00:00, 99.50it/s]\rLoading weights: 100%|██████████| 286/286 [00:03\u003c00:00, 81.42it/s]\n"}
+,{"stream_name":"stderr","time":72.523750931,"data":"\rLoading weights:  95%|█████████▍| 271/286 [00:03\u003c00:00, 91.84it/s]\n"}
+,{"stream_name":"stderr","time":72.52431886,"data":"\rLoading weights:  90%|█████████ | 258/286 [00:03\u003c00:00, 92.14it/s]\rLoading weights:  88%|████████▊ | 253/286 [00:03\u003c00:00, 91.37it/s]\rLoading weights:  98%|█████████▊| 279/286 [00:03\u003c00:00, 99.50it/s]\rLoading weights: 100%|██████████| 286/286 [00:03\u003c00:00, 81.42it/s]\n"}
+,{"stream_name":"stderr","time":72.582932254,"data":"\rLoading weights:  95%|█████████▍| 271/286 [00:03\u003c00:00, 91.84it/s]\rLoading weights: 100%|██████████| 286/286 [00:03\u003c00:00, 81.46it/s]\n"}
+,{"stream_name":"stderr","time":72.784994625,"data":"\rLoading weights: 100%|██████████| 286/286 [00:03\u003c00:00, 81.46it/s]\n"}
+,{"stream_name":"stderr","time":72.78504902,"data":"\n"}
+,{"stream_name":"stderr","time":72.785054484,"data":"\rLoading weights: 100%|██████████| 286/286 [00:03\u003c00:00, 81.46it/s]\n"}
+,{"stream_name":"stderr","time":80.215485935,"data":"[rank0]: Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":80.215530638,"data":"[rank0]:   File \"/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py\", line 1408, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":80.215536524,"data":"[rank0]:     main()\n"}
+,{"stream_name":"stderr","time":80.215540016,"data":"[rank0]:     ~~~~^^\n"}
+,{"stream_name":"stderr","time":80.215543539,"data":"[rank0]:   File \"/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py\", line 1325, in main\n"}
+,{"stream_name":"stderr","time":80.215547562,"data":"[rank0]:     trainer = CurriculumCompletionTrainer(\n"}
+,{"stream_name":"stderr","time":80.21555117,"data":"[rank0]:         model=model,\n"}
+,{"stream_name":"stderr","time":80.215554503,"data":"[rank0]:     ...\u003c5 lines\u003e...\n"}
+,{"stream_name":"stderr","time":80.215557986,"data":"[rank0]:         stress_longest_first=a.stress_longest_first,\n"}
+,{"stream_name":"stderr","time":80.21556162,"data":"[rank0]:     )\n"}
+,{"stream_name":"stderr","time":80.215565006,"data":"[rank0]:   File \"/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py\", line 792, in __init__\n"}
+,{"stream_name":"stderr","time":80.215568958,"data":"[rank0]:     super().__init__(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":80.215572839,"data":"[rank0]:     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":80.21557637,"data":"[rank0]:   File \"/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py\", line 701, in __init__\n"}
+,{"stream_name":"stderr","time":80.215580158,"data":"[rank0]:     super().__init__(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":80.21558353,"data":"[rank0]:     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":80.215586994,"data":"[rank0]:   File \"/usr/local/lib/python3.13/dist-packages/transformers/trainer.py\", line 504, in __init__\n"}
+,{"stream_name":"stderr","time":80.215604393,"data":"[rank0]:     self._move_model_to_device(model, args.device)\n"}
+,{"stream_name":"stderr","time":80.215608298,"data":"[rank0]:     ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":80.215611808,"data":"[rank0]:   File \"/usr/local/lib/python3.13/dist-packages/transformers/trainer.py\", line 4723, in _move_model_to_device\n"}
+,{"stream_name":"stderr","time":80.215615485,"data":"[rank0]:     model = model.to(device)\n"}
+,{"stream_name":"stderr","time":80.215618826,"data":"[rank0]:   File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1384, in to\n"}
+,{"stream_name":"stderr","time":80.215622401,"data":"[rank0]:     return self._apply(convert)\n"}
+,{"stream_name":"stderr","time":80.215625793,"data":"[rank0]:            ~~~~~~~~~~~^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":80.215629208,"data":"[rank0]:   File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 934, in _apply\n"}
+,{"stream_name":"stderr","time":80.21563274,"data":"[rank0]:     module._apply(fn)\n"}
+,{"stream_name":"stderr","time":80.21563608,"data":"[rank0]:     ~~~~~~~~~~~~~^^^^\n"}
+,{"stream_name":"stderr","time":80.21563949,"data":"[rank0]:   File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 934, in _apply\n"}
+,{"stream_name":"stderr","time":80.215643086,"data":"[rank0]:     module._apply(fn)\n"}
+,{"stream_name":"stderr","time":80.21564643,"data":"[rank0]:     ~~~~~~~~~~~~~^^^^\n"}
+,{"stream_name":"stderr","time":80.215649749,"data":"[rank0]:   File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 934, in _apply\n"}
+,{"stream_name":"stderr","time":80.215653305,"data":"[rank0]:     module._apply(fn)\n"}
+,{"stream_name":"stderr","time":80.215656515,"data":"[rank0]:     ~~~~~~~~~~~~~^^^^\n"}
+,{"stream_name":"stderr","time":80.215661132,"data":"[rank0]:   [Previous line repeated 988 more times]\n"}
+,{"stream_name":"stderr","time":80.215664949,"data":"[rank0]:   File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 933, in _apply\n"}
+,{"stream_name":"stderr","time":80.215668648,"data":"[rank0]:     for module in self.children():\n"}
+,{"stream_name":"stderr","time":80.215672081,"data":"[rank0]:                   ~~~~~~~~~~~~~^^\n"}
+,{"stream_name":"stderr","time":80.215675466,"data":"[rank0]:   File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 2783, in children\n"}
+,{"stream_name":"stderr","time":80.215679282,"data":"[rank0]:     for _name, module in self.named_children():\n"}
+,{"stream_name":"stderr","time":80.215682748,"data":"[rank0]:                          ~~~~~~~~~~~~~~~~~~~^^\n"}
+,{"stream_name":"stderr","time":80.215686176,"data":"[rank0]: RecursionError: maximum recursion depth exceeded\n"}
+,{"stream_name":"stderr","time":80.231036949,"data":"[rank1]: Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":80.231063125,"data":"[rank1]:   File \"/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py\", line 1408, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":80.231069012,"data":"[rank1]:     main()\n"}
+,{"stream_name":"stderr","time":80.231072997,"data":"[rank1]:     ~~~~^^\n"}
+,{"stream_name":"stderr","time":80.231076867,"data":"[rank1]:   File \"/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py\", line 1325, in main\n"}
+,{"stream_name":"stderr","time":80.231081053,"data":"[rank1]:     trainer = CurriculumCompletionTrainer(\n"}
+,{"stream_name":"stderr","time":80.231095611,"data":"[rank1]:         model=model,\n"}
+,{"stream_name":"stderr","time":80.231099087,"data":"[rank1]:     ...\u003c5 lines\u003e...\n"}
+,{"stream_name":"stderr","time":80.231102817,"data":"[rank1]:         stress_longest_first=a.stress_longest_first,\n"}
+,{"stream_name":"stderr","time":80.231106468,"data":"[rank1]:     )\n"}
+,{"stream_name":"stderr","time":80.231110271,"data":"[rank1]:   File \"/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py\", line 792, in __init__\n"}
+,{"stream_name":"stderr","time":80.231114544,"data":"[rank1]:     super().__init__(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":80.231118103,"data":"[rank1]:     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":80.231122177,"data":"[rank1]:   File \"/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py\", line 701, in __init__\n"}
+,{"stream_name":"stderr","time":80.231139815,"data":"[rank1]:     super().__init__(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":80.231144832,"data":"[rank1]:     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":80.231149807,"data":"[rank1]:   File \"/usr/local/lib/python3.13/dist-packages/transformers/trainer.py\", line 504, in __init__\n"}
+,{"stream_name":"stderr","time":80.2311558,"data":"[rank1]:     self._move_model_to_device(model, args.device)\n"}
+,{"stream_name":"stderr","time":80.231159221,"data":"[rank1]:     ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":80.231162678,"data":"[rank1]:   File \"/usr/local/lib/python3.13/dist-packages/transformers/trainer.py\", line 4723, in _move_model_to_device\n"}
+,{"stream_name":"stderr","time":80.231166409,"data":"[rank1]:     model = model.to(device)\n"}
+,{"stream_name":"stderr","time":80.231169737,"data":"[rank1]:   File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1384, in to\n"}
+,{"stream_name":"stderr","time":80.231173432,"data":"[rank1]:     return self._apply(convert)\n"}
+,{"stream_name":"stderr","time":80.23117677,"data":"[rank1]:            ~~~~~~~~~~~^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":80.231180153,"data":"[rank1]:   File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 934, in _apply\n"}
+,{"stream_name":"stderr","time":80.231183844,"data":"[rank1]:     module._apply(fn)\n"}
+,{"stream_name":"stderr","time":80.231187154,"data":"[rank1]:     ~~~~~~~~~~~~~^^^^\n"}
+,{"stream_name":"stderr","time":80.231190527,"data":"[rank1]:   File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 934, in _apply\n"}
+,{"stream_name":"stderr","time":80.23119418,"data":"[rank1]:     module._apply(fn)\n"}
+,{"stream_name":"stderr","time":80.231197593,"data":"[rank1]:     ~~~~~~~~~~~~~^^^^\n"}
+,{"stream_name":"stderr","time":80.231200984,"data":"[rank1]:   File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 934, in _apply\n"}
+,{"stream_name":"stderr","time":80.231204515,"data":"[rank1]:     module._apply(fn)\n"}
+,{"stream_name":"stderr","time":80.231207857,"data":"[rank1]:     ~~~~~~~~~~~~~^^^^\n"}
+,{"stream_name":"stderr","time":80.231212148,"data":"[rank1]:   [Previous line repeated 988 more times]\n"}
+,{"stream_name":"stderr","time":80.23121553,"data":"[rank1]:   File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 933, in _apply\n"}
+,{"stream_name":"stderr","time":80.231219884,"data":"[rank1]:     for module in self.children():\n"}
+,{"stream_name":"stderr","time":80.231223357,"data":"[rank1]:                   ~~~~~~~~~~~~~^^\n"}
+,{"stream_name":"stderr","time":80.231230692,"data":"[rank1]:   File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 2783, in children\n"}
+,{"stream_name":"stderr","time":80.231234535,"data":"[rank1]:     for _name, module in self.named_children():\n"}
+,{"stream_name":"stderr","time":80.231237942,"data":"[rank1]:                          ~~~~~~~~~~~~~~~~~~~^^\n"}
+,{"stream_name":"stderr","time":80.231241485,"data":"[rank1]: RecursionError: maximum recursion depth exceeded\n"}
+,{"stream_name":"stderr","time":80.419668998,"data":"[rank0]: Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":80.419703072,"data":"[rank0]:   File \"/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py\", line 1408, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":80.419708666,"data":"[rank0]:     main()\n"}
+,{"stream_name":"stderr","time":80.419712695,"data":"[rank0]:     ~~~~^^\n"}
+,{"stream_name":"stderr","time":80.419716574,"data":"[rank0]:   File \"/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py\", line 1325, in main\n"}
+,{"stream_name":"stderr","time":80.419720426,"data":"[rank0]:     trainer = CurriculumCompletionTrainer(\n"}
+,{"stream_name":"stderr","time":80.419723822,"data":"[rank0]:         model=model,\n"}
+,{"stream_name":"stderr","time":80.419727618,"data":"[rank0]:     ...\u003c5 lines\u003e...\n"}
+,{"stream_name":"stderr","time":80.419743204,"data":"[rank0]:         stress_longest_first=a.stress_longest_first,\n"}
+,{"stream_name":"stderr","time":80.419761588,"data":"[rank0]:     )\n"}
+,{"stream_name":"stderr","time":80.419764887,"data":"[rank0]:   File \"/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py\", line 792, in __init__\n"}
+,{"stream_name":"stderr","time":80.419768625,"data":"[rank0]:     super().__init__(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":80.419772437,"data":"[rank0]:     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":80.419778505,"data":"[rank0]:   File \"/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py\", line 701, in __init__\n"}
+,{"stream_name":"stderr","time":80.419782729,"data":"[rank0]:     super().__init__(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":80.419787058,"data":"[rank0]:     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":80.41979058,"data":"[rank0]:   File \"/usr/local/lib/python3.13/dist-packages/transformers/trainer.py\", line 504, in __init__\n"}
+,{"stream_name":"stderr","time":80.419794389,"data":"[rank0]:     self._move_model_to_device(model, args.device)\n"}
+,{"stream_name":"stderr","time":80.419797719,"data":"[rank0]:     ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":80.419801302,"data":"[rank0]:   File \"/usr/local/lib/python3.13/dist-packages/transformers/trainer.py\", line 4723, in _move_model_to_device\n"}
+,{"stream_name":"stderr","time":80.419804904,"data":"[rank0]:     model = model.to(device)\n"}
+,{"stream_name":"stderr","time":80.419808119,"data":"[rank0]:   File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1384, in to\n"}
+,{"stream_name":"stderr","time":80.419811697,"data":"[rank0]:     return self._apply(convert)\n"}
+,{"stream_name":"stderr","time":80.419815029,"data":"[rank0]:            ~~~~~~~~~~~^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":80.419818431,"data":"[rank0]:   File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 934, in _apply\n"}
+,{"stream_name":"stderr","time":80.41982188,"data":"[rank0]:     module._apply(fn)\n"}
+,{"stream_name":"stderr","time":80.419836038,"data":"[rank0]:     ~~~~~~~~~~~~~^^^^\n"}
+,{"stream_name":"stderr","time":80.419839588,"data":"[rank0]:   File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 934, in _apply\n"}
+,{"stream_name":"stderr","time":80.419843019,"data":"[rank0]:     module._apply(fn)\n"}
+,{"stream_name":"stderr","time":80.41984638,"data":"[rank0]:     ~~~~~~~~~~~~~^^^^\n"}
+,{"stream_name":"stderr","time":80.41984951,"data":"[rank0]:   File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 934, in _apply\n"}
+,{"stream_name":"stderr","time":80.419853056,"data":"[rank0]:     module._apply(fn)\n"}
+,{"stream_name":"stderr","time":80.419856304,"data":"[rank0]:     ~~~~~~~~~~~~~^^^^\n"}
+,{"stream_name":"stderr","time":80.419861748,"data":"[rank0]:   [Previous line repeated 988 more times]\n"}
+,{"stream_name":"stderr","time":80.41986517,"data":"[rank0]:   File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 933, in _apply\n"}
+,{"stream_name":"stderr","time":80.419868503,"data":"[rank0]:     for module in self.children():\n"}
+,{"stream_name":"stderr","time":80.419871671,"data":"[rank0]:                   ~~~~~~~~~~~~~^^\n"}
+,{"stream_name":"stderr","time":80.419874906,"data":"[rank0]:   File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 2783, in children\n"}
+,{"stream_name":"stderr","time":80.419878412,"data":"[rank0]:     for _name, module in self.named_children():\n"}
+,{"stream_name":"stderr","time":80.419881755,"data":"[rank0]:                          ~~~~~~~~~~~~~~~~~~~^^\n"}
+,{"stream_name":"stderr","time":80.419885029,"data":"[rank0]: RecursionError: maximum recursion depth exceeded\n"}
+,{"stream_name":"stderr","time":80.419888116,"data":"[rank1]: Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":80.419891299,"data":"[rank1]:   File \"/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py\", line 1408, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":80.419894865,"data":"[rank1]:     main()\n"}
+,{"stream_name":"stderr","time":80.419898266,"data":"[rank1]:     ~~~~^^\n"}
+,{"stream_name":"stderr","time":80.419901319,"data":"[rank1]:   File \"/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py\", line 1325, in main\n"}
+,{"stream_name":"stderr","time":80.419904783,"data":"[rank1]:     trainer = CurriculumCompletionTrainer(\n"}
+,{"stream_name":"stderr","time":80.419917375,"data":"[rank1]:         model=model,\n"}
+,{"stream_name":"stderr","time":80.419920509,"data":"[rank1]:     ...\u003c5 lines\u003e...\n"}
+,{"stream_name":"stderr","time":80.419924355,"data":"[rank1]:         stress_longest_first=a.stress_longest_first,\n"}
+,{"stream_name":"stderr","time":80.419927757,"data":"[rank1]:     )\n"}
+,{"stream_name":"stderr","time":80.419930861,"data":"[rank1]:   File \"/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py\", line 792, in __init__\n"}
+,{"stream_name":"stderr","time":80.419934963,"data":"[rank1]:     super().__init__(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":80.419938303,"data":"[rank1]:     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":80.419941261,"data":"[rank1]:   File \"/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py\", line 701, in __init__\n"}
+,{"stream_name":"stderr","time":80.419944598,"data":"[rank1]:     super().__init__(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":80.419947591,"data":"[rank1]:     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":80.419950893,"data":"[rank1]:   File \"/usr/local/lib/python3.13/dist-packages/transformers/trainer.py\", line 504, in __init__\n"}
+,{"stream_name":"stderr","time":80.419959098,"data":"[rank1]:     self._move_model_to_device(model, args.device)\n"}
+,{"stream_name":"stderr","time":80.419962803,"data":"[rank1]:     ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":80.419966024,"data":"[rank1]:   File \"/usr/local/lib/python3.13/dist-packages/transformers/trainer.py\", line 4723, in _move_model_to_device\n"}
+,{"stream_name":"stderr","time":80.419969566,"data":"[rank1]:     model = model.to(device)\n"}
+,{"stream_name":"stderr","time":80.419972865,"data":"[rank1]:   File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1384, in to\n"}
+,{"stream_name":"stderr","time":80.419976524,"data":"[rank1]:     return self._apply(convert)\n"}
+,{"stream_name":"stderr","time":80.419979724,"data":"[rank1]:            ~~~~~~~~~~~^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":80.419983607,"data":"[rank1]:   File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 934, in _apply\n"}
+,{"stream_name":"stderr","time":80.419986989,"data":"[rank1]:     module._apply(fn)\n"}
+,{"stream_name":"stderr","time":80.419990411,"data":"[rank1]:     ~~~~~~~~~~~~~^^^^\n"}
+,{"stream_name":"stderr","time":80.419993443,"data":"[rank1]:   File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 934, in _apply\n"}
+,{"stream_name":"stderr","time":80.419996839,"data":"[rank1]:     module._apply(fn)\n"}
+,{"stream_name":"stderr","time":80.420000413,"data":"[rank1]:     ~~~~~~~~~~~~~^^^^\n"}
+,{"stream_name":"stderr","time":80.420003763,"data":"[rank1]:   File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 934, in _apply\n"}
+,{"stream_name":"stderr","time":80.420007163,"data":"[rank1]:     module._apply(fn)\n"}
+,{"stream_name":"stderr","time":80.420010553,"data":"[rank1]:     ~~~~~~~~~~~~~^^^^\n"}
+,{"stream_name":"stderr","time":80.420014234,"data":"[rank1]:   [Previous line repeated 988 more times]\n"}
+,{"stream_name":"stderr","time":80.420017664,"data":"[rank1]:   File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 933, in _apply\n"}
+,{"stream_name":"stderr","time":80.420021067,"data":"[rank1]:     for module in self.children():\n"}
+,{"stream_name":"stderr","time":80.42002437,"data":"[rank1]:                   ~~~~~~~~~~~~~^^\n"}
+,{"stream_name":"stderr","time":80.420027957,"data":"[rank1]:   File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 2783, in children\n"}
+,{"stream_name":"stderr","time":80.420031378,"data":"[rank1]:     for _name, module in self.named_children():\n"}
+,{"stream_name":"stderr","time":80.420045834,"data":"[rank1]:                          ~~~~~~~~~~~~~~~~~~~^^\n"}
+,{"stream_name":"stderr","time":80.420049007,"data":"[rank1]: RecursionError: maximum recursion depth exceeded\n"}
+,{"stream_name":"stderr","time":80.420052155,"data":"\n"}
+,{"stream_name":"stderr","time":80.420055314,"data":"[rank0]: Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":80.420058387,"data":"[rank0]:   File \"/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py\", line 1408, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":80.420062139,"data":"[rank0]:     main()\n"}
+,{"stream_name":"stderr","time":80.420064999,"data":"[rank0]:     ~~~~^^\n"}
+,{"stream_name":"stderr","time":80.42006797,"data":"[rank0]:   File \"/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py\", line 1325, in main\n"}
+,{"stream_name":"stderr","time":80.420074593,"data":"[rank0]:     trainer = CurriculumCompletionTrainer(\n"}
+,{"stream_name":"stderr","time":80.420078118,"data":"[rank0]:         model=model,\n"}
+,{"stream_name":"stderr","time":80.420081447,"data":"[rank0]:     ...\u003c5 lines\u003e...\n"}
+,{"stream_name":"stderr","time":80.4200848,"data":"[rank0]:         stress_longest_first=a.stress_longest_first,\n"}
+,{"stream_name":"stderr","time":80.420088074,"data":"[rank0]:     )\n"}
+,{"stream_name":"stderr","time":80.420090972,"data":"[rank0]:   File \"/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py\", line 792, in __init__\n"}
+,{"stream_name":"stderr","time":80.420094253,"data":"[rank0]:     super().__init__(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":80.42009742,"data":"[rank0]:     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":80.420100329,"data":"[rank0]:   File \"/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py\", line 701, in __init__\n"}
+,{"stream_name":"stderr","time":80.42010367,"data":"[rank0]:     super().__init__(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":80.420106594,"data":"[rank0]:     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":80.420111304,"data":"[rank0]:   File \"/usr/local/lib/python3.13/dist-packages/transformers/trainer.py\", line 504, in __init__\n"}
+,{"stream_name":"stderr","time":80.420114845,"data":"[rank0]:     self._move_model_to_device(model, args.device)\n"}
+,{"stream_name":"stderr","time":80.420117945,"data":"[rank0]:     ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":80.420121254,"data":"[rank0]:   File \"/usr/local/lib/python3.13/dist-packages/transformers/trainer.py\", line 4723, in _move_model_to_device\n"}
+,{"stream_name":"stderr","time":80.420124637,"data":"[rank0]:     model = model.to(device)\n"}
+,{"stream_name":"stderr","time":80.420127634,"data":"[rank0]:   File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1384, in to\n"}
+,{"stream_name":"stderr","time":80.420131312,"data":"[rank0]:     return self._apply(convert)\n"}
+,{"stream_name":"stderr","time":80.420134387,"data":"[rank0]:            ~~~~~~~~~~~^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":80.42013748,"data":"[rank0]:   File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 934, in _apply\n"}
+,{"stream_name":"stderr","time":80.420140658,"data":"[rank0]:     module._apply(fn)\n"}
+,{"stream_name":"stderr","time":80.420143797,"data":"[rank0]:     ~~~~~~~~~~~~~^^^^\n"}
+,{"stream_name":"stderr","time":80.420147152,"data":"[rank0]:   File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 934, in _apply\n"}
+,{"stream_name":"stderr","time":80.420150244,"data":"[rank0]:     module._apply(fn)\n"}
+,{"stream_name":"stderr","time":80.420153285,"data":"[rank0]:     ~~~~~~~~~~~~~^^^^\n"}
+,{"stream_name":"stderr","time":80.420156215,"data":"[rank0]:   File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 934, in _apply\n"}
+,{"stream_name":"stderr","time":80.420159709,"data":"[rank0]:     module._apply(fn)\n"}
+,{"stream_name":"stderr","time":80.420163035,"data":"[rank0]:     ~~~~~~~~~~~~~^^^^\n"}
+,{"stream_name":"stderr","time":80.420166094,"data":"[rank0]:   [Previous line repeated 988 more times]\n"}
+,{"stream_name":"stderr","time":80.420168955,"data":"[rank0]:   File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 933, in _apply\n"}
+,{"stream_name":"stderr","time":80.420172272,"data":"[rank0]:     for module in self.children():\n"}
+,{"stream_name":"stderr","time":80.420178169,"data":"[rank0]:                   ~~~~~~~~~~~~~^^\n"}
+,{"stream_name":"stderr","time":80.420181526,"data":"[rank0]:   File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 2783, in children\n"}
+,{"stream_name":"stderr","time":80.420185347,"data":"[rank0]:     for _name, module in self.named_children():\n"}
+,{"stream_name":"stderr","time":80.420188655,"data":"[rank0]:                          ~~~~~~~~~~~~~~~~~~~^^\n"}
+,{"stream_name":"stderr","time":80.420191647,"data":"[rank0]: RecursionError: maximum recursion depth exceeded\n"}
+,{"stream_name":"stderr","time":80.42019489,"data":"[rank1]: Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":80.42019792,"data":"[rank1]:   File \"/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py\", line 1408, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":80.420201204,"data":"[rank1]:     main()\n"}
+,{"stream_name":"stderr","time":80.420204377,"data":"[rank1]:     ~~~~^^\n"}
+,{"stream_name":"stderr","time":80.420207251,"data":"[rank1]:   File \"/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py\", line 1325, in main\n"}
+,{"stream_name":"stderr","time":80.420210402,"data":"[rank1]:     trainer = CurriculumCompletionTrainer(\n"}
+,{"stream_name":"stderr","time":80.420213517,"data":"[rank1]:         model=model,\n"}
+,{"stream_name":"stderr","time":80.420216447,"data":"[rank1]:     ...\u003c5 lines\u003e...\n"}
+,{"stream_name":"stderr","time":80.420219714,"data":"[rank1]:         stress_longest_first=a.stress_longest_first,\n"}
+,{"stream_name":"stderr","time":80.420223497,"data":"[rank1]:     )\n"}
+,{"stream_name":"stderr","time":80.420226713,"data":"[rank1]:   File \"/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py\", line 792, in __init__\n"}
+,{"stream_name":"stderr","time":80.420229973,"data":"[rank1]:     super().__init__(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":80.420233217,"data":"[rank1]:     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":80.420236447,"data":"[rank1]:   File \"/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py\", line 701, in __init__\n"}
+,{"stream_name":"stderr","time":80.420239985,"data":"[rank1]:     super().__init__(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":80.420243124,"data":"[rank1]:     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":80.420246097,"data":"[rank1]:   File \"/usr/local/lib/python3.13/dist-packages/transformers/trainer.py\", line 504, in __init__\n"}
+,{"stream_name":"stderr","time":80.420249584,"data":"[rank1]:     self._move_model_to_device(model, args.device)\n"}
+,{"stream_name":"stderr","time":80.420252837,"data":"[rank1]:     ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":80.420256067,"data":"[rank1]:   File \"/usr/local/lib/python3.13/dist-packages/transformers/trainer.py\", line 4723, in _move_model_to_device\n"}
+,{"stream_name":"stderr","time":80.420259185,"data":"[rank1]:     model = model.to(device)\n"}
+,{"stream_name":"stderr","time":80.420262355,"data":"[rank1]:   File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 1384, in to\n"}
+,{"stream_name":"stderr","time":80.420265784,"data":"[rank1]:     return self._apply(convert)\n"}
+,{"stream_name":"stderr","time":80.420268965,"data":"[rank1]:            ~~~~~~~~~~~^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":80.42027206,"data":"[rank1]:   File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 934, in _apply\n"}
+,{"stream_name":"stderr","time":80.420278307,"data":"[rank1]:     module._apply(fn)\n"}
+,{"stream_name":"stderr","time":80.420281461,"data":"[rank1]:     ~~~~~~~~~~~~~^^^^\n"}
+,{"stream_name":"stderr","time":80.420284775,"data":"[rank1]:   File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 934, in _apply\n"}
+,{"stream_name":"stderr","time":80.420288159,"data":"[rank1]:     module._apply(fn)\n"}
+,{"stream_name":"stderr","time":80.420291211,"data":"[rank1]:     ~~~~~~~~~~~~~^^^^\n"}
+,{"stream_name":"stderr","time":80.420294482,"data":"[rank1]:   File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 934, in _apply\n"}
+,{"stream_name":"stderr","time":80.420297747,"data":"[rank1]:     module._apply(fn)\n"}
+,{"stream_name":"stderr","time":80.420300693,"data":"[rank1]:     ~~~~~~~~~~~~~^^^^\n"}
+,{"stream_name":"stderr","time":80.420303651,"data":"[rank1]:   [Previous line repeated 988 more times]\n"}
+,{"stream_name":"stderr","time":80.420306767,"data":"[rank1]:   File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 933, in _apply\n"}
+,{"stream_name":"stderr","time":80.420310464,"data":"[rank1]:     for module in self.children():\n"}
+,{"stream_name":"stderr","time":80.420313441,"data":"[rank1]:                   ~~~~~~~~~~~~~^^\n"}
+,{"stream_name":"stderr","time":80.420316445,"data":"[rank1]:   File \"/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py\", line 2783, in children\n"}
+,{"stream_name":"stderr","time":80.420319602,"data":"[rank1]:     for _name, module in self.named_children():\n"}
+,{"stream_name":"stderr","time":80.420322907,"data":"[rank1]:                          ~~~~~~~~~~~~~~~~~~~^^\n"}
+,{"stream_name":"stderr","time":80.420325765,"data":"[rank1]: RecursionError: maximum recursion depth exceeded\n"}
+,{"stream_name":"stderr","time":80.959176521,"data":"[rank0]:[W1115 19:55:16.987067646 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())\n"}
+,{"stream_name":"stderr","time":81.161969061,"data":"[rank0]:[W1115 19:55:16.987067646 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())\n"}
+,{"stream_name":"stderr","time":81.161990229,"data":"\n"}
+,{"stream_name":"stderr","time":81.161993259,"data":"[rank0]:[W1115 19:55:16.987067646 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())\n"}
+,{"stream_name":"stderr","time":84.530161607,"data":"W1115 19:55:19.615000 47 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 57 closing signal SIGTERM\n"}
+,{"stream_name":"stderr","time":84.644304077,"data":"E1115 19:55:19.730000 47 torch/distributed/elastic/multiprocessing/api.py:986] failed (exitcode: 1) local_rank: 0 (pid: 56) of binary: /usr/bin/python3\n"}
+,{"stream_name":"stderr","time":84.649587663,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":84.650567495,"data":"  File \"/usr/local/bin/torchrun\", line 10, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":84.650586041,"data":"    sys.exit(main())\n"}
+,{"stream_name":"stderr","time":84.650590506,"data":"             ~~~~^^\n"}
+,{"stream_name":"stderr","time":84.650593991,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py\", line 362, in wrapper\n"}
+,{"stream_name":"stderr","time":84.650611539,"data":"    return f(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":84.650615097,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/distributed/run.py\", line 990, in main\n"}
+,{"stream_name":"stderr","time":84.650618543,"data":"    run(args)\n"}
+,{"stream_name":"stderr","time":84.650621871,"data":"    ~~~^^^^^^\n"}
+,{"stream_name":"stderr","time":84.650624971,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/distributed/run.py\", line 981, in run\n"}
+,{"stream_name":"stderr","time":84.650628345,"data":"    elastic_launch(\n"}
+,{"stream_name":"stderr","time":84.650631644,"data":"    ~~~~~~~~~~~~~~~\n"}
+,{"stream_name":"stderr","time":84.650634869,"data":"        config=config,\n"}
+,{"stream_name":"stderr","time":84.650638217,"data":"        ~~~~~~~~~~~~~~\n"}
+,{"stream_name":"stderr","time":84.650641385,"data":"        entrypoint=cmd,\n"}
+,{"stream_name":"stderr","time":84.650644737,"data":"        ~~~~~~~~~~~~~~~\n"}
+,{"stream_name":"stderr","time":84.650647852,"data":"    )(*cmd_args)\n"}
+,{"stream_name":"stderr","time":84.650651102,"data":"    ~^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":84.650654243,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/distributed/launcher/api.py\", line 170, in __call__\n"}
+,{"stream_name":"stderr","time":84.650657708,"data":"    return launch_agent(self._config, self._entrypoint, list(args))\n"}
+,{"stream_name":"stderr","time":84.650661226,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/distributed/launcher/api.py\", line 317, in launch_agent\n"}
+,{"stream_name":"stderr","time":84.650664781,"data":"    raise ChildFailedError(\n"}
+,{"stream_name":"stderr","time":84.650668404,"data":"    ...\u003c2 lines\u003e...\n"}
+,{"stream_name":"stderr","time":84.650672108,"data":"    )\n"}
+,{"stream_name":"stderr","time":84.650681688,"data":"torch.distributed.elastic.multiprocessing.errors.ChildFailedError: \n"}
+,{"stream_name":"stderr","time":84.650685433,"data":"============================================================\n"}
+,{"stream_name":"stderr","time":84.650689237,"data":"/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py FAILED\n"}
+,{"stream_name":"stderr","time":84.650693101,"data":"------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":84.650696957,"data":"Failures:\n"}
+,{"stream_name":"stderr","time":84.650700134,"data":"[1]:\n"}
+,{"stream_name":"stderr","time":84.6507035,"data":"  time      : 2026-11-15_19:55:19\n"}
+,{"stream_name":"stderr","time":84.650706795,"data":"  host      : 3cc88caf5af5\n"}
+,{"stream_name":"stderr","time":84.650710203,"data":"  rank      : 1 (local_rank: 1)\n"}
+,{"stream_name":"stderr","time":84.650713377,"data":"  exitcode  : 1 (pid: 57)\n"}
+,{"stream_name":"stderr","time":84.650716794,"data":"  error_file: \u003cN/A\u003e\n"}
+,{"stream_name":"stderr","time":84.650719974,"data":"  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html\n"}
+,{"stream_name":"stderr","time":84.650722997,"data":"------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":84.650726424,"data":"Root Cause (first observed failure):\n"}
+,{"stream_name":"stderr","time":84.650730045,"data":"[0]:\n"}
+,{"stream_name":"stderr","time":84.650753809,"data":"  time      : 2026-11-15_19:55:19\n"}
+,{"stream_name":"stderr","time":84.650761121,"data":"  host      : 3cc88caf5af5\n"}
+,{"stream_name":"stderr","time":84.650765045,"data":"  rank      : 0 (local_rank: 0)\n"}
+,{"stream_name":"stderr","time":84.650774826,"data":"  exitcode  : 1 (pid: 56)\n"}
+,{"stream_name":"stderr","time":84.650778362,"data":"  error_file: \u003cN/A\u003e\n"}
+,{"stream_name":"stderr","time":84.650782131,"data":"  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html\n"}
+,{"stream_name":"stderr","time":84.650786039,"data":"============================================================\n"}
+,{"stream_name":"stderr","time":84.733135457,"data":"W1115 19:55:19.615000 47 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 57 closing signal SIGTERM\n"}
+,{"stream_name":"stderr","time":84.733175046,"data":"E1115 19:55:19.730000 47 torch/distributed/elastic/multiprocessing/api.py:986] failed (exitcode: 1) local_rank: 0 (pid: 56) of binary: /usr/bin/python3\n"}
+,{"stream_name":"stderr","time":84.733181146,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":84.733185078,"data":"  File \"/usr/local/bin/torchrun\", line 10, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":84.733189392,"data":"    sys.exit(main())\n"}
+,{"stream_name":"stderr","time":84.733193273,"data":"             ~~~~^^\n"}
+,{"stream_name":"stderr","time":84.733197135,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py\", line 362, in wrapper\n"}
+,{"stream_name":"stderr","time":84.73320078,"data":"    return f(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":84.733204147,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/distributed/run.py\", line 990, in main\n"}
+,{"stream_name":"stderr","time":84.733207618,"data":"    run(args)\n"}
+,{"stream_name":"stderr","time":84.733210813,"data":"    ~~~^^^^^^\n"}
+,{"stream_name":"stderr","time":84.733213994,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/distributed/run.py\", line 981, in run\n"}
+,{"stream_name":"stderr","time":84.733217488,"data":"    elastic_launch(\n"}
+,{"stream_name":"stderr","time":84.733220682,"data":"    ~~~~~~~~~~~~~~~\n"}
+,{"stream_name":"stderr","time":84.73322837,"data":"        config=config,\n"}
+,{"stream_name":"stderr","time":84.733231493,"data":"        ~~~~~~~~~~~~~~\n"}
+,{"stream_name":"stderr","time":84.733233791,"data":"        entrypoint=cmd,\n"}
+,{"stream_name":"stderr","time":84.733236,"data":"        ~~~~~~~~~~~~~~~\n"}
+,{"stream_name":"stderr","time":84.733238209,"data":"    )(*cmd_args)\n"}
+,{"stream_name":"stderr","time":84.733240409,"data":"    ~^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":84.73324269,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/distributed/launcher/api.py\", line 170, in __call__\n"}
+,{"stream_name":"stderr","time":84.73324509,"data":"    return launch_agent(self._config, self._entrypoint, list(args))\n"}
+,{"stream_name":"stderr","time":84.733247469,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/distributed/launcher/api.py\", line 317, in launch_agent\n"}
+,{"stream_name":"stderr","time":84.73324984,"data":"    raise ChildFailedError(\n"}
+,{"stream_name":"stderr","time":84.733252117,"data":"    ...\u003c2 lines\u003e...\n"}
+,{"stream_name":"stderr","time":84.733254439,"data":"    )\n"}
+,{"stream_name":"stderr","time":84.733256619,"data":"torch.distributed.elastic.multiprocessing.errors.ChildFailedError: \n"}
+,{"stream_name":"stderr","time":84.733259311,"data":"============================================================\n"}
+,{"stream_name":"stderr","time":84.733273164,"data":"/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py FAILED\n"}
+,{"stream_name":"stderr","time":84.733291176,"data":"------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":84.733294887,"data":"Failures:\n"}
+,{"stream_name":"stderr","time":84.73329802,"data":"[1]:\n"}
+,{"stream_name":"stderr","time":84.733301158,"data":"  time      : 2026-11-15_19:55:19\n"}
+,{"stream_name":"stderr","time":84.733304395,"data":"  host      : 3cc88caf5af5\n"}
+,{"stream_name":"stderr","time":84.733307619,"data":"  rank      : 1 (local_rank: 1)\n"}
+,{"stream_name":"stderr","time":84.733310788,"data":"  exitcode  : 1 (pid: 57)\n"}
+,{"stream_name":"stderr","time":84.733313985,"data":"  error_file: \u003cN/A\u003e\n"}
+,{"stream_name":"stderr","time":84.733317365,"data":"  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html\n"}
+,{"stream_name":"stderr","time":84.733320757,"data":"------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":84.733324075,"data":"Root Cause (first observed failure):\n"}
+,{"stream_name":"stderr","time":84.733327197,"data":"[0]:\n"}
+,{"stream_name":"stderr","time":84.733330335,"data":"  time      : 2026-11-15_19:55:19\n"}
+,{"stream_name":"stderr","time":84.733335407,"data":"  host      : 3cc88caf5af5\n"}
+,{"stream_name":"stderr","time":84.73334248,"data":"  rank      : 0 (local_rank: 0)\n"}
+,{"stream_name":"stderr","time":84.733344834,"data":"  exitcode  : 1 (pid: 56)\n"}
+,{"stream_name":"stderr","time":84.733348193,"data":"  error_file: \u003cN/A\u003e\n"}
+,{"stream_name":"stderr","time":84.733350619,"data":"  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html\n"}
+,{"stream_name":"stderr","time":84.73335298800001,"data":"============================================================\n"}
+,{"stream_name":"stderr","time":84.733355697,"data":"\n"}
+,{"stream_name":"stderr","time":84.733370231,"data":"W1115 19:55:19.615000 47 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 57 closing signal SIGTERM\n"}
+,{"stream_name":"stderr","time":84.733374604,"data":"E1115 19:55:19.730000 47 torch/distributed/elastic/multiprocessing/api.py:986] failed (exitcode: 1) local_rank: 0 (pid: 56) of binary: /usr/bin/python3\n"}
+,{"stream_name":"stderr","time":84.733378697,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":84.733382846,"data":"  File \"/usr/local/bin/torchrun\", line 10, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":84.733387157,"data":"    sys.exit(main())\n"}
+,{"stream_name":"stderr","time":84.733390303,"data":"             ~~~~^^\n"}
+,{"stream_name":"stderr","time":84.733393402,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py\", line 362, in wrapper\n"}
+,{"stream_name":"stderr","time":84.733397047,"data":"    return f(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":84.73340026,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/distributed/run.py\", line 990, in main\n"}
+,{"stream_name":"stderr","time":84.733403743,"data":"    run(args)\n"}
+,{"stream_name":"stderr","time":84.733407275,"data":"    ~~~^^^^^^\n"}
+,{"stream_name":"stderr","time":84.733410476,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/distributed/run.py\", line 981, in run\n"}
+,{"stream_name":"stderr","time":84.733413963,"data":"    elastic_launch(\n"}
+,{"stream_name":"stderr","time":84.733417113,"data":"    ~~~~~~~~~~~~~~~\n"}
+,{"stream_name":"stderr","time":84.733420288,"data":"        config=config,\n"}
+,{"stream_name":"stderr","time":84.733423483,"data":"        ~~~~~~~~~~~~~~\n"}
+,{"stream_name":"stderr","time":84.733430248,"data":"        entrypoint=cmd,\n"}
+,{"stream_name":"stderr","time":84.73343347,"data":"        ~~~~~~~~~~~~~~~\n"}
+,{"stream_name":"stderr","time":84.733436688,"data":"    )(*cmd_args)\n"}
+,{"stream_name":"stderr","time":84.733439893,"data":"    ~^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":84.733447433,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/distributed/launcher/api.py\", line 170, in __call__\n"}
+,{"stream_name":"stderr","time":84.73345078,"data":"    return launch_agent(self._config, self._entrypoint, list(args))\n"}
+,{"stream_name":"stderr","time":84.733464085,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/distributed/launcher/api.py\", line 317, in launch_agent\n"}
+,{"stream_name":"stderr","time":84.73347513,"data":"    raise ChildFailedError(\n"}
+,{"stream_name":"stderr","time":84.733488465,"data":"    ...\u003c2 lines\u003e...\n"}
+,{"stream_name":"stderr","time":84.733492352,"data":"    )\n"}
+,{"stream_name":"stderr","time":84.733495436,"data":"torch.distributed.elastic.multiprocessing.errors.ChildFailedError: \n"}
+,{"stream_name":"stderr","time":84.733498682,"data":"============================================================\n"}
+,{"stream_name":"stderr","time":84.73350198,"data":"/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py FAILED\n"}
+,{"stream_name":"stderr","time":84.733505348,"data":"------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":84.733508676,"data":"Failures:\n"}
+,{"stream_name":"stderr","time":84.733511725,"data":"[1]:\n"}
+,{"stream_name":"stderr","time":84.733514902,"data":"  time      : 2026-11-15_19:55:19\n"}
+,{"stream_name":"stderr","time":84.733518072,"data":"  host      : 3cc88caf5af5\n"}
+,{"stream_name":"stderr","time":84.73352129,"data":"  rank      : 1 (local_rank: 1)\n"}
+,{"stream_name":"stderr","time":84.733524515,"data":"  exitcode  : 1 (pid: 57)\n"}
+,{"stream_name":"stderr","time":84.733527707,"data":"  error_file: \u003cN/A\u003e\n"}
+,{"stream_name":"stderr","time":84.733531014,"data":"  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html\n"}
+,{"stream_name":"stderr","time":84.733534408,"data":"------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":84.733538037,"data":"Root Cause (first observed failure):\n"}
+,{"stream_name":"stderr","time":84.733541261,"data":"[0]:\n"}
+,{"stream_name":"stderr","time":84.733546085,"data":"  time      : 2026-11-15_19:55:19\n"}
+,{"stream_name":"stderr","time":84.733552825,"data":"  host      : 3cc88caf5af5\n"}
+,{"stream_name":"stderr","time":84.733566696,"data":"  rank      : 0 (local_rank: 0)\n"}
+,{"stream_name":"stderr","time":84.733570424,"data":"  exitcode  : 1 (pid: 56)\n"}
+,{"stream_name":"stderr","time":84.733574132,"data":"  error_file: \u003cN/A\u003e\n"}
+,{"stream_name":"stderr","time":84.733578042,"data":"  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html\n"}
+,{"stream_name":"stderr","time":84.733582223,"data":"============================================================\n"}
+,{"stream_name":"stderr","time":86.054390911,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":86.055124002,"data":"  File \"\u003cstring\u003e\", line 1, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":86.055139334,"data":"    import sys;import papermill as pm;pm.execute_notebook(\"__notebook__.ipynb\",\"__notebook__.ipynb\",progress_bar=False,log_output=True,stdout_file=sys.stdout,stderr_file=sys.stderr,allow_errors=False,timeout=43200)\n"}
+,{"stream_name":"stderr","time":86.055171646,"data":"                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":86.05518595,"data":"  File \"/usr/local/lib/python3.13/dist-packages/papermill/execute.py\", line 131, in execute_notebook\n"}
+,{"stream_name":"stderr","time":86.055190238,"data":"    raise_for_execution_errors(nb, output_path)\n"}
+,{"stream_name":"stderr","time":86.055194302,"data":"    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":86.055197908,"data":"  File \"/usr/local/lib/python3.13/dist-packages/papermill/execute.py\", line 251, in raise_for_execution_errors\n"}
+,{"stream_name":"stderr","time":86.055201694,"data":"    raise error\n"}
+,{"stream_name":"stderr","time":86.055205126,"data":"papermill.exceptions.PapermillExecutionError: \n"}
+,{"stream_name":"stderr","time":86.05520865,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":86.055212242,"data":"Exception encountered at \"In [2]\":\n"}
+,{"stream_name":"stderr","time":86.055215984,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":86.055224928,"data":"CalledProcessError                        Traceback (most recent call last)\n"}
+,{"stream_name":"stderr","time":86.055233848,"data":"/tmp/ipykernel_24/241376089.py in \u003ccell line: 0\u003e()\n"}
+,{"stream_name":"stderr","time":86.055236585,"data":"     58 t_arm = time.time()\n"}
+,{"stream_name":"stderr","time":86.055239041,"data":"     59 try:\n"}
+,{"stream_name":"stderr","time":86.055241344,"data":"---\u003e 60     subprocess.check_call(cmd, env=env)\n"}
+,{"stream_name":"stderr","time":86.055243812,"data":"     61     print(f\"=== Finished trial_a1 in {time.time() - t_arm:.1f}s ===\", flush=True)\n"}
+,{"stream_name":"stderr","time":86.05524631,"data":"     62     completed_arms.append(\"trial_a1\")\n"}
+,{"stream_name":"stderr","time":86.055248894,"data":"\n"}
+,{"stream_name":"stderr","time":86.055251116,"data":"/usr/lib/python3.13/subprocess.py in check_call(*popenargs, **kwargs)\n"}
+,{"stream_name":"stderr","time":86.055253547,"data":"    418         if cmd is None:\n"}
+,{"stream_name":"stderr","time":86.055255872,"data":"    419             cmd = popenargs[0]\n"}
+,{"stream_name":"stderr","time":86.055258306,"data":"--\u003e 420         raise CalledProcessError(retcode, cmd)\n"}
+,{"stream_name":"stderr","time":86.055260743,"data":"    421     return 0\n"}
+,{"stream_name":"stderr","time":86.055263072,"data":"    422 \n"}
+,{"stream_name":"stderr","time":86.055265385,"data":"\n"}
+,{"stream_name":"stderr","time":86.055274846,"data":"CalledProcessError: Command '['torchrun', '--standalone', '--nproc_per_node=2', '/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py', '--model-dir', '/tmp/lfm3_base_staged', '--role', 'deriver', '--train-file', '/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/v15_train_272.sft.jsonl', '--dev-file', '/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/dev_24.sft.jsonl', '--out', '/kaggle/working/trial_a1', '--mode', 'train', '--max-seq-len', '5600', '--epochs', '2', '--max-steps', '24', '--effective-batch', '8', '--microbatch', '1', '--checkpoint-steps', '10', '--lora-r', '16', '--lora-alpha', '32', '--target-modules', 'all-linear', '--lr', '2e-4', '--stress-longest-first', '--milestones', '25,50,75', '--milestone-probe-rows', '8', '--milestone-max-new-tokens', '600', '--eval-max-new-tokens', '1800', '--time-budget-s', '1100']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":86.055283163,"data":"\n"}
+,{"stream_name":"stderr","time":88.237576589,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":88.237606163,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":88.400850505,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":88.400877292,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":89.155191056,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":89.233323211,"data":"[NbConvertApp] Writing 27075 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":91.817851711,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":92.325450467,"data":"[NbConvertApp] Writing 320881 bytes to __results__.html\n"}
+]
