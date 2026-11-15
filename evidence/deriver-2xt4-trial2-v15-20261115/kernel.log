@@ -1,0 +1,380 @@
+[{"stream_name":"stderr","time":12.039881885,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":12.039932478,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":12.03993719,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":12.039940076,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":12.792657168,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":12.792705825,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":12.792712067,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":12.792719398,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":27.631140363,"data":"Visible GPUs: 2 ['Tesla T4', 'Tesla T4']\n"}
+,{"stream_name":"stdout","time":28.193831905,"data":"SRC_MODEL_DIR: /kaggle/input/datasets/<kaggle-user>/lfm3-1p7b-base\n"}
+,{"stream_name":"stdout","time":28.193854862,"data":"PAYLOAD_DIR: /kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload\n"}
+,{"stream_name":"stdout","time":42.629493477,"data":"Staged model to /tmp/lfm3_base_staged in 14.6s\n"}
+,{"stream_name":"stdout","time":42.630366482,"data":"Active MODEL_DIR: /tmp/lfm3_base_staged\n"}
+,{"stream_name":"stdout","time":42.648854735,"data":"=== Launching Trial Run 2 (sprint_a2, Pass 1: 20 steps) ===\n"}
+,{"stream_name":"stdout","time":42.649991966,"data":"CMD 1: torchrun --standalone --nproc_per_node=2 /kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py --model-dir /tmp/lfm3_base_staged --role deriver --train-file /kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/v15_train_272.sft.jsonl --dev-file /kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/dev_24.sft.jsonl --out /kaggle/working/trial_a2 --mode train --max-seq-len 5600 --epochs 2 --max-steps 20 --effective-batch 8 --microbatch 1 --checkpoint-steps 10 --lora-r 32 --lora-alpha 64 --target-modules all-linear --lr 1.5e-4 --stress-longest-first --milestones 25,50,75 --milestone-probe-rows 4 --milestone-max-new-tokens 600 --eval-max-new-tokens 1800 --time-budget-s 825\n"}
+,{"stream_name":"stderr","time":47.993879256,"data":"W1115 21:05:46.587000 47 torch/distributed/run.py:851] \n"}
+,{"stream_name":"stderr","time":47.993905455,"data":"W1115 21:05:46.587000 47 torch/distributed/run.py:851] *****************************************\n"}
+,{"stream_name":"stderr","time":47.993911232,"data":"W1115 21:05:46.587000 47 torch/distributed/run.py:851] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. \n"}
+,{"stream_name":"stderr","time":47.993917366,"data":"W1115 21:05:46.587000 47 torch/distributed/run.py:851] *****************************************\n"}
+,{"stream_name":"stderr","time":48.195978861,"data":"W1115 21:05:46.587000 47 torch/distributed/run.py:851] \n"}
+,{"stream_name":"stderr","time":48.196010188,"data":"W1115 21:05:46.587000 47 torch/distributed/run.py:851] *****************************************\n"}
+,{"stream_name":"stderr","time":48.196016623,"data":"W1115 21:05:46.587000 47 torch/distributed/run.py:851] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. \n"}
+,{"stream_name":"stderr","time":48.196034288,"data":"W1115 21:05:46.587000 47 torch/distributed/run.py:851] *****************************************\n"}
+,{"stream_name":"stderr","time":48.19603824,"data":"\n"}
+,{"stream_name":"stderr","time":48.196043304,"data":"W1115 21:05:46.587000 47 torch/distributed/run.py:851] \n"}
+,{"stream_name":"stderr","time":48.196051778,"data":"W1115 21:05:46.587000 47 torch/distributed/run.py:851] *****************************************\n"}
+,{"stream_name":"stderr","time":48.196054896,"data":"W1115 21:05:46.587000 47 torch/distributed/run.py:851] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. \n"}
+,{"stream_name":"stderr","time":48.196057744,"data":"W1115 21:05:46.587000 47 torch/distributed/run.py:851] *****************************************\n"}
+,{"stream_name":"stderr","time":106.802081219,"data":"\rLoading weights:   0%|          | 0/286 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 0/286 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 0/286 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 0/286 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stderr","time":108.774420384,"data":"\rLoading weights:   0%|          | 0/286 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 0/286 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 1/286 [00:01\u003c09:21,  1.97s/it]\rLoading weights:   0%|          | 1/286 [00:01\u003c08:38,  1.82s/it]\rLoading weights:  57%|█████▋    | 162/286 [00:02\u003c00:01, 108.32it/s]\rLoading weights:  51%|█████     | 145/286 [00:01\u003c00:01, 103.58it/s]\rLoading weights:   0%|          | 1/286 [00:01\u003c09:21,  1.97s/it]\rLoading weights:   0%|          | 1/286 [00:01\u003c08:38,  1.82s/it]\rLoading weights:  57%|█████▋    | 162/286 [00:02\u003c00:01, 108.32it/s]\rLoading weights:  51%|█████     | 145/286 [00:01\u003c00:01, 103.58it/s]\n"}
+,{"stream_name":"stderr","time":109.490538196,"data":"\rLoading weights:   0%|          | 1/286 [00:01\u003c09:21,  1.97s/it]\rLoading weights:   0%|          | 1/286 [00:01\u003c08:38,  1.82s/it]\rLoading weights:  57%|█████▋    | 162/286 [00:02\u003c00:01, 108.32it/s]\rLoading weights:  51%|█████     | 145/286 [00:01\u003c00:01, 103.58it/s]\rLoading weights:  75%|███████▍  | 214/286 [00:02\u003c00:00, 109.31it/s]\rLoading weights:  75%|███████▍  | 214/286 [00:02\u003c00:00, 109.31it/s]\n"}
+,{"stream_name":"stderr","time":109.695218404,"data":"\rLoading weights:  75%|███████▍  | 214/286 [00:02\u003c00:00, 109.31it/s]\rLoading weights:  86%|████████▌ | 245/286 [00:02\u003c00:00, 105.44it/s]\rLoading weights:  86%|████████▌ | 245/286 [00:02\u003c00:00, 105.44it/s]\n"}
+,{"stream_name":"stderr","time":109.85366328,"data":"\rLoading weights:  86%|████████▌ | 245/286 [00:02\u003c00:00, 105.44it/s]\rLoading weights:  90%|████████▉ | 257/286 [00:02\u003c00:00, 104.22it/s]\rLoading weights: 100%|██████████| 286/286 [00:03\u003c00:00, 87.73it/s] \n"}
+,{"stream_name":"stderr","time":109.918065528,"data":"\rLoading weights: 100%|██████████| 286/286 [00:03\u003c00:00, 90.64it/s] \n"}
+,{"stream_name":"stderr","time":109.953538189,"data":"\rLoading weights:  90%|████████▉ | 257/286 [00:02\u003c00:00, 104.22it/s]\rLoading weights: 100%|██████████| 286/286 [00:03\u003c00:00, 87.73it/s] \n"}
+,{"stream_name":"stderr","time":109.953568703,"data":"\rLoading weights: 100%|██████████| 286/286 [00:03\u003c00:00, 90.64it/s] \n"}
+,{"stream_name":"stderr","time":109.953574961,"data":"\n"}
+,{"stream_name":"stderr","time":109.953592052,"data":"\rLoading weights:  90%|████████▉ | 257/286 [00:02\u003c00:00, 104.22it/s]\rLoading weights: 100%|██████████| 286/286 [00:03\u003c00:00, 87.73it/s] \n"}
+,{"stream_name":"stderr","time":109.953596816,"data":"\rLoading weights: 100%|██████████| 286/286 [00:03\u003c00:00, 90.64it/s] \n"}
+,{"stream_name":"stderr","time":113.161131336,"data":"\r  0%|          | 0/20 [00:00\u003c?, ?it/s]\r  0%|          | 0/20 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":156.08158634,"data":"{'loss': '0.6188', 'grad_norm': '0.3675', 'learning_rate': '0', 'epoch': '0.02941'}\n"}
+,{"stream_name":"stderr","time":156.283992616,"data":"\r  0%|          | 0/20 [00:00\u003c?, ?it/s]\r  5%|▌         | 1/20 [00:43\u003c13:39, 43.12s/it]\r                                              \r\r  5%|▌         | 1/20 [00:43\u003c13:39, 43.12s/it]\r  5%|▌         | 1/20 [00:43\u003c13:39, 43.12s/it]\r                                              \r\r  5%|▌         | 1/20 [00:43\u003c13:39, 43.12s/it]\n"}
+,{"stream_name":"stdout","time":156.28616151,"data":"{'loss': '0.6188', 'grad_norm': '0.3675', 'learning_rate': '0', 'epoch': '0.02941'}\n"}
+,{"stream_name":"stdout","time":164.681111917,"data":"{'loss': '0.7769', 'grad_norm': '0.8269', 'learning_rate': '0.00015', 'epoch': '0.05882'}\n"}
+,{"stream_name":"stderr","time":164.883258059,"data":"\r  5%|▌         | 1/20 [00:43\u003c13:39, 43.12s/it]\r                                              \r\r  5%|▌         | 1/20 [00:43\u003c13:39, 43.12s/it]\r 10%|█         | 2/20 [00:51\u003c06:50, 22.82s/it]\r                                              \r\r 10%|█         | 2/20 [00:51\u003c06:50, 22.82s/it]\r 10%|█         | 2/20 [00:51\u003c06:50, 22.82s/it]\r                                              \r\r 10%|█         | 2/20 [00:51\u003c06:50, 22.82s/it]\n"}
+,{"stream_name":"stdout","time":164.884801161,"data":"{'loss': '0.7769', 'grad_norm': '0.8269', 'learning_rate': '0.00015', 'epoch': '0.05882'}\n"}
+,{"stream_name":"stdout","time":175.68745811,"data":"{'loss': '0.722', 'grad_norm': '0.4882', 'learning_rate': '0.000149', 'epoch': '0.08824'}\n"}
+,{"stream_name":"stderr","time":175.889680313,"data":"\r 10%|█         | 2/20 [00:51\u003c06:50, 22.82s/it]\r                                              \r\r 10%|█         | 2/20 [00:51\u003c06:50, 22.82s/it]\r 15%|█▌        | 3/20 [01:02\u003c04:56, 17.42s/it]\r                                              \r\r 15%|█▌        | 3/20 [01:02\u003c04:56, 17.42s/it]\r 15%|█▌        | 3/20 [01:02\u003c04:56, 17.42s/it]\r                                              \r\r 15%|█▌        | 3/20 [01:02\u003c04:56, 17.42s/it]\n"}
+,{"stream_name":"stdout","time":175.891329226,"data":"{'loss': '0.722', 'grad_norm': '0.4882', 'learning_rate': '0.000149', 'epoch': '0.08824'}\n"}
+,{"stream_name":"stdout","time":191.653633427,"data":"{'loss': '0.8019', 'grad_norm': '0.4683', 'learning_rate': '0.0001459', 'epoch': '0.1176'}\n"}
+,{"stream_name":"stderr","time":191.860079623,"data":"\r 15%|█▌        | 3/20 [01:02\u003c04:56, 17.42s/it]\r                                              \r\r 15%|█▌        | 3/20 [01:02\u003c04:56, 17.42s/it]\r 20%|██        | 4/20 [01:18\u003c04:29, 16.85s/it]\r                                              \r\r 20%|██        | 4/20 [01:18\u003c04:29, 16.85s/it]\r 20%|██        | 4/20 [01:18\u003c04:29, 16.85s/it]\r                                              \r\r 20%|██        | 4/20 [01:18\u003c04:29, 16.85s/it]\n"}
+,{"stream_name":"stdout","time":191.862179238,"data":"{'loss': '0.8019', 'grad_norm': '0.4683', 'learning_rate': '0.0001459', 'epoch': '0.1176'}\n"}
+,{"stream_name":"stderr","time":209.158673249,"data":"\r 20%|██        | 4/20 [01:18\u003c04:29, 16.85s/it]\r                                              \r\r 20%|██        | 4/20 [01:18\u003c04:29, 16.85s/it]\r 25%|██▌       | 5/20 [01:36\u003c04:16, 17.08s/it]/usr/local/lib/python3.13/dist-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.\n"}
+,{"stream_name":"stderr","time":209.158727258,"data":"  return func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":209.358699216,"data":"\r 25%|██▌       | 5/20 [01:36\u003c04:16, 17.08s/it]/usr/local/lib/python3.13/dist-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.\n"}
+,{"stream_name":"stderr","time":209.358733488,"data":"  return func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":209.358737977,"data":"\n"}
+,{"stream_name":"stderr","time":209.358741848,"data":"\r 25%|██▌       | 5/20 [01:36\u003c04:16, 17.08s/it]/usr/local/lib/python3.13/dist-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.\n"}
+,{"stream_name":"stderr","time":209.358746255,"data":"  return func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":323.886180944,"data":"/usr/local/lib/python3.13/dist-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.\n"}
+,{"stream_name":"stderr","time":323.886263163,"data":"  return func(*args, **kwargs)\n"}
+,{"stream_name":"stdout","time":323.88644201,"data":"{'loss': '0.8101', 'grad_norm': '0.4653', 'learning_rate': '0.000141', 'epoch': '0.1471'}\n"}
+,{"stream_name":"stdout","time":324.095320199,"data":"{'loss': '0.8101', 'grad_norm': '0.4653', 'learning_rate': '0.000141', 'epoch': '0.1471'}\n"}
+,{"stream_name":"stderr","time":324.095403962,"data":"\r                                              \r\r 25%|██▌       | 5/20 [03:30\u003c04:16, 17.08s/it]/usr/local/lib/python3.13/dist-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.\n"}
+,{"stream_name":"stderr","time":324.095440406,"data":"  return func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":324.095470795,"data":"\r                                              \r\r 25%|██▌       | 5/20 [03:30\u003c04:16, 17.08s/it]\n"}
+,{"stream_name":"stderr","time":324.095476431,"data":"/usr/local/lib/python3.13/dist-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.\n"}
+,{"stream_name":"stderr","time":324.095482214,"data":"  return func(*args, **kwargs)\n"}
+,{"stream_name":"stdout","time":356.263257177,"data":"{'loss': '0.6909', 'grad_norm': '0.3315', 'learning_rate': '0.0001342', 'epoch': '0.1765'}\n"}
+,{"stream_name":"stderr","time":356.469291018,"data":"\r                                              \r\r 25%|██▌       | 5/20 [03:30\u003c04:16, 17.08s/it]\r 30%|███       | 6/20 [04:03\u003c14:18, 61.29s/it]\r                                              \r\r 30%|███       | 6/20 [04:03\u003c14:18, 61.29s/it]\r 30%|███       | 6/20 [04:03\u003c14:18, 61.29s/it]\r                                              \r\r 30%|███       | 6/20 [04:03\u003c14:18, 61.29s/it]\n"}
+,{"stream_name":"stdout","time":356.470660437,"data":"{'loss': '0.6909', 'grad_norm': '0.3315', 'learning_rate': '0.0001342', 'epoch': '0.1765'}\n"}
+,{"stream_name":"stdout","time":379.079848201,"data":"{'loss': '0.6334', 'grad_norm': '0.3882', 'learning_rate': '0.0001258', 'epoch': '0.2059'}\n"}
+,{"stream_name":"stderr","time":379.282916233,"data":"\r 30%|███       | 6/20 [04:03\u003c14:18, 61.29s/it]\r                                              \r\r 30%|███       | 6/20 [04:03\u003c14:18, 61.29s/it]\r 35%|███▌      | 7/20 [04:26\u003c10:33, 48.71s/it]\r                                              \r\r 35%|███▌      | 7/20 [04:26\u003c10:33, 48.71s/it]\r 35%|███▌      | 7/20 [04:26\u003c10:33, 48.71s/it]\r                                              \r\r 35%|███▌      | 7/20 [04:26\u003c10:33, 48.71s/it]\n"}
+,{"stream_name":"stdout","time":379.283704095,"data":"{'loss': '0.6334', 'grad_norm': '0.3882', 'learning_rate': '0.0001258', 'epoch': '0.2059'}\n"}
+,{"stream_name":"stdout","time":404.55571828,"data":"{'loss': '0.6885', 'grad_norm': '0.365', 'learning_rate': '0.000116', 'epoch': '0.2353'}\n"}
+,{"stream_name":"stderr","time":404.76111868,"data":"\r 35%|███▌      | 7/20 [04:26\u003c10:33, 48.71s/it]\r                                              \r\r 35%|███▌      | 7/20 [04:26\u003c10:33, 48.71s/it]\r 40%|████      | 8/20 [04:51\u003c08:15, 41.32s/it]\r                                              \r\r 40%|████      | 8/20 [04:51\u003c08:15, 41.32s/it]\r 40%|████      | 8/20 [04:51\u003c08:15, 41.32s/it]\r                                              \r\r 40%|████      | 8/20 [04:51\u003c08:15, 41.32s/it]\n"}
+,{"stream_name":"stdout","time":404.762255481,"data":"{'loss': '0.6885', 'grad_norm': '0.365', 'learning_rate': '0.000116', 'epoch': '0.2353'}\n"}
+,{"stream_name":"stdout","time":424.844204517,"data":"{'loss': '0.5464', 'grad_norm': '0.3288', 'learning_rate': '0.0001051', 'epoch': '0.2647'}\n"}
+,{"stream_name":"stderr","time":425.046683342,"data":"\r 40%|████      | 8/20 [04:51\u003c08:15, 41.32s/it]\r                                              \r\r 40%|████      | 8/20 [04:51\u003c08:15, 41.32s/it]\r 45%|████▌     | 9/20 [05:11\u003c06:22, 34.74s/it]\r                                              \r\r 45%|████▌     | 9/20 [05:11\u003c06:22, 34.74s/it]\r 45%|████▌     | 9/20 [05:11\u003c06:22, 34.74s/it]\r                                              \r\r 45%|████▌     | 9/20 [05:11\u003c06:22, 34.74s/it]\n"}
+,{"stream_name":"stdout","time":425.048597223,"data":"{'loss': '0.5464', 'grad_norm': '0.3288', 'learning_rate': '0.0001051', 'epoch': '0.2647'}\n"}
+,{"stream_name":"stderr","time":432.925058009,"data":"\r 45%|████▌     | 9/20 [05:11\u003c06:22, 34.74s/it]\r                                              \r\r 45%|████▌     | 9/20 [05:11\u003c06:22, 34.74s/it]\r 50%|█████     | 10/20 [05:19\u003c04:24, 26.45s/it]\r 50%|█████     | 10/20 [05:19\u003c04:24, 26.45s/it]\n"}
+,{"stream_name":"stdout","time":544.108335616,"data":"{'loss': '0.284', 'grad_norm': '1.223', 'learning_rate': '9.341e-05', 'epoch': '0.2941'}\n"}
+,{"stream_name":"stderr","time":544.314562435,"data":"\r 50%|█████     | 10/20 [05:19\u003c04:24, 26.45s/it]\r                                               \r\r 50%|█████     | 10/20 [07:11\u003c04:24, 26.45s/it]\r                                               \r\r 50%|█████     | 10/20 [07:11\u003c04:24, 26.45s/it]\n"}
+,{"stream_name":"stdout","time":544.315725058,"data":"{'loss': '0.284', 'grad_norm': '1.223', 'learning_rate': '9.341e-05', 'epoch': '0.2941'}\n"}
+,{"stream_name":"stdout","time":554.79438224,"data":"{'loss': '0.2722', 'grad_norm': '0.9595', 'learning_rate': '8.119e-05', 'epoch': '0.3235'}\n"}
+,{"stream_name":"stderr","time":554.996532528,"data":"\r                                               \r\r 50%|█████     | 10/20 [07:11\u003c04:24, 26.45s/it]\r 55%|█████▌    | 11/20 [07:21\u003c08:21, 55.71s/it]\r                                               \r\r 55%|█████▌    | 11/20 [07:21\u003c08:21, 55.71s/it]\r 55%|█████▌    | 11/20 [07:21\u003c08:21, 55.71s/it]\r                                               \r\r 55%|█████▌    | 11/20 [07:21\u003c08:21, 55.71s/it]\n"}
+,{"stream_name":"stdout","time":554.997729871,"data":"{'loss': '0.2722', 'grad_norm': '0.9595', 'learning_rate': '8.119e-05', 'epoch': '0.3235'}\n"}
+,{"stream_name":"stdout","time":559.784245055,"data":"{'loss': '0.2492', 'grad_norm': '0.3723', 'learning_rate': '6.881e-05', 'epoch': '0.3529'}\n"}
+,{"stream_name":"stderr","time":559.987076772,"data":"\r 55%|█████▌    | 11/20 [07:21\u003c08:21, 55.71s/it]\r                                               \r\r 55%|█████▌    | 11/20 [07:21\u003c08:21, 55.71s/it]\r 60%|██████    | 12/20 [07:26\u003c05:22, 40.28s/it]\r                                               \r\r 60%|██████    | 12/20 [07:26\u003c05:22, 40.28s/it]\r 60%|██████    | 12/20 [07:26\u003c05:22, 40.28s/it]\r                                               \r\r 60%|██████    | 12/20 [07:26\u003c05:22, 40.28s/it]\n"}
+,{"stream_name":"stdout","time":559.988926756,"data":"{'loss': '0.2492', 'grad_norm': '0.3723', 'learning_rate': '6.881e-05', 'epoch': '0.3529'}\n"}
+,{"stream_name":"stdout","time":566.674522036,"data":"{'loss': '0.611', 'grad_norm': '0.7166', 'learning_rate': '5.659e-05', 'epoch': '0.3824'}\n"}
+,{"stream_name":"stderr","time":566.876707232,"data":"\r 60%|██████    | 12/20 [07:26\u003c05:22, 40.28s/it]\r                                               \r\r 60%|██████    | 12/20 [07:26\u003c05:22, 40.28s/it]\r 65%|██████▌   | 13/20 [07:33\u003c03:31, 30.17s/it]\r                                               \r\r 65%|██████▌   | 13/20 [07:33\u003c03:31, 30.17s/it]\r 65%|██████▌   | 13/20 [07:33\u003c03:31, 30.17s/it]\r                                               \r\r 65%|██████▌   | 13/20 [07:33\u003c03:31, 30.17s/it]\n"}
+,{"stream_name":"stdout","time":566.878612726,"data":"{'loss': '0.611', 'grad_norm': '0.7166', 'learning_rate': '5.659e-05', 'epoch': '0.3824'}\n"}
+,{"stream_name":"stdout","time":573.55707579,"data":"{'loss': '0.5902', 'grad_norm': '0.6417', 'learning_rate': '4.487e-05', 'epoch': '0.4118'}\n"}
+,{"stream_name":"stderr","time":573.759436574,"data":"\r 65%|██████▌   | 13/20 [07:33\u003c03:31, 30.17s/it]\r                                               \r\r 65%|██████▌   | 13/20 [07:33\u003c03:31, 30.17s/it]\r 70%|███████   | 14/20 [07:40\u003c02:18, 23.13s/it]\r                                               \r\r 70%|███████   | 14/20 [07:40\u003c02:18, 23.13s/it]\r 70%|███████   | 14/20 [07:40\u003c02:18, 23.13s/it]\r                                               \r\r 70%|███████   | 14/20 [07:40\u003c02:18, 23.13s/it]\n"}
+,{"stream_name":"stdout","time":573.760915899,"data":"{'loss': '0.5902', 'grad_norm': '0.6417', 'learning_rate': '4.487e-05', 'epoch': '0.4118'}\n"}
+,{"stream_name":"stderr","time":582.358780554,"data":"\r 70%|███████   | 14/20 [07:40\u003c02:18, 23.13s/it]\r                                               \r\r 70%|███████   | 14/20 [07:40\u003c02:18, 23.13s/it]\r 75%|███████▌  | 15/20 [07:49\u003c01:34, 18.81s/it]/usr/local/lib/python3.13/dist-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.\n"}
+,{"stream_name":"stderr","time":582.358812382,"data":"  return func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":582.563196482,"data":"\r 75%|███████▌  | 15/20 [07:49\u003c01:34, 18.81s/it]/usr/local/lib/python3.13/dist-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.\n"}
+,{"stream_name":"stderr","time":582.563274722,"data":"  return func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":582.563280422,"data":"\n"}
+,{"stream_name":"stderr","time":582.563283546,"data":"\r 75%|███████▌  | 15/20 [07:49\u003c01:34, 18.81s/it]/usr/local/lib/python3.13/dist-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.\n"}
+,{"stream_name":"stderr","time":582.563287638,"data":"  return func(*args, **kwargs)\n"}
+,{"stream_name":"stdout","time":587.065827734,"data":"{'loss': '0.3811', 'grad_norm': '0.3662', 'learning_rate': '3.398e-05', 'epoch': '0.4412'}\n"}
+,{"stream_name":"stderr","time":587.269658749,"data":"\r                                               \r\r 75%|███████▌  | 15/20 [07:54\u003c01:34, 18.81s/it]\r                                               \r\r 75%|███████▌  | 15/20 [07:54\u003c01:34, 18.81s/it]\n"}
+,{"stream_name":"stdout","time":587.270857434,"data":"{'loss': '0.3811', 'grad_norm': '0.3662', 'learning_rate': '3.398e-05', 'epoch': '0.4412'}\n"}
+,{"stream_name":"stdout","time":594.743646782,"data":"{'loss': '0.4622', 'grad_norm': '0.5492', 'learning_rate': '2.42e-05', 'epoch': '0.4706'}\n"}
+,{"stream_name":"stderr","time":594.945933771,"data":"\r                                               \r\r 75%|███████▌  | 15/20 [07:54\u003c01:34, 18.81s/it]\r 80%|████████  | 16/20 [08:01\u003c01:07, 16.88s/it]\r                                               \r\r 80%|████████  | 16/20 [08:01\u003c01:07, 16.88s/it]\r 80%|████████  | 16/20 [08:01\u003c01:07, 16.88s/it]\r                                               \r\r 80%|████████  | 16/20 [08:01\u003c01:07, 16.88s/it]\n"}
+,{"stream_name":"stdout","time":594.947647357,"data":"{'loss': '0.4622', 'grad_norm': '0.5492', 'learning_rate': '2.42e-05', 'epoch': '0.4706'}\n"}
+,{"stream_name":"stdout","time":601.003625112,"data":"{'loss': '0.479', 'grad_norm': '0.6074', 'learning_rate': '1.581e-05', 'epoch': '0.5'}\n"}
+,{"stream_name":"stderr","time":601.206580163,"data":"\r 80%|████████  | 16/20 [08:01\u003c01:07, 16.88s/it]\r                                               \r\r 80%|████████  | 16/20 [08:01\u003c01:07, 16.88s/it]\r 85%|████████▌ | 17/20 [08:08\u003c00:41, 13.69s/it]\r                                               \r\r 85%|████████▌ | 17/20 [08:08\u003c00:41, 13.69s/it]\r 85%|████████▌ | 17/20 [08:08\u003c00:41, 13.69s/it]\r                                               \r\r 85%|████████▌ | 17/20 [08:08\u003c00:41, 13.69s/it]\n"}
+,{"stream_name":"stdout","time":601.207936997,"data":"{'loss': '0.479', 'grad_norm': '0.6074', 'learning_rate': '1.581e-05', 'epoch': '0.5'}\n"}
+,{"stream_name":"stdout","time":619.702201275,"data":"{'loss': '0.769', 'grad_norm': '0.5469', 'learning_rate': '9.039e-06', 'epoch': '0.5294'}\n"}
+,{"stream_name":"stderr","time":619.909705422,"data":"\r 85%|████████▌ | 17/20 [08:08\u003c00:41, 13.69s/it]\r                                               \r\r 85%|████████▌ | 17/20 [08:08\u003c00:41, 13.69s/it]\r 90%|█████████ | 18/20 [08:26\u003c00:30, 15.19s/it]\r                                               \r\r 90%|█████████ | 18/20 [08:26\u003c00:30, 15.19s/it]\r 90%|█████████ | 18/20 [08:26\u003c00:30, 15.19s/it]\r                                               \r\r 90%|█████████ | 18/20 [08:26\u003c00:30, 15.19s/it]\n"}
+,{"stream_name":"stdout","time":619.91097117,"data":"{'loss': '0.769', 'grad_norm': '0.5469', 'learning_rate': '9.039e-06', 'epoch': '0.5294'}\n"}
+,{"stream_name":"stdout","time":640.944393803,"data":"{'loss': '0.7159', 'grad_norm': '0.4263', 'learning_rate': '4.064e-06', 'epoch': '0.5588'}\n"}
+,{"stream_name":"stderr","time":641.147618384,"data":"\r 90%|█████████ | 18/20 [08:26\u003c00:30, 15.19s/it]\r                                               \r\r 90%|█████████ | 18/20 [08:26\u003c00:30, 15.19s/it]\r 95%|█████████▌| 19/20 [08:47\u003c00:17, 17.01s/it]\r                                               \r\r 95%|█████████▌| 19/20 [08:47\u003c00:17, 17.01s/it]\r 95%|█████████▌| 19/20 [08:47\u003c00:17, 17.01s/it]\r                                               \r\r 95%|█████████▌| 19/20 [08:47\u003c00:17, 17.01s/it]\n"}
+,{"stream_name":"stdout","time":641.148285313,"data":"{'loss': '0.7159', 'grad_norm': '0.4263', 'learning_rate': '4.064e-06', 'epoch': '0.5588'}\n"}
+,{"stream_name":"stdout","time":666.549443258,"data":"{'loss': '0.3889', 'grad_norm': '0.3104', 'learning_rate': '1.023e-06', 'epoch': '0.5882'}\n"}
+,{"stream_name":"stderr","time":666.755102134,"data":"\r 95%|█████████▌| 19/20 [08:47\u003c00:17, 17.01s/it]\r                                               \r\r 95%|█████████▌| 19/20 [08:47\u003c00:17, 17.01s/it]\r100%|██████████| 20/20 [09:13\u003c00:00, 19.59s/it]\r                                               \r\r100%|██████████| 20/20 [09:13\u003c00:00, 19.59s/it]\r100%|██████████| 20/20 [09:13\u003c00:00, 19.59s/it]\r                                               \r\r100%|██████████| 20/20 [09:13\u003c00:00, 19.59s/it]\n"}
+,{"stream_name":"stdout","time":666.756225456,"data":"{'loss': '0.3889', 'grad_norm': '0.3104', 'learning_rate': '1.023e-06', 'epoch': '0.5882'}\n"}
+,{"stream_name":"stdout","time":667.037754748,"data":"{'train_runtime': '554.3', 'train_samples_per_second': '0.289', 'train_steps_per_second': '0.036', 'train_loss': '0.5746', 'epoch': '0.5882'}\n"}
+,{"stream_name":"stderr","time":667.038468895,"data":"\r100%|██████████| 20/20 [09:13\u003c00:00, 19.59s/it]\r                                               \r\r100%|██████████| 20/20 [09:13\u003c00:00, 19.59s/it]\r                                               \r\r100%|██████████| 20/20 [09:14\u003c00:00, 19.59s/it]/usr/local/lib/python3.13/dist-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.\n"}
+,{"stream_name":"stderr","time":667.038507862,"data":"  return func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":667.039730101,"data":"\r100%|██████████| 20/20 [09:14\u003c00:00, 27.70s/it]\n"}
+,{"stream_name":"stderr","time":667.241043059,"data":"\r                                               \r\r100%|██████████| 20/20 [09:14\u003c00:00, 19.59s/it]/usr/local/lib/python3.13/dist-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.\n"}
+,{"stream_name":"stderr","time":667.241111143,"data":"  return func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":667.241117119,"data":"\r100%|██████████| 20/20 [09:14\u003c00:00, 27.70s/it]\n"}
+,{"stream_name":"stderr","time":667.241122109,"data":"\n"}
+,{"stream_name":"stderr","time":667.241126587,"data":"\r                                               \r\r100%|██████████| 20/20 [09:14\u003c00:00, 19.59s/it]/usr/local/lib/python3.13/dist-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.\n"}
+,{"stream_name":"stderr","time":667.241170389,"data":"  return func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":667.241174734,"data":"\r100%|██████████| 20/20 [09:14\u003c00:00, 27.70s/it]\n"}
+,{"stream_name":"stdout","time":667.24209172,"data":"{'train_runtime': '554.3', 'train_samples_per_second': '0.289', 'train_steps_per_second': '0.036', 'train_loss': '0.5746', 'epoch': '0.5882'}\n"}
+,{"stream_name":"stdout","time":709.23202312,"data":"=== Finished trial_a2 Pass 1 in 666.6s ===\n"}
+,{"stream_name":"stdout","time":709.233028695,"data":"=== Launching Trial Run 2 (sprint_a2, Pass 2: 4-step resume from checkpoint-latest) ===\n"}
+,{"stream_name":"stdout","time":709.233999431,"data":"CMD 2: torchrun --standalone --nproc_per_node=2 /kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py --model-dir /tmp/lfm3_base_staged --role deriver --train-file /kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/v15_train_272.sft.jsonl --dev-file /kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/dev_24.sft.jsonl --out /kaggle/working/trial_a2 --mode train --max-seq-len 5600 --epochs 2 --max-steps 24 --effective-batch 8 --microbatch 1 --checkpoint-steps 10 --lora-r 32 --lora-alpha 64 --target-modules all-linear --lr 1.5e-4 --stress-longest-first --milestones 25,50,75 --resume /kaggle/working/trial_a2/checkpoint-latest --milestone-probe-rows 4 --milestone-max-new-tokens 600 --eval-max-new-tokens 1800 --time-budget-s 1100\n"}
+,{"stream_name":"stderr","time":710.9743039,"data":"W1115 21:16:49.568000 115 torch/distributed/run.py:851] \n"}
+,{"stream_name":"stderr","time":710.974331341,"data":"W1115 21:16:49.568000 115 torch/distributed/run.py:851] *****************************************\n"}
+,{"stream_name":"stderr","time":710.974337295,"data":"W1115 21:16:49.568000 115 torch/distributed/run.py:851] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. \n"}
+,{"stream_name":"stderr","time":710.974342725,"data":"W1115 21:16:49.568000 115 torch/distributed/run.py:851] *****************************************\n"}
+,{"stream_name":"stderr","time":711.176564775,"data":"W1115 21:16:49.568000 115 torch/distributed/run.py:851] \n"}
+,{"stream_name":"stderr","time":711.176590037,"data":"W1115 21:16:49.568000 115 torch/distributed/run.py:851] *****************************************\n"}
+,{"stream_name":"stderr","time":711.176596087,"data":"W1115 21:16:49.568000 115 torch/distributed/run.py:851] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. \n"}
+,{"stream_name":"stderr","time":711.176601535,"data":"W1115 21:16:49.568000 115 torch/distributed/run.py:851] *****************************************\n"}
+,{"stream_name":"stderr","time":711.17660584,"data":"\n"}
+,{"stream_name":"stderr","time":711.176609985,"data":"W1115 21:16:49.568000 115 torch/distributed/run.py:851] \n"}
+,{"stream_name":"stderr","time":711.176619402,"data":"W1115 21:16:49.568000 115 torch/distributed/run.py:851] *****************************************\n"}
+,{"stream_name":"stderr","time":711.176622774,"data":"W1115 21:16:49.568000 115 torch/distributed/run.py:851] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. \n"}
+,{"stream_name":"stderr","time":711.176634814,"data":"W1115 21:16:49.568000 115 torch/distributed/run.py:851] *****************************************\n"}
+,{"stream_name":"stderr","time":726.294404576,"data":"[rank0]: Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":726.294441448,"data":"[rank0]:   File \"/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py\", line 1445, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":726.294447496,"data":"[rank0]:     main()\n"}
+,{"stream_name":"stderr","time":726.294451124,"data":"[rank0]:     ~~~~^^\n"}
+,{"stream_name":"stderr","time":726.294455158,"data":"[rank0]:   File \"/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py\", line 1193, in main\n"}
+,{"stream_name":"stderr","time":726.294459244,"data":"[rank0]:     raise ValueError(contract_error[0])\n"}
+,{"stream_name":"stderr","time":726.294462798,"data":"[rank0]: ValueError: AssertionError: Resume contract changed\n"}
+,{"stream_name":"stderr","time":726.31057795,"data":"[rank1]: Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":726.310629683,"data":"[rank1]:   File \"/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py\", line 1445, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":726.310636652,"data":"[rank1]:     main()\n"}
+,{"stream_name":"stderr","time":726.310640133,"data":"[rank1]:     ~~~~^^\n"}
+,{"stream_name":"stderr","time":726.31064377,"data":"[rank1]:   File \"/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py\", line 1193, in main\n"}
+,{"stream_name":"stderr","time":726.31064783,"data":"[rank1]:     raise ValueError(contract_error[0])\n"}
+,{"stream_name":"stderr","time":726.310651181,"data":"[rank1]: ValueError: AssertionError: Resume contract changed\n"}
+,{"stream_name":"stderr","time":726.497385721,"data":"[rank0]: Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":726.49742122,"data":"[rank0]:   File \"/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py\", line 1445, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":726.497426677,"data":"[rank0]:     main()\n"}
+,{"stream_name":"stderr","time":726.497441111,"data":"[rank0]:     ~~~~^^\n"}
+,{"stream_name":"stderr","time":726.497444373,"data":"[rank0]:   File \"/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py\", line 1193, in main\n"}
+,{"stream_name":"stderr","time":726.497448125,"data":"[rank0]:     raise ValueError(contract_error[0])\n"}
+,{"stream_name":"stderr","time":726.497452399,"data":"[rank0]: ValueError: AssertionError: Resume contract changed\n"}
+,{"stream_name":"stderr","time":726.497455823,"data":"[rank1]: Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":726.49745907,"data":"[rank1]:   File \"/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py\", line 1445, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":726.497462936,"data":"[rank1]:     main()\n"}
+,{"stream_name":"stderr","time":726.497465944,"data":"[rank1]:     ~~~~^^\n"}
+,{"stream_name":"stderr","time":726.49746914,"data":"[rank1]:   File \"/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py\", line 1193, in main\n"}
+,{"stream_name":"stderr","time":726.497472586,"data":"[rank1]:     raise ValueError(contract_error[0])\n"}
+,{"stream_name":"stderr","time":726.497493079,"data":"[rank1]: ValueError: AssertionError: Resume contract changed\n"}
+,{"stream_name":"stderr","time":726.497517149,"data":"\n"}
+,{"stream_name":"stderr","time":726.497520711,"data":"[rank0]: Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":726.497523949,"data":"[rank0]:   File \"/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py\", line 1445, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":726.497527776,"data":"[rank0]:     main()\n"}
+,{"stream_name":"stderr","time":726.497530907,"data":"[rank0]:     ~~~~^^\n"}
+,{"stream_name":"stderr","time":726.497533971,"data":"[rank0]:   File \"/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py\", line 1193, in main\n"}
+,{"stream_name":"stderr","time":726.497537683,"data":"[rank0]:     raise ValueError(contract_error[0])\n"}
+,{"stream_name":"stderr","time":726.497541211,"data":"[rank0]: ValueError: AssertionError: Resume contract changed\n"}
+,{"stream_name":"stderr","time":726.497544485,"data":"[rank1]: Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":726.497547866,"data":"[rank1]:   File \"/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py\", line 1445, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":726.497551402,"data":"[rank1]:     main()\n"}
+,{"stream_name":"stderr","time":726.497554641,"data":"[rank1]:     ~~~~^^\n"}
+,{"stream_name":"stderr","time":726.497557756,"data":"[rank1]:   File \"/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py\", line 1193, in main\n"}
+,{"stream_name":"stderr","time":726.497561431,"data":"[rank1]:     raise ValueError(contract_error[0])\n"}
+,{"stream_name":"stderr","time":726.497565211,"data":"[rank1]: ValueError: AssertionError: Resume contract changed\n"}
+,{"stream_name":"stderr","time":726.949292959,"data":"[rank0]:[W1115 21:17:05.713279538 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())\n"}
+,{"stream_name":"stderr","time":727.151715928,"data":"[rank0]:[W1115 21:17:05.713279538 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())\n"}
+,{"stream_name":"stderr","time":727.151754405,"data":"\n"}
+,{"stream_name":"stderr","time":727.151757818,"data":"[rank0]:[W1115 21:17:05.713279538 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())\n"}
+,{"stream_name":"stderr","time":728.206628671,"data":"W1115 21:17:06.800000 115 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 124 closing signal SIGTERM\n"}
+,{"stream_name":"stderr","time":728.370790201,"data":"E1115 21:17:06.965000 115 torch/distributed/elastic/multiprocessing/api.py:986] failed (exitcode: 1) local_rank: 0 (pid: 123) of binary: /usr/bin/python3\n"}
+,{"stream_name":"stderr","time":728.375580019,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":728.376556473,"data":"  File \"/usr/local/bin/torchrun\", line 10, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":728.376577554,"data":"    sys.exit(main())\n"}
+,{"stream_name":"stderr","time":728.376582548,"data":"             ~~~~^^\n"}
+,{"stream_name":"stderr","time":728.376586659,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py\", line 362, in wrapper\n"}
+,{"stream_name":"stderr","time":728.37660899,"data":"    return f(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":728.376624808,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/distributed/run.py\", line 990, in main\n"}
+,{"stream_name":"stderr","time":728.376629922,"data":"    run(args)\n"}
+,{"stream_name":"stderr","time":728.376634642,"data":"    ~~~^^^^^^\n"}
+,{"stream_name":"stderr","time":728.376639006,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/distributed/run.py\", line 981, in run\n"}
+,{"stream_name":"stderr","time":728.376643416,"data":"    elastic_launch(\n"}
+,{"stream_name":"stderr","time":728.376647179,"data":"    ~~~~~~~~~~~~~~~\n"}
+,{"stream_name":"stderr","time":728.376650905,"data":"        config=config,\n"}
+,{"stream_name":"stderr","time":728.376654693,"data":"        ~~~~~~~~~~~~~~\n"}
+,{"stream_name":"stderr","time":728.376658469,"data":"        entrypoint=cmd,\n"}
+,{"stream_name":"stderr","time":728.376662237,"data":"        ~~~~~~~~~~~~~~~\n"}
+,{"stream_name":"stderr","time":728.376666031,"data":"    )(*cmd_args)\n"}
+,{"stream_name":"stderr","time":728.37666984,"data":"    ~^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":728.37667379,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/distributed/launcher/api.py\", line 170, in __call__\n"}
+,{"stream_name":"stderr","time":728.376678018,"data":"    return launch_agent(self._config, self._entrypoint, list(args))\n"}
+,{"stream_name":"stderr","time":728.37668209,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/distributed/launcher/api.py\", line 317, in launch_agent\n"}
+,{"stream_name":"stderr","time":728.376689358,"data":"    raise ChildFailedError(\n"}
+,{"stream_name":"stderr","time":728.376708196,"data":"    ...\u003c2 lines\u003e...\n"}
+,{"stream_name":"stderr","time":728.376716463,"data":"    )\n"}
+,{"stream_name":"stderr","time":728.376721162,"data":"torch.distributed.elastic.multiprocessing.errors.ChildFailedError: \n"}
+,{"stream_name":"stderr","time":728.376725894,"data":"============================================================\n"}
+,{"stream_name":"stderr","time":728.376730066,"data":"/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py FAILED\n"}
+,{"stream_name":"stderr","time":728.376734186,"data":"------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":728.376738093,"data":"Failures:\n"}
+,{"stream_name":"stderr","time":728.376741724,"data":"[1]:\n"}
+,{"stream_name":"stderr","time":728.376745535,"data":"  time      : 2026-11-15_21:17:06\n"}
+,{"stream_name":"stderr","time":728.37674931,"data":"  host      : 01fed5f41d8d\n"}
+,{"stream_name":"stderr","time":728.376753019,"data":"  rank      : 1 (local_rank: 1)\n"}
+,{"stream_name":"stderr","time":728.376756827,"data":"  exitcode  : 1 (pid: 124)\n"}
+,{"stream_name":"stderr","time":728.37676061,"data":"  error_file: \u003cN/A\u003e\n"}
+,{"stream_name":"stderr","time":728.37676466,"data":"  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html\n"}
+,{"stream_name":"stderr","time":728.376768711,"data":"------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":728.376772572,"data":"Root Cause (first observed failure):\n"}
+,{"stream_name":"stderr","time":728.376776271,"data":"[0]:\n"}
+,{"stream_name":"stderr","time":728.376780015,"data":"  time      : 2026-11-15_21:17:06\n"}
+,{"stream_name":"stderr","time":728.376788497,"data":"  host      : 01fed5f41d8d\n"}
+,{"stream_name":"stderr","time":728.376802454,"data":"  rank      : 0 (local_rank: 0)\n"}
+,{"stream_name":"stderr","time":728.376812598,"data":"  exitcode  : 1 (pid: 123)\n"}
+,{"stream_name":"stderr","time":728.376816873,"data":"  error_file: \u003cN/A\u003e\n"}
+,{"stream_name":"stderr","time":728.376821587,"data":"  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html\n"}
+,{"stream_name":"stderr","time":728.376826058,"data":"============================================================\n"}
+,{"stream_name":"stderr","time":728.409114913,"data":"W1115 21:17:06.800000 115 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 124 closing signal SIGTERM\n"}
+,{"stream_name":"stderr","time":728.409135885,"data":"E1115 21:17:06.965000 115 torch/distributed/elastic/multiprocessing/api.py:986] failed (exitcode: 1) local_rank: 0 (pid: 123) of binary: /usr/bin/python3\n"}
+,{"stream_name":"stderr","time":728.409141349,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":728.409145452,"data":"  File \"/usr/local/bin/torchrun\", line 10, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":728.409150419,"data":"    sys.exit(main())\n"}
+,{"stream_name":"stderr","time":728.409153865,"data":"             ~~~~^^\n"}
+,{"stream_name":"stderr","time":728.409157334,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py\", line 362, in wrapper\n"}
+,{"stream_name":"stderr","time":728.409161483,"data":"    return f(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":728.409164965,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/distributed/run.py\", line 990, in main\n"}
+,{"stream_name":"stderr","time":728.409168831,"data":"    run(args)\n"}
+,{"stream_name":"stderr","time":728.409172269,"data":"    ~~~^^^^^^\n"}
+,{"stream_name":"stderr","time":728.409175733,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/distributed/run.py\", line 981, in run\n"}
+,{"stream_name":"stderr","time":728.409179409,"data":"    elastic_launch(\n"}
+,{"stream_name":"stderr","time":728.409186685,"data":"    ~~~~~~~~~~~~~~~\n"}
+,{"stream_name":"stderr","time":728.409190739,"data":"        config=config,\n"}
+,{"stream_name":"stderr","time":728.409193259,"data":"        ~~~~~~~~~~~~~~\n"}
+,{"stream_name":"stderr","time":728.409195554,"data":"        entrypoint=cmd,\n"}
+,{"stream_name":"stderr","time":728.409197944,"data":"        ~~~~~~~~~~~~~~~\n"}
+,{"stream_name":"stderr","time":728.409200246,"data":"    )(*cmd_args)\n"}
+,{"stream_name":"stderr","time":728.409202579,"data":"    ~^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":728.409204921,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/distributed/launcher/api.py\", line 170, in __call__\n"}
+,{"stream_name":"stderr","time":728.409210042,"data":"    return launch_agent(self._config, self._entrypoint, list(args))\n"}
+,{"stream_name":"stderr","time":728.409213301,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/distributed/launcher/api.py\", line 317, in launch_agent\n"}
+,{"stream_name":"stderr","time":728.409215935,"data":"    raise ChildFailedError(\n"}
+,{"stream_name":"stderr","time":728.409218254,"data":"    ...\u003c2 lines\u003e...\n"}
+,{"stream_name":"stderr","time":728.409220836,"data":"    )\n"}
+,{"stream_name":"stderr","time":728.409223498,"data":"torch.distributed.elastic.multiprocessing.errors.ChildFailedError: \n"}
+,{"stream_name":"stderr","time":728.409226025,"data":"============================================================\n"}
+,{"stream_name":"stderr","time":728.40922868,"data":"/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py FAILED\n"}
+,{"stream_name":"stderr","time":728.409240317,"data":"------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":728.409242928,"data":"Failures:\n"}
+,{"stream_name":"stderr","time":728.409245224,"data":"[1]:\n"}
+,{"stream_name":"stderr","time":728.409247596,"data":"  time      : 2026-11-15_21:17:06\n"}
+,{"stream_name":"stderr","time":728.409249999,"data":"  host      : 01fed5f41d8d\n"}
+,{"stream_name":"stderr","time":728.409252492,"data":"  rank      : 1 (local_rank: 1)\n"}
+,{"stream_name":"stderr","time":728.409254924,"data":"  exitcode  : 1 (pid: 124)\n"}
+,{"stream_name":"stderr","time":728.409257423,"data":"  error_file: \u003cN/A\u003e\n"}
+,{"stream_name":"stderr","time":728.409259986,"data":"  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html\n"}
+,{"stream_name":"stderr","time":728.409262511,"data":"------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":728.409264971,"data":"Root Cause (first observed failure):\n"}
+,{"stream_name":"stderr","time":728.409267392,"data":"[0]:\n"}
+,{"stream_name":"stderr","time":728.409269783,"data":"  time      : 2026-11-15_21:17:06\n"}
+,{"stream_name":"stderr","time":728.409272106,"data":"  host      : 01fed5f41d8d\n"}
+,{"stream_name":"stderr","time":728.409274501,"data":"  rank      : 0 (local_rank: 0)\n"}
+,{"stream_name":"stderr","time":728.409276821,"data":"  exitcode  : 1 (pid: 123)\n"}
+,{"stream_name":"stderr","time":728.40928022,"data":"  error_file: \u003cN/A\u003e\n"}
+,{"stream_name":"stderr","time":728.40928268,"data":"  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html\n"}
+,{"stream_name":"stderr","time":728.409285751,"data":"============================================================\n"}
+,{"stream_name":"stderr","time":728.409288258,"data":"\n"}
+,{"stream_name":"stderr","time":728.409290635,"data":"W1115 21:17:06.800000 115 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 124 closing signal SIGTERM\n"}
+,{"stream_name":"stderr","time":728.409293246,"data":"E1115 21:17:06.965000 115 torch/distributed/elastic/multiprocessing/api.py:986] failed (exitcode: 1) local_rank: 0 (pid: 123) of binary: /usr/bin/python3\n"}
+,{"stream_name":"stderr","time":728.409295889,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":728.409298291,"data":"  File \"/usr/local/bin/torchrun\", line 10, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":728.409300951,"data":"    sys.exit(main())\n"}
+,{"stream_name":"stderr","time":728.409303393,"data":"             ~~~~^^\n"}
+,{"stream_name":"stderr","time":728.409305798,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py\", line 362, in wrapper\n"}
+,{"stream_name":"stderr","time":728.409308413,"data":"    return f(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":728.409310863,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/distributed/run.py\", line 990, in main\n"}
+,{"stream_name":"stderr","time":728.40931354,"data":"    run(args)\n"}
+,{"stream_name":"stderr","time":728.409316092,"data":"    ~~~^^^^^^\n"}
+,{"stream_name":"stderr","time":728.409318401,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/distributed/run.py\", line 981, in run\n"}
+,{"stream_name":"stderr","time":728.409320906,"data":"    elastic_launch(\n"}
+,{"stream_name":"stderr","time":728.409323186,"data":"    ~~~~~~~~~~~~~~~\n"}
+,{"stream_name":"stderr","time":728.409325544,"data":"        config=config,\n"}
+,{"stream_name":"stderr","time":728.409327924,"data":"        ~~~~~~~~~~~~~~\n"}
+,{"stream_name":"stderr","time":728.409332565,"data":"        entrypoint=cmd,\n"}
+,{"stream_name":"stderr","time":728.409335012,"data":"        ~~~~~~~~~~~~~~~\n"}
+,{"stream_name":"stderr","time":728.409337325,"data":"    )(*cmd_args)\n"}
+,{"stream_name":"stderr","time":728.409339632,"data":"    ~^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":728.409352818,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/distributed/launcher/api.py\", line 170, in __call__\n"}
+,{"stream_name":"stderr","time":728.409355828,"data":"    return launch_agent(self._config, self._entrypoint, list(args))\n"}
+,{"stream_name":"stderr","time":728.409358265,"data":"  File \"/usr/local/lib/python3.13/dist-packages/torch/distributed/launcher/api.py\", line 317, in launch_agent\n"}
+,{"stream_name":"stderr","time":728.409360859,"data":"    raise ChildFailedError(\n"}
+,{"stream_name":"stderr","time":728.409363266,"data":"    ...\u003c2 lines\u003e...\n"}
+,{"stream_name":"stderr","time":728.409365791,"data":"    )\n"}
+,{"stream_name":"stderr","time":728.409368162,"data":"torch.distributed.elastic.multiprocessing.errors.ChildFailedError: \n"}
+,{"stream_name":"stderr","time":728.409370587,"data":"============================================================\n"}
+,{"stream_name":"stderr","time":728.409372983,"data":"/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py FAILED\n"}
+,{"stream_name":"stderr","time":728.409375436,"data":"------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":728.40937781,"data":"Failures:\n"}
+,{"stream_name":"stderr","time":728.409380089,"data":"[1]:\n"}
+,{"stream_name":"stderr","time":728.409382382,"data":"  time      : 2026-11-15_21:17:06\n"}
+,{"stream_name":"stderr","time":728.409384716,"data":"  host      : 01fed5f41d8d\n"}
+,{"stream_name":"stderr","time":728.409387022,"data":"  rank      : 1 (local_rank: 1)\n"}
+,{"stream_name":"stderr","time":728.409389332,"data":"  exitcode  : 1 (pid: 124)\n"}
+,{"stream_name":"stderr","time":728.4093926,"data":"  error_file: \u003cN/A\u003e\n"}
+,{"stream_name":"stderr","time":728.409395004,"data":"  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html\n"}
+,{"stream_name":"stderr","time":728.40939764,"data":"------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":728.409400446,"data":"Root Cause (first observed failure):\n"}
+,{"stream_name":"stderr","time":728.409402882,"data":"[0]:\n"}
+,{"stream_name":"stderr","time":728.409405246,"data":"  time      : 2026-11-15_21:17:06\n"}
+,{"stream_name":"stderr","time":728.40940756,"data":"  host      : 01fed5f41d8d\n"}
+,{"stream_name":"stderr","time":728.409410047,"data":"  rank      : 0 (local_rank: 0)\n"}
+,{"stream_name":"stderr","time":728.409412367,"data":"  exitcode  : 1 (pid: 123)\n"}
+,{"stream_name":"stderr","time":728.409414664,"data":"  error_file: \u003cN/A\u003e\n"}
+,{"stream_name":"stderr","time":728.409417028,"data":"  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html\n"}
+,{"stream_name":"stderr","time":728.409419471,"data":"============================================================\n"}
+,{"stream_name":"stderr","time":729.94407654,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":729.944656226,"data":"  File \"\u003cstring\u003e\", line 1, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":729.944667783,"data":"    import sys;import papermill as pm;pm.execute_notebook(\"__notebook__.ipynb\",\"__notebook__.ipynb\",progress_bar=False,log_output=True,stdout_file=sys.stdout,stderr_file=sys.stderr,allow_errors=False,timeout=43200)\n"}
+,{"stream_name":"stderr","time":729.944711967,"data":"                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":729.944722007,"data":"  File \"/usr/local/lib/python3.13/dist-packages/papermill/execute.py\", line 131, in execute_notebook\n"}
+,{"stream_name":"stderr","time":729.944726457,"data":"    raise_for_execution_errors(nb, output_path)\n"}
+,{"stream_name":"stderr","time":729.944729925,"data":"    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n"}
+,{"stream_name":"stderr","time":729.944733507,"data":"  File \"/usr/local/lib/python3.13/dist-packages/papermill/execute.py\", line 251, in raise_for_execution_errors\n"}
+,{"stream_name":"stderr","time":729.944738037,"data":"    raise error\n"}
+,{"stream_name":"stderr","time":729.944747741,"data":"papermill.exceptions.PapermillExecutionError: \n"}
+,{"stream_name":"stderr","time":729.944752227,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":729.94475643,"data":"Exception encountered at \"In [2]\":\n"}
+,{"stream_name":"stderr","time":729.944760135,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":729.944763724,"data":"CalledProcessError                        Traceback (most recent call last)\n"}
+,{"stream_name":"stderr","time":729.944767329,"data":"/tmp/ipykernel_24/797224872.py in \u003ccell line: 0\u003e()\n"}
+,{"stream_name":"stderr","time":729.944771069,"data":"     94     print(\"CMD 2:\", \" \".join(cmd_pass2), flush=True)\n"}
+,{"stream_name":"stderr","time":729.944774773,"data":"     95     t_arm2 = time.time()\n"}
+,{"stream_name":"stderr","time":729.944778188,"data":"---\u003e 96     subprocess.check_call(cmd_pass2, env=env)\n"}
+,{"stream_name":"stderr","time":729.944781912,"data":"     97     print(f\"=== Finished trial_a2 Pass 2 in {time.time() - t_arm2:.1f}s ===\", flush=True)\n"}
+,{"stream_name":"stderr","time":729.944789287,"data":"     98     completed_arms.append(\"trial_a2\")\n"}
+,{"stream_name":"stderr","time":729.944791839,"data":"\n"}
+,{"stream_name":"stderr","time":729.944794129,"data":"/usr/lib/python3.13/subprocess.py in check_call(*popenargs, **kwargs)\n"}
+,{"stream_name":"stderr","time":729.944796558,"data":"    418         if cmd is None:\n"}
+,{"stream_name":"stderr","time":729.944798976,"data":"    419             cmd = popenargs[0]\n"}
+,{"stream_name":"stderr","time":729.944801365,"data":"--\u003e 420         raise CalledProcessError(retcode, cmd)\n"}
+,{"stream_name":"stderr","time":729.944803829,"data":"    421     return 0\n"}
+,{"stream_name":"stderr","time":729.944806489,"data":"    422 \n"}
+,{"stream_name":"stderr","time":729.944809096,"data":"\n"}
+,{"stream_name":"stderr","time":729.944815167,"data":"CalledProcessError: Command '['torchrun', '--standalone', '--nproc_per_node=2', '/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py', '--model-dir', '/tmp/lfm3_base_staged', '--role', 'deriver', '--train-file', '/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/v15_train_272.sft.jsonl', '--dev-file', '/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/dev_24.sft.jsonl', '--out', '/kaggle/working/trial_a2', '--mode', 'train', '--max-seq-len', '5600', '--epochs', '2', '--max-steps', '24', '--effective-batch', '8', '--microbatch', '1', '--checkpoint-steps', '10', '--lora-r', '32', '--lora-alpha', '64', '--target-modules', 'all-linear', '--lr', '1.5e-4', '--stress-longest-first', '--milestones', '25,50,75', '--resume', '/kaggle/working/trial_a2/checkpoint-latest', '--milestone-probe-rows', '4', '--milestone-max-new-tokens', '600', '--eval-max-new-tokens', '1800', '--time-budget-s', '1100']' returned non-zero exit status 1.\n"}
+,{"stream_name":"stderr","time":729.944838239,"data":"\n"}
+,{"stream_name":"stderr","time":732.326462142,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":732.32648988,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":732.550283008,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":732.550308948,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":733.426030456,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":733.514165145,"data":"[NbConvertApp] Writing 34168 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":736.048936518,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":736.628384559,"data":"[NbConvertApp] Writing 336272 bytes to __results__.html\n"}
+]
