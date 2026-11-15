@@ -1,0 +1,22 @@
+{
+  "rank": 0,
+  "local_rank": 0,
+  "world_size": 2,
+  "gpu_uuid": "<gpu-0-uuid>",
+  "device_name": "Tesla T4",
+  "steps_completed": 24,
+  "rows_processed": 96,
+  "non_pad_tokens": 246726,
+  "supervised_tokens": 81863,
+  "peak_allocated_mib": 12201.78,
+  "peak_reserved_mib": 12552.0,
+  "nan_grad_steps_skipped": 0,
+  "oom_steps_skipped": 0,
+  "effective_optimizer_steps": 24,
+  "logical_device": 0,
+  "optimizer_steps_seen": 24,
+  "last_step_seconds": 6.586567640304565,
+  "max_allocated_bytes": 12794489856,
+  "max_reserved_bytes": 13161725952,
+  "at_unix_utc": 1794775619.9124544
+}
