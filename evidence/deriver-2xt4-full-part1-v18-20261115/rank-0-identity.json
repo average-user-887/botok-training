@@ -1,0 +1,14 @@
+{
+  "rank": 0,
+  "local_rank": 0,
+  "world_size": 2,
+  "logical_device": 0,
+  "device_name": "Tesla T4",
+  "device_uuid": "<gpu-0-uuid>",
+  "gpu_uuid": "<gpu-0-uuid>",
+  "total_memory": 15636037632,
+  "cuda_visible_devices": "0,1",
+  "torch_version": "2.11.0+cu130",
+  "cuda_runtime": "13.0",
+  "pid": 55
+}
