@@ -1,0 +1,233 @@
+[
+ {
+  "id": "A-010",
+  "ok": true,
+  "n_pred": 0,
+  "n_gold": 0,
+  "text": "{\"explicit\": []}"
+ },
+ {
+  "id": "B-060",
+  "ok": true,
+  "n_pred": 0,
+  "n_gold": 0,
+  "text": "{\"explicit\": []}"
+ },
+ {
+  "id": "E-010",
+  "ok": true,
+  "n_pred": 0,
+  "n_gold": 0,
+  "text": "{\"explicit\": []}"
+ },
+ {
+  "id": "C-040",
+  "ok": true,
+  "n_pred": 3,
+  "n_gold": 3,
+  "text": "{\"explicit\": [{\"content\": \"ada's new service is written in Go\"}, {\"content\": \"ada reads about Rust as a side project on weekends\"}, {\"content\": \"ada plays the harp\"}]}"
+ },
+ {
+  "id": "C-020",
+  "ok": true,
+  "n_pred": 3,
+  "n_gold": 3,
+  "text": "{\"explicit\": [{\"content\": \"wes is running his first marathon in Valencia in December 2026\"}, {\"content\": \"wes's knee is now fine after physio treatment in September 2026\"}, {\"content\": \"wes is learning to cook Thai food\"}]}"
+ },
+ {
+  "id": "F-040",
+  "ok": true,
+  "n_pred": 6,
+  "n_gold": 4,
+  "text": "{\"explicit\": [{\"content\": \"emil is on platform on-call for October 2026\"}, {\"content\": \"emil carries a spare charger while on the road\"}, {\"content\": \"emil will raise the disk alert threshold by 2026-10-09\"}, {\"content\": \"emil runs Linux on his desktop only since August 2026\"}, {\"content\": \"emil runs Saturday park runs every week, rain or shine\"}, {\"content\": \"emil will remove the auto-ack on disk alerts by 2026-10-09\"}]}"
+ },
+ {
+  "id": "D-040",
+  "ok": true,
+  "n_pred": 7,
+  "n_gold": 5,
+  "text": "{\"explicit\": [{\"content\": \"uma's mesh Wi-Fi has three nodes on 5 GHz with the same SSID\"}, {\"content\": \"uma's mesh has one far node with a wireless backhaul\"}, {\"content\": \"uma's mesh Wi-Fi caused call drops on uma's laptop, with a 22 percent retry rate and RSSI -78 dBm\"}, {\"content\": \"uma's laptop roamed to node 3\"}, {\"content\": \"uma ran a cable from the far node to the switch on 2026-11-06\"}, {\"content\": \"uma's call drops stopped on 2026-11-06 with zero drops in three calls\"}, {\"content\": \"uma's far node retry rate fell to 4 percent after the cable installation\"}]}"
+ },
+ {
+  "id": "E-040",
+  "ok": true,
+  "n_pred": 0,
+  "n_gold": 0,
+  "text": "{\"explicit\": []}"
+ },
+ {
+  "id": "D-020",
+  "ok": true,
+  "n_pred": 6,
+  "n_gold": 8,
+  "text": "{\"explicit\": [{\"content\": \"rhea's Home Assistant backups failed with a permission error on 2026-11-01 after changing the share user\"}, {\"content\": \"rhea's NAS share is SMB and she set it to read-only for the ha-backup user\"}, {\"content\": \"rhea gave write access to ha-backup in DSM on 2026-11-01 and retried the backup\"}, {\"content\": \"rhea's automated backup at 04:00 succeeded on 2026-11-02 with 1.9 GB written\"}, {\"content\": \"rhea set the backup retention to 7 on 2026-11-02\"}, {\"content\": \"rhea will review the share quota in December\"}]}"
+ },
+ {
+  "id": "C-010",
+  "ok": true,
+  "n_pred": 3,
+  "n_gold": 3,
+  "text": "{\"explicit\": [{\"content\": \"tom moved to Berlin in July 2026 for a lab job\"}, {\"content\": \"tom's Paris job fell through in June 2026\"}, {\"content\": \"tom lives in an apartment in Kreuzberg, Berlin\"}]}"
+ },
+ {
+  "id": "B-040",
+  "ok": true,
+  "n_pred": 0,
+  "n_gold": 0,
+  "text": "{\"explicit\": []}"
+ },
+ {
+  "id": "E-050",
+  "ok": true,
+  "n_pred": 0,
+  "n_gold": 0,
+  "text": "{\"explicit\": []}"
+ },
+ {
+  "id": "E-020",
+  "ok": true,
+  "n_pred": 0,
+  "n_gold": 0,
+  "text": "{\"explicit\": []}"
+ },
+ {
+  "id": "A-040",
+  "ok": true,
+  "n_pred": 4,
+  "n_gold": 4,
+  "text": "{\"explicit\": [{\"content\": \"theo's mongo replica set lost quorum over the weekend of 2026-05-24\"}, {\"content\": \"theo's arm nodes are two Raspi 5 robots\"}, {\"content\": \"theo's arm nodes have run hot in the closet and their SD cards died\"}, {\"content\": \"theo plans to replace the arm nodes with SSDs on 2026-05-02\"}]}"
+ },
+ {
+  "id": "C-050",
+  "ok": true,
+  "n_pred": 3,
+  "n_gold": 4,
+  "text": "{\"explicit\": [{\"content\": \"pete works as an accountant at a small firm in Bristol\"}, {\"content\": \"pete likes spreadsheets at work\"}, {\"content\": \"pete plays five a side football on Saturdays\"}]}"
+ },
+ {
+  "id": "C-030",
+  "ok": true,
+  "n_pred": 3,
+  "n_gold": 4,
+  "text": "{\"explicit\": [{\"content\": \"fen is rewriting chapter 3 of her thesis for the third time\"}, {\"content\": \"fen's thesis supervisor is Dr Hale\"}, {\"content\": \"fen expects to finish the thesis by Christmas\"}]}"
+ },
+ {
+  "id": "F-030",
+  "ok": true,
+  "n_pred": 5,
+  "n_gold": 5,
+  "text": "{\"explicit\": [{\"content\": \"saoirse is leading the accessibility audit with a target completion of 2026-05-15\"}, {\"content\": \"saoirse targets WCAG 2.2 AA rather than 2.1 for the audit\"}, {\"content\": \"saoirse will fix the checkout colour contrast first, in the same sprint\"}, {\"content\": \"saoirse uses a screen reader every day and works hard on keyboard navigation\"}, {\"content\": \"saoirse moves to the new office on 2026-06-08\"}]}"
+ },
+ {
+  "id": "A-060",
+  "ok": true,
+  "n_pred": 4,
+  "n_gold": 3,
+  "text": "{\"explicit\": [{\"content\": \"dmitri owns a Proxmox container platform with a 4 TB NVMe drive\"}, {\"content\": \"dmitri's Proxmox box shows critical media errors 14 on the 4 TB NVMe drive\"}, {\"content\": \"dmitri is ordering a replacement for the NVMe drive\"}, {\"content\": \"dmitri keeps VM backups on the HDD pool until the NVMe is replaced\"}]}"
+ },
+ {
+  "id": "D-010",
+  "ok": true,
+  "n_pred": 9,
+  "n_gold": 8,
+  "text": "{\"explicit\": [{\"content\": \"ruben is running k3s on three 8 GB Pi 5s, booting from NVMe through a hat\"}, {\"content\": \"ruben chose k3sup as the k3s installer from his laptop\"}, {\"content\": \"ruben plans ingress-nginx for his API gateway and disables traefik\"}, {\"content\": \"ruben's first node pi-01 is Ready while pi-02 and pi-03 were NotReady due to kubelet memory cgroup issues\"}, {\"content\": \"ruben fixed the kubelet cgroup issue on 2026-10-28 so all three nodes are Ready\"}, {\"content\": \"ruben plans local-path-provisioner for storage so data stays on each NVMe\"}, {\"content\": \"ruben plans nightly restic backups of the PV directories to the NAS\"}, {\"content\": \"ruben's first real workload is Gitea on pi-01, using about 1.1 GB RAM\"}, {\"content\": \"ruben plans switching Gitea to sqlite\"}]}"
+ },
+ {
+  "id": "F-050",
+  "ok": true,
+  "n_pred": 4,
+  "n_gold": 5,
+  "text": "{\"explicit\": [{\"content\": \"leon handles the vendor renewal list until 2026-12-15\"}, {\"content\": \"leon will chase the three catering contracts by 2026-11-20\"}, {\"content\": \"leon prefers a single shared spreadsheet over separate trackers since 2025\"}, {\"content\": \"leon moves desks on 2026-11-10 near the stairs\"}]}"
+ },
+ {
+  "id": "B-020",
+  "ok": true,
+  "n_pred": 3,
+  "n_gold": 3,
+  "text": "{\"explicit\": [{\"content\": \"ben took his dad to the cardiologist on 2026-04-08\"}, {\"content\": \"ben's dad needs to cut his salt\"}, {\"content\": \"ben cooks his dad low salt dinners on Wednesdays\"}]}"
+ },
+ {
+  "id": "C-060",
+  "ok": true,
+  "n_pred": 4,
+  "n_gold": 4,
+  "text": "{\"explicit\": [{\"content\": \"sami accepts a job at a tech firm in Lyon starting 2026-12-08\"}, {\"content\": \"sami is learning French but finds it difficult\"}, {\"content\": \"sami dreams of buying a house in Provence with a pool if he wins the lottery\"}, {\"content\": \"sami is leaving his cat Mochi with his sister until he is settled\"}]}"
+ },
+ {
+  "id": "B-010",
+  "ok": true,
+  "n_pred": 3,
+  "n_gold": 3,
+  "text": "{\"explicit\": [{\"content\": \"lena started a pottery class on Tuesdays in January 2026\"}, {\"content\": \"lena's first pottery class resulted in a bowl that looks like a potato\"}, {\"content\": \"lena plans to attend the pottery class again in January 2026\"}]}"
+ },
+ {
+  "id": "B-030",
+  "ok": true,
+  "n_pred": 3,
+  "n_gold": 3,
+  "text": "{\"explicit\": [{\"content\": \"lena sold her old car for 2,000\"}, {\"content\": \"lena is saving for a bike instead of buying a new car\"}, {\"content\": \"lena plans to ride the coast in September on her new bike\"}]}"
+ },
+ {
+  "id": "D-030",
+  "ok": true,
+  "n_pred": 8,
+  "n_gold": 6,
+  "text": "{\"explicit\": [{\"content\": \"soren runs a PPD driver on his network printer\"}, {\"content\": \"soren's network printer was unreachable from his Linux laptop until 2026-10-31\"}, {\"content\": \"soren's printer job 17 stalled on 2026-10-31 because it could not connect to the printer on port 9100\"}, {\"content\": \"soren re-added the printer using the ipp:// URI on 2026-10-31 and the page printed successfully\"}, {\"content\": \"soren removed the raw queue on 2026-10-31\"}, {\"content\": \"soren's printer went to sleep on 2026-11-01 and the job failed with timeouts\"}, {\"content\": \"soren set the printer idle timeout to 60 minutes on 2026-11-01, after which the job worked\"}, {\"content\": \"soren's Windows PC continued printing over the raw port\"}]}"
+ },
+ {
+  "id": "D-050",
+  "ok": true,
+  "n_pred": 5,
+  "n_gold": 7,
+  "text": "{\"explicit\": [{\"content\": \"pieter's Syncthing notes folder created conflict files on 2026-11-13\"}, {\"content\": \"pieter edits the notes on both his laptop and tablet\"}, {\"content\": \"pieter's notes versioning keeps 30 days of history\"}, {\"content\": \"pieter merged three real conflicts by hand on the morning of 2026-11-14\"}, {\"content\": \"pieter's backup contains 84 files\"}]}"
+ },
+ {
+  "id": "A-050",
+  "ok": true,
+  "n_pred": 0,
+  "n_gold": 2,
+  "text": "{\"explicit\": []}"
+ },
+ {
+  "id": "F-020",
+  "ok": true,
+  "n_pred": 5,
+  "n_gold": 5,
+  "text": "{\"explicit\": [{\"content\": \"piper announced the docs launch on 2026-12-02, correcting an earlier 2026-11-18 date\"}, {\"content\": \"piper will fix the four broken links on the docs site by 2026-10-30\"}, {\"content\": \"piper moved the docs site from Jekyll to Hugo in August 2026\"}, {\"content\": \"piper will rebuild the search index before the docs launch\"}, {\"content\": \"piper will attend the 2026-10-12 docs review\"}]}"
+ },
+ {
+  "id": "F-010",
+  "ok": true,
+  "n_pred": 6,
+  "n_gold": 6,
+  "text": "{\"explicit\": [{\"content\": \"nasser owns the Lua plugin, due 2026-10-05\"}, {\"content\": \"nasser's Lua plugin API freezes on 2026-09-01\"}, {\"content\": \"nasser's cat Pilot sits on his keyboard\"}, {\"content\": \"nasser's test run on 2026-06-03 passed 56 tests, skipped 2, and failed 0\"}, {\"content\": \"nasser runs Ubuntu on his main laptop\"}, {\"content\": \"nasser's plugin demo is on 2026-09-15\"}]}"
+ },
+ {
+  "id": "A-020",
+  "ok": true,
+  "n_pred": 3,
+  "n_gold": 4,
+  "text": "{\"explicit\": [{\"content\": \"priya is moving the ingest service from Python to Go\"}, {\"content\": \"priya's ingest service target is 2x 500k events per second by 2026-11-30\"}, {\"content\": \"priya's Python ingest service currently handles about 180k events per second\"}]}"
+ },
+ {
+  "id": "B-050",
+  "ok": true,
+  "n_pred": 3,
+  "n_gold": 2,
+  "text": "{\"explicit\": [{\"content\": \"gus's grandfather had hip surgery on 2026-10-23 and is now in hospital\"}, {\"content\": \"gus's grandfather is grumpy while in hospital\"}, {\"content\": \"gus hopes his grandfather returns home by 2026-10-26\"}]}"
+ },
+ {
+  "id": "E-030",
+  "ok": true,
+  "n_pred": 0,
+  "n_gold": 0,
+  "text": "{\"explicit\": []}"
+ },
+ {
+  "id": "A-030",
+  "ok": true,
+  "n_pred": 2,
+  "n_gold": 2,
+  "text": "{\"explicit\": [{\"content\": \"atlas is allowed to load the d1 judge head and the embeddings model on the P2000, both under the labserver no-spill rule\"}, {\"content\": \"atlas's P2000 fails models that don't fit fully in VRAM by closing them rather than spilling to RAM\"}]}"
+ }
+]

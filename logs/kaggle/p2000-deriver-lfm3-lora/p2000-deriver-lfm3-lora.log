@@ -1,0 +1,56 @@
+[{"stream_name":"stdout","time":1.3091837800000001,"data":"model /kaggle/input/datasets/jestemukasz/lfm3-1p7b-base data /kaggle/input/datasets/jestemukasz/p2000-deriver-sft-synth\n"}
+,{"stream_name":"stdout","time":36.603779066,"data":"GPU Tesla T4 torch.float16\n"}
+,{"stream_name":"stdout","time":42.742889772,"data":"train 297/297 dev 33 | example prompt tail: ' him from the rescue in Doncaster in early October, the rescue lady insisted on a home visit\\n\u003c/messages\u003e\u003c|im_end|\u003e\\n\u003c|im_start|\u003eassistant\\n\u003cthink\u003e\u003c/think\u003e'\n"}
+,{"stream_name":"stderr","time":42.751832332,"data":"[transformers] `torch_dtype` is deprecated! Use `dtype` instead!\n"}
+,{"stream_name":"stderr","time":5436.298738086,"data":"\rLoading weights:   0%|          | 0/286 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 1/286 [53:06\u003c252:16:11, 3186.56s/it]\rLoading weights:  48%|████▊     | 138/286 [53:30\u003c40:22, 16.37s/it]    \rLoading weights:  50%|█████     | 143/286 [54:47\u003c38:54, 16.32s/it]\rLoading weights:  50%|█████     | 144/286 [55:08\u003c38:48, 16.40s/it]\rLoading weights:  51%|█████     | 145/286 [56:25\u003c41:18, 17.58s/it]\rLoading weights:  55%|█████▌    | 158/286 [57:52\u003c31:19, 14.69s/it]\rLoading weights:  56%|█████▌    | 160/286 [59:06\u003c33:23, 15.90s/it]\rLoading weights:  56%|█████▋    | 161/286 [59:33\u003c34:00, 16.32s/it]\rLoading weights:  57%|█████▋    | 162/286 [59:47\u003c33:29, 16.20s/it]\rLoading weights:  58%|█████▊    | 167/286 [1:01:10\u003c32:24, 16.34s/it]\rLoading weights:  59%|█████▊    | 168/286 [1:02:24\u003c40:05, 20.39s/it]\rLoading weights:  59%|█████▉    | 169/286 [1:02:52\u003c41:08, 21.10s/it]\rLoading weights:  64%|██████▎   | 182/286 [1:04:08\u003c19:54, 11.48s/it]\rLoading weights:  64%|██████▍   | 184/286 [1:05:38\u003c26:28, 15.57s/it]\rLoading weights:  65%|██████▍   | 185/286 [1:06:04\u003c27:38, 16.42s/it]\rLoading weights:  65%|██████▌   | 186/286 [1:06:11\u003c25:44, 15.45s/it]\rLoading weights:  67%|██████▋   | 191/286 [1:07:14\u003c22:34, 14.26s/it]\rLoading weights:  67%|██████▋   | 192/286 [1:08:41\u003c34:29, 22.02s/it]\rLoading weights:  67%|██████▋   | 193/286 [1:09:06\u003c34:54, 22.52s/it]\rLoading weights:  72%|███████▏  | 206/286 [1:10:10\u003c13:18,  9.98s/it]\rLoading weights:  73%|███████▎  | 208/286 [1:11:47\u003c19:42, 15.15s/it]\rLoading weights:  73%|███████▎  | 209/286 [1:12:05\u003c19:47, 15.43s/it]\rLoading weights:  73%|███████▎  | 210/286 [1:12:11\u003c18:11, 14.36s/it]\rLoading weights:  75%|███████▌  | 215/286 [1:13:14\u003c16:01, 13.55s/it]\rLoading weights:  76%|███████▌  | 216/286 [1:14:44\u003c25:58, 22.26s/it]\rLoading weights:  76%|███████▌  | 217/286 [1:15:02\u003c24:54, 21.66s/it]\rLoading weights:  80%|████████  | 230/286 [1:16:03\u003c08:49,  9.45s/it]\rLoading weights:  81%|████████  | 232/286 [1:17:52\u003c14:01, 15.59s/it]\rLoading weights:  81%|████████▏ | 233/286 [1:18:04\u003c13:28, 15.26s/it]\rLoading weights:  82%|████████▏ | 234/286 [1:18:10\u003c12:18, 14.20s/it]\rLoading weights:  84%|████████▎ | 239/286 [1:19:09\u003c10:17, 13.14s/it]\rLoading weights:  84%|████████▍ | 240/286 [1:20:51\u003c17:46, 23.18s/it]\rLoading weights:  84%|████████▍ | 241/286 [1:21:02\u003c16:07, 21.49s/it]\rLoading weights:  89%|████████▉ | 254/286 [1:22:06\u003c05:05,  9.55s/it]\rLoading weights:  90%|████████▉ | 256/286 [1:23:56\u003c07:53, 15.78s/it]\rLoading weights:  90%|████████▉ | 257/286 [1:24:01\u003c07:07, 14.75s/it]\rLoading weights:  90%|█████████ | 258/286 [1:24:07\u003c06:26, 13.80s/it]\rLoading weights:  92%|█████████▏| 263/286 [1:25:12\u003c05:09, 13.44s/it]\rLoading weights:  92%|█████████▏| 264/286 [1:26:58\u003c08:46, 23.92s/it]\rLoading weights:  93%|█████████▎| 265/286 [1:27:04\u003c07:31, 21.49s/it]\rLoading weights:  97%|█████████▋| 278/286 [1:28:07\u003c01:15,  9.45s/it]\rLoading weights:  98%|█████████▊| 280/286 [1:29:42\u003c01:28, 14.70s/it]\rLoading weights:  98%|█████████▊| 281/286 [1:29:45\u003c01:07, 13.58s/it]\rLoading weights:  99%|█████████▊| 282/286 [1:29:46\u003c00:48, 12.19s/it]\rLoading weights: 100%|██████████| 286/286 [1:29:46\u003c00:00, 18.83s/it]\n"}
+,{"stream_name":"stdout","time":5436.911000406,"data":"loaded in 5394s\n"}
+,{"stream_name":"stdout","time":5437.424651313,"data":"trainable params: 32,937,472 || all params: 1,761,739,008 || trainable%: 1.8696\n"}
+,{"stream_name":"stdout","time":5438.778032772,"data":"steps 152\n"}
+,{"stream_name":"stderr","time":5452.194375026,"data":"/kaggle/src/script.py:67: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate\n"}
+,{"stream_name":"stdout","time":5452.194422548,"data":"ep 0 step 1/152 loss 1.0724 13s\n"}
+,{"stream_name":"stderr","time":5452.194431689,"data":"  scaler.step(opt); scaler.update(); opt.zero_grad(set_to_none=True); sched.step(); step += 1; log.append(tot)\n"}
+,{"stream_name":"stdout","time":5458.05091471,"data":"ep 0 step 2/152 loss 2.2877 19s\n"}
+,{"stream_name":"stdout","time":5477.518746136,"data":"ep 0 step 5/152 loss 1.0285 39s\n"}
+,{"stream_name":"stdout","time":5506.255893981,"data":"ep 0 step 10/152 loss 0.6799 67s\n"}
+,{"stream_name":"stdout","time":5537.562842947,"data":"ep 0 step 15/152 loss 0.5396 99s\n"}
+,{"stream_name":"stdout","time":5572.493697576,"data":"ep 0 step 20/152 loss 0.4643 134s\n"}
+,{"stream_name":"stdout","time":5607.284305211,"data":"ep 0 step 25/152 loss 0.4471 169s\n"}
+,{"stream_name":"stdout","time":5644.427749505,"data":"ep 0 step 30/152 loss 0.5150 206s\n"}
+,{"stream_name":"stdout","time":5681.740554598,"data":"ep 0 step 35/152 loss 0.4044 243s\n"}
+,{"stream_name":"stdout","time":5697.090684335,"data":"epoch 0 done, adapter saved, elapsed total 5696s\n"}
+,{"stream_name":"stdout","time":5711.277322374,"data":"ep 1 step 40/152 loss 0.3314 272s\n"}
+,{"stream_name":"stdout","time":5744.91632565,"data":"ep 1 step 45/152 loss 0.1892 306s\n"}
+,{"stream_name":"stdout","time":5781.944205198,"data":"ep 1 step 50/152 loss 0.1729 343s\n"}
+,{"stream_name":"stdout","time":5818.103286057,"data":"ep 1 step 55/152 loss 0.3899 379s\n"}
+,{"stream_name":"stdout","time":5851.80991736,"data":"ep 1 step 60/152 loss 0.2389 413s\n"}
+,{"stream_name":"stdout","time":5887.969017715,"data":"ep 1 step 65/152 loss 0.3328 449s\n"}
+,{"stream_name":"stdout","time":5922.592145868,"data":"ep 1 step 70/152 loss 0.4029 484s\n"}
+,{"stream_name":"stdout","time":5957.873449038,"data":"ep 1 step 75/152 loss 0.2875 519s\n"}
+,{"stream_name":"stdout","time":5959.235147809,"data":"epoch 1 done, adapter saved, elapsed total 5958s\n"}
+,{"stream_name":"stdout","time":5987.481398746,"data":"ep 2 step 80/152 loss 0.1399 549s\n"}
+,{"stream_name":"stdout","time":6023.691918036,"data":"ep 2 step 85/152 loss 0.1051 585s\n"}
+,{"stream_name":"stdout","time":6058.76455712,"data":"ep 2 step 90/152 loss 0.0797 620s\n"}
+,{"stream_name":"stdout","time":6089.943739266,"data":"ep 2 step 95/152 loss 0.1465 651s\n"}
+,{"stream_name":"stdout","time":6125.325105074,"data":"ep 2 step 100/152 loss 0.1008 687s\n"}
+,{"stream_name":"stdout","time":6163.936744715,"data":"ep 2 step 105/152 loss 0.1742 725s\n"}
+,{"stream_name":"stdout","time":6199.14516337,"data":"ep 2 step 110/152 loss 0.1221 760s\n"}
+,{"stream_name":"stdout","time":6221.737826536,"data":"epoch 2 done, adapter saved, elapsed total 6221s\n"}
+,{"stream_name":"stdout","time":6229.138589686,"data":"ep 3 step 115/152 loss 0.0914 790s\n"}
+,{"stream_name":"stdout","time":6264.51117901,"data":"ep 3 step 120/152 loss 0.0572 826s\n"}
+,{"stream_name":"stdout","time":6299.592441058,"data":"ep 3 step 125/152 loss 0.0432 861s\n"}
+,{"stream_name":"stdout","time":6333.196894161,"data":"ep 3 step 130/152 loss 0.0320 894s\n"}
+,{"stream_name":"stdout","time":6369.815357355,"data":"ep 3 step 135/152 loss 0.0316 931s\n"}
+,{"stream_name":"stdout","time":6406.732146069,"data":"ep 3 step 140/152 loss 0.0947 968s\n"}
+,{"stream_name":"stdout","time":6442.344389817,"data":"ep 3 step 145/152 loss 0.0597 1004s\n"}
+,{"stream_name":"stdout","time":6476.879922109,"data":"ep 3 step 150/152 loss 0.0263 1038s\n"}
+,{"stream_name":"stdout","time":6484.962373699,"data":"epoch 3 done, adapter saved, elapsed total 6484s\n"}
+,{"stream_name":"stdout","time":6652.989714358,"data":"DEV {\"dev_n\": 33, \"schema_valid\": 1.0, \"pred_obs\": 105, \"gold_obs\": 106, \"precision_jaccard\": 0.5619047619047619, \"recall_jaccard\": 0.5566037735849056, \"train_steps\": 152, \"total_steps\": 152, \"elapsed_s\": 6652.046131849289}\n"}
+,{"stream_name":"stderr","time":6657.535991853,"data":"\rWriting model shards:   0%|          | 0/1 [00:00\u003c?, ?it/s]\rWriting model shards: 100%|██████████| 1/1 [00:04\u003c00:00,  4.15s/it]\rWriting model shards: 100%|██████████| 1/1 [00:04\u003c00:00,  4.15s/it]\n"}
+,{"stream_name":"stdout","time":6657.758144676,"data":"done ['chat_template.jinja', 'config.json', 'configuration_lfm3.py', 'generation_config.json', 'lfm3_conv.py', 'model.safetensors', 'modeling_lfm3.py', 'tokenizer.json', 'tokenizer_config.json']\n"}
+,{"stream_name":"stderr","time":6667.832312038,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":6667.832345467,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":6668.234618494,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":6668.234681522,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":6671.729617917,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":6672.927713235,"data":"[NbConvertApp] Writing 320765 bytes to __results__.html\n"}
+]

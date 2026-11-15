@@ -1,0 +1,3 @@
+| model | n | schema-valid | hard-fail | obs/fx | recall | precision | F1(mean/fx) | halluc | determinism | p50 lat s | tok/s |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| qwen35-2b-cap3k | 80 | 0.93 | 0.41 | 9.4 | 0.06 | 0.11 | 0.09 | 0.08 | nan | 11.3 | 34.6 |

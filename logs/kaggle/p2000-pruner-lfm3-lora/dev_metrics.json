@@ -1,0 +1,16 @@
+{
+ "n_dev": 500,
+ "dry_run": false,
+ "max_new_tokens": 64,
+ "max_len": 6000,
+ "line_recall_micro": 0.5483611178223403,
+ "line_recall_macro": 0.5863664552756419,
+ "line_precision_micro": 0.5558821128255368,
+ "line_precision_macro": 0.7700781881455759,
+ "token_share_removed": 0.7314058992430175,
+ "malformed_rate": 0.038,
+ "malformed_due_to_token_cap": 19,
+ "malformed_policy": "malformed output counted as keep-all for recall/precision/removal",
+ "train_steps": 827,
+ "eval_seconds": 1036.1050398349762
+}

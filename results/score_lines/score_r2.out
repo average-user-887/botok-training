@@ -1,0 +1,4 @@
+| model | n | schema-valid | hard-fail | obs/fx | recall | precision | F1(mean/fx) | halluc | determinism | p50 lat s | tok/s |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| lfm3-base | 80 | 0.61 | 0.46 | 5.9 | 0.08 | 0.13 | 0.08 | 0.07 | nan | 16.1 | 44.9 |
+| gemma4-e2b-cap3k | 80 | 0.99 | 0.41 | 10.4 | 0.22 | 0.39 | 0.26 | 0.02 | nan | 33.2 | 34.5 |

@@ -1,0 +1,1 @@
+{"dev_n": 33, "schema_valid": 1.0, "pred_obs": 105, "gold_obs": 106, "precision_jaccard": 0.5619047619047619, "recall_jaccard": 0.5566037735849056, "train_steps": 152, "total_steps": 152, "elapsed_s": 6652.046131849289}
