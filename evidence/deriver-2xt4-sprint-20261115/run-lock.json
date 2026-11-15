@@ -1,0 +1,22 @@
+{
+  "format": "honcho_minimal_content_only_v1",
+  "role": "deriver",
+  "model": "LiquidAI/LFM3-1.7B-Base",
+  "revision": "7bca5038823c0d0f14efe06439109354a10e014c",
+  "data_sha256": "2ff33073974a7cbbc6259d3041eb517c2e52d0949667ddef57f7d787888e3c9c",
+  "max_length": 6400,
+  "mode": "train",
+  "max_steps": -1,
+  "epochs": 2,
+  "effective_batch": 8,
+  "world_size": 2,
+  "seed": 42,
+  "microbatch": 1,
+  "lora_rank": 16,
+  "lora_alpha": 32,
+  "target_modules": "all-linear",
+  "learning_rate": 0.0002,
+  "curriculum_order": "none",
+  "calibration_steps": 20,
+  "checkpoint_steps": 10
+}

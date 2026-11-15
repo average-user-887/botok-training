@@ -1,0 +1,2 @@
+{"pct": 10, "step": 4, "train_loss": 0.8270694017410278, "dev_schema_valid": 0.0, "dev_precision": 0.0, "dev_recall": 0.0, "dev_f1": 0.0, "empty_fp_rate": 0.0, "long_window_recall": 0.0, "non_empty_pred_rate": 0.0, "empty_collapse_detected": true}
+{"pct": 20, "step": 7, "train_loss": 0.4432567358016968, "dev_schema_valid": 1.0, "dev_precision": 0.0, "dev_recall": 0.0, "dev_f1": 0.0, "empty_fp_rate": 0.0, "long_window_recall": 0.0, "non_empty_pred_rate": 0.0, "empty_collapse_detected": true}

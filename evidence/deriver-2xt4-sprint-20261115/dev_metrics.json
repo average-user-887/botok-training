@@ -1,0 +1,16 @@
+{
+  "source": "milestones.jsonl:step_7_pct_20",
+  "status": "partial_eval_interrupted_by_step_8_oom",
+  "pct": 20,
+  "step": 7,
+  "train_loss": 0.4432567358016968,
+  "dev_schema_valid": 1.0,
+  "dev_precision": 0.0,
+  "dev_recall": 0.0,
+  "dev_f1": 0.0,
+  "empty_fp_rate": 0.0,
+  "long_window_recall": 0.0,
+  "non_empty_pred_rate": 0.0,
+  "empty_collapse_detected": true,
+  "notes": "Full end-of-run dev_metrics.json was interrupted when step 8 encountered a CUDA OOM during backward pass. Metrics reflect the 20% milestone checkpoint probe."
+}
