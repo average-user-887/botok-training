@@ -1,0 +1,131 @@
+{
+  "run": "pruner_v4",
+  "kernel_ref": "<kaggle-user>/p2000-pruner-v4-full",
+  "kernel_status": "COMPLETE",
+  "renderer_audit_note": "AUDIT-pruner-renderer-parity-unresolved-20261116 (GH main 6d7240f / evidence b9978d8) reported DEPLOYED_PRUNER_RENDERER_PARITY_UNRESOLVED because botok-training lacked the deployed pruner trainer source (deployed_pruner_source_found=false; local replay showed inherited chat template=39,145 tok vs raw concat=38,425 tok across 60 rows, 12 tok/row diff). Verified in deployed recipe_prep/train_deriver.py:encode_row & pruner_v4 run-lock (format=honcho_pruner_v1): pruner rows have {prompt, completion} (no messages key) and use raw concatenation with explicit BOS+EOS ([124894] + tok(prompt) + tok(' KEEP ...') + [124900], NO chat template, -100 prompt mask), matching llama-server --override-kv tokenizer.ggml.add_bos_token=bool:true. Sanitized train_deriver.py added to evidence/code/.",
+  "lineage": {
+    "classification": "warm_start_branch_from_pruner_v3_pct60 (fresh optimizer/scheduler/RNG)",
+    "init_adapter_source": "pruner_v3/pruner_v3/checkpoint-pct-60",
+    "init_adapter_arg": "/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/init_adapter_pruner_v3_pct60",
+    "init_adapter_safetensors_sha256": "298b5fdd2c028d9a29736e9070159ac5859c227610dca16ecca774ad0a4b04b6",
+    "optimizer_restored": false,
+    "scheduler_restored": false,
+    "rng_restored": false,
+    "output_adapter_safetensors_sha256": {
+      "checkpoint-pct-10": {
+        "size_bytes": 54229296,
+        "sha256": "626abf325bf6bd2a697242f434dcccd24ea581cd95d42cf77e00eaae021d6e7d"
+      },
+      "checkpoint-pct-20": {
+        "size_bytes": 54229296,
+        "sha256": "fbf783bc62156bc39523c8cc26449a1740a572d191fa1678119dbb4724084ba5"
+      },
+      "checkpoint-pct-30": {
+        "size_bytes": 54229296,
+        "sha256": "6f3bb2fef231be205a3a0d60c3d264f763d17140fcf74730213a00e28659bc87"
+      },
+      "checkpoint-pct-40": {
+        "size_bytes": 54229296,
+        "sha256": "51148c74658d113a5ceaed6c5d96fdfe8c0b26618bb31f3fde73995bae4fc285"
+      },
+      "checkpoint-pct-50": {
+        "size_bytes": 54229296,
+        "sha256": "ed51ac8d5b17057e2301078e23f42622463fb3583ddab66c33b45d04e278c64f"
+      },
+      "checkpoint-pct-60": {
+        "size_bytes": 54229296,
+        "sha256": "c7d74f1f173d16d77196da0f6941faa2920a070da07b17623a0d5c6936553da1"
+      },
+      "checkpoint-pct-70": {
+        "size_bytes": 54229296,
+        "sha256": "1f1bad52459ec561604e8bdbe3365f4f5d08ecedb1aacd2c41f588a1bad4d096"
+      },
+      "checkpoint-pct-80": {
+        "size_bytes": 54229296,
+        "sha256": "7977ee2b448792f4b654d00e65ce0ccea8cf8403a1ce7e1199e2bca7b4def283"
+      },
+      "checkpoint-pct-90": {
+        "size_bytes": 54229296,
+        "sha256": "accaa5d2b51bf34933874757ac387a3579093463ba127576451173540ce87ec3"
+      },
+      "adapter": {
+        "size_bytes": 54229296,
+        "sha256": "3112ccd7e03506f01bc3d1947c7e25ba920338580f7eb65e279b2f2a11e803f1"
+      }
+    },
+    "exported_gguf": {
+      "pruner-v4-pct10-lora.gguf": {
+        "source_checkpoint": "checkpoint-pct-10",
+        "size_bytes": 54214720,
+        "sha256": "3463e3e47f67e5a03bdc65ce5d003ad0748bb8d1f06bb4516a8129fee559c122"
+      },
+      "pruner-v4-pct20-lora.gguf": {
+        "source_checkpoint": "checkpoint-pct-20",
+        "size_bytes": 54214720,
+        "sha256": "a6f5ea0a2883b69d9ed01927c2e706d9a496d0dd332faaa9defcd318f17223ab"
+      },
+      "pruner-v4-pct30-lora.gguf": {
+        "source_checkpoint": "checkpoint-pct-30",
+        "size_bytes": 54214720,
+        "sha256": "2abf951699911592bd784eb373ec68797bc25ac8b6f574c7215e287fcceaffa0"
+      },
+      "pruner-v4-pct40-lora.gguf": {
+        "source_checkpoint": "checkpoint-pct-40",
+        "size_bytes": 54214720,
+        "sha256": "497a4252c572f4598c9433d9b0893ee5fc281b798e94709f381f455bae65592e"
+      },
+      "pruner-v4-pct50-lora.gguf": {
+        "source_checkpoint": "checkpoint-pct-50",
+        "size_bytes": 54214720,
+        "sha256": "717c17bc90c0738413aa3927fdc71f65fc7a9f54b518d47cce7b787d853283a0"
+      },
+      "pruner-v4-pct60-lora.gguf": {
+        "source_checkpoint": "checkpoint-pct-60",
+        "size_bytes": 54214720,
+        "sha256": "33a410d2ad164d61bb824396e670ec80960f4243e399a6ab0664c8b35973f5d5"
+      },
+      "pruner-v4-pct70-lora.gguf": {
+        "source_checkpoint": "checkpoint-pct-70",
+        "size_bytes": 54214720,
+        "sha256": "3fae24d0f5d9d63bb77645f9dba8eadb23fee4c4ff3ea68fff53d47409e009dd"
+      },
+      "pruner-v4-pct80-lora.gguf": {
+        "source_checkpoint": "checkpoint-pct-80",
+        "size_bytes": 54214720,
+        "sha256": "e22f185b3df4e07a04756ca49f1ae3caf011e16dea33dc38a13af1c6cd845074"
+      },
+      "pruner-v4-pct90-lora.gguf": {
+        "source_checkpoint": "checkpoint-pct-90",
+        "size_bytes": 54214720,
+        "sha256": "1c31ed1eac6cd5c825134d75b12588dc798356800552a0c965c24d89164ba40b"
+      },
+      "pruner-v4-lora.gguf": {
+        "source_checkpoint": "adapter (step 76 / 100%)",
+        "size_bytes": 54214624,
+        "sha256": "02e76b41bb63060b464b7a79a3fdf3429ebd22840ab9940d43b441cd52e22486"
+      }
+    },
+    "promoted_symlink": {
+      "symlink": "<models-root>/gguf/p2000-roles/pruner-lora.gguf",
+      "target": "<models-root>/gguf/p2000-roles/pruner-v4-pct30-lora.gguf",
+      "sha256": "2abf951699911592bd784eb373ec68797bc25ac8b6f574c7215e287fcceaffa0"
+    }
+  },
+  "admission_audit": {
+    "policy": "reject",
+    "max_length": 5600,
+    "role": "pruner",
+    "total_rows": 146,
+    "admitted_rows": 146,
+    "rejected_rows": 0,
+    "rejected_ids": [],
+    "truncated_rows": 0,
+    "excess_tokens_total": 0,
+    "original_total_tokens": 64887,
+    "retained_total_tokens": 64887,
+    "data_sha256": "55334428586d66fe1f77a0b7e9cc6e019d460dcec24a2e7157259edd8b25b23f",
+    "length_min": 105,
+    "length_max": 2559
+  },
+  "p2000_rollback_verified": true
+}
