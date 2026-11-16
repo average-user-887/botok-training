@@ -1,0 +1,18 @@
+{
+  "dev_n": 12,
+  "dev_schema_valid": 1.0,
+  "dev_precision": 0.6320754716981132,
+  "dev_recall": 0.6146788990825688,
+  "dev_f1": 0.6232558139534884,
+  "dev_token_f1": 0.5900793650793651,
+  "empty_fp_rate": 0.5,
+  "long_window_recall": null,
+  "short_window_recall": 0.6146788990825688,
+  "pred_items": 106,
+  "gold_items": 109,
+  "non_empty_pred_rate": 0.9166666666666666,
+  "empty_collapse_detected": false,
+  "role": "pruner",
+  "train_steps": 54,
+  "elapsed_s": 161.2161991596222
+}
