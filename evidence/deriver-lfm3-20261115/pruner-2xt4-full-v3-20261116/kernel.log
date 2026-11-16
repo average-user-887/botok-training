@@ -1,0 +1,315 @@
+[{"stream_name":"stderr","time":8.049508046,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.049571172,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.049576808,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.049580365,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.648492476,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.648527495,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.648531335,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.648534024,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":16.816781214,"data":"Visible GPUs: 2 ['Tesla T4', 'Tesla T4']\n"}
+,{"stream_name":"stdout","time":17.380811401,"data":"SRC_MODEL_DIR: /kaggle/input/datasets/<kaggle-user>/lfm3-1p7b-base\n"}
+,{"stream_name":"stdout","time":17.380840379,"data":"PAYLOAD_DIR: /kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload\n"}
+,{"stream_name":"stdout","time":34.680787005,"data":"Staged model to /tmp/lfm3_base_staged in 17.5s\n"}
+,{"stream_name":"stdout","time":34.681562037,"data":"Active MODEL_DIR: /tmp/lfm3_base_staged\n"}
+,{"stream_name":"stdout","time":34.698640441,"data":"=== Launching Pruner v3 Warm-Start Run (budget=6000s) ===\n"}
+,{"stream_name":"stdout","time":34.700451402,"data":"CMD: torchrun --standalone --nproc_per_node=2 /kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train_deriver.py --model-dir /tmp/lfm3_base_staged --init-adapter /kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/init_adapter_pruner_pct60 --role pruner --train-file /kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/train.sft.jsonl --dev-file /kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/dev.sft.jsonl --out /kaggle/working/pruner_v3 --mode train --max-seq-len 5600 --over-limit-policy reject --epochs 3 --effective-batch 8 --microbatch 1 --checkpoint-steps 10 --lora-r 16 --lora-alpha 32 --target-modules attn-mlp --lr 1e-4 --milestones 20,40,60,80 --milestone-probe-rows 12 --milestone-max-new-tokens 256 --eval-max-new-tokens 1800 --no-downweight-empty --empty-target-ratio 0.25 --time-budget-s 6000\n"}
+,{"stream_name":"stderr","time":36.687416841,"data":"W1116 11:08:32.257000 46 torch/distributed/run.py:851] \n"}
+,{"stream_name":"stderr","time":36.687442252,"data":"W1116 11:08:32.257000 46 torch/distributed/run.py:851] *****************************************\n"}
+,{"stream_name":"stderr","time":36.687447932,"data":"W1116 11:08:32.257000 46 torch/distributed/run.py:851] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. \n"}
+,{"stream_name":"stderr","time":36.687453718,"data":"W1116 11:08:32.257000 46 torch/distributed/run.py:851] *****************************************\n"}
+,{"stream_name":"stderr","time":36.890210421,"data":"W1116 11:08:32.257000 46 torch/distributed/run.py:851] \n"}
+,{"stream_name":"stderr","time":36.890243274,"data":"W1116 11:08:32.257000 46 torch/distributed/run.py:851] *****************************************\n"}
+,{"stream_name":"stderr","time":36.89024881,"data":"W1116 11:08:32.257000 46 torch/distributed/run.py:851] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. \n"}
+,{"stream_name":"stderr","time":36.890263677,"data":"W1116 11:08:32.257000 46 torch/distributed/run.py:851] *****************************************\n"}
+,{"stream_name":"stderr","time":36.890267841,"data":"\n"}
+,{"stream_name":"stderr","time":36.89027142,"data":"W1116 11:08:32.257000 46 torch/distributed/run.py:851] \n"}
+,{"stream_name":"stderr","time":36.890275292,"data":"W1116 11:08:32.257000 46 torch/distributed/run.py:851] *****************************************\n"}
+,{"stream_name":"stderr","time":36.890279445,"data":"W1116 11:08:32.257000 46 torch/distributed/run.py:851] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. \n"}
+,{"stream_name":"stderr","time":36.890283822,"data":"W1116 11:08:32.257000 46 torch/distributed/run.py:851] *****************************************\n"}
+,{"stream_name":"stderr","time":76.267711268,"data":"\rLoading weights:   0%|          | 0/286 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 0/286 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 0/286 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 0/286 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stderr","time":78.256677919,"data":"\rLoading weights:   0%|          | 0/286 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 0/286 [00:00\u003c?, ?it/s]\rLoading weights:   0%|          | 1/286 [00:02\u003c09:30,  2.00s/it]\rLoading weights:   0%|          | 1/286 [00:01\u003c08:49,  1.86s/it]\rLoading weights:  57%|█████▋    | 162/286 [00:02\u003c00:01, 111.59it/s]\rLoading weights:  58%|█████▊    | 167/286 [00:02\u003c00:01, 106.32it/s]\rLoading weights:   0%|          | 1/286 [00:02\u003c09:30,  2.00s/it]\rLoading weights:   0%|          | 1/286 [00:01\u003c08:49,  1.86s/it]\rLoading weights:  57%|█████▋    | 162/286 [00:02\u003c00:01, 111.59it/s]\rLoading weights:  58%|█████▊    | 167/286 [00:02\u003c00:01, 106.32it/s]\n"}
+,{"stream_name":"stderr","time":78.884056372,"data":"\rLoading weights:   0%|          | 1/286 [00:02\u003c09:30,  2.00s/it]\rLoading weights:   0%|          | 1/286 [00:01\u003c08:49,  1.86s/it]\rLoading weights:  57%|█████▋    | 162/286 [00:02\u003c00:01, 111.59it/s]\rLoading weights:  58%|█████▊    | 167/286 [00:02\u003c00:01, 106.32it/s]\rLoading weights:  79%|███████▉  | 226/286 [00:02\u003c00:00, 112.64it/s]\rLoading weights:  79%|███████▉  | 227/286 [00:02\u003c00:00, 114.91it/s]\rLoading weights:  79%|███████▉  | 226/286 [00:02\u003c00:00, 112.64it/s]\rLoading weights:  79%|███████▉  | 227/286 [00:02\u003c00:00, 114.91it/s]\n"}
+,{"stream_name":"stderr","time":79.247547205,"data":"\rLoading weights:  79%|███████▉  | 226/286 [00:02\u003c00:00, 112.64it/s]\rLoading weights:  79%|███████▉  | 227/286 [00:02\u003c00:00, 114.91it/s]\rLoading weights:  92%|█████████▏| 264/286 [00:03\u003c00:00, 104.34it/s]\rLoading weights:  94%|█████████▎| 268/286 [00:02\u003c00:00, 108.58it/s]\rLoading weights: 100%|██████████| 286/286 [00:03\u003c00:00, 89.37it/s] \n"}
+,{"stream_name":"stderr","time":79.267435072,"data":"\rLoading weights: 100%|██████████| 286/286 [00:03\u003c00:00, 93.23it/s] \n"}
+,{"stream_name":"stderr","time":79.33156317,"data":"\rLoading weights:  92%|█████████▏| 264/286 [00:03\u003c00:00, 104.34it/s]\rLoading weights:  94%|█████████▎| 268/286 [00:02\u003c00:00, 108.58it/s]\rLoading weights: 100%|██████████| 286/286 [00:03\u003c00:00, 89.37it/s] \n"}
+,{"stream_name":"stderr","time":79.331603459,"data":"\rLoading weights: 100%|██████████| 286/286 [00:03\u003c00:00, 93.23it/s] \n"}
+,{"stream_name":"stderr","time":79.331608819,"data":"\n"}
+,{"stream_name":"stderr","time":79.331612671,"data":"\rLoading weights:  92%|█████████▏| 264/286 [00:03\u003c00:00, 104.34it/s]\rLoading weights:  94%|█████████▎| 268/286 [00:02\u003c00:00, 108.58it/s]\rLoading weights: 100%|██████████| 286/286 [00:03\u003c00:00, 89.37it/s] \n"}
+,{"stream_name":"stderr","time":79.331617778,"data":"\rLoading weights: 100%|██████████| 286/286 [00:03\u003c00:00, 93.23it/s] \n"}
+,{"stream_name":"stderr","time":85.037852727,"data":"\r  0%|          | 0/39 [00:00\u003c?, ?it/s]\r  0%|          | 0/39 [00:00\u003c?, ?it/s]\n"}
+,{"stream_name":"stdout","time":92.803124651,"data":"{'loss': '0.7678', 'grad_norm': '6.216', 'learning_rate': '0', 'epoch': '0.07692'}\n"}
+,{"stream_name":"stderr","time":93.003256221,"data":"\r  0%|          | 0/39 [00:00\u003c?, ?it/s]\r  3%|▎         | 1/39 [00:07\u003c05:02,  7.96s/it]\r                                              \r\r  3%|▎         | 1/39 [00:07\u003c05:02,  7.96s/it]\r  3%|▎         | 1/39 [00:07\u003c05:02,  7.96s/it]\r                                              \r\r  3%|▎         | 1/39 [00:07\u003c05:02,  7.96s/it]\n"}
+,{"stream_name":"stdout","time":93.005210876,"data":"{'loss': '0.7678', 'grad_norm': '6.216', 'learning_rate': '0', 'epoch': '0.07692'}\n"}
+,{"stream_name":"stdout","time":94.381318673,"data":"{'loss': '0.3474', 'grad_norm': '2.012', 'learning_rate': '5e-05', 'epoch': '0.1538'}\n"}
+,{"stream_name":"stderr","time":94.583289025,"data":"\r  3%|▎         | 1/39 [00:07\u003c05:02,  7.96s/it]\r                                              \r\r  3%|▎         | 1/39 [00:07\u003c05:02,  7.96s/it]\r  5%|▌         | 2/39 [00:09\u003c02:35,  4.21s/it]\r                                              \r\r  5%|▌         | 2/39 [00:09\u003c02:35,  4.21s/it]\r  5%|▌         | 2/39 [00:09\u003c02:35,  4.21s/it]\r                                              \r\r  5%|▌         | 2/39 [00:09\u003c02:35,  4.21s/it]\n"}
+,{"stream_name":"stdout","time":94.584378369,"data":"{'loss': '0.3474', 'grad_norm': '2.012', 'learning_rate': '5e-05', 'epoch': '0.1538'}\n"}
+,{"stream_name":"stdout","time":96.041171888,"data":"{'loss': '0.531', 'grad_norm': '4.224', 'learning_rate': '0.0001', 'epoch': '0.2308'}\n"}
+,{"stream_name":"stderr","time":96.24310983,"data":"\r  5%|▌         | 2/39 [00:09\u003c02:35,  4.21s/it]\r                                              \r\r  5%|▌         | 2/39 [00:09\u003c02:35,  4.21s/it]\r  8%|▊         | 3/39 [00:11\u003c01:49,  3.04s/it]\r                                              \r\r  8%|▊         | 3/39 [00:11\u003c01:49,  3.04s/it]\r  8%|▊         | 3/39 [00:11\u003c01:49,  3.04s/it]\r                                              \r\r  8%|▊         | 3/39 [00:11\u003c01:49,  3.04s/it]\n"}
+,{"stream_name":"stdout","time":96.24433909,"data":"{'loss': '0.531', 'grad_norm': '4.224', 'learning_rate': '0.0001', 'epoch': '0.2308'}\n"}
+,{"stream_name":"stdout","time":97.853442521,"data":"{'loss': '0.4317', 'grad_norm': '3.263', 'learning_rate': '9.982e-05', 'epoch': '0.3077'}\n"}
+,{"stream_name":"stderr","time":98.055359901,"data":"\r  8%|▊         | 3/39 [00:11\u003c01:49,  3.04s/it]\r                                              \r\r  8%|▊         | 3/39 [00:11\u003c01:49,  3.04s/it]\r 10%|█         | 4/39 [00:13\u003c01:29,  2.56s/it]\r                                              \r\r 10%|█         | 4/39 [00:13\u003c01:29,  2.56s/it]\r 10%|█         | 4/39 [00:13\u003c01:29,  2.56s/it]\r                                              \r\r 10%|█         | 4/39 [00:13\u003c01:29,  2.56s/it]\n"}
+,{"stream_name":"stdout","time":98.056568185,"data":"{'loss': '0.4317', 'grad_norm': '3.263', 'learning_rate': '9.982e-05', 'epoch': '0.3077'}\n"}
+,{"stream_name":"stdout","time":100.343454324,"data":"{'loss': '0.2681', 'grad_norm': '1.503', 'learning_rate': '9.928e-05', 'epoch': '0.3846'}\n"}
+,{"stream_name":"stderr","time":100.545069668,"data":"\r 10%|█         | 4/39 [00:13\u003c01:29,  2.56s/it]\r                                              \r\r 10%|█         | 4/39 [00:13\u003c01:29,  2.56s/it]\r 13%|█▎        | 5/39 [00:15\u003c01:26,  2.53s/it]\r                                              \r\r 13%|█▎        | 5/39 [00:15\u003c01:26,  2.53s/it]\r 13%|█▎        | 5/39 [00:15\u003c01:26,  2.53s/it]\r                                              \r\r 13%|█▎        | 5/39 [00:15\u003c01:26,  2.53s/it]\n"}
+,{"stream_name":"stdout","time":100.547062171,"data":"{'loss': '0.2681', 'grad_norm': '1.503', 'learning_rate': '9.928e-05', 'epoch': '0.3846'}\n"}
+,{"stream_name":"stdout","time":101.96966316,"data":"{'loss': '0.3166', 'grad_norm': '5.133', 'learning_rate': '9.839e-05', 'epoch': '0.4615'}\n"}
+,{"stream_name":"stderr","time":102.174833185,"data":"\r 13%|█▎        | 5/39 [00:15\u003c01:26,  2.53s/it]\r                                              \r\r 13%|█▎        | 5/39 [00:15\u003c01:26,  2.53s/it]\r 15%|█▌        | 6/39 [00:17\u003c01:13,  2.23s/it]\r                                              \r\r 15%|█▌        | 6/39 [00:17\u003c01:13,  2.23s/it]\r 15%|█▌        | 6/39 [00:17\u003c01:13,  2.23s/it]\r                                              \r\r 15%|█▌        | 6/39 [00:17\u003c01:13,  2.23s/it]\n"}
+,{"stream_name":"stdout","time":102.175915872,"data":"{'loss': '0.3166', 'grad_norm': '5.133', 'learning_rate': '9.839e-05', 'epoch': '0.4615'}\n"}
+,{"stream_name":"stdout","time":103.749615056,"data":"{'loss': '0.474', 'grad_norm': '3.19', 'learning_rate': '9.714e-05', 'epoch': '0.5385'}\n"}
+,{"stream_name":"stderr","time":103.951395444,"data":"\r 15%|█▌        | 6/39 [00:17\u003c01:13,  2.23s/it]\r                                              \r\r 15%|█▌        | 6/39 [00:17\u003c01:13,  2.23s/it]\r 18%|█▊        | 7/39 [00:18\u003c01:06,  2.08s/it]\r                                              \r\r 18%|█▊        | 7/39 [00:18\u003c01:06,  2.08s/it]\r 18%|█▊        | 7/39 [00:18\u003c01:06,  2.08s/it]\r                                              \r\r 18%|█▊        | 7/39 [00:18\u003c01:06,  2.08s/it]\n"}
+,{"stream_name":"stdout","time":103.952614275,"data":"{'loss': '0.474', 'grad_norm': '3.19', 'learning_rate': '9.714e-05', 'epoch': '0.5385'}\n"}
+,{"stream_name":"stderr","time":105.300262907,"data":"\r 18%|█▊        | 7/39 [00:18\u003c01:06,  2.08s/it]\r                                              \r\r 18%|█▊        | 7/39 [00:18\u003c01:06,  2.08s/it]\r 21%|██        | 8/39 [00:20\u003c00:59,  1.91s/it]/usr/local/lib/python3.13/dist-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.\n"}
+,{"stream_name":"stderr","time":105.300289078,"data":"  return func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":105.501079604,"data":"\r 21%|██        | 8/39 [00:20\u003c00:59,  1.91s/it]/usr/local/lib/python3.13/dist-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.\n"}
+,{"stream_name":"stderr","time":105.501115271,"data":"  return func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":105.501119278,"data":"\n"}
+,{"stream_name":"stderr","time":105.501122849,"data":"\r 21%|██        | 8/39 [00:20\u003c00:59,  1.91s/it]/usr/local/lib/python3.13/dist-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.\n"}
+,{"stream_name":"stderr","time":105.5011433,"data":"  return func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":120.133373086,"data":"/usr/local/lib/python3.13/dist-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.\n"}
+,{"stream_name":"stderr","time":120.133408393,"data":"  return func(*args, **kwargs)\n"}
+,{"stream_name":"stdout","time":120.133914378,"data":"{'loss': '0.3692', 'grad_norm': '2.584', 'learning_rate': '9.556e-05', 'epoch': '0.6154'}\n"}
+,{"stream_name":"stderr","time":120.339545741,"data":"\r                                              \r\r 21%|██        | 8/39 [00:35\u003c00:59,  1.91s/it]/usr/local/lib/python3.13/dist-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.\n"}
+,{"stream_name":"stderr","time":120.339572723,"data":"  return func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":120.339578403,"data":"\r                                              \r\r 21%|██        | 8/39 [00:35\u003c00:59,  1.91s/it]\n"}
+,{"stream_name":"stderr","time":120.339583454,"data":"/usr/local/lib/python3.13/dist-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.\n"}
+,{"stream_name":"stderr","time":120.339588391,"data":"  return func(*args, **kwargs)\n"}
+,{"stream_name":"stdout","time":120.340660923,"data":"{'loss': '0.3692', 'grad_norm': '2.584', 'learning_rate': '9.556e-05', 'epoch': '0.6154'}\n"}
+,{"stream_name":"stdout","time":121.797887152,"data":"{'loss': '0.5222', 'grad_norm': '3.249', 'learning_rate': '9.365e-05', 'epoch': '0.6923'}\n"}
+,{"stream_name":"stderr","time":121.999713598,"data":"\r                                              \r\r 21%|██        | 8/39 [00:35\u003c00:59,  1.91s/it]\r 23%|██▎       | 9/39 [00:36\u003c03:14,  6.47s/it]\r                                              \r\r 23%|██▎       | 9/39 [00:36\u003c03:14,  6.47s/it]\r 23%|██▎       | 9/39 [00:36\u003c03:14,  6.47s/it]\r                                              \r\r 23%|██▎       | 9/39 [00:36\u003c03:14,  6.47s/it]\n"}
+,{"stream_name":"stdout","time":122.000686741,"data":"{'loss': '0.5222', 'grad_norm': '3.249', 'learning_rate': '9.365e-05', 'epoch': '0.6923'}\n"}
+,{"stream_name":"stdout","time":123.447272261,"data":"{'loss': '0.2957', 'grad_norm': '3.445', 'learning_rate': '9.143e-05', 'epoch': '0.7692'}\n"}
+,{"stream_name":"stderr","time":123.648984077,"data":"\r 23%|██▎       | 9/39 [00:36\u003c03:14,  6.47s/it]\r                                              \r\r 23%|██▎       | 9/39 [00:36\u003c03:14,  6.47s/it]\r 26%|██▌       | 10/39 [00:38\u003c02:24,  4.98s/it]\r                                               \r\r 26%|██▌       | 10/39 [00:38\u003c02:24,  4.98s/it]\r 26%|██▌       | 10/39 [00:38\u003c02:24,  4.98s/it]\r                                               \r\r 26%|██▌       | 10/39 [00:38\u003c02:24,  4.98s/it]\n"}
+,{"stream_name":"stdout","time":123.649889686,"data":"{'loss': '0.2957', 'grad_norm': '3.445', 'learning_rate': '9.143e-05', 'epoch': '0.7692'}\n"}
+,{"stream_name":"stdout","time":125.365585741,"data":"{'loss': '0.3919', 'grad_norm': '1.771', 'learning_rate': '8.89e-05', 'epoch': '0.8462'}\n"}
+,{"stream_name":"stderr","time":125.567652963,"data":"\r 26%|██▌       | 10/39 [00:38\u003c02:24,  4.98s/it]\r                                               \r\r 26%|██▌       | 10/39 [00:38\u003c02:24,  4.98s/it]\r 28%|██▊       | 11/39 [00:40\u003c01:53,  4.04s/it]\r                                               \r\r 28%|██▊       | 11/39 [00:40\u003c01:53,  4.04s/it]\r 28%|██▊       | 11/39 [00:40\u003c01:53,  4.04s/it]\r                                               \r\r 28%|██▊       | 11/39 [00:40\u003c01:53,  4.04s/it]\n"}
+,{"stream_name":"stdout","time":125.569360306,"data":"{'loss': '0.3919', 'grad_norm': '1.771', 'learning_rate': '8.89e-05', 'epoch': '0.8462'}\n"}
+,{"stream_name":"stdout","time":126.931501018,"data":"{'loss': '0.492', 'grad_norm': '3.612', 'learning_rate': '8.61e-05', 'epoch': '0.9231'}\n"}
+,{"stream_name":"stderr","time":127.133178327,"data":"\r 28%|██▊       | 11/39 [00:40\u003c01:53,  4.04s/it]\r                                               \r\r 28%|██▊       | 11/39 [00:40\u003c01:53,  4.04s/it]\r 31%|███       | 12/39 [00:42\u003c01:28,  3.29s/it]\r                                               \r\r 31%|███       | 12/39 [00:42\u003c01:28,  3.29s/it]\r 31%|███       | 12/39 [00:42\u003c01:28,  3.29s/it]\r                                               \r\r 31%|███       | 12/39 [00:42\u003c01:28,  3.29s/it]\n"}
+,{"stream_name":"stdout","time":127.134167249,"data":"{'loss': '0.492', 'grad_norm': '3.612', 'learning_rate': '8.61e-05', 'epoch': '0.9231'}\n"}
+,{"stream_name":"stdout","time":128.492008099,"data":"{'loss': '0.4127', 'grad_norm': '2.773', 'learning_rate': '8.303e-05', 'epoch': '1'}\n"}
+,{"stream_name":"stderr","time":128.693909144,"data":"\r 31%|███       | 12/39 [00:42\u003c01:28,  3.29s/it]\r                                               \r\r 31%|███       | 12/39 [00:42\u003c01:28,  3.29s/it]\r 33%|███▎      | 13/39 [00:43\u003c01:11,  2.77s/it]\r                                               \r\r 33%|███▎      | 13/39 [00:43\u003c01:11,  2.77s/it]\r 33%|███▎      | 13/39 [00:43\u003c01:11,  2.77s/it]\r                                               \r\r 33%|███▎      | 13/39 [00:43\u003c01:11,  2.77s/it]\n"}
+,{"stream_name":"stdout","time":128.695173059,"data":"{'loss': '0.4127', 'grad_norm': '2.773', 'learning_rate': '8.303e-05', 'epoch': '1'}\n"}
+,{"stream_name":"stdout","time":130.02747052,"data":"{'loss': '0.2135', 'grad_norm': '1.898', 'learning_rate': '7.973e-05', 'epoch': '1.077'}\n"}
+,{"stream_name":"stderr","time":130.230129649,"data":"\r 33%|███▎      | 13/39 [00:43\u003c01:11,  2.77s/it]\r                                               \r\r 33%|███▎      | 13/39 [00:43\u003c01:11,  2.77s/it]\r 36%|███▌      | 14/39 [00:45\u003c00:59,  2.39s/it]\r                                               \r\r 36%|███▌      | 14/39 [00:45\u003c00:59,  2.39s/it]\r 36%|███▌      | 14/39 [00:45\u003c00:59,  2.39s/it]\r                                               \r\r 36%|███▌      | 14/39 [00:45\u003c00:59,  2.39s/it]\n"}
+,{"stream_name":"stdout","time":130.230361735,"data":"{'loss': '0.2135', 'grad_norm': '1.898', 'learning_rate': '7.973e-05', 'epoch': '1.077'}\n"}
+,{"stream_name":"stdout","time":131.604720253,"data":"{'loss': '0.2817', 'grad_norm': '2.083', 'learning_rate': '7.622e-05', 'epoch': '1.154'}\n"}
+,{"stream_name":"stderr","time":131.807006211,"data":"\r 36%|███▌      | 14/39 [00:45\u003c00:59,  2.39s/it]\r                                               \r\r 36%|███▌      | 14/39 [00:45\u003c00:59,  2.39s/it]\r 38%|███▊      | 15/39 [00:46\u003c00:51,  2.15s/it]\r                                               \r\r 38%|███▊      | 15/39 [00:46\u003c00:51,  2.15s/it]\r 38%|███▊      | 15/39 [00:46\u003c00:51,  2.15s/it]\r                                               \r\r 38%|███▊      | 15/39 [00:46\u003c00:51,  2.15s/it]\n"}
+,{"stream_name":"stdout","time":131.807997739,"data":"{'loss': '0.2817', 'grad_norm': '2.083', 'learning_rate': '7.622e-05', 'epoch': '1.154'}\n"}
+,{"stream_name":"stderr","time":133.126454799,"data":"\r 38%|███▊      | 15/39 [00:46\u003c00:51,  2.15s/it]\r                                               \r\r 38%|███▊      | 15/39 [00:46\u003c00:51,  2.15s/it]\r 41%|████      | 16/39 [00:48\u003c00:45,  1.96s/it]/usr/local/lib/python3.13/dist-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.\n"}
+,{"stream_name":"stderr","time":133.126484601,"data":"  return func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":133.328155403,"data":"\r 41%|████      | 16/39 [00:48\u003c00:45,  1.96s/it]/usr/local/lib/python3.13/dist-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.\n"}
+,{"stream_name":"stderr","time":133.328221364,"data":"  return func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":133.32822675,"data":"\n"}
+,{"stream_name":"stderr","time":133.328230243,"data":"\r 41%|████      | 16/39 [00:48\u003c00:45,  1.96s/it]/usr/local/lib/python3.13/dist-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.\n"}
+,{"stream_name":"stderr","time":133.328251436,"data":"  return func(*args, **kwargs)\n"}
+,{"stream_name":"stdout","time":141.67590107,"data":"{'loss': '0.2713', 'grad_norm': '2.014', 'learning_rate': '7.251e-05', 'epoch': '1.231'}\n"}
+,{"stream_name":"stderr","time":141.878656014,"data":"\r                                               \r\r 41%|████      | 16/39 [00:56\u003c00:45,  1.96s/it]\r                                               \r\r 41%|████      | 16/39 [00:56\u003c00:45,  1.96s/it]\n"}
+,{"stream_name":"stdout","time":141.879720752,"data":"{'loss': '0.2713', 'grad_norm': '2.014', 'learning_rate': '7.251e-05', 'epoch': '1.231'}\n"}
+,{"stream_name":"stdout","time":143.573694578,"data":"{'loss': '0.1839', 'grad_norm': '1.686', 'learning_rate': '6.864e-05', 'epoch': '1.308'}\n"}
+,{"stream_name":"stderr","time":143.775924466,"data":"\r                                               \r\r 41%|████      | 16/39 [00:56\u003c00:45,  1.96s/it]\r 44%|████▎     | 17/39 [00:58\u003c01:39,  4.51s/it]\r                                               \r\r 44%|████▎     | 17/39 [00:58\u003c01:39,  4.51s/it]\r 44%|████▎     | 17/39 [00:58\u003c01:39,  4.51s/it]\r                                               \r\r 44%|████▎     | 17/39 [00:58\u003c01:39,  4.51s/it]\n"}
+,{"stream_name":"stdout","time":143.777701091,"data":"{'loss': '0.1839', 'grad_norm': '1.686', 'learning_rate': '6.864e-05', 'epoch': '1.308'}\n"}
+,{"stream_name":"stdout","time":145.185105169,"data":"{'loss': '0.1456', 'grad_norm': '0.9164', 'learning_rate': '6.464e-05', 'epoch': '1.385'}\n"}
+,{"stream_name":"stderr","time":145.38698424,"data":"\r 44%|████▎     | 17/39 [00:58\u003c01:39,  4.51s/it]\r                                               \r\r 44%|████▎     | 17/39 [00:58\u003c01:39,  4.51s/it]\r 46%|████▌     | 18/39 [01:00\u003c01:16,  3.64s/it]\r                                               \r\r 46%|████▌     | 18/39 [01:00\u003c01:16,  3.64s/it]\r 46%|████▌     | 18/39 [01:00\u003c01:16,  3.64s/it]\r                                               \r\r 46%|████▌     | 18/39 [01:00\u003c01:16,  3.64s/it]\n"}
+,{"stream_name":"stdout","time":145.388063423,"data":"{'loss': '0.1456', 'grad_norm': '0.9164', 'learning_rate': '6.464e-05', 'epoch': '1.385'}\n"}
+,{"stream_name":"stdout","time":146.694815778,"data":"{'loss': '0.2675', 'grad_norm': '1.511', 'learning_rate': '6.053e-05', 'epoch': '1.462'}\n"}
+,{"stream_name":"stderr","time":146.896544458,"data":"\r 46%|████▌     | 18/39 [01:00\u003c01:16,  3.64s/it]\r                                               \r\r 46%|████▌     | 18/39 [01:00\u003c01:16,  3.64s/it]\r 49%|████▊     | 19/39 [01:01\u003c01:00,  3.00s/it]\r                                               \r\r 49%|████▊     | 19/39 [01:01\u003c01:00,  3.00s/it]\r 49%|████▊     | 19/39 [01:01\u003c01:00,  3.00s/it]\r                                               \r\r 49%|████▊     | 19/39 [01:01\u003c01:00,  3.00s/it]\n"}
+,{"stream_name":"stdout","time":146.898028308,"data":"{'loss': '0.2675', 'grad_norm': '1.511', 'learning_rate': '6.053e-05', 'epoch': '1.462'}\n"}
+,{"stream_name":"stdout","time":149.072576502,"data":"{'loss': '0.3395', 'grad_norm': '3.862', 'learning_rate': '5.635e-05', 'epoch': '1.538'}\n"}
+,{"stream_name":"stderr","time":149.274596096,"data":"\r 49%|████▊     | 19/39 [01:01\u003c01:00,  3.00s/it]\r                                               \r\r 49%|████▊     | 19/39 [01:01\u003c01:00,  3.00s/it]\r 51%|█████▏    | 20/39 [01:04\u003c00:53,  2.81s/it]\r                                               \r\r 51%|█████▏    | 20/39 [01:04\u003c00:53,  2.81s/it]\r 51%|█████▏    | 20/39 [01:04\u003c00:53,  2.81s/it]\r                                               \r\r 51%|█████▏    | 20/39 [01:04\u003c00:53,  2.81s/it]\n"}
+,{"stream_name":"stdout","time":149.275625367,"data":"{'loss': '0.3395', 'grad_norm': '3.862', 'learning_rate': '5.635e-05', 'epoch': '1.538'}\n"}
+,{"stream_name":"stdout","time":150.983435088,"data":"{'loss': '0.2179', 'grad_norm': '1.958', 'learning_rate': '5.212e-05', 'epoch': '1.615'}\n"}
+,{"stream_name":"stderr","time":151.194116029,"data":"\r 51%|█████▏    | 20/39 [01:04\u003c00:53,  2.81s/it]\r                                               \r\r 51%|█████▏    | 20/39 [01:04\u003c00:53,  2.81s/it]\r 54%|█████▍    | 21/39 [01:06\u003c00:45,  2.54s/it]\r                                               \r\r 54%|█████▍    | 21/39 [01:06\u003c00:45,  2.54s/it]\r 54%|█████▍    | 21/39 [01:06\u003c00:45,  2.54s/it]\r                                               \r\r 54%|█████▍    | 21/39 [01:06\u003c00:45,  2.54s/it]\n"}
+,{"stream_name":"stdout","time":151.194553271,"data":"{'loss': '0.2179', 'grad_norm': '1.958', 'learning_rate': '5.212e-05', 'epoch': '1.615'}\n"}
+,{"stream_name":"stdout","time":152.687830716,"data":"{'loss': '0.1741', 'grad_norm': '2.202', 'learning_rate': '4.788e-05', 'epoch': '1.692'}\n"}
+,{"stream_name":"stderr","time":152.889327553,"data":"\r 54%|█████▍    | 21/39 [01:06\u003c00:45,  2.54s/it]\r                                               \r\r 54%|█████▍    | 21/39 [01:06\u003c00:45,  2.54s/it]\r 56%|█████▋    | 22/39 [01:07\u003c00:38,  2.29s/it]\r                                               \r\r 56%|█████▋    | 22/39 [01:07\u003c00:38,  2.29s/it]\r 56%|█████▋    | 22/39 [01:07\u003c00:38,  2.29s/it]\r                                               \r\r 56%|█████▋    | 22/39 [01:07\u003c00:38,  2.29s/it]\n"}
+,{"stream_name":"stdout","time":152.890581021,"data":"{'loss': '0.1741', 'grad_norm': '2.202', 'learning_rate': '4.788e-05', 'epoch': '1.692'}\n"}
+,{"stream_name":"stdout","time":154.98545046,"data":"{'loss': '0.1393', 'grad_norm': '1.73', 'learning_rate': '4.365e-05', 'epoch': '1.769'}\n"}
+,{"stream_name":"stderr","time":155.187050805,"data":"\r 56%|█████▋    | 22/39 [01:07\u003c00:38,  2.29s/it]\r                                               \r\r 56%|█████▋    | 22/39 [01:07\u003c00:38,  2.29s/it]\r 59%|█████▉    | 23/39 [01:10\u003c00:36,  2.29s/it]\r                                               \r\r 59%|█████▉    | 23/39 [01:10\u003c00:36,  2.29s/it]\r 59%|█████▉    | 23/39 [01:10\u003c00:36,  2.29s/it]\r                                               \r\r 59%|█████▉    | 23/39 [01:10\u003c00:36,  2.29s/it]\n"}
+,{"stream_name":"stdout","time":155.188303858,"data":"{'loss': '0.1393', 'grad_norm': '1.73', 'learning_rate': '4.365e-05', 'epoch': '1.769'}\n"}
+,{"stream_name":"stderr","time":156.496315466,"data":"\r 59%|█████▉    | 23/39 [01:10\u003c00:36,  2.29s/it]\r                                               \r\r 59%|█████▉    | 23/39 [01:10\u003c00:36,  2.29s/it]\r 62%|██████▏   | 24/39 [01:11\u003c00:30,  2.06s/it]/usr/local/lib/python3.13/dist-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.\n"}
+,{"stream_name":"stderr","time":156.496342336,"data":"  return func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":156.69785795,"data":"\r 62%|██████▏   | 24/39 [01:11\u003c00:30,  2.06s/it]/usr/local/lib/python3.13/dist-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.\n"}
+,{"stream_name":"stderr","time":156.697908625,"data":"  return func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":156.697913549,"data":"\n"}
+,{"stream_name":"stderr","time":156.697917894,"data":"\r 62%|██████▏   | 24/39 [01:11\u003c00:30,  2.06s/it]/usr/local/lib/python3.13/dist-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.\n"}
+,{"stream_name":"stderr","time":156.697922111,"data":"  return func(*args, **kwargs)\n"}
+,{"stream_name":"stdout","time":164.8068138,"data":"{'loss': '0.185', 'grad_norm': '1.76', 'learning_rate': '3.947e-05', 'epoch': '1.846'}\n"}
+,{"stream_name":"stderr","time":165.00995162,"data":"\r                                               \r\r 62%|██████▏   | 24/39 [01:19\u003c00:30,  2.06s/it]\r                                               \r\r 62%|██████▏   | 24/39 [01:19\u003c00:30,  2.06s/it]\n"}
+,{"stream_name":"stdout","time":165.011019422,"data":"{'loss': '0.185', 'grad_norm': '1.76', 'learning_rate': '3.947e-05', 'epoch': '1.846'}\n"}
+,{"stream_name":"stdout","time":166.370122351,"data":"{'loss': '0.1767', 'grad_norm': '1.502', 'learning_rate': '3.536e-05', 'epoch': '1.923'}\n"}
+,{"stream_name":"stderr","time":166.572054258,"data":"\r                                               \r\r 62%|██████▏   | 24/39 [01:19\u003c00:30,  2.06s/it]\r 64%|██████▍   | 25/39 [01:21\u003c01:01,  4.40s/it]\r                                               \r\r 64%|██████▍   | 25/39 [01:21\u003c01:01,  4.40s/it]\r 64%|██████▍   | 25/39 [01:21\u003c01:01,  4.40s/it]\r                                               \r\r 64%|██████▍   | 25/39 [01:21\u003c01:01,  4.40s/it]\n"}
+,{"stream_name":"stdout","time":166.573114821,"data":"{'loss': '0.1767', 'grad_norm': '1.502', 'learning_rate': '3.536e-05', 'epoch': '1.923'}\n"}
+,{"stream_name":"stdout","time":167.96377569,"data":"{'loss': '0.3233', 'grad_norm': '2.605', 'learning_rate': '3.136e-05', 'epoch': '2'}\n"}
+,{"stream_name":"stdout","time":168.166871391,"data":"{'loss': '0.3233', 'grad_norm': '2.605', 'learning_rate': '3.136e-05', 'epoch': '2'}\n"}
+,{"stream_name":"stderr","time":168.166936782,"data":"\r 64%|██████▍   | 25/39 [01:21\u003c01:01,  4.40s/it]\r                                               \r\r 64%|██████▍   | 25/39 [01:21\u003c01:01,  4.40s/it]\r 67%|██████▋   | 26/39 [01:23\u003c00:46,  3.56s/it]\r                                               \r\r 67%|██████▋   | 26/39 [01:23\u003c00:46,  3.56s/it]\r 67%|██████▋   | 26/39 [01:23\u003c00:46,  3.56s/it]\r                                               \r\r 67%|██████▋   | 26/39 [01:23\u003c00:46,  3.56s/it]\n"}
+,{"stream_name":"stdout","time":169.801103769,"data":"{'loss': '0.05648', 'grad_norm': '0.7619', 'learning_rate': '2.749e-05', 'epoch': '2.077'}\n"}
+,{"stream_name":"stderr","time":170.003117941,"data":"\r 67%|██████▋   | 26/39 [01:23\u003c00:46,  3.56s/it]\r                                               \r\r 67%|██████▋   | 26/39 [01:23\u003c00:46,  3.56s/it]\r 69%|██████▉   | 27/39 [01:24\u003c00:36,  3.04s/it]\r                                               \r\r 69%|██████▉   | 27/39 [01:24\u003c00:36,  3.04s/it]\r 69%|██████▉   | 27/39 [01:24\u003c00:36,  3.04s/it]\r                                               \r\r 69%|██████▉   | 27/39 [01:24\u003c00:36,  3.04s/it]\n"}
+,{"stream_name":"stdout","time":170.004878897,"data":"{'loss': '0.05648', 'grad_norm': '0.7619', 'learning_rate': '2.749e-05', 'epoch': '2.077'}\n"}
+,{"stream_name":"stdout","time":171.341401499,"data":"{'loss': '0.1515', 'grad_norm': '1.55', 'learning_rate': '2.378e-05', 'epoch': '2.154'}\n"}
+,{"stream_name":"stderr","time":171.543440988,"data":"\r 69%|██████▉   | 27/39 [01:24\u003c00:36,  3.04s/it]\r                                               \r\r 69%|██████▉   | 27/39 [01:24\u003c00:36,  3.04s/it]\r 72%|███████▏  | 28/39 [01:26\u003c00:28,  2.59s/it]\r                                               \r\r 72%|███████▏  | 28/39 [01:26\u003c00:28,  2.59s/it]\r 72%|███████▏  | 28/39 [01:26\u003c00:28,  2.59s/it]\r                                               \r\r 72%|███████▏  | 28/39 [01:26\u003c00:28,  2.59s/it]\n"}
+,{"stream_name":"stdout","time":171.544431641,"data":"{'loss': '0.1515', 'grad_norm': '1.55', 'learning_rate': '2.378e-05', 'epoch': '2.154'}\n"}
+,{"stream_name":"stdout","time":172.917197932,"data":"{'loss': '0.1199', 'grad_norm': '1.112', 'learning_rate': '2.027e-05', 'epoch': '2.231'}\n"}
+,{"stream_name":"stderr","time":173.11901023,"data":"\r 72%|███████▏  | 28/39 [01:26\u003c00:28,  2.59s/it]\r                                               \r\r 72%|███████▏  | 28/39 [01:26\u003c00:28,  2.59s/it]\r 74%|███████▍  | 29/39 [01:28\u003c00:22,  2.29s/it]\r                                               \r\r 74%|███████▍  | 29/39 [01:28\u003c00:22,  2.29s/it]\r 74%|███████▍  | 29/39 [01:28\u003c00:22,  2.29s/it]\r                                               \r\r 74%|███████▍  | 29/39 [01:28\u003c00:22,  2.29s/it]\n"}
+,{"stream_name":"stdout","time":173.120141699,"data":"{'loss': '0.1199', 'grad_norm': '1.112', 'learning_rate': '2.027e-05', 'epoch': '2.231'}\n"}
+,{"stream_name":"stdout","time":174.520945723,"data":"{'loss': '0.1291', 'grad_norm': '1.489', 'learning_rate': '1.697e-05', 'epoch': '2.308'}\n"}
+,{"stream_name":"stderr","time":174.722702867,"data":"\r 74%|███████▍  | 29/39 [01:28\u003c00:22,  2.29s/it]\r                                               \r\r 74%|███████▍  | 29/39 [01:28\u003c00:22,  2.29s/it]\r 77%|███████▋  | 30/39 [01:29\u003c00:18,  2.08s/it]\r                                               \r\r 77%|███████▋  | 30/39 [01:29\u003c00:18,  2.08s/it]\r 77%|███████▋  | 30/39 [01:29\u003c00:18,  2.08s/it]\r                                               \r\r 77%|███████▋  | 30/39 [01:29\u003c00:18,  2.08s/it]\n"}
+,{"stream_name":"stdout","time":174.723689641,"data":"{'loss': '0.1291', 'grad_norm': '1.489', 'learning_rate': '1.697e-05', 'epoch': '2.308'}\n"}
+,{"stream_name":"stdout","time":176.410551048,"data":"{'loss': '0.1229', 'grad_norm': '1.362', 'learning_rate': '1.39e-05', 'epoch': '2.385'}\n"}
+,{"stream_name":"stderr","time":176.612894545,"data":"\r 77%|███████▋  | 30/39 [01:29\u003c00:18,  2.08s/it]\r                                               \r\r 77%|███████▋  | 30/39 [01:29\u003c00:18,  2.08s/it]\r 79%|███████▉  | 31/39 [01:31\u003c00:16,  2.02s/it]\r                                               \r\r 79%|███████▉  | 31/39 [01:31\u003c00:16,  2.02s/it]\r 79%|███████▉  | 31/39 [01:31\u003c00:16,  2.02s/it]\r                                               \r\r 79%|███████▉  | 31/39 [01:31\u003c00:16,  2.02s/it]\n"}
+,{"stream_name":"stdout","time":176.613936999,"data":"{'loss': '0.1229', 'grad_norm': '1.362', 'learning_rate': '1.39e-05', 'epoch': '2.385'}\n"}
+,{"stream_name":"stderr","time":177.936833282,"data":"\r 79%|███████▉  | 31/39 [01:31\u003c00:16,  2.02s/it]\r                                               \r\r 79%|███████▉  | 31/39 [01:31\u003c00:16,  2.02s/it]\r 82%|████████▏ | 32/39 [01:33\u003c00:13,  1.88s/it]/usr/local/lib/python3.13/dist-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.\n"}
+,{"stream_name":"stderr","time":177.936861905,"data":"  return func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":178.138633467,"data":"\r 82%|████████▏ | 32/39 [01:33\u003c00:13,  1.88s/it]/usr/local/lib/python3.13/dist-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.\n"}
+,{"stream_name":"stderr","time":178.13866738,"data":"  return func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":178.138671492,"data":"\n"}
+,{"stream_name":"stderr","time":178.138674926,"data":"\r 82%|████████▏ | 32/39 [01:33\u003c00:13,  1.88s/it]/usr/local/lib/python3.13/dist-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.\n"}
+,{"stream_name":"stderr","time":178.138679255,"data":"  return func(*args, **kwargs)\n"}
+,{"stream_name":"stdout","time":186.828051744,"data":"{'loss': '0.04866', 'grad_norm': '1.062', 'learning_rate': '1.11e-05', 'epoch': '2.462'}\n"}
+,{"stream_name":"stderr","time":187.037759182,"data":"\r                                               \r\r 82%|████████▏ | 32/39 [01:41\u003c00:13,  1.88s/it]\r                                               \r\r 82%|████████▏ | 32/39 [01:41\u003c00:13,  1.88s/it]\n"}
+,{"stream_name":"stdout","time":187.037767249,"data":"{'loss': '0.04866', 'grad_norm': '1.062', 'learning_rate': '1.11e-05', 'epoch': '2.462'}\n"}
+,{"stream_name":"stdout","time":188.709169981,"data":"{'loss': '0.173', 'grad_norm': '1.876', 'learning_rate': '8.575e-06', 'epoch': '2.538'}\n"}
+,{"stream_name":"stderr","time":188.910938854,"data":"\r                                               \r\r 82%|████████▏ | 32/39 [01:41\u003c00:13,  1.88s/it]\r 85%|████████▍ | 33/39 [01:43\u003c00:27,  4.54s/it]\r                                               \r\r 85%|████████▍ | 33/39 [01:43\u003c00:27,  4.54s/it]\r 85%|████████▍ | 33/39 [01:43\u003c00:27,  4.54s/it]\r                                               \r\r 85%|████████▍ | 33/39 [01:43\u003c00:27,  4.54s/it]\n"}
+,{"stream_name":"stdout","time":188.912272799,"data":"{'loss': '0.173', 'grad_norm': '1.876', 'learning_rate': '8.575e-06', 'epoch': '2.538'}\n"}
+,{"stream_name":"stdout","time":191.067272775,"data":"{'loss': '0.1838', 'grad_norm': '1.726', 'learning_rate': '6.349e-06', 'epoch': '2.615'}\n"}
+,{"stream_name":"stderr","time":191.268830314,"data":"\r 85%|████████▍ | 33/39 [01:43\u003c00:27,  4.54s/it]\r                                               \r\r 85%|████████▍ | 33/39 [01:43\u003c00:27,  4.54s/it]\r 87%|████████▋ | 34/39 [01:46\u003c00:19,  3.89s/it]\r                                               \r\r 87%|████████▋ | 34/39 [01:46\u003c00:19,  3.89s/it]\r 87%|████████▋ | 34/39 [01:46\u003c00:19,  3.89s/it]\r                                               \r\r 87%|████████▋ | 34/39 [01:46\u003c00:19,  3.89s/it]\n"}
+,{"stream_name":"stdout","time":191.270143677,"data":"{'loss': '0.1838', 'grad_norm': '1.726', 'learning_rate': '6.349e-06', 'epoch': '2.615'}\n"}
+,{"stream_name":"stdout","time":193.00551817,"data":"{'loss': '0.1363', 'grad_norm': '1.853', 'learning_rate': '4.439e-06', 'epoch': '2.692'}\n"}
+,{"stream_name":"stderr","time":193.207271344,"data":"\r 87%|████████▋ | 34/39 [01:46\u003c00:19,  3.89s/it]\r                                               \r\r 87%|████████▋ | 34/39 [01:46\u003c00:19,  3.89s/it]\r 90%|████████▉ | 35/39 [01:48\u003c00:13,  3.30s/it]\r                                               \r\r 90%|████████▉ | 35/39 [01:48\u003c00:13,  3.30s/it]\r 90%|████████▉ | 35/39 [01:48\u003c00:13,  3.30s/it]\r                                               \r\r 90%|████████▉ | 35/39 [01:48\u003c00:13,  3.30s/it]\n"}
+,{"stream_name":"stdout","time":193.208293404,"data":"{'loss': '0.1363', 'grad_norm': '1.853', 'learning_rate': '4.439e-06', 'epoch': '2.692'}\n"}
+,{"stream_name":"stdout","time":195.059017115,"data":"{'loss': '0.1235', 'grad_norm': '2.471', 'learning_rate': '2.856e-06', 'epoch': '2.769'}\n"}
+,{"stream_name":"stderr","time":195.261050323,"data":"\r 90%|████████▉ | 35/39 [01:48\u003c00:13,  3.30s/it]\r                                               \r\r 90%|████████▉ | 35/39 [01:48\u003c00:13,  3.30s/it]\r 92%|█████████▏| 36/39 [01:50\u003c00:08,  2.93s/it]\r                                               \r\r 92%|█████████▏| 36/39 [01:50\u003c00:08,  2.93s/it]\r 92%|█████████▏| 36/39 [01:50\u003c00:08,  2.93s/it]\r                                               \r\r 92%|█████████▏| 36/39 [01:50\u003c00:08,  2.93s/it]\n"}
+,{"stream_name":"stdout","time":195.262110734,"data":"{'loss': '0.1235', 'grad_norm': '2.471', 'learning_rate': '2.856e-06', 'epoch': '2.769'}\n"}
+,{"stream_name":"stdout","time":196.602175152,"data":"{'loss': '0.1257', 'grad_norm': '1.413', 'learning_rate': '1.613e-06', 'epoch': '2.846'}\n"}
+,{"stream_name":"stdout","time":196.805207076,"data":"{'loss': '0.1257', 'grad_norm': '1.413', 'learning_rate': '1.613e-06', 'epoch': '2.846'}\n"}
+,{"stream_name":"stderr","time":196.805324691,"data":"\r 92%|█████████▏| 36/39 [01:50\u003c00:08,  2.93s/it]\r                                               \r\r 92%|█████████▏| 36/39 [01:50\u003c00:08,  2.93s/it]\r 95%|█████████▍| 37/39 [01:51\u003c00:05,  2.51s/it]\r                                               \r\r 95%|█████████▍| 37/39 [01:51\u003c00:05,  2.51s/it]\r 95%|█████████▍| 37/39 [01:51\u003c00:05,  2.51s/it]\r                                               \r\r 95%|█████████▍| 37/39 [01:51\u003c00:05,  2.51s/it]\n"}
+,{"stream_name":"stdout","time":198.333025376,"data":"{'loss': '0.1501', 'grad_norm': '1.626', 'learning_rate': '7.192e-07', 'epoch': '2.923'}\n"}
+,{"stream_name":"stderr","time":198.534956383,"data":"\r 95%|█████████▍| 37/39 [01:51\u003c00:05,  2.51s/it]\r                                               \r\r 95%|█████████▍| 37/39 [01:51\u003c00:05,  2.51s/it]\r 97%|█████████▋| 38/39 [01:53\u003c00:02,  2.28s/it]\r                                               \r\r 97%|█████████▋| 38/39 [01:53\u003c00:02,  2.28s/it]\r 97%|█████████▋| 38/39 [01:53\u003c00:02,  2.28s/it]\r                                               \r\r 97%|█████████▋| 38/39 [01:53\u003c00:02,  2.28s/it]\n"}
+,{"stream_name":"stdout","time":198.536205765,"data":"{'loss': '0.1501', 'grad_norm': '1.626', 'learning_rate': '7.192e-07', 'epoch': '2.923'}\n"}
+,{"stream_name":"stdout","time":199.823640709,"data":"{'loss': '0.163', 'grad_norm': '1.963', 'learning_rate': '1.801e-07', 'epoch': '3'}\n"}
+,{"stream_name":"stderr","time":200.025575478,"data":"\r 97%|█████████▋| 38/39 [01:53\u003c00:02,  2.28s/it]\r                                               \r\r 97%|█████████▋| 38/39 [01:53\u003c00:02,  2.28s/it]\r100%|██████████| 39/39 [01:54\u003c00:00,  2.04s/it]\r                                               \r\r100%|██████████| 39/39 [01:54\u003c00:00,  2.04s/it]\r100%|██████████| 39/39 [01:54\u003c00:00,  2.04s/it]\r                                               \r\r100%|██████████| 39/39 [01:54\u003c00:00,  2.04s/it]\n"}
+,{"stream_name":"stdout","time":200.026947749,"data":"{'loss': '0.163', 'grad_norm': '1.963', 'learning_rate': '1.801e-07', 'epoch': '3'}\n"}
+,{"stream_name":"stdout","time":200.096479518,"data":"{'train_runtime': '115.5', 'train_samples_per_second': '2.675', 'train_steps_per_second': '0.338', 'train_loss': '0.2621', 'epoch': '3'}\n"}
+,{"stream_name":"stderr","time":200.09718878,"data":"\r100%|██████████| 39/39 [01:54\u003c00:00,  2.04s/it]\r                                               \r\r100%|██████████| 39/39 [01:54\u003c00:00,  2.04s/it]\r                                               \r\r100%|██████████| 39/39 [01:55\u003c00:00,  2.04s/it]/usr/local/lib/python3.13/dist-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.\n"}
+,{"stream_name":"stderr","time":200.097210247,"data":"  return func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":200.098639122,"data":"\r100%|██████████| 39/39 [01:55\u003c00:00,  2.96s/it]\n"}
+,{"stream_name":"stderr","time":200.300697584,"data":"\r                                               \r\r100%|██████████| 39/39 [01:55\u003c00:00,  2.04s/it]/usr/local/lib/python3.13/dist-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.\n"}
+,{"stream_name":"stderr","time":200.300726395,"data":"  return func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":200.300730437,"data":"\r100%|██████████| 39/39 [01:55\u003c00:00,  2.96s/it]\n"}
+,{"stream_name":"stderr","time":200.300733995,"data":"\n"}
+,{"stream_name":"stderr","time":200.300737115,"data":"\r                                               \r\r100%|██████████| 39/39 [01:55\u003c00:00,  2.04s/it]/usr/local/lib/python3.13/dist-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.\n"}
+,{"stream_name":"stderr","time":200.300754752,"data":"  return func(*args, **kwargs)\n"}
+,{"stream_name":"stderr","time":200.300758136,"data":"\r100%|██████████| 39/39 [01:55\u003c00:00,  2.96s/it]\n"}
+,{"stream_name":"stdout","time":200.300778919,"data":"{'train_runtime': '115.5', 'train_samples_per_second': '2.675', 'train_steps_per_second': '0.338', 'train_loss': '0.2621', 'epoch': '3'}\n"}
+,{"stream_name":"stdout","time":213.350114407,"data":"=== Finished pruner_v3 in 178.7s ===\n"}
+,{"stream_name":"stdout","time":214.301894338,"data":"{\n"}
+,{"stream_name":"stdout","time":214.301923878,"data":"  \"status\": \"PER_RANK_STEPS_AND_ALLOCATIONS_OBSERVED\",\n"}
+,{"stream_name":"stdout","time":214.301928767,"data":"  \"world_size\": 2,\n"}
+,{"stream_name":"stdout","time":214.301938402,"data":"  \"known_distinct_uuids\": true,\n"}
+,{"stream_name":"stdout","time":214.301941142,"data":"  \"steps\": [\n"}
+,{"stream_name":"stdout","time":214.301943458,"data":"    39,\n"}
+,{"stream_name":"stdout","time":214.301945731,"data":"    39\n"}
+,{"stream_name":"stdout","time":214.301947901,"data":"  ],\n"}
+,{"stream_name":"stdout","time":214.301950292,"data":"  \"rows_processed\": [\n"}
+,{"stream_name":"stdout","time":214.301952606,"data":"    156,\n"}
+,{"stream_name":"stdout","time":214.301954818,"data":"    156\n"}
+,{"stream_name":"stdout","time":214.301956991,"data":"  ],\n"}
+,{"stream_name":"stdout","time":214.30198676,"data":"  \"oom_steps_skipped\": 0,\n"}
+,{"stream_name":"stdout","time":214.30199332,"data":"  \"nan_grad_steps_skipped\": 0,\n"}
+,{"stream_name":"stdout","time":214.301996671,"data":"  \"skips_clean\": true,\n"}
+,{"stream_name":"stdout","time":214.302000004,"data":"  \"caution\": \"Inspect both UUID utilization traces. Receipts are not proof of speedup, useful compute balance, numerical correctness or successful checkpoint restore.\"\n"}
+,{"stream_name":"stdout","time":214.302003973,"data":"}\n"}
+,{"stream_name":"stdout","time":214.314086308,"data":"verify_ddp (pruner_v3): {\n"}
+,{"stream_name":"stdout","time":214.314105722,"data":"  \"status\": \"PER_RANK_STEPS_AND_ALLOCATIONS_OBSERVED\",\n"}
+,{"stream_name":"stdout","time":214.314110048,"data":"  \"world_size\": 2,\n"}
+,{"stream_name":"stdout","time":214.314113451,"data":"  \"known_distinct_uuids\": true,\n"}
+,{"stream_name":"stdout","time":214.314116673,"data":"  \"steps\": [\n"}
+,{"stream_name":"stdout","time":214.314120413,"data":"    39,\n"}
+,{"stream_name":"stdout","time":214.314123469,"data":"    39\n"}
+,{"stream_name":"stdout","time":214.3141271,"data":"  ],\n"}
+,{"stream_name":"stdout","time":214.314130747,"data":"  \"rows_processed\": [\n"}
+,{"stream_name":"stdout","time":214.31413445,"data":"    156,\n"}
+,{"stream_name":"stdout","time":214.314137897,"data":"    156\n"}
+,{"stream_name":"stdout","time":214.314141088,"data":"  ],\n"}
+,{"stream_name":"stdout","time":214.314144933,"data":"  \"oom_steps_skipped\": 0,\n"}
+,{"stream_name":"stdout","time":214.314148798,"data":"  \"nan_grad_steps_skipped\": 0,\n"}
+,{"stream_name":"stdout","time":214.314152558,"data":"  \"skips_clean\": true,\n"}
+,{"stream_name":"stdout","time":214.314156188,"data":"  \"caution\": \"Inspect both UUID utilization traces. Receipts are not proof of speedup, useful compute balance, numerical correctness or successful checkpoint restore.\"\n"}
+,{"stream_name":"stdout","time":214.314161258,"data":"}\n"}
+,{"stream_name":"stdout","time":214.314174743,"data":"{\n"}
+,{"stream_name":"stdout","time":214.314178023,"data":"  \"status\": \"PER_RANK_STEPS_AND_ALLOCATIONS_OBSERVED\",\n"}
+,{"stream_name":"stdout","time":214.314181431,"data":"  \"world_size\": 2,\n"}
+,{"stream_name":"stdout","time":214.314184653,"data":"  \"known_distinct_uuids\": true,\n"}
+,{"stream_name":"stdout","time":214.314193373,"data":"  \"steps\": [\n"}
+,{"stream_name":"stdout","time":214.314196758,"data":"    39,\n"}
+,{"stream_name":"stdout","time":214.314199051,"data":"    39\n"}
+,{"stream_name":"stdout","time":214.3142012,"data":"  ],\n"}
+,{"stream_name":"stdout","time":214.314203343,"data":"  \"rows_processed\": [\n"}
+,{"stream_name":"stdout","time":214.314205593,"data":"    156,\n"}
+,{"stream_name":"stdout","time":214.314207836,"data":"    156\n"}
+,{"stream_name":"stdout","time":214.314209964,"data":"  ],\n"}
+,{"stream_name":"stdout","time":214.314212086,"data":"  \"oom_steps_skipped\": 0,\n"}
+,{"stream_name":"stdout","time":214.314214323,"data":"  \"nan_grad_steps_skipped\": 0,\n"}
+,{"stream_name":"stdout","time":214.314216647,"data":"  \"skips_clean\": true,\n"}
+,{"stream_name":"stdout","time":214.314218938,"data":"  \"caution\": \"Inspect both UUID utilization traces. Receipts are not proof of speedup, useful compute balance, numerical correctness or successful checkpoint restore.\"\n"}
+,{"stream_name":"stdout","time":214.314221445,"data":"}\n"}
+,{"stream_name":"stdout","time":214.31422357,"data":"PRUNER_V3_SUMMARY: {\n"}
+,{"stream_name":"stdout","time":214.314225875,"data":"  \"run\": \"pruner_v3\",\n"}
+,{"stream_name":"stdout","time":214.314229143,"data":"  \"ddp\": {\n"}
+,{"stream_name":"stdout","time":214.314249627,"data":"    \"status\": \"PER_RANK_STEPS_AND_ALLOCATIONS_OBSERVED\",\n"}
+,{"stream_name":"stdout","time":214.314253723,"data":"    \"world_size\": 2,\n"}
+,{"stream_name":"stdout","time":214.314257745,"data":"    \"known_distinct_uuids\": true,\n"}
+,{"stream_name":"stdout","time":214.31426138,"data":"    \"steps\": [\n"}
+,{"stream_name":"stdout","time":214.314265246,"data":"      39,\n"}
+,{"stream_name":"stdout","time":214.314268935,"data":"      39\n"}
+,{"stream_name":"stdout","time":214.314272054,"data":"    ],\n"}
+,{"stream_name":"stdout","time":214.314275076,"data":"    \"rows_processed\": [\n"}
+,{"stream_name":"stdout","time":214.31427836,"data":"      156,\n"}
+,{"stream_name":"stdout","time":214.314281496,"data":"      156\n"}
+,{"stream_name":"stdout","time":214.31428465,"data":"    ],\n"}
+,{"stream_name":"stdout","time":214.314287703,"data":"    \"oom_steps_skipped\": 0,\n"}
+,{"stream_name":"stdout","time":214.314291107,"data":"    \"nan_grad_steps_skipped\": 0,\n"}
+,{"stream_name":"stdout","time":214.314296,"data":"    \"skips_clean\": true,\n"}
+,{"stream_name":"stdout","time":214.31430508,"data":"    \"caution\": \"Inspect both UUID utilization traces. Receipts are not proof of speedup, useful compute balance, numerical correctness or successful checkpoint restore.\"\n"}
+,{"stream_name":"stdout","time":214.314312265,"data":"  },\n"}
+,{"stream_name":"stdout","time":214.314332601,"data":"  \"p95_step_seconds\": 2.351469039916992,\n"}
+,{"stream_name":"stdout","time":214.314348822,"data":"  \"measured_optimizer_steps\": 39,\n"}
+,{"stream_name":"stdout","time":214.31435298,"data":"  \"planned_training_steps\": 39,\n"}
+,{"stream_name":"stdout","time":214.314357138,"data":"  \"remaining_optimizer_steps\": 0,\n"}
+,{"stream_name":"stdout","time":214.314361048,"data":"  \"stop_requested\": false,\n"}
+,{"stream_name":"stdout","time":214.314365128,"data":"  \"milestones_count\": 4,\n"}
+,{"stream_name":"stdout","time":214.314373618,"data":"  \"dev_metrics\": {\n"}
+,{"stream_name":"stdout","time":214.314377135,"data":"    \"dev_n\": 12,\n"}
+,{"stream_name":"stdout","time":214.314380608,"data":"    \"dev_schema_valid\": 1.0,\n"}
+,{"stream_name":"stdout","time":214.314384132,"data":"    \"dev_precision\": 0.7263157894736842,\n"}
+,{"stream_name":"stdout","time":214.314387682,"data":"    \"dev_recall\": 0.6330275229357798,\n"}
+,{"stream_name":"stdout","time":214.314391212,"data":"    \"pred_micro_recall\": 0.6330275229357798,\n"}
+,{"stream_name":"stdout","time":214.31439476,"data":"    \"dev_f1\": 0.6764705882352942,\n"}
+,{"stream_name":"stdout","time":214.314398167,"data":"    \"dev_token_f1\": 0.6910052910052911,\n"}
+,{"stream_name":"stdout","time":214.314401728,"data":"    \"empty_fp_rate\": 0.0,\n"}
+,{"stream_name":"stdout","time":214.31440524,"data":"    \"long_window_recall\": null,\n"}
+,{"stream_name":"stdout","time":214.314408722,"data":"    \"short_window_recall\": 0.6330275229357798,\n"}
+,{"stream_name":"stdout","time":214.314412394,"data":"    \"tp\": 69,\n"}
+,{"stream_name":"stdout","time":214.314422412,"data":"    \"gtp\": 69,\n"}
+,{"stream_name":"stdout","time":214.314425014,"data":"    \"fp\": 26,\n"}
+,{"stream_name":"stdout","time":214.314427412,"data":"    \"fn\": 40,\n"}
+,{"stream_name":"stdout","time":214.314430462,"data":"    \"pred_items\": 95,\n"}
+,{"stream_name":"stdout","time":214.314433633,"data":"    \"gold_items\": 109,\n"}
+,{"stream_name":"stdout","time":214.314449387,"data":"    \"max_new_tokens\": 1800,\n"}
+,{"stream_name":"stdout","time":214.314453626,"data":"    \"capped_count\": 0,\n"}
+,{"stream_name":"stdout","time":214.31445777,"data":"    \"capped_ids\": [],\n"}
+,{"stream_name":"stdout","time":214.314461852,"data":"    \"non_empty_pred_rate\": 0.8333333333333334,\n"}
+,{"stream_name":"stdout","time":214.314466103,"data":"    \"empty_collapse_detected\": false,\n"}
+,{"stream_name":"stdout","time":214.314469685,"data":"    \"role\": \"pruner\",\n"}
+,{"stream_name":"stdout","time":214.314473204,"data":"    \"train_steps\": 39,\n"}
+,{"stream_name":"stdout","time":214.314476721,"data":"    \"elapsed_s\": 139.55279064178467\n"}
+,{"stream_name":"stdout","time":214.314480264,"data":"  }\n"}
+,{"stream_name":"stdout","time":214.314483602,"data":"}\n"}
+,{"stream_name":"stderr","time":217.134647882,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":217.134675918,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":217.293297227,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":217.293328391,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":218.033597615,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":218.12838443,"data":"[NbConvertApp] Writing 32517 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":220.588551603,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":221.153529665,"data":"[NbConvertApp] Writing 333660 bytes to __results__.html\n"}
+]

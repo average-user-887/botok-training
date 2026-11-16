@@ -1,0 +1,52 @@
+{
+  "run": "pruner_v3",
+  "ddp": {
+    "status": "PER_RANK_STEPS_AND_ALLOCATIONS_OBSERVED",
+    "world_size": 2,
+    "known_distinct_uuids": true,
+    "steps": [
+      39,
+      39
+    ],
+    "rows_processed": [
+      156,
+      156
+    ],
+    "oom_steps_skipped": 0,
+    "nan_grad_steps_skipped": 0,
+    "skips_clean": true,
+    "caution": "Inspect both UUID utilization traces. Receipts are not proof of speedup, useful compute balance, numerical correctness or successful checkpoint restore."
+  },
+  "p95_step_seconds": 2.351469039916992,
+  "measured_optimizer_steps": 39,
+  "planned_training_steps": 39,
+  "remaining_optimizer_steps": 0,
+  "stop_requested": false,
+  "milestones_count": 4,
+  "dev_metrics": {
+    "dev_n": 12,
+    "dev_schema_valid": 1.0,
+    "dev_precision": 0.7263157894736842,
+    "dev_recall": 0.6330275229357798,
+    "pred_micro_recall": 0.6330275229357798,
+    "dev_f1": 0.6764705882352942,
+    "dev_token_f1": 0.6910052910052911,
+    "empty_fp_rate": 0.0,
+    "long_window_recall": null,
+    "short_window_recall": 0.6330275229357798,
+    "tp": 69,
+    "gtp": 69,
+    "fp": 26,
+    "fn": 40,
+    "pred_items": 95,
+    "gold_items": 109,
+    "max_new_tokens": 1800,
+    "capped_count": 0,
+    "capped_ids": [],
+    "non_empty_pred_rate": 0.8333333333333334,
+    "empty_collapse_detected": false,
+    "role": "pruner",
+    "train_steps": 39,
+    "elapsed_s": 139.55279064178467
+  }
+}

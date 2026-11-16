@@ -1,0 +1,83 @@
+{
+  "run": "pruner_v3",
+  "kernel_ref": "<kaggle-user>/p2000-pruner-v3-full",
+  "kernel_status": "COMPLETE",
+  "lineage": {
+    "classification": "warm_start_branch_from_pruner_v2_pct60 (fresh optimizer/scheduler/RNG)",
+    "init_adapter_source": "pruner_v2/pruner_full/checkpoint-pct-60",
+    "init_adapter_arg": "/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/init_adapter_pruner_pct60",
+    "init_adapter_safetensors_sha256": "60dcf29cc69ba495522270328c4b4fa15dab1195bbc2b6daf1917ac2d1c03a8e",
+    "optimizer_restored": false,
+    "scheduler_restored": false,
+    "rng_restored": false,
+    "checkpoint_latest": {
+      "global_step": 39,
+      "has_optimizer_pt": true,
+      "has_scheduler_pt": true,
+      "has_rng_state_0": true,
+      "has_rng_state_1": true
+    },
+    "output_adapter_safetensors_sha256": {
+      "checkpoint-pct-20": {
+        "size_bytes": 54229296,
+        "sha256": "cc6d1945e093ce47b1c853e06dc0dc0083f44c4046310e70bdd7e95a1b2e1423"
+      },
+      "checkpoint-pct-40": {
+        "size_bytes": 54229296,
+        "sha256": "10cf52d5fddb4586bbc63d61a277cd7396b2e1380736b5297d4f11e0b3851a51"
+      },
+      "checkpoint-pct-60": {
+        "size_bytes": 54229296,
+        "sha256": "298b5fdd2c028d9a29736e9070159ac5859c227610dca16ecca774ad0a4b04b6"
+      },
+      "checkpoint-pct-80": {
+        "size_bytes": 54229296,
+        "sha256": "ad4cfbfe38c81cbc1b3c0aff815dafffdfcaa3039a0a29530b60122386465e1a"
+      },
+      "checkpoint-latest": {
+        "size_bytes": 54229296,
+        "sha256": "2fb853dc8bd9d2581a4ee2a95461a37fa5c34a8a83a8e1ec0073326534dd4c35"
+      },
+      "adapter": {
+        "size_bytes": 54229296,
+        "sha256": "2fb853dc8bd9d2581a4ee2a95461a37fa5c34a8a83a8e1ec0073326534dd4c35"
+      }
+    },
+    "exported_gguf": {
+      "pruner-v3-peak-lora.gguf": {
+        "source_checkpoint": "checkpoint-pct-20",
+        "selection_note": "Highest milestone dev_f1=0.7308 (step 8) with empty_fp_rate=0.50",
+        "size_bytes": 54214720,
+        "sha256": "102c8c016bc91dbdf994aae2f9c1b64fe637224fcb19416c86925c58bf47817f"
+      },
+      "pruner-v3-pct60-lora.gguf": {
+        "source_checkpoint": "checkpoint-pct-60",
+        "selection_note": "Highest zero-empty-FP milestone dev_f1=0.7010 (step 24, dev_precision=0.80, empty_fp_rate=0.0); best on held-out pruner10 (selection_f1_micro=0.7143, exact_set_acc=0.40, empty_fp_rate=0.00) -> promoted to pruner-lora.gguf",
+        "size_bytes": 54214720,
+        "sha256": "2e2614586d0a52e2e811309bce9aac46f5b9bf872849e62b035839b95bc036a3"
+      },
+      "pruner-v3-lora.gguf": {
+        "source_checkpoint": "adapter (step 39 / 100%)",
+        "selection_note": "Final checkpoint (dev_f1=0.6765, empty_fp_rate=0.0; pruner10 selection_f1_micro=0.6957, exact_set_acc=0.30)",
+        "size_bytes": 54214624,
+        "sha256": "0971d1ae156f5125d3adbbd3acd01e9f947e48a72eef0b10b147ba637d95a48f"
+      }
+    }
+  },
+  "admission_audit": {
+    "policy": "reject",
+    "max_length": 5600,
+    "role": "pruner",
+    "total_rows": 103,
+    "admitted_rows": 103,
+    "rejected_rows": 0,
+    "truncated_rows": 0,
+    "excess_tokens_total": 0,
+    "original_total_tokens": 30121,
+    "retained_total_tokens": 30121,
+    "supervised_tokens": 1044,
+    "length_min": 105,
+    "length_max": 1210,
+    "data_sha256": "23b60f5997e5e50750252d3adc6f6739629edfec8979f4f63b16a21e9d84ee28"
+  }
+}
