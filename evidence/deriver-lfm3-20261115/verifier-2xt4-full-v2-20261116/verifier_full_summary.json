@@ -1,0 +1,44 @@
+{
+  "run": "verifier_full",
+  "ddp": {
+    "status": "PER_RANK_STEPS_AND_ALLOCATIONS_OBSERVED",
+    "world_size": 2,
+    "known_distinct_uuids": true,
+    "steps": [
+      36,
+      36
+    ],
+    "rows_processed": [
+      126,
+      126
+    ],
+    "oom_steps_skipped": 0,
+    "nan_grad_steps_skipped": 0,
+    "skips_clean": true,
+    "caution": "Inspect both UUID utilization traces. Receipts are not proof of speedup, useful compute balance, numerical correctness or successful checkpoint restore."
+  },
+  "p95_step_seconds": 3.9102909564971924,
+  "measured_optimizer_steps": 36,
+  "planned_training_steps": 36,
+  "remaining_optimizer_steps": 0,
+  "stop_requested": false,
+  "milestones_count": 4,
+  "dev_metrics": {
+    "dev_n": 6,
+    "dev_schema_valid": 0.8333333333333334,
+    "dev_precision": 0.6761904761904762,
+    "dev_recall": 0.5668662674650699,
+    "dev_f1": 0.6167209554831704,
+    "dev_token_f1": 0.6334872011901108,
+    "empty_fp_rate": 0.0,
+    "long_window_recall": null,
+    "short_window_recall": 0.5668662674650699,
+    "pred_items": 420,
+    "gold_items": 501,
+    "non_empty_pred_rate": 1.0,
+    "empty_collapse_detected": false,
+    "role": "verifier",
+    "train_steps": 36,
+    "elapsed_s": 568.4427101612091
+  }
+}
