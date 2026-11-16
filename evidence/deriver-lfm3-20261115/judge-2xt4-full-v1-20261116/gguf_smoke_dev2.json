@@ -1,0 +1,48 @@
+{
+  "eval_dataset": "none_heldout_local (eval_n=0); smoke_dev_2_from_si-lab-judge-proposed-candidate-v1",
+  "heldout_eval_n": 0,
+  "smoke_dev_n": 2,
+  "checkpoint": "checkpoint-pct-40",
+  "gguf_path": "<models-root>/gguf/p2000-roles/judge-v1-lora.gguf",
+  "base_gguf": "<models-root>/gguf/lfm3-1.7b-base/lfm3-1.7b-base-Q4_K_M.gguf",
+  "metric_name": "smoke_dev2_token_f1_micro",
+  "schema_valid_4key": 1.0,
+  "schema_valid_strict": 0.5,
+  "verdict_acc": 0.5,
+  "token_f1_micro": 0.8679,
+  "token_f1_macro": 0.8793,
+  "total_elapsed_s": 7.84,
+  "avg_latency_s": 3.92,
+  "per_row": [
+    {
+      "id": "judge-candidate-dev-01",
+      "prompt_tokens": 397,
+      "tokens_predicted": 46,
+      "stop_type": "eos",
+      "finished": true,
+      "schema_valid_4key": true,
+      "schema_valid_strict": true,
+      "verdict_pred": "fail",
+      "verdict_gold": "fail",
+      "verdict_match": true,
+      "token_f1": 1.0,
+      "pred_text": "{\"matched\": [0, 1, 2, 3], \"missed\": [4], \"hallucinated\": [3], \"attribution_invalid\": [], \"verdict\": \"fail\"}",
+      "elapsed_s": 3.83
+    },
+    {
+      "id": "judge-candidate-dev-02",
+      "prompt_tokens": 416,
+      "tokens_predicted": 46,
+      "stop_type": "eos",
+      "finished": true,
+      "schema_valid_4key": true,
+      "schema_valid_strict": false,
+      "verdict_pred": "pass",
+      "verdict_gold": "fail",
+      "verdict_match": false,
+      "token_f1": 0.7586,
+      "pred_text": "{\"matched\": [0, 1, 2, 3], \"missed\": [4], \"hallucinated\": [4], \"attribution_invalid\": [], \"verdict\": \"pass\"}",
+      "elapsed_s": 4.01
+    }
+  ]
+}
