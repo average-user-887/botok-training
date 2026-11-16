@@ -1,0 +1,143 @@
+{
+  "use_bos": true,
+  "n_cases": 12,
+  "schema_valid_4key": 1.0,
+  "verdict_acc": 0.75,
+  "exact": 0.1667,
+  "token_f1_micro": 0.9667,
+  "total_elapsed_s": 41.78,
+  "per_row": [
+    {
+      "id": "blind-v2-001",
+      "finished": true,
+      "stop_type": "eos",
+      "schema_valid_4key": true,
+      "verdict_pred": "fail",
+      "verdict_gold": "pass",
+      "verdict_match": false,
+      "exact": false,
+      "pred_text": "{\"matched\": [0, 1], \"missed\": [], \"hallucinated\": [0], \"attribution_invalid\": [], \"verdict\": \"fail\"}"
+    },
+    {
+      "id": "blind-v2-002",
+      "finished": true,
+      "stop_type": "eos",
+      "schema_valid_4key": true,
+      "verdict_pred": "fail",
+      "verdict_gold": "pass",
+      "verdict_match": false,
+      "exact": false,
+      "pred_text": "{\"matched\": [0], \"missed\": [], \"hallucinated\": [0], \"attribution_invalid\": [], \"verdict\": \"fail\"}"
+    },
+    {
+      "id": "blind-v2-003",
+      "finished": true,
+      "stop_type": "eos",
+      "schema_valid_4key": true,
+      "verdict_pred": "fail",
+      "verdict_gold": "pass",
+      "verdict_match": false,
+      "exact": false,
+      "pred_text": "{\"matched\": [0, 1], \"missed\": [], \"hallucinated\": [], \"attribution_invalid\": [0], \"verdict\": \"fail\"}"
+    },
+    {
+      "id": "blind-v2-004",
+      "finished": true,
+      "stop_type": "eos",
+      "schema_valid_4key": true,
+      "verdict_pred": "fail",
+      "verdict_gold": "fail",
+      "verdict_match": true,
+      "exact": true,
+      "pred_text": "{\"matched\": [0], \"missed\": [], \"hallucinated\": [0], \"attribution_invalid\": [], \"verdict\": \"fail\"}"
+    },
+    {
+      "id": "blind-v2-005",
+      "finished": true,
+      "stop_type": "eos",
+      "schema_valid_4key": true,
+      "verdict_pred": "fail",
+      "verdict_gold": "fail",
+      "verdict_match": true,
+      "exact": false,
+      "pred_text": "{\"matched\": [0], \"missed\": [], \"hallucinated\": [0], \"attribution_invalid\": [], \"verdict\": \"fail\"}"
+    },
+    {
+      "id": "blind-v2-006",
+      "finished": true,
+      "stop_type": "eos",
+      "schema_valid_4key": true,
+      "verdict_pred": "fail",
+      "verdict_gold": "fail",
+      "verdict_match": true,
+      "exact": false,
+      "pred_text": "{\"matched\": [0], \"missed\": [], \"hallucinated\": [0], \"attribution_invalid\": [], \"verdict\": \"fail\"}"
+    },
+    {
+      "id": "blind-v2-007",
+      "finished": true,
+      "stop_type": "eos",
+      "schema_valid_4key": true,
+      "verdict_pred": "fail",
+      "verdict_gold": "fail",
+      "verdict_match": true,
+      "exact": false,
+      "pred_text": "{\"matched\": [0], \"missed\": [], \"hallucinated\": [0], \"attribution_invalid\": [], \"verdict\": \"fail\"}"
+    },
+    {
+      "id": "blind-v2-008",
+      "finished": true,
+      "stop_type": "eos",
+      "schema_valid_4key": true,
+      "verdict_pred": "fail",
+      "verdict_gold": "fail",
+      "verdict_match": true,
+      "exact": false,
+      "pred_text": "{\"matched\": [0], \"missed\": [0], \"hallucinated\": [1], \"attribution_invalid\": [], \"verdict\": \"fail\"}"
+    },
+    {
+      "id": "blind-v2-009",
+      "finished": true,
+      "stop_type": "eos",
+      "schema_valid_4key": true,
+      "verdict_pred": "fail",
+      "verdict_gold": "fail",
+      "verdict_match": true,
+      "exact": true,
+      "pred_text": "{\"matched\": [], \"missed\": [], \"hallucinated\": [0], \"attribution_invalid\": [], \"verdict\": \"fail\"}"
+    },
+    {
+      "id": "blind-v2-010",
+      "finished": true,
+      "stop_type": "eos",
+      "schema_valid_4key": true,
+      "verdict_pred": "fail",
+      "verdict_gold": "fail",
+      "verdict_match": true,
+      "exact": false,
+      "pred_text": "{\"matched\": [0, 1], \"missed\": [2], \"hallucinated\": [0], \"attribution_invalid\": [], \"verdict\": \"fail\"}"
+    },
+    {
+      "id": "blind-v2-011",
+      "finished": true,
+      "stop_type": "eos",
+      "schema_valid_4key": true,
+      "verdict_pred": "fail",
+      "verdict_gold": "fail",
+      "verdict_match": true,
+      "exact": false,
+      "pred_text": "{\"matched\": [0], \"missed\": [], \"hallucinated\": [0], \"attribution_invalid\": [], \"verdict\": \"fail\"}"
+    },
+    {
+      "id": "blind-v2-012",
+      "finished": true,
+      "stop_type": "eos",
+      "schema_valid_4key": true,
+      "verdict_pred": "fail",
+      "verdict_gold": "fail",
+      "verdict_match": true,
+      "exact": false,
+      "pred_text": "{\"matched\": [0], \"missed\": [1], \"hallucinated\": [0], \"attribution_invalid\": [1], \"verdict\": \"fail\"}"
+    }
+  ]
+}
