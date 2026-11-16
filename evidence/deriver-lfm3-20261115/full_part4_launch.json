@@ -1,0 +1,53 @@
+{
+  "status": "launched",
+  "latest_dataset": "honcho-deriver-v47-training-only",
+  "new_gdrive_archives": [
+    "honcho-deriver-v41-training-only.zip",
+    "honcho-deriver-v42-training-only.zip",
+    "honcho-deriver-v43-training-only.zip",
+    "honcho-deriver-v44-training-only.zip",
+    "honcho-deriver-v45-training-only.zip",
+    "honcho-deriver-v46-training-only.zip",
+    "honcho-deriver-v47-training-only.zip"
+  ],
+  "new_specialist_or_eval_archives": [],
+  "train_rows": 691,
+  "dev_rows": 24,
+  "init_adapter": "deriver_part1/full_part1/checkpoint-pct-80",
+  "lr": 0.0001,
+  "epochs": 2,
+  "planned_steps": 174,
+  "kernel_ref": "<kaggle-user>/p2000-deriver-v40-full-part4",
+  "kernel_status": "QUEUED",
+  "pushed_at": "2026-11-16T08:07:01Z",
+  "estimated_wall_s": 4815,
+  "dataset_ref": "<kaggle-user>/p2000-deriver-v11-sprint-payload",
+  "hyperparams": {
+    "role": "deriver",
+    "lora_r": 16,
+    "lora_alpha": 32,
+    "target_modules": "attn-mlp",
+    "lr": 0.0001,
+    "epochs": 2,
+    "effective_batch": 8,
+    "microbatch": 1,
+    "max_seq_len": 5600,
+    "milestones": "20,40,60,80",
+    "milestone_probe_rows": 12,
+    "milestone_max_new_tokens": 256,
+    "eval_max_new_tokens": 1800,
+    "time_budget_s": 12000,
+    "ddp_timeout": 3600
+  },
+  "cpu_tests": {
+    "test_budget.py": "7/7 pass",
+    "test_completion_loss_cpu.py": "4/4 pass",
+    "test_contract_cpu.py": "3/3 pass",
+    "test_native_contract.py": "2/2 pass",
+    "test_patched_recipe_cpu.py": "21/23 pass (2 new flags tests pass; 2 legacy sprint_a1 payload file assertions fail as dataset_payload holds Part 4 layout)"
+  },
+  "live_status_check": {
+    "checked_at_utc": "2026-11-16T08:31:22Z",
+    "kernel_status": "KernelWorkerStatus.RUNNING"
+  }
+}

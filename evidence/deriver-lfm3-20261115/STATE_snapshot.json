@@ -1,0 +1,120 @@
+{
+  "updated_at": "2026-11-16T09:08:00+01:00",
+  "phase": "PHASE_C_WAVE1_DERIVER_PART4_RUNNING_2XT4_DDP",
+  "subagent_model_policy": "hydrogen (swarm) / flash only (never argon or inherit)",
+  "kaggle_queue": {
+    "gpu_slot_free": true,
+    "kernels": {
+      "<kaggle-user>/p2000-deriver-lfm3-v2a": "CANCEL_ACKNOWLEDGED",
+      "<kaggle-user>/p2000-pruner-lfm3-lora": "COMPLETE",
+      "<kaggle-user>/p2000-deriver-lfm3-lora": "COMPLETE"
+    },
+    "datasets": [
+      "<kaggle-user>/lfm3-1p7b-base",
+      "<kaggle-user>/p2000-deriver-sft-v2",
+      "<kaggle-user>/p2000-deriver-sft-synth",
+      "<kaggle-user>/p2000-pruner-data"
+    ]
+  },
+  "staged_datasets": {
+    "dot_gdrive_extracted": {
+      "honcho-deriver-v47-training-only": "latest Astra deriver drop (v34-v47 synced 2026-11-16; v47 used in Part 4, 691 train / 24 dev)",
+      "EVAL-ONLY-20261116": "judge12-scribe8 + pruner10-log8 held-out evals (local only)",
+      "honcho-deriver-v18_and_v20": "used in Part 1 (352) & Part 2 (392)",
+      "honcho-deriver-v14-evaluation-only": "held-out evaluation drop (do not upload test splits)",
+      "other_role_drops_20261115": "9 drops: pruner_v2, judge_v1, log-analyser_v1/v2, scribe_v1/v2+eval",
+      "HONCHO-LFM3-DOMAIN-V3-20261114": "legacy V3 compound schema - do not mix"
+    },
+    "claude_local": {
+      "claude-deriver-v2-sft": "1115 train / 75 dev",
+      "claude-pruner-v1": "8000 train / 500 dev / 500 sealed test"
+    }
+  },
+  "roles": {
+    "deriver": {
+      "adapter_id": 0,
+      "status": "v1_gguf_verified_v11_2xT4_pending",
+      "gguf": "<models-root>/gguf/p2000-pruner-lfm3/deriver-v1-lora-adapter.gguf",
+      "size_mib": 132,
+      "r": 32
+    },
+    "pruner": {
+      "adapter_id": 1,
+      "status": "v1_gguf_verified",
+      "gguf": "<models-root>/gguf/p2000-pruner-lfm3/pruner-lora-adapter.gguf",
+      "size_mib": 63,
+      "r": 16
+    },
+    "judge": {
+      "adapter_id": 2,
+      "status": "pending_prep",
+      "target_size_mib": 63,
+      "r": 16
+    },
+    "verifier": {
+      "adapter_id": 3,
+      "status": "pending_prep",
+      "target_size_mib": 63,
+      "r": 16
+    },
+    "scribe": {
+      "adapter_id": 4,
+      "status": "pending_prep",
+      "target_size_mib": 63,
+      "r": 16
+    }
+  },
+  "receipts": {
+    "drive_sync": {
+      "status": "ok",
+      "archives_count": 21,
+      "new_archives_count": 15,
+      "latest_deriver_train": "honcho-deriver-v15-training-only (272 train, 4 dev, 733086 tok)",
+      "latest_deriver_eval": "honcho-deriver-v14-evaluation-only",
+      "validated": "21/21_crc_ok, 30/30_samples_5k, manifests_and_contracts_pass",
+      "timestamp": "2026-11-15T19:23:50Z"
+    },
+    "recipe_prep": {
+      "status": "success_v15_oom_hardened",
+      "fixes": [
+        "sliced_lm_head",
+        "loss_shift_1e5",
+        "grad_ckpt_layers",
+        "stress_longest_first",
+        "max_seq_5600"
+      ],
+      "v15_rows": "272 train / 24 dev (heldout_test_excluded=true)",
+      "cpu_tests_passed": "5/5_suites_pass"
+    },
+    "claude_audit": {
+      "status": "COMPLETE",
+      "commit": "2087900",
+      "cpu_tests": "27/27_pass"
+    },
+    "sprints": {
+      "summary": "trial_1_v15 COMPLETE ([24,24], p95=29.39s, f1=0.1786, gh:6b82578); trial_2 PASS1 COMPLETE / PASS2 resume lock fixed (gh:bc9410c)"
+    },
+    "full_runs": {
+      "deriver_part1": "COMPLETE_220_steps (v18, p95=23.81s, pct-80 dev_f1=0.2733, gh:894ed44)",
+      "deriver_part2": "COMPLETE_147_steps (v20, p95=21.17s, pct-100 dev_f1=0.2145, gh:742d2c1)",
+      "scribe_v2": "COMPLETE_30_steps (p95=4.71s, adapter dev=0.7053, gh:f66535f)",
+      "judge_v1": "COMPLETE_30_steps (p95=0.86s, pct-40 dev=0.8889, gh:842e3c3)",
+      "verifier_v2": "COMPLETE_36_steps (p95=3.91s, adapter dev=0.6167, gh:a9630d3)",
+      "pruner_v2": "COMPLETE_54_steps (p95=1.75s, pct-60 dev=0.7333, gh:f6350c3)",
+      "deriver_part3": "COMPLETE_219_steps (v33, p95=24.39s, pct-100 dev=0.2117, gh:ffaa43c)",
+      "deriver_part4": "QUEUED_174_steps (v47 691 train / 24 dev, init=part1/pct-80, lr=1e-4, 2 ep, est=4815s, <kaggle-user>/p2000-deriver-v40-full-part4)"
+    },
+    "exports": {
+      "deriver_v18_pct80": "deriver-v18-lora.gguf (heldout_v14_f1=0.1815)",
+      "deriver_v20_pct100": "deriver-v20-lora.gguf (heldout_v14_f1=0.2205, schema=0.5, active deriver-lora.gguf)",
+      "deriver_v33_pct100": "deriver-v33-lora.gguf (51.7 MiB, v14_base=0.1754, n768=0.0, schema=0.25)",
+      "scribe_v2": "scribe-v2-lora.gguf (51.7 MiB, scribe8_bos tok_f1=0.7637, format=0.875, active scribe-lora.gguf)",
+      "judge_v1": "judge-v1-lora.gguf (51.7 MiB, judge12_bos verdict=0.75 tok_f1=0.9667 4key=1.0, active judge-lora.gguf)",
+      "verifier_v2": "verifier-v2-lora.gguf (51.7 MiB, log8_bos tok_f1=0.5446 schema=1.0 empty_fp=1.0, active verifier-lora.gguf)",
+      "pruner_v2": "pruner-v2-lora.gguf (51.7 MiB, pruner10_bos sel_f1=0.60 format=1.0 empty_fp=1.0, active pruner-lora.gguf)",
+      "p2000_bundle": "5/5 LoRAs verified (258.52 MiB, est_vram=1657.20/5120 MiB, gh:0de18fc+d49f277)"
+    }
+  },
+  "snapshot_sanitized_at_utc": "2026-11-16T08:31:22Z",
+  "live_part4_kernel_status_observed": "KernelWorkerStatus.RUNNING"
+}

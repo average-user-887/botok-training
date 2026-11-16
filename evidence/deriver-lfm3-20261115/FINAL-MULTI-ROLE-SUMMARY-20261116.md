@@ -72,3 +72,22 @@ All 5 active symlinks in `<models-root>/gguf/p2000-roles/` resolve to readable `
 | **Sum (5 LoRAs)** | - | - | **271,073,312** | **258.52** | All 5 GGUF v3 readable |
 | **KV Cache Budget** | - | - | - | **350.00** | P2000 single-context estimate |
 | **Total P2000 VRAM Est** | - | - | - | **1657.20** | **Fits 5 GiB (`5120 MiB`); headroom `3462.80 MiB`** |
+
+## 4. Base-vs-LoRA 5-Role Held-Out Comparison
+
+| Role | Held-Out Dataset (`n`) | Unadapted Base (`lfm3-1.7b-base-Q4_K_M`) | Best / Active LoRA (`r=16`) |
+|---|---|---|---|
+| `deriver` | `honcho-deriver-v14-evaluation-only` (`n=4`, `n_predict=1200`) | Probe 7-row base: `schema_valid=0.0000`, `eos=0.0000`, `f1=0.0000`; Historical 80-fx base: `schema_valid=0.61`, `F1=0.08` (not run on `v14`) | `v20` (active): `schema_valid=0.5000`, `f1=0.2205`, `token_f1=0.8535` (`v18`: `f1=0.1815`; `v33`: `f1=0.1754`; `-n 768`: `f1=0.0000`) |
+| `scribe` | `scribe8` (`n=8`, `n_predict=1200`, BOS) | Not evaluated separately on `scribe8` | `scribe-v2`: `schema_valid=0.8750`, `source_bind=0.7500`, `pre_cutoff=0.6250`, `token_f1_micro=0.7637`, `empty_fp=0.0000` (`scribe6`: `f1=0.6456`, `schema=1.0000`) |
+| `judge` | `judge12` (`n=12`, `n_predict=512`) | Not evaluated separately on `judge12`; No-BOS LoRA parity: `schema_4key=0.3333`, `verdict_acc=0.1667`, `tok_f1=0.9180`, `4/12` EOS | `judge-v1` (BOS): `schema_4key=1.0000` (`12/12` EOS), `strict_checker=0.9167`, `verdict_acc=0.7500`, `false_pass=0`, `tok_f1=0.9667` |
+| `verifier` (`log-analyser`) | `log8` (`n=8`, `n_predict=1800`, BOS) | `json_valid=0.0000`, `schema_valid=0.0000`, `evidence_ids=0.0000`, `all_eos=false`, `token_f1_micro=0.1536`, `token_f1_macro=0.1227` | `verifier-v2` (BOS): `json_valid=1.0000`, `schema_valid=1.0000`, `evidence_ids=1.0000`, `all_eos=true`, `token_f1_micro=0.5446`, `empty_fp=1.0000` |
+| `pruner` | `pruner10` (`n=10`, `n_predict=512`, BOS) | `format_valid=0.0000`, `strict_schema=0.0000`, `all_eos=false`, `selection_f1=0.0000`, `macro_tok_f1=0.1191` | `pruner-v2` (BOS): `format_valid=1.0000`, `strict_schema=1.0000`, `all_eos=true`, `selection_f1=0.6000` (`P=0.5676`, `R=0.6364`), `empty_fp=1.0000` |
+
+Structured JSON counterpart: [base_vs_lora_5role_summary.json](base_vs_lora_5role_summary.json).
+
+## 5. Deriver Part 4 (`v47`) Launch & Live GDrive Sync (2026-11-16T08:31Z)
+
+- **GDrive Metadata Sync**: Confirmed zero brand-new archives since `honcho-deriver-v47-training-only.zip` (`56` total `.zip` archives; `v47` has `691` train / `4` dev windows in `STATISTICS.json`, `2,144,712` tokens/pass, `max_full_tokens=6398`, `heldout_included=false`).
+- **Part 4 Run**: `<kaggle-user>/p2000-deriver-v40-full-part4` (initialized from `deriver_part1/full_part1/checkpoint-pct-80`, `lr=1e-4`, `epochs=2`, `691` train / `24` dev rows, `planned_steps=174`, `estimated_wall_s=4815`, pushed `2026-11-16T08:07:01Z`).
+- **Live Kernel Status**: `KernelWorkerStatus.RUNNING` (checked `2026-11-16T08:31:22Z`).
+- **Sanitized Snapshots**: [STATE_snapshot.json](STATE_snapshot.json), [full_part4_launch.json](full_part4_launch.json), and [p2000_bundle_verification.json](p2000_bundle_verification.json).
