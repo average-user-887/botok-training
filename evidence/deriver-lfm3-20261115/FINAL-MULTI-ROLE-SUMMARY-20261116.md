@@ -36,6 +36,27 @@ Evaluated locally on CPU (`lfm3-1.7b-base-Q4_K_M.gguf`, greedy `temperature=0.0`
 - **Empty Abstention (`08_empty`)**: `empty_fp_rate = 0.0000` (`items: []`), `total_elapsed_s = 67.06` (`avg_latency_s = 8.38`)
 - **Prompt Injection (`04_scope_and_injection`)**: Resisted embedded override instructions cleanly.
 
+## 2b. Held-Out Eval (`EVAL-ONLY-si-lab-pruner10-log8-reviewed-20261116`)
+
+Evaluated locally on CPU (`lfm3-1.7b-base-Q4_K_M.gguf`, greedy `temperature=0.0`, explicit BOS parity `[bos] + prompt` via `tokenizer.ggml.add_bos_token=bool:true`, verified against HF `AutoTokenizer`):
+
+### Pruner (`pruner-lora.gguf` -> `pruner-v2-lora.gguf`, 10 cases, `n_predict=512`)
+
+- **Format Valid (`score_pruner_sets.py` & strict `KEEP_RE` + EOS)**: `1.0000` (`10/10` EOS; unadapted base: `0/10` valid, `0/10` EOS, F1 `0.0000`)
+- **Selection-Set F1 (micro, `score_pruner_sets.py`)**: `0.6000` (`TP=21, FP=16, FN=12`; `precision=0.5676`, `recall=0.6364`, `exact_set_accuracy=0.0000`, `macro_token_f1=0.5850`)
+- **NONE Controls (`pe2-02`, `pe2-10`)**: `empty_fp_rate = 1.0000` (`2/2` false-positive retentions: `KEEP 1-2` and `KEEP 1-2,5`)
+- **Latency**: `10.68 s` total (`avg = 1.07 s/case`)
+- **Semantic Findings**: Near-match retention (`pe2-01`: `kiln-70` retained alongside `kiln-7`), critical omissions on error-context/halted-before-write/bounded-absence/empty-schedule cases (`pe2-04`, `pe2-05`, `pe2-06`, `pe2-09`), and destination line omitted on `pe2-08` (`all_control`).
+
+### Verifier / Log-Analyser (`verifier-lora.gguf` -> `verifier-v2-lora.gguf`, 8 cases, `n_predict=1800`)
+
+- **JSON & Schema Valid (4-section schema + EOS)**: `1.0000` (`8/8` EOS; unadapted base: `0/8` JSON/schema valid, `0/8` EOS, `token_f1_micro=0.1536`)
+- **Citation Grounding (`evidence_ids_valid`)**: `1.0000` (`8/8`; zero fabricated log IDs)
+- **Token F1 (micro / macro)**: `0.5446` / `0.5250` (`precision=0.5226`, `recall=0.5685`)
+- **All-Empty Irrelevant Window (`loge2-03`)**: `empty_fp_rate = 1.0000` (`1/1`: summarized unrelated `css-N1`/`mail-P8` instead of returning 4 empty arrays)
+- **Latency**: `89.35 s` total (`avg = 11.17 s/case`)
+- **Semantic Findings**: Strong on `loge2-01` (request separation), `loge2-04` (T33 pass with empty findings/unknowns/checks), and `loge2-06` (U18 guess vs `/health` scope); failed throughput arithmetic on `loge2-02` (`36/6 = 6/s`), misread `local_seq=2` on `loge2-07`, and resisted fixture injection on `loge2-08` while over-emitting an `observed_error` and `unknowns`/`next_checks`.
+
 ## 3. Five-Role P2000 GGUF Bundle & 5 GiB VRAM Footprint Matrix
 
 All 5 active symlinks in `<models-root>/gguf/p2000-roles/` resolve to readable `GGUF v3` adapter files, and base `<models-root>/gguf/lfm3-1.7b-base/lfm3-1.7b-base-Q4_K_M.gguf` is a readable `GGUF v3` model:
@@ -46,8 +67,8 @@ All 5 active symlinks in `<models-root>/gguf/p2000-roles/` resolve to readable `
 | `deriver` (`r=16`) | `deriver-lora.gguf` | `deriver-v20-lora.gguf` | 54,214,624 | 51.70 | Held-out v14 F1 `0.2205` (Part 2) |
 | `scribe` (`r=16`) | `scribe-lora.gguf` | `scribe-v2-lora.gguf` | 54,214,624 | 51.70 | Scribe6 F1 `0.6456`, Scribe8 F1 `0.7637` |
 | `judge` (`r=16`) | `judge-lora.gguf` | `judge-v1-lora.gguf` | 54,214,720 | 51.70 | Judge12 BOS verdict `0.7500` / tokF1 `0.9667` |
-| `verifier` (`r=16`) | `verifier-lora.gguf` | `verifier-v2-lora.gguf` | 54,214,624 | 51.70 | Smoke dev6 tokF1 `0.5957`, schema `0.6667` |
-| `pruner` (`r=16`) | `pruner-lora.gguf` | `pruner-v2-lora.gguf` | 54,214,720 | 51.70 | Held-out v1 line F1 `0.7407`, schema `1.0000` |
+| `verifier` (`r=16`) | `verifier-lora.gguf` | `verifier-v2-lora.gguf` | 54,214,624 | 51.70 | Smoke dev6 tokF1 `0.5957`; Log8 tokF1 `0.5446` (schema `1.0000`) |
+| `pruner` (`r=16`) | `pruner-lora.gguf` | `pruner-v2-lora.gguf` | 54,214,720 | 51.70 | Held-out v1 F1 `0.7407`; Pruner10 set F1 `0.6000` (format `1.0000`) |
 | **Sum (5 LoRAs)** | - | - | **271,073,312** | **258.52** | All 5 GGUF v3 readable |
 | **KV Cache Budget** | - | - | - | **350.00** | P2000 single-context estimate |
 | **Total P2000 VRAM Est** | - | - | - | **1657.20** | **Fits 5 GiB (`5120 MiB`); headroom `3462.80 MiB`** |
