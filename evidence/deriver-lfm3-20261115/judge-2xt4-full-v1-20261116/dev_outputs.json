@@ -1,0 +1,20 @@
+[
+  {
+    "id": "judge-candidate-dev-01",
+    "ok": true,
+    "finished": true,
+    "tokens": 447,
+    "n_pred": 12,
+    "n_gold": 12,
+    "text": "{\"matched\": [0, 1, 2, 3], \"missed\": [4], \"hallucinated\": [4], \"attribution_invalid\": [], \"verdict\": \"fail\"}"
+  },
+  {
+    "id": "judge-candidate-dev-02",
+    "ok": true,
+    "finished": true,
+    "tokens": 477,
+    "n_pred": 12,
+    "n_gold": 17,
+    "text": "{\"matched\": [0, 1, 2, 3, 4], \"missed\": [], \"hallucinated\": [], \"attribution_invalid\": [], \"verdict\": \"pass\"}"
+  }
+]

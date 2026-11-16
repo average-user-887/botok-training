@@ -1,0 +1,131 @@
+{
+  "scope": "structural consistency only, requires separate gold/evidence semantic grading",
+  "total": 12,
+  "consistent": 4,
+  "results": [
+    {
+      "id": "blind-v2-001",
+      "consistent": false,
+      "errors": [
+        "invalid_json",
+        "not_object",
+        "invalid_indices:matched",
+        "invalid_indices:missed",
+        "invalid_indices:hallucinated",
+        "invalid_indices:attribution_invalid",
+        "invalid_verdict"
+      ]
+    },
+    {
+      "id": "blind-v2-002",
+      "consistent": false,
+      "errors": [
+        "invalid_json",
+        "not_object",
+        "invalid_indices:matched",
+        "invalid_indices:missed",
+        "invalid_indices:hallucinated",
+        "invalid_indices:attribution_invalid",
+        "invalid_verdict"
+      ]
+    },
+    {
+      "id": "blind-v2-003",
+      "consistent": false,
+      "errors": [
+        "invalid_json",
+        "not_object",
+        "invalid_indices:matched",
+        "invalid_indices:missed",
+        "invalid_indices:hallucinated",
+        "invalid_indices:attribution_invalid",
+        "invalid_verdict"
+      ]
+    },
+    {
+      "id": "blind-v2-004",
+      "consistent": false,
+      "errors": [
+        "invalid_json",
+        "not_object",
+        "invalid_indices:matched",
+        "invalid_indices:missed",
+        "invalid_indices:hallucinated",
+        "invalid_indices:attribution_invalid",
+        "invalid_verdict"
+      ]
+    },
+    {
+      "id": "blind-v2-005",
+      "consistent": true,
+      "errors": []
+    },
+    {
+      "id": "blind-v2-006",
+      "consistent": true,
+      "errors": []
+    },
+    {
+      "id": "blind-v2-007",
+      "consistent": false,
+      "errors": [
+        "invalid_json",
+        "not_object",
+        "invalid_indices:matched",
+        "invalid_indices:missed",
+        "invalid_indices:hallucinated",
+        "invalid_indices:attribution_invalid",
+        "invalid_verdict"
+      ]
+    },
+    {
+      "id": "blind-v2-008",
+      "consistent": true,
+      "errors": []
+    },
+    {
+      "id": "blind-v2-009",
+      "consistent": false,
+      "errors": [
+        "invalid_json",
+        "not_object",
+        "invalid_indices:matched",
+        "invalid_indices:missed",
+        "invalid_indices:hallucinated",
+        "invalid_indices:attribution_invalid",
+        "invalid_verdict"
+      ]
+    },
+    {
+      "id": "blind-v2-010",
+      "consistent": true,
+      "errors": []
+    },
+    {
+      "id": "blind-v2-011",
+      "consistent": false,
+      "errors": [
+        "invalid_json",
+        "not_object",
+        "invalid_indices:matched",
+        "invalid_indices:missed",
+        "invalid_indices:hallucinated",
+        "invalid_indices:attribution_invalid",
+        "invalid_verdict"
+      ]
+    },
+    {
+      "id": "blind-v2-012",
+      "consistent": false,
+      "errors": [
+        "invalid_json",
+        "not_object",
+        "invalid_indices:matched",
+        "invalid_indices:missed",
+        "invalid_indices:hallucinated",
+        "invalid_indices:attribution_invalid",
+        "invalid_verdict"
+      ]
+    }
+  ]
+}

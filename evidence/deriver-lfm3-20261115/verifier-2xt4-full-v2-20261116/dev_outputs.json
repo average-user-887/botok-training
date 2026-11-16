@@ -1,0 +1,56 @@
+[
+  {
+    "id": "silog-v1-011",
+    "ok": true,
+    "finished": true,
+    "tokens": 950,
+    "n_pred": 87,
+    "n_gold": 120,
+    "text": "{\"timeline\": [{\"text\": \"The CPU load was requested, libcuda failed, and no device context was created.\", \"evidence\": [\"L01\", \"L02\", \"L03\"]}, {\"text\": \"The fallback policy was disabled and the runner exited with 2.\", \"evidence\": [\"L03\", \"L04\"]}, {\"text\": \"The CPU backend initialized and a separate smoke request returned 8 tokens.\", \"evidence\": [\"L06\", \"L07\", \"L08\"]}, {\"text\": \"The operator notes no GPU retry was made and the CPU request was explicit, not automatic fallback.\", \"evidence\": [\"L09\"]}], \"findings\": [{\"kind\": \"observed_error\", \"text\": \"The reported failure is a CPU library load failure, not a broken accelerator.\", \"evidence\": [\"L01\", \"L02\", \"L03\", \"L09\"]}, {\"kind\": \"scope_limit\", \"text\": \"Host driver status, container device mappings, and library-search configuration are not included.\", \"evidence\": [\"L05\"]}], \"unknowns\": [{\"question\": \"Was the library search configured to include the expected CPU library?\", \"evidence\": [\"L05\", \"L06\", \"L07\"]}], \"next_checks\": [{\"action\": \"Read the existing library-search configuration and existing host driver status documentation.\", \"purpose\": \"Determine whether the CPU library was available without changing the request.\", \"evidence\": [\"L05\", \"L06\", \"L07\"]}]}"
+  },
+  {
+    "id": "silog-v1-012",
+    "ok": false,
+    "finished": true,
+    "tokens": 1153,
+    "n_pred": 96,
+    "n_gold": 142,
+    "text": "{\"timeline\": [{\"text\": \"The first s8 chunk 41e2 decoded as A€B with strict UTF-8, but the consumer reported unexpected end-of-data at offset 1.\", \"evidence\": [\"L01\", \"L02\", \"L06\"]}, {\"text\": \"The second chunk 82ac42 was not rendered; the consumer reported failure after chunk 1 and that chunk 2 was not rendered.\", \"evidence\": [\"L03\", \"L04\", \"L05\"]}, {\"text\": \"Incremental decoding of s8 produced A and €B separately, then final flush succeeded.\", \"evidence\": [\"L07\", \"L08\", \"L09\"]}, {\"text\": \"A truncated s8-only fixture failed with unexpected end-of-data.\", \"evidence\": [\"L10\", \"L11\"]}], \"findings\": [{\"kind\": \"observed_error\", \"text\": \"The stream consumer does not guarantee code-point-aligned chunks; the first chunk is incomplete UTF-8.\", \"evidence\": [\"L01\", \"L02\", \"L06\"]}, {\"kind\": \"observed_recovery\", \"text\": \"Incremental decoding of the two s8 chunks separately produced the expected code points, and final flush succeeded.\", \"evidence\": [\"L07\", \"L08\", \"L09\"]}, {\"kind\": \"observed_failure\", \"text\": \"The truncated-only fixture failed with unexpected end-of-data.\", \"evidence\": [\"L10\", \"L11\"]}], \"unknowns\": [{\"question\": \"Does the stream consumer require complete UTF-8 chunks before decoding?\", \"evidence\": [\"L02\", \"L06\"]}], \"next_checks\": [{\"action\": \"Inspect the stream protocol specification for chunk alignment requirements.\", \"purpose\": \"Distinguish transport encoding from consumer decoding behavior.\", \"evidence\": [\"L06\", \"L10\"]}]}"
+  },
+  {
+    "id": "silog-v2-021",
+    "ok": true,
+    "finished": true,
+    "tokens": 447,
+    "n_pred": 30,
+    "n_gold": 32,
+    "text": "{\"timeline\": [{\"text\": \"The fixture was read and parsed as JSON with zero retries, matching the expected fixture.\", \"evidence\": [\"L01\", \"L02\", \"L03\"]}, {\"text\": \"The embedded stub recorded zero writes and network calls.\", \"evidence\": [\"L04\"]}], \"findings\": [], \"unknowns\": [], \"next_checks\": []}"
+  },
+  {
+    "id": "silog-v2-022",
+    "ok": true,
+    "finished": true,
+    "tokens": 770,
+    "n_pred": 61,
+    "n_gold": 82,
+    "text": "{\"timeline\": [{\"text\": \"a1 tokenized and generated complete; a1 returned 200.\", \"evidence\": [\"L01\", \"L04\", \"L06\", \"L07\"]}, {\"text\": \"b1 tokenized, then failed with unsupported input type; the gateway returned 400.\", \"evidence\": [\"L02\", \"L03\", \"L05\"]}], \"findings\": [{\"kind\": \"observed_error\", \"text\": \"b1 failed before the gateway returned 400.\", \"evidence\": [\"L02\", \"L03\", \"L05\"]}, {\"kind\": \"scope_limit\", \"text\": \"The gateway 400 does not establish a worker failure; the worker later returned 200.\", \"evidence\": [\"L03\", \"L05\", \"L06\", \"L07\"]}], \"unknowns\": [{\"question\": \"What was b1’s payload?\", \"evidence\": [\"L02\", \"L03\", \"L08\"]}], \"next_checks\": [{\"action\": \"Read b1’s payload from existing records if available.\", \"purpose\": \"Resolve the observed error without replaying the gateway 400.\", \"evidence\": [\"L02\", \"L03\", \"L05\", \"L08\"]}]}"
+  },
+  {
+    "id": "silog-v2-023",
+    "ok": true,
+    "finished": true,
+    "tokens": 642,
+    "n_pred": 80,
+    "n_gold": 64,
+    "text": "{\"timeline\": [{\"text\": \"The locale3 fixture exported 1,25 seconds with a comma decimal separator, but the parser stripped commas and reported 125 seconds.\", \"evidence\": [\"L01\", \"L02\"]}, {\"text\": \"The dashboard displayed 125 seconds for the same fixture, while the later parser candidate reported 1.25 seconds with a comma separator and passed the fixture oracle.\", \"evidence\": [\"L03\", \"L04\", \"L05\"]}, {\"text\": \"The capture notes no benchmark rerun and that thousands separators and mixed-locale files were not tested.\", \"evidence\": [\"L06\"]}], \"findings\": [{\"kind\": \"observed_error\", \"text\": \"The exported and parsed values differ because the parser removed commas, not because the fixture measured 125 seconds.\", \"evidence\": [\"L01\", \"L02\", \"L04\"]}, {\"kind\": \"observed_recovery\", \"text\": \"The dashboard retained the exported value; the later parser candidate passed the oracle.\", \"evidence\": [\"L03\", \"L04\", \"L05\"]}], \"unknowns\": [{\"question\": \"Which parser configuration produced the reported 125 seconds?\", \"evidence\": [\"L01\", \"L02\", \"L04\"]}], \"next_checks\": [{\"action\": \"Inspect the parser configuration and fixture export format without changing the benchmark.\", \"purpose\": \"Resolve the reported discrepancy.\", \"evidence\": [\"L01\", \"L02\", \"L04\", \"L06\"]}]}"
+  },
+  {
+    "id": "silog-v2-024",
+    "ok": true,
+    "finished": true,
+    "tokens": 457,
+    "n_pred": 66,
+    "n_gold": 61,
+    "text": "{\"timeline\": [{\"text\": \"Installation guide rendered and its eight internal links were checked with no broken links.\", \"evidence\": [\"L01\", \"L02\"]}, {\"text\": \"The supplied logs contain only installation-build evidence and no GPU process, device telemetry or runtime error record.\", \"evidence\": [\"L03\"]}], \"findings\": [{\"kind\": \"scope_limit\", \"text\": \"The installation guide passed; no GPU fault is established.\", \"evidence\": [\"L01\", \"L02\", \"L03\"]}, {\"kind\": \"scope_limit\", \"text\": \"The supplied logs do not contain a GPU fault record.\", \"evidence\": [\"L03\"]}], \"unknowns\": [{\"question\": \"When, if ever, did the GPU fault occur?\", \"evidence\": [\"L03\"]}], \"next_checks\": [{\"action\": \"Review existing GPU process and device telemetry records if available.\", \"purpose\": \"Establish a GPU fault timeline without inventing one from unrelated documentation.\", \"evidence\": [\"L03\"]}]}"
+  }
+]

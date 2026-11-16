@@ -1,0 +1,641 @@
+{
+  "generated_at_utc": "2026-11-16T09:15:00Z",
+  "tokenizer": {
+    "model": "LiquidAI/LFM3-1.7B-Base",
+    "revision": "7bca5038823c0d0f14efe06439109354a10e014c",
+    "special_ids": {
+      "bos": 124894,
+      "eos": 124900,
+      "pad": 124893
+    },
+    "tokenizer_files_sha256": {
+      "chat_template.jinja": "f45005c50cd2a97329722bf3a2dee9f16c04cdf825a589b280fb7e99e6827818",
+      "special_tokens_map.json": "7946f864cbfb62a1b041bda937244210a1a87f4a6cab3a48b791131b2cd57f88",
+      "tokenizer.json": "7e226e34bface23ccf6e495d157bf77186c1c30a7659880e1a8994db528c3701",
+      "tokenizer_config.json": "bf028f813efc6137bc07ed045cafe71820df9a5e26a38e39954706ed1e30a457"
+    }
+  },
+  "root_cause_fixed_in_recipe": {
+    "file": "recipe_prep/train_deriver.py",
+    "old_behavior": "encode_row sliced middle tokens of prompt prefix when full_len > max_seq_len before main() checked len(ex['input_ids']) <= a.max_length",
+    "new_behavior": "--over-limit-policy defaults to 'reject' and emits per-row admission_receipt.json (original/retained lengths, truncation_side, source_sha256, gold_sha256)"
+  },
+  "completed_and_in_flight_runs": [
+    {
+      "run": "deriver_part1",
+      "package": "honcho-deriver-v18-training-only",
+      "train_rows": 352,
+      "corpus_full_tokens_per_pass": 1001931,
+      "executed_tokens_per_pass": 996841,
+      "executed_supervised_tokens_per_pass": 361524,
+      "silent_prompt_shortening_tokens_per_pass": 5090,
+      "max_seq_len": 5600,
+      "over_5600_rows_count": 11,
+      "truncation_mechanism": "train_deriver.py:encode_row middle-truncated prompt tokens while preserving full completion gold before post-encode length assertion"
+    },
+    {
+      "run": "deriver_part2",
+      "package": "honcho-deriver-v20-training-only",
+      "train_rows": 392,
+      "corpus_full_tokens_per_pass": 1137108,
+      "executed_tokens_per_pass": 1132018,
+      "executed_supervised_tokens_per_pass": 420575,
+      "silent_prompt_shortening_tokens_per_pass": 5090,
+      "max_seq_len": 5600,
+      "over_5600_rows_count": 11,
+      "truncation_mechanism": "train_deriver.py:encode_row middle-truncated prompt tokens while preserving full completion gold before post-encode length assertion"
+    },
+    {
+      "run": "deriver_part3",
+      "package": "honcho-deriver-v33-training-only",
+      "train_rows": 580,
+      "corpus_full_tokens_per_pass": 1769485,
+      "executed_tokens_per_pass": 1764395,
+      "executed_supervised_tokens_per_pass": 695516,
+      "silent_prompt_shortening_tokens_per_pass": 5090,
+      "max_seq_len": 5600,
+      "over_5600_rows_count": 11,
+      "truncation_mechanism": "train_deriver.py:encode_row middle-truncated prompt tokens while preserving full completion gold before post-encode length assertion"
+    },
+    {
+      "run": "deriver_part4_in_flight",
+      "package": "honcho-deriver-v47-training-only",
+      "train_rows": 691,
+      "corpus_full_tokens_per_pass": 2144712,
+      "executed_tokens_per_pass": "pending_completion (expected 2144712 - 5090 = 2139622 at max_seq_len=5600)",
+      "silent_prompt_shortening_tokens_per_pass": 5090,
+      "max_seq_len": 5600,
+      "over_5600_rows_count": 11,
+      "truncation_mechanism": "Part 4 launched prior to 2026-11-16 script patch; future runs default to --over-limit-policy reject + admission_receipt.json"
+    }
+  ],
+  "over_5600_rows_detail": {
+    "count": 11,
+    "total_excess_tokens": 5090,
+    "total_gold_facts": 966,
+    "rows": [
+      {
+        "id": "atomicbenchA-long-012",
+        "original_prompt_tokens": 3837,
+        "completion_tokens": 2017,
+        "original_total_tokens": 5854,
+        "gold_facts": 92,
+        "max_seq_len": 5600,
+        "excess_over_5600": 254,
+        "retained_prompt_tokens_if_5600": 3583,
+        "retained_total_tokens_if_5600": 5600,
+        "truncation_side": "prompt_middle",
+        "completion_truncated": false,
+        "lossless_admitted": false
+      },
+      {
+        "id": "benchv6-long-001",
+        "original_prompt_tokens": 3894,
+        "completion_tokens": 2245,
+        "original_total_tokens": 6139,
+        "gold_facts": 84,
+        "max_seq_len": 5600,
+        "excess_over_5600": 539,
+        "retained_prompt_tokens_if_5600": 3355,
+        "retained_total_tokens_if_5600": 5600,
+        "truncation_side": "prompt_middle",
+        "completion_truncated": false,
+        "lossless_admitted": false
+      },
+      {
+        "id": "benchv6-long-003",
+        "original_prompt_tokens": 3708,
+        "completion_tokens": 2178,
+        "original_total_tokens": 5886,
+        "gold_facts": 85,
+        "max_seq_len": 5600,
+        "excess_over_5600": 286,
+        "retained_prompt_tokens_if_5600": 3422,
+        "retained_total_tokens_if_5600": 5600,
+        "truncation_side": "prompt_middle",
+        "completion_truncated": false,
+        "lossless_admitted": false
+      },
+      {
+        "id": "benchv6-long-004",
+        "original_prompt_tokens": 3859,
+        "completion_tokens": 2398,
+        "original_total_tokens": 6257,
+        "gold_facts": 84,
+        "max_seq_len": 5600,
+        "excess_over_5600": 657,
+        "retained_prompt_tokens_if_5600": 3202,
+        "retained_total_tokens_if_5600": 5600,
+        "truncation_side": "prompt_middle",
+        "completion_truncated": false,
+        "lossless_admitted": false
+      },
+      {
+        "id": "benchv6-long-005",
+        "original_prompt_tokens": 3587,
+        "completion_tokens": 2103,
+        "original_total_tokens": 5690,
+        "gold_facts": 90,
+        "max_seq_len": 5600,
+        "excess_over_5600": 90,
+        "retained_prompt_tokens_if_5600": 3497,
+        "retained_total_tokens_if_5600": 5600,
+        "truncation_side": "prompt_middle",
+        "completion_truncated": false,
+        "lossless_admitted": false
+      },
+      {
+        "id": "OpsV6-long-0001",
+        "original_prompt_tokens": 3537,
+        "completion_tokens": 2338,
+        "original_total_tokens": 5875,
+        "gold_facts": 84,
+        "max_seq_len": 5600,
+        "excess_over_5600": 275,
+        "retained_prompt_tokens_if_5600": 3262,
+        "retained_total_tokens_if_5600": 5600,
+        "truncation_side": "prompt_middle",
+        "completion_truncated": false,
+        "lossless_admitted": false
+      },
+      {
+        "id": "OpsV6-long-0002",
+        "original_prompt_tokens": 3744,
+        "completion_tokens": 2581,
+        "original_total_tokens": 6325,
+        "gold_facts": 85,
+        "max_seq_len": 5600,
+        "excess_over_5600": 725,
+        "retained_prompt_tokens_if_5600": 3019,
+        "retained_total_tokens_if_5600": 5600,
+        "truncation_side": "prompt_middle",
+        "completion_truncated": false,
+        "lossless_admitted": false
+      },
+      {
+        "id": "OpsV6-long-0003",
+        "original_prompt_tokens": 3634,
+        "completion_tokens": 2544,
+        "original_total_tokens": 6178,
+        "gold_facts": 89,
+        "max_seq_len": 5600,
+        "excess_over_5600": 578,
+        "retained_prompt_tokens_if_5600": 3056,
+        "retained_total_tokens_if_5600": 5600,
+        "truncation_side": "prompt_middle",
+        "completion_truncated": false,
+        "lossless_admitted": false
+      },
+      {
+        "id": "OpsV6-long-0004",
+        "original_prompt_tokens": 3605,
+        "completion_tokens": 2567,
+        "original_total_tokens": 6172,
+        "gold_facts": 94,
+        "max_seq_len": 5600,
+        "excess_over_5600": 572,
+        "retained_prompt_tokens_if_5600": 3033,
+        "retained_total_tokens_if_5600": 5600,
+        "truncation_side": "prompt_middle",
+        "completion_truncated": false,
+        "lossless_admitted": false
+      },
+      {
+        "id": "OpsV6-long-0005",
+        "original_prompt_tokens": 3657,
+        "completion_tokens": 2259,
+        "original_total_tokens": 5916,
+        "gold_facts": 90,
+        "max_seq_len": 5600,
+        "excess_over_5600": 316,
+        "retained_prompt_tokens_if_5600": 3341,
+        "retained_total_tokens_if_5600": 5600,
+        "truncation_side": "prompt_middle",
+        "completion_truncated": false,
+        "lossless_admitted": false
+      },
+      {
+        "id": "OpsV6-long-0006",
+        "original_prompt_tokens": 3717,
+        "completion_tokens": 2681,
+        "original_total_tokens": 6398,
+        "gold_facts": 89,
+        "max_seq_len": 5600,
+        "excess_over_5600": 798,
+        "retained_prompt_tokens_if_5600": 2919,
+        "retained_total_tokens_if_5600": 5600,
+        "truncation_side": "prompt_middle",
+        "completion_truncated": false,
+        "lossless_admitted": false
+      }
+    ]
+  },
+  "feedback_addenda_20261116_admission": {
+    "archive_sha256": "684d6099ab36d6099e61ef6be6c734a9dea0d29a0bda466cc604d33f7f63f64a",
+    "deriver_addendum": {
+      "data_sha256": "4c66d81c56a39e18897e2d256eeac1cf6d2ed8367251238d68358d5c396e1977",
+      "rows": 4,
+      "total_tokens": 10423,
+      "max_tokens": 3304,
+      "limit": 5600,
+      "admitted_all_without_truncation": true,
+      "counts": [
+        {
+          "id": "fbnov16-medium-1",
+          "prompt": 2197,
+          "completion": 809,
+          "total": 3006
+        },
+        {
+          "id": "fbnov16-medium-2",
+          "prompt": 2169,
+          "completion": 766,
+          "total": 2935
+        },
+        {
+          "id": "fbnov16-medium-3",
+          "prompt": 2302,
+          "completion": 1002,
+          "total": 3304
+        },
+        {
+          "id": "fbnov16-empty-4",
+          "prompt": 1172,
+          "completion": 6,
+          "total": 1178
+        }
+      ]
+    },
+    "pruner_addendum": {
+      "data_sha256": "0ae10d27afe0b75ac191ecc0ed1982a25a1f08811ef1a76b4437a6061169f733",
+      "rows": 8,
+      "max_raw_concat": 1208,
+      "max_chat_recipe_full": 1220,
+      "all_counted_variants_under_4000": true,
+      "deployed_rendering_contract_verified": false,
+      "counts": [
+        {
+          "id": "fbpr16-none-01",
+          "raw_prompt": 313,
+          "raw_completion": 4,
+          "raw_concat": 317,
+          "raw_split_plus_eos": 318,
+          "raw_split_plus_bos_eos": 319,
+          "chat_recipe_full": 329
+        },
+        {
+          "id": "fbpr16-none-02",
+          "raw_prompt": 396,
+          "raw_completion": 4,
+          "raw_concat": 400,
+          "raw_split_plus_eos": 401,
+          "raw_split_plus_bos_eos": 402,
+          "chat_recipe_full": 412
+        },
+        {
+          "id": "fbpr16-all-03",
+          "raw_prompt": 207,
+          "raw_completion": 4,
+          "raw_concat": 211,
+          "raw_split_plus_eos": 212,
+          "raw_split_plus_bos_eos": 213,
+          "chat_recipe_full": 223
+        },
+        {
+          "id": "fbpr16-partial-04",
+          "raw_prompt": 1199,
+          "raw_completion": 9,
+          "raw_concat": 1208,
+          "raw_split_plus_eos": 1209,
+          "raw_split_plus_bos_eos": 1210,
+          "chat_recipe_full": 1220
+        },
+        {
+          "id": "fbpr16-partial-05",
+          "raw_prompt": 497,
+          "raw_completion": 9,
+          "raw_concat": 506,
+          "raw_split_plus_eos": 507,
+          "raw_split_plus_bos_eos": 508,
+          "chat_recipe_full": 518
+        },
+        {
+          "id": "fbpr16-partial-06",
+          "raw_prompt": 385,
+          "raw_completion": 5,
+          "raw_concat": 390,
+          "raw_split_plus_eos": 391,
+          "raw_split_plus_bos_eos": 392,
+          "chat_recipe_full": 402
+        },
+        {
+          "id": "fbpr16-partial-07",
+          "raw_prompt": 404,
+          "raw_completion": 11,
+          "raw_concat": 415,
+          "raw_split_plus_eos": 416,
+          "raw_split_plus_bos_eos": 417,
+          "chat_recipe_full": 427
+        },
+        {
+          "id": "fbpr16-partial-08",
+          "raw_prompt": 710,
+          "raw_completion": 13,
+          "raw_concat": 723,
+          "raw_split_plus_eos": 724,
+          "raw_split_plus_bos_eos": 725,
+          "chat_recipe_full": 735
+        }
+      ],
+      "qualification": "Exact counts under explicitly documented raw and inherited chat renderings. Actual deployed pruner preprocessing was not provided; these counts are not proof of that preprocessing. All variants are below 4000."
+    }
+  },
+  "dev_24_assembly_and_hashes": {
+    "explanation": "Training runs assemble dev_24.sft.jsonl from the 4 author-visible honcho-deriver dev windows plus 20 length-stratified rows from claude-deriver-v2-sft/v2_dev.jsonl (selected via recipe_prep/build_sprint_payload.py).",
+    "v47_author_visible_dev_4_sha256": {
+      "dev.raw.jsonl": "6d061ce339d18771f003ea7a787e1bdf6b494c0263f55374be7a319966e67cc8",
+      "dev.sft.jsonl": "a7a726f589249ee126bd93a01862954eb37f95c6599acb574d3db16f32278b1e"
+    },
+    "part4_payload_dev_24": {
+      "rows": 24,
+      "sources": {
+        "honcho-deriver-v47-training/dev.sft.jsonl": 4,
+        "claude-deriver-v2-sft/v2_dev.jsonl": 20
+      },
+      "sha256": "4454d0f194c41bea29b3098d5aee6d8b9305db841272e73eee7010bebf1ac22a"
+    },
+    "part2_vs_part3_dev_24_diff": {
+      "part2_total_gold_items": 431,
+      "part3_total_gold_items": 414,
+      "shared_row_ids_count": 22,
+      "only_in_part2": [
+        {
+          "id": "V2-long-0400",
+          "tokens": 6825,
+          "n_gold": 67
+        },
+        {
+          "id": "V2-long-1104",
+          "tokens": 6661,
+          "n_gold": 37
+        }
+      ],
+      "only_in_part3": [
+        {
+          "id": "V2-long-0101",
+          "tokens": 6730,
+          "n_gold": 56
+        },
+        {
+          "id": "V2-long-0407",
+          "tokens": 6081,
+          "n_gold": 31
+        }
+      ],
+      "part2_rows_metadata": [
+        {
+          "id": "atomicbenchA-short-005",
+          "tokens": 1449,
+          "n_gold": 20
+        },
+        {
+          "id": "opsv5-short-004",
+          "tokens": 1632,
+          "n_gold": 26
+        },
+        {
+          "id": "Ops-medium-0004",
+          "tokens": 3004,
+          "n_gold": 38
+        },
+        {
+          "id": "Ops-empty-0002",
+          "tokens": 711,
+          "n_gold": 0
+        },
+        {
+          "id": "B-030",
+          "tokens": 582,
+          "n_gold": 3
+        },
+        {
+          "id": "C-040",
+          "tokens": 634,
+          "n_gold": 3
+        },
+        {
+          "id": "C-050",
+          "tokens": 686,
+          "n_gold": 4
+        },
+        {
+          "id": "F-040",
+          "tokens": 1002,
+          "n_gold": 4
+        },
+        {
+          "id": "D-020",
+          "tokens": 1098,
+          "n_gold": 8
+        },
+        {
+          "id": "V2-short-0223",
+          "tokens": 1657,
+          "n_gold": 10
+        },
+        {
+          "id": "V2-short-0206",
+          "tokens": 1752,
+          "n_gold": 12
+        },
+        {
+          "id": "V2-short-0811",
+          "tokens": 2064,
+          "n_gold": 17
+        },
+        {
+          "id": "V2-medium-0203",
+          "tokens": 3257,
+          "n_gold": 17
+        },
+        {
+          "id": "V2-medium-0304",
+          "tokens": 4219,
+          "n_gold": 31
+        },
+        {
+          "id": "V2-long-0708",
+          "tokens": 5513,
+          "n_gold": 36
+        },
+        {
+          "id": "V2-long-0400",
+          "tokens": 6825,
+          "n_gold": 67
+        },
+        {
+          "id": "V2-long-0502",
+          "tokens": 6730,
+          "n_gold": 62
+        },
+        {
+          "id": "V2-long-1104",
+          "tokens": 6661,
+          "n_gold": 37
+        },
+        {
+          "id": "V2-long-1804",
+          "tokens": 6331,
+          "n_gold": 36
+        },
+        {
+          "id": "B-040",
+          "tokens": 519,
+          "n_gold": 0
+        },
+        {
+          "id": "E-030",
+          "tokens": 713,
+          "n_gold": 0
+        },
+        {
+          "id": "E-010",
+          "tokens": 821,
+          "n_gold": 0
+        },
+        {
+          "id": "V2-empty-0102",
+          "tokens": 1009,
+          "n_gold": 0
+        },
+        {
+          "id": "V2-short-0703",
+          "tokens": 1494,
+          "n_gold": 0
+        }
+      ],
+      "part3_rows_metadata": [
+        {
+          "id": "atomicbenchA-short-005",
+          "tokens": 1449,
+          "n_gold": 20
+        },
+        {
+          "id": "opsv5-short-004",
+          "tokens": 1632,
+          "n_gold": 26
+        },
+        {
+          "id": "Ops-medium-0004",
+          "tokens": 3004,
+          "n_gold": 38
+        },
+        {
+          "id": "Ops-empty-0002",
+          "tokens": 711,
+          "n_gold": 0
+        },
+        {
+          "id": "B-030",
+          "tokens": 582,
+          "n_gold": 3
+        },
+        {
+          "id": "C-040",
+          "tokens": 634,
+          "n_gold": 3
+        },
+        {
+          "id": "C-050",
+          "tokens": 686,
+          "n_gold": 4
+        },
+        {
+          "id": "F-040",
+          "tokens": 1002,
+          "n_gold": 4
+        },
+        {
+          "id": "D-020",
+          "tokens": 1098,
+          "n_gold": 8
+        },
+        {
+          "id": "V2-short-0223",
+          "tokens": 1657,
+          "n_gold": 10
+        },
+        {
+          "id": "V2-short-0206",
+          "tokens": 1752,
+          "n_gold": 12
+        },
+        {
+          "id": "V2-short-0811",
+          "tokens": 2064,
+          "n_gold": 17
+        },
+        {
+          "id": "V2-medium-0203",
+          "tokens": 3257,
+          "n_gold": 17
+        },
+        {
+          "id": "V2-medium-0304",
+          "tokens": 4219,
+          "n_gold": 31
+        },
+        {
+          "id": "V2-long-0708",
+          "tokens": 5513,
+          "n_gold": 36
+        },
+        {
+          "id": "V2-long-0407",
+          "tokens": 6081,
+          "n_gold": 31
+        },
+        {
+          "id": "V2-long-1804",
+          "tokens": 6331,
+          "n_gold": 36
+        },
+        {
+          "id": "V2-long-0101",
+          "tokens": 6730,
+          "n_gold": 56
+        },
+        {
+          "id": "V2-long-0502",
+          "tokens": 6730,
+          "n_gold": 62
+        },
+        {
+          "id": "B-040",
+          "tokens": 519,
+          "n_gold": 0
+        },
+        {
+          "id": "E-030",
+          "tokens": 713,
+          "n_gold": 0
+        },
+        {
+          "id": "E-010",
+          "tokens": 821,
+          "n_gold": 0
+        },
+        {
+          "id": "V2-empty-0102",
+          "tokens": 1009,
+          "n_gold": 0
+        },
+        {
+          "id": "V2-short-0703",
+          "tokens": 1494,
+          "n_gold": 0
+        }
+      ]
+    }
+  }
+}

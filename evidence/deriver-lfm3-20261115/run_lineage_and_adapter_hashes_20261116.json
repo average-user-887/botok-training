@@ -1,0 +1,280 @@
+{
+  "generated_at_utc": "2026-11-16T09:15:00Z",
+  "base_model": {
+    "hf_model": "LiquidAI/LFM3-1.7B-Base",
+    "hf_revision": "7bca5038823c0d0f14efe06439109354a10e014c",
+    "gguf_file": "lfm3-1.7b-base-Q4_K_M.gguf",
+    "gguf_size_bytes": 1099627488,
+    "gguf_sha256": "740c14a9c4bad8b2a719de26c409d1539cae2b784817e58a869715e580c80c2f"
+  },
+  "completed_runs": {
+    "deriver_part1": {
+      "lineage_mode": "fresh_base",
+      "init_adapter_arg": null,
+      "optimizer_restored": false,
+      "scheduler_restored": false,
+      "rng_restored": false,
+      "train_data_sha256": "ac28d3dad27ede7c6013e5a68f9a1d9168b7fcdffe9ea1ed851f7c7cad5a1afd",
+      "final_adapter_sha256": "116d512f4b56c61451c5c0df538b2b4ed406e9992c114a14d75b51732f06a51d",
+      "lora_config": {
+        "r": 16,
+        "lora_alpha": 32,
+        "target_modules": [
+          "q_proj",
+          "w1",
+          "k_proj",
+          "w2",
+          "v_proj",
+          "w3",
+          "o_proj"
+        ]
+      },
+      "checkpoint_latest": {
+        "global_step": 220,
+        "has_optimizer_pt": true,
+        "has_scheduler_pt": true,
+        "has_rng_state_0": true,
+        "has_rng_state_1": true
+      },
+      "exported_gguf": {
+        "filename": "deriver-v18-lora.gguf",
+        "size_bytes": 54214720,
+        "sha256": "575a65adfe1fb423b5d418e01a96ea8965ce7ebe11dd5a8df28f7e1672d5a46d"
+      },
+      "checkpoint_pct_80_adapter_sha256": "d27bb70dce5e67976994a6e8f951145e2c600e5293a031c133ee73a53b430faa"
+    },
+    "deriver_part2": {
+      "lineage_mode": "warm_start_branch",
+      "init_adapter_arg": "/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/init_adapter_pct80",
+      "optimizer_restored": false,
+      "scheduler_restored": false,
+      "rng_restored": false,
+      "train_data_sha256": "9bc489a3cde3b36605d07b3ece2da81876db15d0ff5a1d042b35db223585b0b6",
+      "final_adapter_sha256": "0251a4b2a6b182050f6d18d80b3b354e5fd64d54aeb3842635f281db12b37697",
+      "lora_config": {
+        "r": 16,
+        "lora_alpha": 32,
+        "target_modules": [
+          "v_proj",
+          "o_proj",
+          "w3",
+          "k_proj",
+          "w2",
+          "q_proj",
+          "w1"
+        ]
+      },
+      "checkpoint_latest": {
+        "global_step": 147,
+        "has_optimizer_pt": true,
+        "has_scheduler_pt": true,
+        "has_rng_state_0": true,
+        "has_rng_state_1": true
+      },
+      "exported_gguf": {
+        "filename": "deriver-v20-lora.gguf",
+        "size_bytes": 54214624,
+        "sha256": "057a3dfc1d3bb16cf9d792452b363f1df61b06b7e6747c77bc8246321f7bc329"
+      }
+    },
+    "deriver_part3": {
+      "lineage_mode": "warm_start_branch",
+      "init_adapter_arg": "/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/init_adapter_part2",
+      "optimizer_restored": false,
+      "scheduler_restored": false,
+      "rng_restored": false,
+      "train_data_sha256": "c3bf7b7de3f83591c13232c6f43c63ad7abb919a73e1206cd0ad9736af34f9b1",
+      "final_adapter_sha256": "c7d8c8b3ba49775b430b27b370d77fe03c25755a33778ec3fa13c0438d55aa3c",
+      "lora_config": {
+        "r": 16,
+        "lora_alpha": 32,
+        "target_modules": [
+          "w3",
+          "w1",
+          "q_proj",
+          "v_proj",
+          "w2",
+          "o_proj",
+          "k_proj"
+        ]
+      },
+      "checkpoint_latest": {
+        "global_step": 219,
+        "has_optimizer_pt": true,
+        "has_scheduler_pt": true,
+        "has_rng_state_0": true,
+        "has_rng_state_1": true
+      },
+      "exported_gguf": {
+        "filename": "deriver-v33-lora.gguf",
+        "size_bytes": 54214624,
+        "sha256": "d75718122a1e089c60ac7e93b71aeac1e38f6e4abf2c0db261b51b6720344bdc"
+      }
+    },
+    "scribe_v2": {
+      "lineage_mode": "fresh_base",
+      "init_adapter_arg": null,
+      "optimizer_restored": false,
+      "scheduler_restored": false,
+      "rng_restored": false,
+      "train_data_sha256": "3942f07740f5185ceb8890edf46174b1d3e0dc20d178f70a67ebc6158cc3c63e",
+      "final_adapter_sha256": "697e1f3c088dfc62f018de21562d6613ce8502b51aa28d1c26d66b14677e3939",
+      "lora_config": {
+        "r": 16,
+        "lora_alpha": 32,
+        "target_modules": [
+          "k_proj",
+          "w1",
+          "q_proj",
+          "w3",
+          "o_proj",
+          "v_proj",
+          "w2"
+        ]
+      },
+      "checkpoint_latest": {
+        "global_step": 30,
+        "has_optimizer_pt": true,
+        "has_scheduler_pt": true,
+        "has_rng_state_0": true,
+        "has_rng_state_1": true
+      },
+      "exported_gguf": {
+        "filename": "scribe-v2-lora.gguf",
+        "size_bytes": 54214624,
+        "sha256": "465329d4542d6524bc3f905e459d10a216d239c0e9c90e6e7077d62b880874d4"
+      }
+    },
+    "judge_v1": {
+      "lineage_mode": "fresh_base",
+      "init_adapter_arg": null,
+      "optimizer_restored": false,
+      "scheduler_restored": false,
+      "rng_restored": false,
+      "train_data_sha256": "524b1464ca8285c518c7dda4fcf493f972e147651b06b2b9073a9e0ef845ff43",
+      "final_adapter_sha256": "74d83f57b6e61fced3fb544484b30276dc70eb84062133721ef9b9f691d23377",
+      "lora_config": {
+        "r": 16,
+        "lora_alpha": 32,
+        "target_modules": [
+          "k_proj",
+          "w2",
+          "w3",
+          "q_proj",
+          "w1",
+          "o_proj",
+          "v_proj"
+        ]
+      },
+      "checkpoint_latest": {
+        "global_step": 30,
+        "has_optimizer_pt": true,
+        "has_scheduler_pt": true,
+        "has_rng_state_0": true,
+        "has_rng_state_1": true
+      },
+      "exported_gguf": {
+        "filename": "judge-v1-lora.gguf",
+        "size_bytes": 54214720,
+        "sha256": "9ea4fd5bc966541ca95bc5d30389b9925735746b9e34053cf5f4293391b3ece9"
+      }
+    },
+    "verifier_v2": {
+      "lineage_mode": "fresh_base",
+      "init_adapter_arg": null,
+      "optimizer_restored": false,
+      "scheduler_restored": false,
+      "rng_restored": false,
+      "train_data_sha256": "dec75ed0b5666df8d22231699f452060026e22cc27fe7708ebe6aadb5b44507c",
+      "final_adapter_sha256": "cce2c2d93200aa4f92308c3ccf349747b0d4e7848a7e1cfc7f1bec790952b247",
+      "lora_config": {
+        "r": 16,
+        "lora_alpha": 32,
+        "target_modules": [
+          "w3",
+          "w2",
+          "v_proj",
+          "w1",
+          "q_proj",
+          "k_proj",
+          "o_proj"
+        ]
+      },
+      "checkpoint_latest": {
+        "global_step": 36,
+        "has_optimizer_pt": true,
+        "has_scheduler_pt": true,
+        "has_rng_state_0": true,
+        "has_rng_state_1": true
+      },
+      "exported_gguf": {
+        "filename": "verifier-v2-lora.gguf",
+        "size_bytes": 54214624,
+        "sha256": "02b95187cbfdc365bc04132ff99d973910c2e1bfade7e604782b7822d175a53b"
+      }
+    },
+    "pruner_v2": {
+      "lineage_mode": "fresh_base",
+      "init_adapter_arg": null,
+      "optimizer_restored": false,
+      "scheduler_restored": false,
+      "rng_restored": false,
+      "train_data_sha256": "8040f11cdb15ac477ac44363eb58e614e502a47b61fb51d78fb4eb0e24a3282d",
+      "final_adapter_sha256": "512ac2a73e2095e3a72e7542f770ecf2d625e674acda6c194602804df84b9a78",
+      "lora_config": {
+        "r": 16,
+        "lora_alpha": 32,
+        "target_modules": [
+          "q_proj",
+          "o_proj",
+          "w2",
+          "w3",
+          "k_proj",
+          "w1",
+          "v_proj"
+        ]
+      },
+      "checkpoint_latest": {
+        "global_step": 54,
+        "has_optimizer_pt": true,
+        "has_scheduler_pt": true,
+        "has_rng_state_0": true,
+        "has_rng_state_1": true
+      },
+      "exported_gguf": {
+        "filename": "pruner-v2-lora.gguf",
+        "size_bytes": 54214720,
+        "sha256": "fbd1797209af124d9faefaa9da89088ac31892f34a8b4a4b410c109bfd610229"
+      }
+    }
+  },
+  "deriver_part4_in_flight": {
+    "kernel_ref": "<kaggle-user>/p2000-deriver-v40-full-part4",
+    "live_status": "RUNNING (not interrupted)",
+    "lineage_classification": "warm_start_branch_from_part1_pct80 (NOT sequential continuation from Part 3; NOT full-state resume)",
+    "dataset": "honcho-deriver-v47-training-only",
+    "init_adapter_source": "deriver_part1/full_part1/checkpoint-pct-80",
+    "init_adapter_sha256": "d27bb70dce5e67976994a6e8f951145e2c600e5293a031c133ee73a53b430faa",
+    "matches_part1_pct80_sha256": true,
+    "optimizer_restored": false,
+    "scheduler_restored": false,
+    "rng_restored": false,
+    "hyperparams": {
+      "role": "deriver",
+      "lora_r": 16,
+      "lora_alpha": 32,
+      "target_modules": "attn-mlp",
+      "lr": 0.0001,
+      "epochs": 2,
+      "effective_batch": 8,
+      "microbatch": 1,
+      "max_seq_len": 5600,
+      "milestones": "20,40,60,80",
+      "milestone_probe_rows": 12,
+      "milestone_max_new_tokens": 256,
+      "eval_max_new_tokens": 1800,
+      "time_budget_s": 12000,
+      "ddp_timeout": 3600
+    }
+  }
+}

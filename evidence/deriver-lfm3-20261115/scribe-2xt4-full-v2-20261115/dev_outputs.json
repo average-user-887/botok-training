@@ -1,0 +1,56 @@
+[
+  {
+    "id": "scribe-candidate-011",
+    "ok": true,
+    "finished": true,
+    "tokens": 846,
+    "n_pred": 67,
+    "n_gold": 72,
+    "text": "{\"title\": \"Demo projector edge issue\", \"as_of\": \"2026-04-16 08:20\", \"items\": [{\"kind\": \"state\", \"text\": \"proj-90 at 90 percent zoom fits the full synthetic dashboard; the normal 100 percent profile remains unchanged.\", \"owner\": null, \"due\": null, \"evidence\": [\"m5\", \"m6\"]}, {\"kind\": \"decision\", \"text\": \"Use proj-90 as a demo workaround, not a diagnosis of zoom or overscan.\", \"owner\": null, \"due\": null, \"evidence\": [\"m2\", \"m4\"]}, {\"kind\": \"pending\", \"text\": \"Try a reduced-column dashboard and review readability from the rear seats.\", \"owner\": \"Lina\", \"due\": null, \"evidence\": [\"m7\"]}, {\"kind\": \"uncertainty\", \"text\": \"The original cropping cause is still unknown.\", \"owner\": null, \"due\": null, \"evidence\": [\"m1\", \"m7\"]}]}"
+  },
+  {
+    "id": "scribe-candidate-012",
+    "ok": true,
+    "finished": true,
+    "tokens": 821,
+    "n_pred": 47,
+    "n_gold": 66,
+    "text": "{\"title\": \"Unpublished announcement\", \"as_of\": \"2026-05-21 11:05\", \"items\": [{\"kind\": \"decision\", \"text\": \"Keep the announcement unpublished until Jo supplies the deployment status.\", \"owner\": \"Ari\", \"due\": null, \"evidence\": [\"m6\"]}, {\"kind\": \"pending\", \"text\": \"Supply Jo’s deployment status.\", \"owner\": \"Jo\", \"due\": null, \"evidence\": [\"m6\"]}, {\"kind\": \"pending\", \"text\": \"Decide whether to publish.\", \"owner\": \"Ari\", \"due\": null, \"evidence\": [\"m6\", \"m7\"]}, {\"kind\": \"state\", \"text\": \"No deployment receipt has been supplied; neither feature is labeled live.\", \"owner\": null, \"due\": null, \"evidence\": [\"m4\", \"m5\"]}]}"
+  },
+  {
+    "id": "scribe-v2-021",
+    "ok": true,
+    "finished": true,
+    "tokens": 1465,
+    "n_pred": 85,
+    "n_gold": 106,
+    "text": "{\"title\": \"Accessible neighborhood science night\", \"as_of\": \"2026-10-08 10:11\", \"items\": [{\"kind\": \"state\", \"text\": \"P3 uses the current venue plan in both sizes; entrance arrows are checked against that plan. No copies have been printed.\", \"owner\": null, \"due\": null, \"evidence\": [\"m8\"]}, {\"kind\": \"state\", \"text\": \"Sam accepted cleanup lead, October 10 from 20:00 to 20:30. The roster entry excludes rented-lighting teardown.\", \"owner\": null, \"due\": null, \"evidence\": [\"m9\", \"m12\"]}, {\"kind\": \"decision\", \"text\": \"Remove Ola from the 17:00 welcome shift. Hold printing until the replacement is confirmed; the old 15:00 print deadline is suspended.\", \"owner\": null, \"due\": null, \"evidence\": [\"m13\", \"m14\"]}, {\"kind\": \"pending\", \"text\": \"Find the replacement for the 17:00 welcome shift and decide a new print deadline.\", \"owner\": \"Vera\", \"due\": null, \"evidence\": [\"m13\", \"m14\"]}, {\"kind\": \"pending\", \"text\": \"Print P3.\", \"owner\": null, \"due\": null, \"evidence\": [\"m12\", \"m14\"]}, {\"kind\": \"decision\", \"text\": \"Remove Ola from the 17:00 welcome shift. Hold printing until the replacement is confirmed; the old 15:00 print deadline is suspended.\", \"owner\": null, \"due\": null, \"evidence\": [\"m13\", \"m14\"]}]}"
+  },
+  {
+    "id": "scribe-v2-022",
+    "ok": true,
+    "finished": true,
+    "tokens": 1316,
+    "n_pred": 85,
+    "n_gold": 79,
+    "text": "{\"title\": \"Cue sheet resolution\", \"as_of\": \"2026-11-10 13:24\", \"items\": [{\"kind\": \"state\", \"text\": \"C3 is current and exported; the operator’s stand has the new sheet while the old PDF remains in the dated archive.\", \"owner\": null, \"due\": null, \"evidence\": [\"m9\"]}, {\"kind\": \"decision\", \"text\": \"Retain end-of-line timing; the director’s request is closed without altering cue timing.\", \"owner\": null, \"due\": null, \"evidence\": [\"m11\", \"m12\"]}, {\"kind\": \"pending\", \"text\": \"Resolve the approved end-of-line cue timing with the director.\", \"owner\": \"Lena\", \"due\": \"2026-11-10 14:00\", \"evidence\": [\"m11\", \"m12\"]}, {\"kind\": \"state\", \"text\": \"Scene5 trigger is approved as “close the window” after the actor finishes the line; the approved cue remains in use.\", \"owner\": null, \"due\": null, \"evidence\": [\"m6\", \"m10\", \"m11\"]}, {\"kind\": \"state\", \"text\": \"C2 cues are mapped to assets R2 and R7 and are ready.\", \"owner\": null, \"due\": null, \"evidence\": [\"m5\"]}, {\"kind\": \"state\", \"text\": \"C3 was exported and the stand was updated; the old PDF is in the dated archive.\", \"owner\": null, \"due\": null, \"evidence\": [\"m9\"]}, {\"kind\": \"decision\", \"text\": \"Do not change cue timing for this production; the change request is closed.\", \"owner\": null, \"due\": null, \"evidence\": [\"m12\"]}]}"
+  },
+  {
+    "id": "scribe-v2-023",
+    "ok": true,
+    "finished": true,
+    "tokens": 1339,
+    "n_pred": 86,
+    "n_gold": 93,
+    "text": "{\"title\": \"W17 exclusion exercise\", \"as_of\": \"2026-12-08 14:11\", \"items\": [{\"kind\": \"state\", \"text\": \"C9 is built with the five lineage-linked rows excluded and the unrelated fixture retained; its manifest lacks the excluded IDs and the release note was corrected to the C9 scope.\", \"owner\": null, \"due\": null, \"evidence\": [\"m5\", \"m6\", \"m11\"]}, {\"kind\": \"decision\", \"text\": \"The exercise is accepted and W17’s wording issue is closed; archival-policy design remains separate under Dina. Do not interpret the exercise as a verified procedure for real legal requests or as evidence of model forgetting.\", \"owner\": null, \"due\": null, \"evidence\": [\"m10\", \"m11\", \"m12\"]}, {\"kind\": \"pending\", \"text\": \"Decide archival policy separately; no deadline is committed.\", \"owner\": \"Dina\", \"due\": null, \"evidence\": [\"m10\", \"m12\"]}, {\"kind\": \"state\", \"text\": \"The original overbroad release note was retained as a failed wording example in the exercise record.\", \"owner\": null, \"due\": null, \"evidence\": [\"m11\"]}]}"
+  },
+  {
+    "id": "scribe-v2-024",
+    "ok": true,
+    "finished": true,
+    "tokens": 492,
+    "n_pred": 12,
+    "n_gold": 13,
+    "text": "{\"title\": \"No supported continuity\", \"as_of\": \"2026-01-12 17:10\", \"items\": []}"
+  }
+]
