@@ -1,0 +1,218 @@
+[
+ {
+  "id": "atomicbenchA-short-005",
+  "ok": true,
+  "finished": true,
+  "tokens": 1449,
+  "n_pred": 19,
+  "n_gold": 20,
+  "text": "{\"explicit\": [{\"content\": \"eli tested the maple classifier on the 1660 Ti on June 21, 2026.\"}, {\"content\": \"eli finished the idle browser session in 51 seconds across 100 requests.\"}, {\"content\": \"eli finished the desktop video-call session in 79 seconds across the same request set.\"}, {\"content\": \"eli does not treat those elapsed totals as per-request latency percentiles.\"}, {\"content\": \"eli used model revision 8aa41c for both maple sessions.\"}, {\"content\": \"eli used concurrency one for both maple sessions.\"}, {\"content\": \"eli used maple-inputs-v2.jsonl with client cache reuse disabled.\"}, {\"content\": \"eli did not inspect server-side cache behavior.\"}, {\"content\": \"eli reported a one-second sampler maximum of 4.8 GiB without ruling out higher usage between samples.\"}, {\"content\": \"eli has not diagnosed a hardware fault as of June 21, 2026.\"}, {\"content\": \"eli drafts interactive classification exclusively for the 1660 Ti when its queue has fewer than three waiting requests.\"}, {\"content\": \"eli proposes P2000 as the fallback for that routing policy.\"}, {\"content\": \"eli has not deployed the routing policy as of June 21, 2026.\"}, {\"content\": \"eli treats the threshold of three as a proposal rather than a measured optimum.\"}, {\"content\": \"eli saved session summaries and original console output as maple-routing-notes.\"}, {\"content\": \"eli has not included individual request timestamps in the current maple files.\"}, {\"content\": \"eli plans a separate timestamp-capture harness copy for"
+ },
+ {
+  "id": "opsv5-short-004",
+  "ok": true,
+  "finished": true,
+  "tokens": 1632,
+  "n_pred": 26,
+  "n_gold": 26,
+  "text": "{\"explicit\": [{\"content\": \"nina tested adapter switching on the 1660 Ti with the desktop active.\"}, {\"content\": \"nina kept the base model loaded for both roles.\"}, {\"content\": \"nina switched between extraction-r4 and tagging-r2 ten times using the runtime adapter endpoint.\"}, {\"content\": \"nina used one request at a time in the adapter test.\"}, {\"content\": \"nina did not benchmark the Steam Deck in the adapter test.\"}, {\"content\": \"nina did not benchmark the P2000 in the adapter test.\"}, {\"content\": \"nina did not change the Steam Deck routing policy.\"}, {\"content\": \"nina did not change the P2000 routing policy.\"}, {\"content\": \"nina called the swap timer client-visible switching latency.\"}, {\"content\": \"nina measured a median of 0.84 seconds and maximum of 1.31 seconds across ten adapter measurements.\"}, {\"content\": \"nina did not isolate GPU adapter loading from endpoint and polling overhead.\"}, {\"content\": \"nina saved all ten adapter measurements in switch_latency_0512.csv.\"}, {\"content\": \"nina used a fixed 120-token prompt for each role request after switching, limiting the result to that prompt rather than long conversation windows.\"}, {\"content\": \"nina saved each request with selected adapter ID and raw output.\"}, {\"content\": \"nina used the extraction schema in two tagging responses.\"}, {\"content\": \"nina reported that both tagging responses followed extraction-to-tagging switches.\"}, {\"content\": \"nina had not determined whether adapter state, request metadata or schema cache"
+ },
+ {
+  "id": "Ops-medium-0004",
+  "ok": true,
+  "finished": true,
+  "tokens": 3004,
+  "n_pred": 48,
+  "n_gold": 38,
+  "text": "{\"explicit\": [{\"content\": \"budget-bot found two saved notebooks in bundle april01 (reported 2026-04-02).\"}, {\"content\": \"budget-bot identifies prune_a as short classification-reply training (reported 2026-04-02).\"}, {\"content\": \"budget-bot identifies derive_b as structured fact-list training (reported 2026-04-02).\"}, {\"content\": \"budget-bot derives task labels from configuration rather than filename interpretation (reported 2026-04-02).\"}, {\"content\": \"budget-bot has not run either notebook (reported 2026-04-02).\"}, {\"content\": \"budget-bot does not treat notebook exports as proof of future free-session hardware allocation (reported 2026-04-02).\"}, {\"content\": \"budget-bot reports prune_a 18.2 examples per second after packing (reported 2026-04-04).\"}, {\"content\": \"budget-bot reports no processed-token-per-second measurement for prune_a (reported 2026-04-04).\"}, {\"content\": \"budget-bot reports prune_a median serialized example length 420 tokens (reported 2026-04-04).\"}, {\"content\": \"budget-bot notes that multiplying summary rate and length cannot recover measured token rate (reported 2026-04-04).\"}, {\"content\": \"budget-bot plans to retain the example rate under its original task name (reported 2026-04-04).\"}, {\"content\": \"budget-bot reports derive_b accumulation four and per-device microbatch one (reported 2026-04-06).\"}, {\"content\": \"budget-bot reports two T4 devices in the hardware export (reported 2026-04-06).\"}, {\"content\": \"budget-bot has not found a distributed-launch rec"
+ },
+ {
+  "id": "Ops-empty-0002",
+  "ok": true,
+  "finished": true,
+  "tokens": 711,
+  "n_pred": 0,
+  "n_gold": 0,
+  "text": "{\"explicit\": []}"
+ },
+ {
+  "id": "B-030",
+  "ok": true,
+  "finished": true,
+  "tokens": 582,
+  "n_pred": 0,
+  "n_gold": 3,
+  "text": "{\"explicit\": []}"
+ },
+ {
+  "id": "C-040",
+  "ok": true,
+  "finished": true,
+  "tokens": 634,
+  "n_pred": 0,
+  "n_gold": 3,
+  "text": "{\"explicit\": []}"
+ },
+ {
+  "id": "C-050",
+  "ok": true,
+  "finished": true,
+  "tokens": 686,
+  "n_pred": 0,
+  "n_gold": 4,
+  "text": "{\"explicit\": []}"
+ },
+ {
+  "id": "F-040",
+  "ok": true,
+  "finished": true,
+  "tokens": 1002,
+  "n_pred": 11,
+  "n_gold": 4,
+  "text": "{\"explicit\": [{\"content\": \"emil is on platform on-call for October 2026.\"}, {\"content\": \"emil carries a laptop.\"}, {\"content\": \"emil carries a spare charger always.\"}, {\"content\": \"emil will raise the disk alert threshold by October 9, 2026.\"}, {\"content\": \"emil runs Linux only on the desktop.\"}, {\"content\": \"emil uses macOS as of August 2026.\"}, {\"content\": \"emil performs Saturday park runs every week regardless of weather.\"}, {\"content\": \"emil will remove auto-ack on disk alerts by October 9, 2026.\"}, {\"content\": \"emil owns the disk alert work.\"}, {\"content\": \"emil reports that the pager disk alerts were 91 percent complete with auto-ack after five minutes on October 1, 2026.\"}, {\"content\": \"emil reports that Emil owns the disk alert work.\"}]}"
+ },
+ {
+  "id": "D-020",
+  "ok": true,
+  "finished": true,
+  "tokens": 1098,
+  "n_pred": 14,
+  "n_gold": 8,
+  "text": "{\"explicit\": [{\"content\": \"rhea reports that Home Assistant backups to the NAS failed with a permission error after changing the share user.\"}, {\"content\": \"rhea identifies the share protocol as SMB.\"}, {\"content\": \"rhea reports that the backup user is ha-backup and the share is set to read-only for it.\"}, {\"content\": \"rhea pasted a backup failure from /backups/.tmp_ha with errno 13, permission denied.\"}, {\"content\": \"rhea gave write permission to ha-backup.\"}, {\"content\": \"rhea started retrying the backup.\"}, {\"content\": \"rhea reports that the backup succeeded, writing 1.8 GB to the share.\"}, {\"content\": \"rhea rotated the Home Assistant password on November 1, 2026.\"}, {\"content\": \"rhea updated the Home Assistant secret.\"}, {\"content\": \"rhea reports that the automated backup at 04:00 on November 2, 2026 succeeded, writing 1.9 GB.\"}, {\"content\": \"rhea set backup retention to 7.\"}, {\"content\": \"rhea reports that the NAS is 45 percent full.\"}, {\"content\": \"rhea plans to review the share quota in December.\"}, {\"content\": \"rhea reports that the automated backup at 04:00 on November 2, 2026 succeeded.\"}]}"
+ },
+ {
+  "id": "V2-short-0223",
+  "ok": true,
+  "finished": true,
+  "tokens": 1657,
+  "n_pred": 26,
+  "n_gold": 10,
+  "text": "{\"explicit\": [{\"content\": \"dev-bot reports the nightly reports job failed at 2026-05-11 02:14 UTC in the transform step.\"}, {\"content\": \"dev-bot reports the error was out of disk space on reports-replica-2.\"}, {\"content\": \"dev-bot reports 0.4 GB free on reports-replica-2 at 2026-05-11 02:13.\"}, {\"content\": \"dev-bot identifies the WAL archive as the growth source.\"}, {\"content\": \"dev-bot reports the retention setting changed on 2026-04-30.\"}, {\"content\": \"dev-bot reports the archive grew from 210 GB to 318 GB over 10 days.\"}, {\"content\": \"dev-bot reports the reports-replica-2 volume is 500 G and used 499.6 G.\"}, {\"content\": \"dev-bot reports the WAL archive is /var/lib/pg/wal_archive 318 G.\"}, {\"content\": \"dev-bot recommends 7-day WAL retention, estimating 140 GB freed.\"}, {\"content\": \"dev-bot has not applied the recommended retention change as of May 11, 2026.\"}, {\"content\": \"dev-bot requires approval because the retention change affects the reports database restore window.\"}, {\"content\": \"dev-bot opened INF-2287 requesting a 300 GB disk expansion for the replica.\"}, {\"content\": \"dev-bot reports the storage team estimates 1 working day for the expansion.\"}, {\"content\": \"dev-bot cleared 12 GB of stale exports older than 30 days from /tmp/reports-scratch.\"}, {\"content\": \"dev-bot reports the cleared-export names are in the job log.\"}, {\"content\": \"dev-bot reran the transform at 2026-05-11 08:12 and reports it completed in 37 minutes.\"}, {\"content\": \"dev-bot reports replica lag fe"
+ },
+ {
+  "id": "V2-short-0206",
+  "ok": true,
+  "finished": true,
+  "tokens": 1752,
+  "n_pred": 31,
+  "n_gold": 12,
+  "text": "{\"explicit\": [{\"content\": \"support-bot identified the support assistant role for a TH-200 showing offline after a firmware update (reported 2026-04-16 11:21).\"}, {\"content\": \"support-bot instructed a 15-second wheel power-cycle (reported 2026-04-16 11:21).\"}, {\"content\": \"support-bot asked whether the user performed the power-cycle (reported 2026-04-16 11:21).\"}, {\"content\": \"support-bot found firmware 3.4.1 has a known issue with 5 GHz-only networks (reported 2026-04-16 11:27).\"}, {\"content\": \"support-bot asked whether the router was split-band or 5 GHz-only (reported 2026-04-16 11:27).\"}, {\"content\": \"support-bot logged a diagnostic request for account kasia-7781 (reported 2026-04-16 11:33).\"}, {\"content\": \"support-bot found the last reported device date 2026-04-15 23:48 UTC matches the update time (reported 2026-04-16 11:33).\"}, {\"content\": \"support-bot planned a warranty check if the reset did not help (reported 2026-04-16 11:33).\"}, {\"content\": \"support-bot noted renaming the network will drop the thermostat (reported 2026-04-16 11:39).\"}, {\"content\": \"support-bot required re-pairing via the app after renaming (reported 2026-04-16 11:39).\"}, {\"content\": \"support-bot added renaming as a ticket step (reported 2026-04-16 11:39).\"}, {\"content\": \"support-bot identified the rename attempt as unsuccessful (reported 2026-04-17 08:07).\"}, {\"content\": \"support-bot still classified the device as offline after the rename attempt (reported 2026-04-17 08:07).\"}, {\"content\": \"support-b"
+ },
+ {
+  "id": "V2-short-0811",
+  "ok": true,
+  "finished": true,
+  "tokens": 2064,
+  "n_pred": 19,
+  "n_gold": 17,
+  "text": "{\"explicit\": [{\"content\": \"ilse used a Class 1 Norsonic 140 sound level meter at 350 m on the field road near Krzywe farm.\"}, {\"content\": \"ilse measured at measurement height 1.5 m.\"}, {\"content\": \"ilse performed 12 ten-minute sessions between 5 February and 12 March 2026.\"}, {\"content\": \"ilse downloaded hub-height wind from the turbine SCADA log on 13 March 2026.\"}, {\"content\": \"ilse estimates average Lden 41.6 dB(A) at 350 m with standard deviation 2.3 dB from 12 sessions.\"}, {\"content\": \"ilse records maximum 46.1 dB(A) on 27 February with mean hub-height wind 9.4 m/s.\"}, {\"content\": \"ilse records average night-time LAeq 38.2 dB(A).\"}, {\"content\": \"ilse does not yet know whether the local guideline uses 40 or 45 dB for the zone.\"}, {\"content\": \"ilse plans to correct turbine model from 2.5 MW to 3.0 MW in section 4.1 and the table.\"}, {\"content\": \"ilse plans to correct hub height from 119 m to 119 m (reported as 119 m in the message, but the original text says 119 m, so no correction needed here).\"}, {\"content\": \"ilse plans to send the corrected Lden table on 18 March 2026.\"}, {\"content\": \"ilse plans to send the SCADA log on 18 March 2026.\"}, {\"content\": \"ilse recorded background LAeq 29.8 dB(A) on 21 February 2026 with turbines stopped.\"}, {\"content\": \"ilse recorded background LAeq 31.4 dB(A) on 7 March 2026 with turbines stopped.\"}, {\"content\": \"ilse uses ISO 1996-2 subtraction only above 3 dB, otherwise reports uncorrected values.\"}, {\"content\": \"ilse reports 9 valid Lden"
+ },
+ {
+  "id": "V2-medium-0203",
+  "ok": true,
+  "finished": true,
+  "tokens": 3257,
+  "n_pred": 42,
+  "n_gold": 17,
+  "text": "{\"explicit\": [{\"content\": \"oren cleaned the churn_baseline notebook v3 export to 48,213 rows after dropping test accounts, with 3,904 churned in the last 90 days (reported 2026-03-05 08:50).\"}, {\"content\": \"oren reports class balance about 8 percent positive, making accuracy useless (reported 2026-03-05 08:50).\"}, {\"content\": \"oren plans AUC and PR AUC reporting (reported 2026-03-05 08:50).\"}, {\"content\": \"oren agreed to a time-based split at 2026-01-31 (reported 2026-03-05 08:58).\"}, {\"content\": \"oren reports the first AUC of 0.93 was too good to be true because of future-row leakage (reported 2026-03-05 08:58).\"}, {\"content\": \"oren dropped support_ticket_text because it is populated after cancellation (reported 2026-03-05 08:58).\"}, {\"content\": \"oren reports remaining features are tenure_days, seats, plan_tier, logins_30d, invoices_failed_90d, and nps_last (reported 2026-03-05 08:58).\"}, {\"content\": \"oren reports AUC 0.812 and PR AUC 0.337 on 9,662 holdout rows (reported 2026-03-05 09:11).\"}, {\"content\": \"oren reports lightgbm AUC 0.846 and PR AUC 0.41 on the same holdout (reported 2026-03-05 09:22).\"}, {\"content\": \"oren reports lightgbm beats logistic by 3 AUC points (reported 2026-03-05 09:22).\"}, {\"content\": \"oren reports SHAP ranks nps_last, invoices_failed_90d, logins_30d, and seats (reported 2026-03-05 09:22).\"}, {\"content\": \"oren reports permutation importance takes about 6 minutes on the CPU (reported 2026-03-05 09:33).\"}, {\"content\": \"oren reports the calibration p"
+ },
+ {
+  "id": "V2-medium-0304",
+  "ok": false,
+  "finished": false,
+  "tokens": 4219,
+  "n_pred": 0,
+  "n_gold": 31,
+  "text": "{\"explicit\": [{\"content\": \"mira_k is building llama.cpp on the vesper box with CUDA on 2026-03-06 10:00.\"}, {\"content\": \"mira_k uses rtx 3090 24GB, cuda 12.6, driver 560.35.03.\"}, {\"content\": \"mira_k reports cmake finished and 14-minute compilation on 12 cores.\"}, {\"content\": \"mira_k uses -DGGML_CUDA=ON, -DCMAKE_CUDA_ARCHITECTURES=86, -DCMAKE_BUILD_TYPE=Release.\"}, {\"content\": \"mira_k plans to run the 27B Q4_K_M model first.\"}, {\"content\": \"mira_k estimates the 27B Q4_K_M model at about 16.4 GB on disk.\"}, {\"content\": \"mira_k expects the model to fit fully on the card with 16k context if memory is not wasted.\"}, {\"content\": \"mira_k plans to benchmark the model after build.\"}, {\"content\": \"mira_k reports the 27B Q4_K_M model fits at 16k with flash attention on.\"}, {\"content\": \"mira_k reports 512 prompt tokens faster than 1024 prompt tokens at 16k with flash attention on.\"}, {\"content\": \"mira_k reports 1810 vs 2140 tok/s for 512 vs 1024 prompt tokens at 16k with flash attention on.\"}, {\"content\": \"mira_k reports 31 tok/s decode at 512 prompt tokens at 16k with flash attention on.\"}, {\"content\": \"mira_k reports 31 tok/s decode at 128 gen tokens at 16k with flash attention on.\"}, {\"content\": \"mira_k tested 32k and found the model runs out of memory on the first big prompt.\"}, {\"content\": \"mira_k reports a cudaMalloc failure at 32k with about 1.5 GB more than free memory after weights.\"}, {\"content\": \"mira_k reports 24k works at the edge with 23.1 GB used.\"}, {\"content\": \"mira_k k"
+ },
+ {
+  "id": "V2-long-0708",
+  "ok": false,
+  "finished": false,
+  "tokens": 5513,
+  "n_pred": 0,
+  "n_gold": 36,
+  "text": "{\"explicit\": [{\"content\": \"lena reports a suspicious invoice forwarding rule in the finance-jo mailbox (reported 2026-11-02 08:12).\"}, {\"content\": \"lena reports the rule was created 2026-10-28 at 14:02 (reported 2026-11-02 08:12).\"}, {\"content\": \"lena saved the rule definition in the incident folder (reported 2026-11-02 08:31).\"}, {\"content\": \"lena exported the mailbox sign in log from 2026-10-20 onward (reported 2026-11-02 08:31).\"}, {\"content\": \"lena reports the 2026-10-28 sign in was successful with the correct password (reported 2026-11-02 08:31).\"}, {\"content\": \"lena reports the forwarding rule was disabled at 2026-11-02 08:40 (reported 2026-11-02 08:44).\"}, {\"content\": \"lena reports fourteen forwarded messages between 2026-10-28 and 2026-11-02 08:40 (reported 2026-11-02 08:44).\"}, {\"content\": \"lena reports the forwarded messages were supplier invoices with PDF attachments (reported 2026-11-02 09:25).\"}, {\"content\": \"lena reports twelve supplier invoices contained only invoice numbers and no sensitive data beyond those numbers (reported 2026-11-02 09:25).\"}, {\"content\": \"lena reports three supplier bank account details were found (reported 2026-11-02 09:25).\"}, {\"content\": \"lena reports the forwarding address fetched the PDFs only from the forwarding address (reported 2026-11-02 09:25).\"}, {\"content\": \"lena reports two suppliers account for the three bank details (reported 2026-11-02 09:52).\"}, {\"content\": \"lena reports one supplier had two forwarded messages and the oth"
+ },
+ {
+  "id": "V2-long-0407",
+  "ok": false,
+  "finished": false,
+  "tokens": 6081,
+  "n_pred": 0,
+  "n_gold": 31,
+  "text": "{\"explicit\": [{\"content\": \"thesis-helper started descriptive pass on survey_wave2_clean.csv (reported 2026-03-11 10:23).\"}, {\"content\": \"thesis-helper requested exact counts for review (reported 2026-03-11 10:23).\"}, {\"content\": \"thesis-helper reports 1,184 rows read (reported 2026-03-11 10:24).\"}, {\"content\": \"thesis-helper reports 1,021 complete responses (reported 2026-03-11 10:24).\"}, {\"content\": \"thesis-helper reports 163 partial responses (reported 2026-03-11 10:24).\"}, {\"content\": \"thesis-helper reports 0 duplicate IDs removed (reported 2026-03-11 10:24).\"}, {\"content\": \"thesis-helper reports mean age 41.3 years (reported 2026-03-11 10:24).\"}, {\"content\": \"thesis-helper reports median age 40 (reported 2026-03-11 10:24).\"}, {\"content\": \"thesis-helper reports age range 18 to 79 (reported 2026-03-11 10:24).\"}, {\"content\": \"thesis-helper reports 548 complete female (reported 2026-03-11 10:28).\"}, {\"content\": \"thesis-helper reports 449 complete male (reported 2026-03-11 10:28).\"}, {\"content\": \"thesis-helper reports 24 other or not stated (reported 2026-03-11 10:28).\"}, {\"content\": \"thesis-helper reports 53.7 percent female in complete cases (reported 2026-03-11 10:28).\"}, {\"content\": \"thesis-helper reports 44.0 percent male in complete cases (reported 2026-03-11 10:28).\"}, {\"content\": \"thesis-helper reports 2.3 percent other or not stated in complete cases (reported 2026-03-11 10:28).\"}, {\"content\": \"thesis-helper reports missing gender coded as other rather than missing (r"
+ },
+ {
+  "id": "V2-long-1804",
+  "ok": false,
+  "finished": false,
+  "tokens": 6331,
+  "n_pred": 0,
+  "n_gold": 36,
+  "text": "{\"explicit\": [{\"content\": \"hana_s asked to help diagnose a weird internet page loading and stopping after 2026-03-06 19:13.\"}, {\"content\": \"hana_s reports the Pihole dashboard shows the LAN is fine.\"}, {\"content\": \"hana_s has a little time to look at the setup.\"}, {\"content\": \"hana_s identifies the ISP box as a Vodafone-type device without knowing its model.\"}, {\"content\": \"hana_s reports the TP-Link Archer AX55 is behind the ISP box and handles WLAN and routing.\"}, {\"content\": \"hana_s reports the TP-Link LAN address is <lan-ip> and the Pihole LAN address is <lan-ip>.\"}, {\"content\": \"hana_s reports the Pihole is set as DNS for everyone on the router.\"}, {\"content\": \"hana_s reports the ISP box is likely <lan-ip>.\"}, {\"content\": \"hana_s reports the TP-Link WAN address is <lan-ip>.\"}, {\"content\": \"hana_s identifies double NAT as not ideal.\"}, {\"content\": \"hana_s plans to paste the Pihole log from 2026-03-06.\"}, {\"content\": \"hana_s reports the Pihole gravity block is for img.example-shop.test, a tracker list.\"}, {\"content\": \"hana_s reports the rest of the Pihole traffic is normal.\"}, {\"content\": \"hana_s reports Chrome on the laptop and Safari on the phone both block img.example-shop.test.\"}, {\"content\": \"hana_s did not add the img blocklist itself.\"}, {\"content\": \"hana_s added img.example-shop.test to the Pihole allowlist.\"}, {\"content\": \"hana_s forced a gravity update.\"}, {\"content\": \"hana_s reports the page loaded fine on the laptop.\"}, {\"content\": \"hana_s report"
+ },
+ {
+  "id": "V2-long-0101",
+  "ok": false,
+  "finished": false,
+  "tokens": 6730,
+  "n_pred": 0,
+  "n_gold": 56,
+  "text": "{\"explicit\": [{\"content\": \"nadia needs to plan a week of food for two adults and one kid on a no-cilantro, no-mushroom strike (reported 2026-03-09 18:31).\"}, {\"content\": \"nadia has about 280 zloty for groceries (reported 2026-03-09 18:31).\"}, {\"content\": \"nadia reports the fridge mostly contains eggs and a half jar of pickles (reported 2026-03-09 18:31).\"}, {\"content\": \"nadia plans seven home dinners (reported 2026-03-09 18:34).\"}, {\"content\": \"nadia plans packed lunches for herself and Ilan (reported 2026-03-09 18:34).\"}, {\"content\": \"nadia plans leftover-based kid meals (reported 2026-03-09 18:34).\"}, {\"content\": \"nadia reports the oven works (reported 2026-03-09 18:34).\"}, {\"content\": \"nadia is trying to increase fibre intake (reported 2026-03-09 18:34).\"}, {\"content\": \"nadia is out of oats (reported 2026-03-09 18:34).\"}, {\"content\": \"nadia accepts the draft chicken-thigh, carrot-and-potato plan at about 46 zl (reported 2026-03-09 18:41).\"}, {\"content\": \"nadia accepts lentil dal with rice at 28 zl (reported 2026-03-09 18:41).\"}, {\"content\": \"nadia accepts leftover dal plus fried egg for lunch (reported 2026-03-09 18:41).\"}, {\"content\": \"nadia accepts pasta with tomato sauce for dinner (reported 2026-03-09 18:41).\"}, {\"content\": \"nadia accepts chicken soup from the Monday carcass if saved (reported 2026-03-09 18:41).\"}, {\"content\": \"nadia accepts bread at 14 zl (reported 2026-03-09 18:41).\"}, {\"content\": \"nadia accepts chicken pancakes with cottage cheese for the kid at 31 "
+ },
+ {
+  "id": "V2-long-0502",
+  "ok": false,
+  "finished": false,
+  "tokens": 6730,
+  "n_pred": 0,
+  "n_gold": 62,
+  "text": "{\"explicit\": [{\"content\": \"ines selected Ferrante, The Lost Daughter, 2008 original with the 2006 Italian edition available in the library (reported 2026-05-04 22:14).\"}, {\"content\": \"ines read the book twice (reported 2026-05-04 22:14).\"}, {\"content\": \"ines plans a book-club meeting on 14 May 2026 at 19:30 at Lou\u2019s flat (reported 2026-05-04 22:14).\"}, {\"content\": \"ines will lead the discussion (reported 2026-05-05 04:38).\"}, {\"content\": \"ines wants to clarify that the book is about the choice not to be a mother rather than motherhood (reported 2026-05-05 04:38).\"}, {\"content\": \"ines identifies Leda as not sympathetic (reported 2026-05-05 04:38).\"}, {\"content\": \"ines initially disliked Leda and later liked her (reported 2026-05-05 04:38).\"}, {\"content\": \"ines is putting four discussion questions in the group doc (reported 2026-05-05 11:02).\"}, {\"content\": \"ines asks whether Leda ever regrets the choice and where the text shows it (reported 2026-05-05 11:02).\"}, {\"content\": \"ines asks why the author gives Leda the doll and what changes after she takes it (reported 2026-05-05 11:02).\"}, {\"content\": \"ines asks whether the translation by Ann Goldstein is too smooth for the tone (reported 2026-05-05 11:02).\"}, {\"content\": \"ines asks whether the ending is an ending or a pause (reported 2026-05-05 11:02).\"}, {\"content\": \"ines plans to bring the group doc printed on 14 May (reported 2026-05-05 11:02).\"}, {\"content\": \"ines does not want to do both a book and a film on the same week (r"
+ },
+ {
+  "id": "B-040",
+  "ok": true,
+  "finished": true,
+  "tokens": 519,
+  "n_pred": 0,
+  "n_gold": 0,
+  "text": "{\"explicit\": []}"
+ },
+ {
+  "id": "E-030",
+  "ok": true,
+  "finished": true,
+  "tokens": 713,
+  "n_pred": 0,
+  "n_gold": 0,
+  "text": "{\"explicit\": []}"
+ },
+ {
+  "id": "E-010",
+  "ok": true,
+  "finished": true,
+  "tokens": 821,
+  "n_pred": 0,
+  "n_gold": 0,
+  "text": "{\"explicit\": []}"
+ },
+ {
+  "id": "V2-empty-0102",
+  "ok": true,
+  "finished": true,
+  "tokens": 1009,
+  "n_pred": 0,
+  "n_gold": 0,
+  "text": "{\"explicit\": []}"
+ },
+ {
+  "id": "V2-short-0703",
+  "ok": false,
+  "finished": false,
+  "tokens": 1494,
+  "n_pred": 0,
+  "n_gold": 0,
+  "text": "{\"explicit\": [{\"content\": \"mira_k could not tell from the window whether it was still raining at the pharmacy (reported 2026-03-06 07:32).\"}, {\"content\": \"mira_k wanted to know whether the van would arrive before finishing (reported 2026-03-06 07:36).\"}, {\"content\": \"mira_k wanted to know if the new flat had a lift (reported 2026-03-06 07:40).\"}, {\"content\": \"mira_k wanted to know the new flat\u2019s floor count (reported 2026-03-06 07:40).\"}, {\"content\": \"mira_k wanted to know whether the sofa would fit through the new door (reported 2026-03-06 07:43).\"}, {\"content\": \"mira_k planned to measure the sofa at home (reported 2026-03-06 07:47).\"}, {\"content\": \"mira_k asked about the new flat\u2019s heating (reported 2026-03-06 07:47).\"}, {\"content\": \"mira_k wanted the kitchen shop\u2019s delivery time (reported 2026-03-06 07:51).\"}, {\"content\": \"mira_k had not yet asked about the bank deposit (reported 2026-03-06 07:53).\"}, {\"content\": \"mira_k had not yet asked about the bank deposit (reported 2026-03-06 07:53).\"}, {\"content\": \"mira_k had not yet asked about the bank deposit (reported 2026-03-06 07:53).\"}, {\"content\": \"mira_k had not yet asked about the bank deposit (reported 2026-03-06 07:53).\"}, {\"content\": \"mira_k had not yet asked about the bank deposit (reported 2026-03-06 07:53).\"}, {\"content\": \"mira_k had not yet asked about the bank deposit (reported 2026-03-06 07:53).\"}, {\"content\": \"mira_k had not yet asked about the bank deposit (reported 2026-03-06 07:53).\"}, {\"content\": \"mira_k had "
+ }
+]

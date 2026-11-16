@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-16T09:15:00Z",
+  "generated_at_utc": "2026-11-16T11:00:00Z",
   "tokenizer": {
     "model": "LiquidAI/LFM3-1.7B-Base",
     "revision": "7bca5038823c0d0f14efe06439109354a10e014c",
@@ -58,15 +58,16 @@
       "truncation_mechanism": "train_deriver.py:encode_row middle-truncated prompt tokens while preserving full completion gold before post-encode length assertion"
     },
     {
-      "run": "deriver_part4_in_flight",
+      "run": "deriver_part4",
       "package": "honcho-deriver-v47-training-only",
       "train_rows": 691,
       "corpus_full_tokens_per_pass": 2144712,
-      "executed_tokens_per_pass": "pending_completion (expected 2144712 - 5090 = 2139622 at max_seq_len=5600)",
+      "executed_tokens_per_pass": 2139622,
       "silent_prompt_shortening_tokens_per_pass": 5090,
       "max_seq_len": 5600,
       "over_5600_rows_count": 11,
-      "truncation_mechanism": "Part 4 launched prior to 2026-11-16 script patch; future runs default to --over-limit-policy reject + admission_receipt.json"
+      "truncation_mechanism": "Part 4 launched prior to 2026-11-16 script patch; token-summary.json confirms 2,139,622 executed tokens (2,144,712 - 5,090) and 835,861 supervised tokens across 691 rows. Future runs default to --over-limit-policy reject + admission_receipt.json.",
+      "executed_supervised_tokens_per_pass": 835861
     }
   ],
   "over_5600_rows_detail": {

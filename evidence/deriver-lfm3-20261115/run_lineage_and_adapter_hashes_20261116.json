@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-16T09:15:00Z",
+  "generated_at_utc": "2026-11-16T11:00:00Z",
   "base_model": {
     "hf_model": "LiquidAI/LFM3-1.7B-Base",
     "hf_revision": "7bca5038823c0d0f14efe06439109354a10e014c",
@@ -246,35 +246,53 @@
         "size_bytes": 54214720,
         "sha256": "fbd1797209af124d9faefaa9da89088ac31892f34a8b4a4b410c109bfd610229"
       }
-    }
-  },
-  "deriver_part4_in_flight": {
-    "kernel_ref": "<kaggle-user>/p2000-deriver-v40-full-part4",
-    "live_status": "RUNNING (not interrupted)",
-    "lineage_classification": "warm_start_branch_from_part1_pct80 (NOT sequential continuation from Part 3; NOT full-state resume)",
-    "dataset": "honcho-deriver-v47-training-only",
-    "init_adapter_source": "deriver_part1/full_part1/checkpoint-pct-80",
-    "init_adapter_sha256": "d27bb70dce5e67976994a6e8f951145e2c600e5293a031c133ee73a53b430faa",
-    "matches_part1_pct80_sha256": true,
-    "optimizer_restored": false,
-    "scheduler_restored": false,
-    "rng_restored": false,
-    "hyperparams": {
-      "role": "deriver",
-      "lora_r": 16,
-      "lora_alpha": 32,
-      "target_modules": "attn-mlp",
-      "lr": 0.0001,
-      "epochs": 2,
-      "effective_batch": 8,
-      "microbatch": 1,
-      "max_seq_len": 5600,
-      "milestones": "20,40,60,80",
-      "milestone_probe_rows": 12,
-      "milestone_max_new_tokens": 256,
-      "eval_max_new_tokens": 1800,
-      "time_budget_s": 12000,
-      "ddp_timeout": 3600
+    },
+    "deriver_part4": {
+      "lineage_mode": "warm_start_branch_from_part1_pct80",
+      "init_adapter_arg": "/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/init_adapter_pct80",
+      "init_adapter_safetensors_sha256": "d27bb70dce5e67976994a6e8f951145e2c600e5293a031c133ee73a53b430faa",
+      "optimizer_restored": false,
+      "scheduler_restored": false,
+      "rng_restored": false,
+      "train_data_sha256": "b5a54544259e1569f2b7b30b12e160361c8c37b36643c61534c1665fac795da4",
+      "final_adapter_sha256": "85070bff55fbf57bd5e8ae0a91451176426271e60ff853116724d6c72f02965e",
+      "checkpoint_pct_20_adapter_sha256": "5d4fdeb33c556c3ea985bc25d533a1cacdb2080db4bc2e937f9ac2ac2de62c10",
+      "checkpoint_pct_40_adapter_sha256": "13a8f73627128ac74a85b17c23d6bcb4d56b8530b9396f4255ab92404886a780",
+      "checkpoint_pct_60_adapter_sha256": "c17b128042a7b931b4088e88ec8417ecac19ca7d762c1722ea03426f04722d4b",
+      "checkpoint_pct_80_adapter_sha256": "7f1bf90542cb73625296c8846421e0b6adca8b1b7ee3ba4fd6fae1e3e246780a",
+      "lora_config": {
+        "r": 16,
+        "lora_alpha": 32,
+        "target_modules": [
+          "w2",
+          "o_proj",
+          "w3",
+          "q_proj",
+          "v_proj",
+          "w1",
+          "k_proj"
+        ]
+      },
+      "checkpoint_latest": {
+        "global_step": 174,
+        "has_optimizer_pt": true,
+        "has_scheduler_pt": true,
+        "has_rng_state_0": true,
+        "has_rng_state_1": true
+      },
+      "exported_ggufs": {
+        "peak_pct20": {
+          "filename": "deriver-v47-peak-lora.gguf",
+          "size_bytes": 54214720,
+          "sha256": "ee211e0724770d4cd8a524ccd111475674189f628be398e2cfdaf0a372298f21"
+        },
+        "final_adapter": {
+          "filename": "deriver-v47-lora.gguf",
+          "size_bytes": 54214624,
+          "sha256": "eb96f8ca9183d7167acbc60f9a9151b4d303d5800fd731bb151e063d282e5d88"
+        }
+      },
+      "active_deriver_symlink": "deriver-v47-peak-lora.gguf"
     }
   }
 }

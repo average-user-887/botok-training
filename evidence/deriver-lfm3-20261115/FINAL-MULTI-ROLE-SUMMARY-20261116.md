@@ -64,7 +64,7 @@ All 5 active symlinks in `<models-root>/gguf/p2000-roles/` resolve to readable `
 | Role / Component | Active Symlink | Resolved Target | Size (Bytes) | Size (MiB) | Primary Eval / Status |
 |---|---|---|---|---|---|
 | Base Model (`Q4_K_M`) | - | `lfm3-1.7b-base-Q4_K_M.gguf` | 1,099,627,488 | 1048.69 | GGUF v3 verified |
-| `deriver` (`r=16`) | `deriver-lora.gguf` | `deriver-v20-lora.gguf` | 54,214,624 | 51.70 | Held-out v14 F1 `0.2205` (Part 2) |
+| `deriver` (`r=16`) | `deriver-lora.gguf` | `deriver-v47-peak-lora.gguf` | 54,214,720 | 51.70 | Held-out v14 F1 `0.4018` (`gtp`) / `0.3961` (`tp`), schema `0.7500` (Part 4 `pct-20`; `v47_final` F1 `0.3620`; `v20` `n=1200` `0.2205`) |
 | `scribe` (`r=16`) | `scribe-lora.gguf` | `scribe-v2-lora.gguf` | 54,214,624 | 51.70 | Scribe6 F1 `0.6456`, Scribe8 F1 `0.7637` |
 | `judge` (`r=16`) | `judge-lora.gguf` | `judge-v1-lora.gguf` | 54,214,720 | 51.70 | Judge12 BOS verdict `0.7500` / tokF1 `0.9667` |
 | `verifier` (`r=16`) | `verifier-lora.gguf` | `verifier-v2-lora.gguf` | 54,214,624 | 51.70 | Smoke dev6 tokF1 `0.5957`; Log8 tokF1 `0.5446` (schema `1.0000`) |
@@ -77,7 +77,7 @@ All 5 active symlinks in `<models-root>/gguf/p2000-roles/` resolve to readable `
 
 | Role | Held-Out Dataset (`n`) | Unadapted Base (`lfm3-1.7b-base-Q4_K_M`) | Best / Active LoRA (`r=16`) |
 |---|---|---|---|
-| `deriver` | `honcho-deriver-v14-evaluation-only` (`n=4`, `n_predict=1200`) | Probe 7-row base: `schema_valid=0.0000`, `eos=0.0000`, `f1=0.0000`; Historical 80-fx base: `schema_valid=0.61`, `F1=0.08` (not run on `v14`) | `v20` (active): `schema_valid=0.5000`, `f1=0.2205`, `token_f1=0.8535` (`v18`: `f1=0.1815`; `v33`: `f1=0.1754`; `-n 768`: `f1=0.0000`) |
+| `deriver` | `honcho-deriver-v14-evaluation-only` (`n=4`, `n_predict=2048` matched / `1200` historical) | Matched `v14` (`n=2048`): `schema_valid=0.0000`, `eos=0.2500`, `f1=0.0000` (Probe 7-row: `0.0000`; Historical 80-fx: `schema_valid=0.61`, `F1=0.08`) | **`v47_peak` (`pct-20`, active)**: `schema_valid=0.7500` (`3/4` EOS), `f1_gtp=0.4018`, `f1_tp=0.3961`; `v47_final`: `schema_valid=0.7500`, `f1_gtp=0.3620`; `v20` (`n=1200` / `n=2048`): `0.2205` / `0.0000`; `v18`: `0.1815`; `v33`: `0.1754` |
 | `scribe` | `scribe8` (`n=8`, `n_predict=1200`, BOS) | Not evaluated separately on `scribe8` | `scribe-v2`: `schema_valid=0.8750`, `source_bind=0.7500`, `pre_cutoff=0.6250`, `token_f1_micro=0.7637`, `empty_fp=0.0000` (`scribe6`: `f1=0.6456`, `schema=1.0000`) |
 | `judge` | `judge12` (`n=12`, `n_predict=512`) | Not evaluated separately on `judge12`; No-BOS LoRA parity: `schema_4key=0.3333`, `verdict_acc=0.1667`, `tok_f1=0.9180`, `4/12` EOS | `judge-v1` (BOS): `schema_4key=1.0000` (`12/12` EOS), `strict_checker=0.9167`, `verdict_acc=0.7500`, `false_pass=0`, `tok_f1=0.9667` |
 | `verifier` (`log-analyser`) | `log8` (`n=8`, `n_predict=1800`, BOS) | `json_valid=0.0000`, `schema_valid=0.0000`, `evidence_ids=0.0000`, `all_eos=false`, `token_f1_micro=0.1536`, `token_f1_macro=0.1227` | `verifier-v2` (BOS): `json_valid=1.0000`, `schema_valid=1.0000`, `evidence_ids=1.0000`, `all_eos=true`, `token_f1_micro=0.5446`, `empty_fp=1.0000` |
@@ -85,9 +85,9 @@ All 5 active symlinks in `<models-root>/gguf/p2000-roles/` resolve to readable `
 
 Structured JSON counterpart: [base_vs_lora_5role_summary.json](base_vs_lora_5role_summary.json).
 
-## 5. Deriver Part 4 (`v47`) Launch & Live GDrive Sync (2026-11-16T08:31Z)
+## 5. Deriver Part 4 (`v47`) Completion & Matched `v14` Evaluation (2026-11-16)
 
-- **GDrive Metadata Sync**: Confirmed zero brand-new archives since `honcho-deriver-v47-training-only.zip` (`56` total `.zip` archives; `v47` has `691` train / `4` dev windows in `STATISTICS.json`, `2,144,712` tokens/pass, `max_full_tokens=6398`, `heldout_included=false`).
-- **Part 4 Run**: `<kaggle-user>/p2000-deriver-v40-full-part4` (initialized from `deriver_part1/full_part1/checkpoint-pct-80`, `lr=1e-4`, `epochs=2`, `691` train / `24` dev rows, `planned_steps=174`, `estimated_wall_s=4815`, pushed `2026-11-16T08:07:01Z`).
-- **Live Kernel Status**: `KernelWorkerStatus.RUNNING` (checked `2026-11-16T08:31:22Z`).
-- **Sanitized Snapshots**: [STATE_snapshot.json](STATE_snapshot.json), [full_part4_launch.json](full_part4_launch.json), and [p2000_bundle_verification.json](p2000_bundle_verification.json).
+- **GDrive Metadata Sync**: Confirmed zero brand-new archives since `honcho-deriver-v47-training-only.zip` (`56` total `.zip` archives; `v47` has `691` train / `4` dev windows in `STATISTICS.json`, `2,144,712` full tokens/pass -> `2,139,622` executed tokens/pass, `max_full_tokens=6398`, `heldout_included=false`).
+- **Part 4 Run**: `<kaggle-user>/p2000-deriver-v40-full-part4` (`KernelWorkerStatus.COMPLETE`, warm-start branch via `--init-adapter` from `deriver_part1/full_part1/checkpoint-pct-80`, fresh optimizer/scheduler/RNG, `lr=1e-4`, `epochs=2`, `691` train / `24` dev rows, `174/174` steps, `p95=25.66 s/step`, `0` OOM/NaN skips, `dev_f1=0.2442`).
+- **Matched `v14` (`n=2048`, CPU, BOS `124894`, `temp=0.0`)**: `v47_peak` (`deriver-v47-peak-lora.gguf`, `pct-20`) achieved `F1_gtp=0.4018` (`F1_tp=0.3961`, `schema_valid=0.7500`), beating `v47_final` (`F1_gtp=0.3620`, `schema_valid=0.7500`), `v20` (`0.0000` matched / `0.2205` historical `n=1200`), and unadapted `base` (`0.0000`). Active `deriver-lora.gguf` symlink updated to `deriver-v47-peak-lora.gguf`.
+- **Sanitized Packets**: [deriver-2xt4-full-part4-v47-20261116/README.md](deriver-2xt4-full-part4-v47-20261116/README.md), [STATE_snapshot.json](STATE_snapshot.json), [full_part4_launch.json](full_part4_launch.json), and [p2000_bundle_verification.json](p2000_bundle_verification.json).

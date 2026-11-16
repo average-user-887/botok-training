@@ -1,0 +1,18 @@
+{
+  "dev_n": 24,
+  "dev_schema_valid": 0.7083333333333334,
+  "dev_precision": 0.3389830508474576,
+  "dev_recall": 0.19082125603864733,
+  "dev_f1": 0.24418514797929064,
+  "dev_token_f1": 0.6112624140377684,
+  "empty_fp_rate": 0.0,
+  "long_window_recall": 0.0,
+  "short_window_recall": 0.4876543209876543,
+  "pred_items": 236,
+  "gold_items": 414,
+  "non_empty_pred_rate": 0.375,
+  "empty_collapse_detected": false,
+  "role": "deriver",
+  "train_steps": 174,
+  "elapsed_s": 5154.993684768677
+}

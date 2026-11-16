@@ -7,7 +7,7 @@
   "pinned_evidence_commit": "e32b9941cc9c6ecfa1177f652a262a10ce1417e2",
   "part4_status": {
     "kernel_ref": "<kaggle-user>/p2000-deriver-v40-full-part4",
-    "live_status": "RUNNING (not interrupted)",
+    "live_status": "COMPLETE (174/174 steps, p95=25.66s, 0 OOM/NaN skips)",
     "lineage_classification": "warm_start_branch_from_part1_pct80 (NOT sequential continuation from Part 3; NOT full-state resume)",
     "dataset": "honcho-deriver-v47-training-only",
     "init_adapter_source": "deriver_part1/full_part1/checkpoint-pct-80",
@@ -32,7 +32,84 @@
       "eval_max_new_tokens": 1800,
       "time_budget_s": 12000,
       "ddp_timeout": 3600
-    }
+    },
+    "output_adapter_hashes": {
+      "checkpoint-pct-20": {
+        "size_bytes": 54229296,
+        "sha256": "5d4fdeb33c556c3ea985bc25d533a1cacdb2080db4bc2e937f9ac2ac2de62c10"
+      },
+      "checkpoint-pct-40": {
+        "size_bytes": 54229296,
+        "sha256": "13a8f73627128ac74a85b17c23d6bcb4d56b8530b9396f4255ab92404886a780"
+      },
+      "checkpoint-pct-60": {
+        "size_bytes": 54229296,
+        "sha256": "c17b128042a7b931b4088e88ec8417ecac19ca7d762c1722ea03426f04722d4b"
+      },
+      "checkpoint-pct-80": {
+        "size_bytes": 54229296,
+        "sha256": "7f1bf90542cb73625296c8846421e0b6adca8b1b7ee3ba4fd6fae1e3e246780a"
+      },
+      "checkpoint-160": {
+        "size_bytes": 54229296,
+        "sha256": "49626752451550a0eaec38a846122ba3eaec8e7a8290496dc8cc2324e1c6fda3"
+      },
+      "checkpoint-170": {
+        "size_bytes": 54229296,
+        "sha256": "0d137fb8c08fe39a915e416a5d0d05f5cdefcfc081354b5ec6dece38765b2323"
+      },
+      "checkpoint-174": {
+        "size_bytes": 54229296,
+        "sha256": "85070bff55fbf57bd5e8ae0a91451176426271e60ff853116724d6c72f02965e"
+      },
+      "checkpoint-latest": {
+        "size_bytes": 54229296,
+        "sha256": "85070bff55fbf57bd5e8ae0a91451176426271e60ff853116724d6c72f02965e"
+      },
+      "adapter": {
+        "size_bytes": 54229296,
+        "sha256": "85070bff55fbf57bd5e8ae0a91451176426271e60ff853116724d6c72f02965e"
+      }
+    },
+    "matched_v14_n2048": {
+      "base": {
+        "schema_valid": 0.0,
+        "stop_eos_rate": 0.25,
+        "precision": 0.0,
+        "recall_gtp": 0.0,
+        "f1_gtp": 0.0,
+        "recall_tp": 0.0,
+        "f1_tp": 0.0
+      },
+      "v20": {
+        "schema_valid": 0.25,
+        "stop_eos_rate": 0.25,
+        "precision": 0.0,
+        "recall_gtp": 0.0,
+        "f1_gtp": 0.0,
+        "recall_tp": 0.0,
+        "f1_tp": 0.0
+      },
+      "v47_peak_pct20": {
+        "schema_valid": 0.75,
+        "stop_eos_rate": 0.75,
+        "precision": 0.4881,
+        "recall_gtp": 0.3415,
+        "f1_gtp": 0.4018,
+        "recall_tp": 0.3333,
+        "f1_tp": 0.3961
+      },
+      "v47_final": {
+        "schema_valid": 0.75,
+        "stop_eos_rate": 0.75,
+        "precision": 0.4545,
+        "recall_gtp": 0.3008,
+        "f1_gtp": 0.362,
+        "recall_tp": 0.2846,
+        "f1_tp": 0.35
+      }
+    },
+    "active_deriver_symlink": "deriver-v47-peak-lora.gguf"
   },
   "recommendation_disposition": [
     {

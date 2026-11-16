@@ -18,7 +18,7 @@ Full structured diagnostics are published in:
   - Part 1 (`v18`, 352 rows): `1,001,931` corpus -> `996,841` executed (`-5,090`)
   - Part 2 (`v20`, 392 rows): `1,137,108` corpus -> `1,132,018` executed (`-5,090`)
   - Part 3 (`v33`, 580 rows): `1,769,485` corpus -> `1,764,395` executed (`-5,090`)
-  - Part 4 (`v47`, 691 rows): `2,144,712` full tokens launched at `max_seq_len=5600` prior to patch (same 11 over-limit rows, `966` facts, `5,090` excess prompt tokens).
+  - Part 4 (`v47`, 691 rows): `2,144,712` full tokens -> `2,139,622` executed tokens (`835,861` supervised tokens; exact `-5,090` tokens/pass across the same 11 over-limit rows at `max_seq_len=5600` prior to patch).
 - **`dev_24.sft.jsonl` Assembly & Hashes**:
   - Built from the 4 author-visible `honcho-deriver` dev windows (`dev.sft.jsonl` SHA-256 `a7a726f589249ee126bd93a01862954eb37f95c6599acb574d3db16f32278b1e`) + 20 length-stratified rows from `claude-deriver-v2-sft/v2_dev.jsonl`.
   - Part 4 `dev_24.sft.jsonl` SHA-256: `4454d0f194c41bea29b3098d5aee6d8b9305db841272e73eee7010bebf1ac22a`.
@@ -31,11 +31,15 @@ Full structured diagnostics are published in:
 - **Pruner (`pruner10`) & Verifier (`log8`)**: Matched unadapted base vs LoRA (`BOS`) confirms base `0/10` / `0/8` format & EOS validity, while LoRA achieves `1.0` schema/format valid and `1.0` `empty_fp_rate` (semantic empty-abstention gap targeted by new addenda).
 - **Scribe (`scribe8`)**: `7/8` schema valid, `7/8` `as_of` match, `5/8` pre-cutoff compliant, `0/1` empty FP.
 
-## (d) Part 4 Exact Lineage & Status
-- **Status**: `<kaggle-user>/p2000-deriver-v40-full-part4` remains `RUNNING` (not interrupted).
+## (d) Part 4 Exact Lineage & Completion Outcome
+- **Status**: `<kaggle-user>/p2000-deriver-v40-full-part4` **COMPLETE** (`174/174` steps, `p95=25.66 s/step`, `0` OOM/NaN skips, DDP both T4s verified, `dev_f1=0.2442` on `dev_24`, `0.0` empty FP).
 - **Lineage**: Warm-start branch initialized via `--init-adapter` from `deriver_part1/full_part1/checkpoint-pct-80` (`adapter_model.safetensors` SHA-256 `d27bb70dce5e67976994a6e8f951145e2c600e5293a031c133ee73a53b430faa`) with fresh AdamW optimizer, cosine scheduler, and RNG (`optimizer_restored=false`, `scheduler_restored=false`, `rng_restored=false`). It is **not** sequential continuation from Part 3 and **not** a full-state resume.
+- **Output Hashes & Matched `v14` (`n_predict=2048`, `temperature=0.0`, explicit BOS `124894`)**:
+  - `deriver-v47-peak-lora.gguf` (`checkpoint-pct-20` SHA-256 `5d4fdeb33c556c3ea985bc25d533a1cacdb2080db4bc2e937f9ac2ac2de62c10`, GGUF SHA-256 `ee211e0724770d4cd8a524ccd111475674189f628be398e2cfdaf0a372298f21`): `schema_valid=0.7500` (`3/4` EOS), `F1_gtp=0.4018` (`P=0.4881`, `R_gtp=0.3415`), `F1_tp=0.3961`, `empty_fp=0.0` — **promoted to active `deriver-lora.gguf` symlink**.
+  - `deriver-v47-lora.gguf` (final `adapter/` SHA-256 `85070bff55fbf57bd5e8ae0a91451176426271e60ff853116724d6c72f02965e`, GGUF SHA-256 `eb96f8ca9183d7167acbc60f9a9151b4d303d5800fd731bb151e063d282e5d88`): `schema_valid=0.7500` (`3/4` EOS), `F1_gtp=0.3620` (`P=0.4545`, `R_gtp=0.3008`), `F1_tp=0.3500`, `empty_fp=0.0`.
+  - Matched `v20` (`n=2048`): `schema_valid=0.2500`, `F1=0.0000` (repetition loops on positives); matched `base` (`n=2048`): `schema_valid=0.0000`, `F1=0.0000`.
+- **Details**: [deriver-2xt4-full-part4-v47-20261116/README.md](deriver-2xt4-full-part4-v47-20261116/README.md), [part4_admission_and_lineage_receipt.json](deriver-2xt4-full-part4-v47-20261116/part4_admission_and_lineage_receipt.json).
 
 ## (e) Adopted vs. Deferred Recommendations
-- **Adopted now**: `train_deriver.py` patched (`--over-limit-policy=reject` default, `admission_receipt.json`, untruncated `dev_outputs.json` + `stop_type`/`tp`/`gtp`/`fp`/`fn`/`capped_count`, milestone 256-tok hard cap removed, lineage & SHA-256 fields); CPU unit tests pass (`22/24`, only 2 legacy sprint payload fixture assertions fail due to Part 4 payload layout). All completed run diagnostics (`part1` mirror, `dev_outputs.json`, confusion matrices, `check_judge_predictions` reports) backfilled to GitHub.
-- **Pending Part 4 completion**: Final Part 4 completion receipt, `adapter_model.safetensors` hash, and matched held-out comparisons.
+- **Adopted now**: `train_deriver.py` patched (`--over-limit-policy=reject` default, `admission_receipt.json`, untruncated `dev_outputs.json` + `stop_type`/`tp`/`gtp`/`fp`/`fn`/`capped_count`, milestone 256-tok hard cap removed, lineage & SHA-256 fields); CPU unit tests pass (`22/24`, only 2 legacy sprint payload fixture assertions fail due to Part 4 payload layout). Part 4 completion receipts, output adapter SHA-256s, matched `v14` `n=2048` base/v20/v47 comparisons, and all completed run diagnostics are published on GitHub.
 - **Deferred (separate runtime gate)**: Live P2000 shared-service VRAM/latency measurement (`DEPLOYMENT-GATES.md`); `1,657.2 MiB` remains explicitly labeled a file-size-plus-KV estimate.

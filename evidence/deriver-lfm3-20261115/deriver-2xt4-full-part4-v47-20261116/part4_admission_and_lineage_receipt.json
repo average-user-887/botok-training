@@ -1,0 +1,88 @@
+{
+  "run": "deriver_part4",
+  "kernel_ref": "<kaggle-user>/p2000-deriver-v40-full-part4",
+  "kernel_status": "COMPLETE",
+  "dataset": "honcho-deriver-v47-training-only",
+  "lineage": {
+    "classification": "warm_start_branch_from_part1_pct80 (NOT sequential continuation from Part 3; NOT full-state resume)",
+    "init_adapter_source": "deriver_part1/full_part1/checkpoint-pct-80",
+    "init_adapter_arg": "/kaggle/input/datasets/<kaggle-user>/p2000-deriver-v11-sprint-payload/init_adapter_pct80",
+    "init_adapter_safetensors_sha256": "d27bb70dce5e67976994a6e8f951145e2c600e5293a031c133ee73a53b430faa",
+    "optimizer_restored": false,
+    "scheduler_restored": false,
+    "rng_restored": false,
+    "checkpoint_latest": {
+      "global_step": 174,
+      "has_optimizer_pt": true,
+      "has_scheduler_pt": true,
+      "has_rng_state_0": true,
+      "has_rng_state_1": true
+    },
+    "output_adapter_safetensors_sha256": {
+      "checkpoint-pct-20": {
+        "size_bytes": 54229296,
+        "sha256": "5d4fdeb33c556c3ea985bc25d533a1cacdb2080db4bc2e937f9ac2ac2de62c10"
+      },
+      "checkpoint-pct-40": {
+        "size_bytes": 54229296,
+        "sha256": "13a8f73627128ac74a85b17c23d6bcb4d56b8530b9396f4255ab92404886a780"
+      },
+      "checkpoint-pct-60": {
+        "size_bytes": 54229296,
+        "sha256": "c17b128042a7b931b4088e88ec8417ecac19ca7d762c1722ea03426f04722d4b"
+      },
+      "checkpoint-pct-80": {
+        "size_bytes": 54229296,
+        "sha256": "7f1bf90542cb73625296c8846421e0b6adca8b1b7ee3ba4fd6fae1e3e246780a"
+      },
+      "checkpoint-160": {
+        "size_bytes": 54229296,
+        "sha256": "49626752451550a0eaec38a846122ba3eaec8e7a8290496dc8cc2324e1c6fda3"
+      },
+      "checkpoint-170": {
+        "size_bytes": 54229296,
+        "sha256": "0d137fb8c08fe39a915e416a5d0d05f5cdefcfc081354b5ec6dece38765b2323"
+      },
+      "checkpoint-174": {
+        "size_bytes": 54229296,
+        "sha256": "85070bff55fbf57bd5e8ae0a91451176426271e60ff853116724d6c72f02965e"
+      },
+      "checkpoint-latest": {
+        "size_bytes": 54229296,
+        "sha256": "85070bff55fbf57bd5e8ae0a91451176426271e60ff853116724d6c72f02965e"
+      },
+      "adapter": {
+        "size_bytes": 54229296,
+        "sha256": "85070bff55fbf57bd5e8ae0a91451176426271e60ff853116724d6c72f02965e"
+      }
+    },
+    "exported_gguf": {
+      "deriver-v47-peak-lora.gguf": {
+        "source_checkpoint": "checkpoint-pct-20",
+        "selection_note": "All checkpoint-pct-{20,40,60,80} scored dev_f1=0.0 under pre-patch milestone_max_new_tokens=256; checkpoint-pct-20 achieved highest milestone dev_token_f1=0.553721.",
+        "size_bytes": 54214720,
+        "sha256": "ee211e0724770d4cd8a524ccd111475674189f628be398e2cfdaf0a372298f21"
+      },
+      "deriver-v47-lora.gguf": {
+        "source_checkpoint": "adapter (step 174 / 100%)",
+        "selection_note": "Overall dev_24 peak dev_f1=0.244185 at eval_max_new_tokens=1800.",
+        "size_bytes": 54214624,
+        "sha256": "eb96f8ca9183d7167acbc60f9a9151b4d303d5800fd731bb151e063d282e5d88"
+      }
+    }
+  },
+  "admission_truncation_audit": {
+    "train_rows": 691,
+    "train_data_sha256": "b5a54544259e1569f2b7b30b12e160361c8c37b36643c61534c1665fac795da4",
+    "max_seq_len": 5600,
+    "corpus_full_tokens_per_pass": 2144712,
+    "executed_tokens_per_pass": 2139622,
+    "executed_supervised_tokens_per_pass": 835861,
+    "silent_prompt_shortening_tokens_per_pass": 5090,
+    "over_5600_rows_count": 11,
+    "over_5600_gold_facts": 966,
+    "truncation_mechanism": "Part 4 launched at 08:07:01Z prior to 09:15Z --over-limit-policy=reject patch; encode_row silently middle-truncated prompt tokens while preserving full completion gold across the 11 >5600 rows (2,144,712 - 5,090 = 2,139,622 verified in token-summary.json).",
+    "dev_24_sha256": "4454d0f194c41bea29b3098d5aee6d8b9305db841272e73eee7010bebf1ac22a",
+    "dev_24_gold_items": 414
+  }
+}

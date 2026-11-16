@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-16T08:34:00Z",
+  "generated_at_utc": "2026-11-16T11:00:00Z",
   "base_model": {
     "name": "lfm3-1.7b-base-Q4_K_M.gguf",
     "size_bytes": 1099627488,
@@ -18,7 +18,7 @@
   },
   "roles": {
     "deriver": {
-      "active_lora": "deriver-v20-lora.gguf",
+      "active_lora": "deriver-v47-peak-lora.gguf",
       "lora_size_mib": 51.7031,
       "heldout_eval_dataset": "honcho-deriver-v14-evaluation-only",
       "n_cases": 4,
@@ -62,6 +62,38 @@
           "token_f1": 0.7851,
           "empty_fp_rate": 0.0,
           "total_elapsed_s": 124.23
+        },
+        "v47_part4_peak_pct20_n2048": {
+          "schema_valid": 0.75,
+          "stop_eos_rate": 0.75,
+          "precision": 0.4881,
+          "recall_gtp": 0.3415,
+          "f1_gtp": 0.4018,
+          "recall_tp": 0.3333,
+          "f1_tp": 0.3961,
+          "token_f1": 0.8356,
+          "empty_fp_rate": 0.0,
+          "total_elapsed_s": 917.34
+        },
+        "v47_part4_final_n2048": {
+          "schema_valid": 0.75,
+          "stop_eos_rate": 0.75,
+          "precision": 0.4545,
+          "recall_gtp": 0.3008,
+          "f1_gtp": 0.362,
+          "recall_tp": 0.2846,
+          "f1_tp": 0.35,
+          "token_f1": 0.8426,
+          "empty_fp_rate": 0.0,
+          "total_elapsed_s": 470.4
+        },
+        "v20_part2_matched_n2048": {
+          "schema_valid": 0.25,
+          "stop_eos_rate": 0.25,
+          "f1_gtp": 0.0,
+          "token_f1": 0.8483,
+          "empty_fp_rate": 0.0,
+          "total_elapsed_s": 1578.59
         }
       },
       "base_references": {
@@ -79,16 +111,25 @@
           "f1": 0.08,
           "recall": 0.08,
           "precision": 0.13
+        },
+        "v14_matched_n2048": {
+          "n_cases": 4,
+          "schema_valid": 0.0,
+          "stop_eos_rate": 0.25,
+          "f1_gtp": 0.0,
+          "token_f1": 0.2729,
+          "total_elapsed_s": 1198.55
         }
       },
-      "part4_in_flight": {
+      "part4_completed": {
         "kernel_ref": "<kaggle-user>/p2000-deriver-v40-full-part4",
         "dataset": "honcho-deriver-v47-training-only",
         "train_rows": 691,
         "dev_rows": 24,
-        "planned_steps": 174,
-        "live_status_checked_at_utc": "2026-11-16T08:31:22Z",
-        "live_kernel_status": "KernelWorkerStatus.RUNNING"
+        "steps_completed": 174,
+        "p95_step_s": 25.66,
+        "dev_f1": 0.2442,
+        "active_symlink": "deriver-v47-peak-lora.gguf"
       }
     },
     "scribe": {
