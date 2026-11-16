@@ -1,0 +1,44 @@
+{
+  "run": "scribe_full",
+  "ddp": {
+    "status": "PER_RANK_STEPS_AND_ALLOCATIONS_OBSERVED",
+    "world_size": 2,
+    "known_distinct_uuids": true,
+    "steps": [
+      30,
+      30
+    ],
+    "rows_processed": [
+      105,
+      105
+    ],
+    "oom_steps_skipped": 0,
+    "nan_grad_steps_skipped": 0,
+    "skips_clean": true,
+    "caution": "Inspect both UUID utilization traces. Receipts are not proof of speedup, useful compute balance, numerical correctness or successful checkpoint restore."
+  },
+  "p95_step_seconds": 4.707113742828369,
+  "measured_optimizer_steps": 30,
+  "planned_training_steps": 30,
+  "remaining_optimizer_steps": 0,
+  "stop_requested": false,
+  "milestones_count": 4,
+  "dev_metrics": {
+    "dev_n": 6,
+    "dev_schema_valid": 1.0,
+    "dev_precision": 0.7486910994764397,
+    "dev_recall": 0.6666666666666666,
+    "dev_f1": 0.7053020961775585,
+    "dev_token_f1": 0.7391748072762853,
+    "empty_fp_rate": 0.0,
+    "long_window_recall": null,
+    "short_window_recall": 0.6666666666666666,
+    "pred_items": 382,
+    "gold_items": 429,
+    "non_empty_pred_rate": 1.0,
+    "empty_collapse_detected": false,
+    "role": "scribe",
+    "train_steps": 30,
+    "elapsed_s": 570.7774891853333
+  }
+}

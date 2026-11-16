@@ -1,0 +1,17 @@
+{
+  "status": "PER_RANK_STEPS_AND_ALLOCATIONS_OBSERVED",
+  "world_size": 2,
+  "known_distinct_uuids": true,
+  "steps": [
+    30,
+    30
+  ],
+  "rows_processed": [
+    105,
+    105
+  ],
+  "oom_steps_skipped": 0,
+  "nan_grad_steps_skipped": 0,
+  "skips_clean": true,
+  "caution": "Inspect both UUID utilization traces. Receipts are not proof of speedup, useful compute balance, numerical correctness or successful checkpoint restore."
+}
