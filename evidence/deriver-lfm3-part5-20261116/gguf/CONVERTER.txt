@@ -1,0 +1,1 @@
+converter: ggml-org/llama.cpp c7518dbec59281c430ca5278ab4e60eadbc88b13 convert_lora_to_gguf.py --outtype f32; base config LFM3-1.7B-Base@7bca5038; validated: reproduces deriver-v47-peak-lora.gguf ee211e07 byte-identical

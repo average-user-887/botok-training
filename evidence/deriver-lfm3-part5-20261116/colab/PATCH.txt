@@ -1,0 +1,1 @@
+ORCH_PATCH_MODEL_TO_DEVICE: model.to(cuda:local_rank) before parity_check. orig 8b3e68b0f5fed2d6f9092ed7a2aade418321114f9f41ae6ad6de5961b9d7adec patched 781f41cf8dad30b38813ab93421581d73b75b79628f680bb3dc1ede8c5d42a5b

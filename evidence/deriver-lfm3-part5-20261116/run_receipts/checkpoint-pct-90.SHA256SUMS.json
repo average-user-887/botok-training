@@ -1,0 +1,30 @@
+{
+  "README.md": {
+    "sha256": "0e7186121c2ad6974a50c2fb5b4a45e211a343537141b7359a1f572de4bd4d7c",
+    "size": 5224
+  },
+  "adapter_config.json": {
+    "sha256": "5e0664162103ed35b93116d77621762ee4a7c7deb038c6be833574c7ce82a1d4",
+    "size": 1158
+  },
+  "adapter_model.safetensors": {
+    "sha256": "9096d849fdd9665fb648a95f50fbbdfd44a83857c570c155945644b78fffa40a",
+    "size": 54229296
+  },
+  "chat_template.jinja": {
+    "sha256": "f45005c50cd2a97329722bf3a2dee9f16c04cdf825a589b280fb7e99e6827818",
+    "size": 12129
+  },
+  "milestone_metrics.json": {
+    "sha256": "a53dc6e4b70d87a832f333ae1bfacf3416d0c3ed298db99277c62e524ed388df",
+    "size": 326
+  },
+  "tokenizer.json": {
+    "sha256": "41927bd314d17d7d7fadb44e10cd0919f7b71528d7741596d8cbd15c6945ec44",
+    "size": 17908634
+  },
+  "tokenizer_config.json": {
+    "sha256": "c4c568af6fe07ad160383704e05fd5344a6cdf9eba5195969c92886b53886e89",
+    "size": 1858
+  }
+}

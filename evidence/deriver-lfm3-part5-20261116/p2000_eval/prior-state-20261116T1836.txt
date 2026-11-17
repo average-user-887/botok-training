@@ -1,0 +1,33 @@
+2026-11-16T18:36:56+01:00
+name, memory.used [MiB], memory.total [MiB]
+Quadro P2000, 4941 MiB, 5120 MiB
+pid, used_gpu_memory [MiB], process_name
+3238262, 2954 MiB, /opt/stacks/llama-cpp/releases/p2000-a4d4f2f-sm61/bin/llama-server
+3238889, 1982 MiB, /opt/stacks/llama-cpp/releases/p2000-a4d4f2f-sm61/bin/llama-server
+{"running":[{"model":"decision-d1-2b","state":"ready","cmd":"/usr/bin/python3 /opt/stacks/llama-cpp/config/decision_p2000.py","proxy":"http://127.0.0.1:18082","ttl":0,"name":"d1-2B Q4_K_M decision heads (P2000 resident; judge/verifier/router via /v1/systemone)","description":""},{"model":"qwen3-embedding-4b-p2000","state":"ready","cmd":"/usr/bin/python3 /opt/stacks/llama-cpp/config/embed_p2000.py","proxy":"http://192.168.1.23:18081","ttl":0,"name":"Qwen3-Embedding-4B Q4_K_M (P2000 resident, behind Ryzen MRL gateway)","description":""}]}
+
+honcho-deriver-1 Up 2 days (healthy)
+honcho-api-1 Up 2 days (healthy)
+open-webui Up 7 days (healthy)
+firecrawl-api-1 Up 2 weeks
+firecrawl-searxng-1 Up 2 weeks
+homeassistant Up 2 weeks
+zabbix-mcp Up 2 weeks (healthy)
+cleanpages Up 2 weeks (healthy)
+nextcloud-redis-1 Up 2 weeks (healthy)
+nextcloud-app-1 Up 2 weeks
+honcho-dream-router-1 Up 2 weeks (healthy)
+zabbix-postgres Up 2 weeks (healthy)
+zabbix-server Up 2 weeks (healthy)
+hardline-router Up 2 weeks
+honcho-mcp-1 Up 15 hours (healthy)
+honcho-database-1 Up 2 weeks (healthy)
+honcho-redis-1 Up 2 weeks (healthy)
+firecrawl-rabbitmq-1 Up 2 weeks (healthy)
+firecrawl-redis-1 Up 2 weeks
+firecrawl-nuq-postgres-1 Up 2 weeks
+firecrawl-playwright-service-1 Up 2 weeks
+ouroboros Up 2 weeks (healthy)
+nextcloud-db-1 Up 2 weeks (healthy)
+zabbix-web Up 2 weeks (healthy)
+dockge Up 2 weeks (healthy)

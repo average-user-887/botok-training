@@ -1,0 +1,61 @@
+{
+  "gpu_class": "L4",
+  "gpu_name": "NVIDIA L4",
+  "total_vram_mib": 22563.12,
+  "parity_check_fp16": {
+    "status": "PASS",
+    "precision": "fp16",
+    "row_lengths": [
+      622,
+      2743,
+      3562,
+      3840,
+      4423,
+      5584,
+      623,
+      624
+    ],
+    "mb1_ref": {
+      "microbatch": 1,
+      "amp_dtype": "torch.float16",
+      "n_rows": 8,
+      "supervised_tokens": 7684,
+      "non_pad_tokens": 22021,
+      "mean_loss": 0.17193,
+      "grad_norm": 0.292276,
+      "max_reserved_mib": 9038.0
+    },
+    "candidate": {
+      "microbatch": 1,
+      "amp_dtype": "torch.float16",
+      "n_rows": 8,
+      "supervised_tokens": 7684,
+      "non_pad_tokens": 22021,
+      "mean_loss": 0.17193,
+      "grad_norm": 0.292276,
+      "max_reserved_mib": 9038.0
+    },
+    "abs_loss_diff": 0.0
+  },
+  "pilot_12_warmup_step_s": 27.466812133789062,
+  "pilot_12_steady_p50_s": 10.81861686706543,
+  "pilot_12_p95_s": 19.347376346588135,
+  "pilot_12_nonpad_tok_per_s": 1860.05,
+  "pilot_12_sup_tok_per_s": 599.47,
+  "pilot_12_peak_reserved_mib": 7882.0,
+  "save_reload_plus_1_step_passed": true,
+  "selected_full_profile": {
+    "precision": "bf16",
+    "microbatch": 2,
+    "grad_accum": 4,
+    "peak_reserved_mib": 12334.0,
+    "steady_p50_step_seconds": 10.920346975326538,
+    "p95_step_seconds": 31.517476320266724
+  },
+  "headroom_pct": 45.34,
+  "projected_full_run_hours": 2.521,
+  "cu_consumed_pilot": null,
+  "measured_cu_per_hour": null,
+  "useful_tokens_per_cu": null,
+  "projected_full_run_cu": null
+}

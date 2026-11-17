@@ -1,0 +1,76 @@
+{
+  "dataset_slug": "jestemukasz/p2000-deriver-v11-sprint-payload",
+  "role": "deriver",
+  "run": "deriver_part5",
+  "init_adapter": "full_outputs/deriver_part4/full_part4/checkpoint-pct-20",
+  "init_adapter_safetensors_sha256": "5d4fdeb33c556c3ea985bc25d533a1cacdb2080db4bc2e937f9ac2ac2de62c10",
+  "heldout_test_excluded": true,
+  "isolated_deriver_only": true,
+  "v47_originals_replaced": 11,
+  "v47_rewindow_replacements_included": 22,
+  "legacy_density_exceptions_acknowledged": [
+    "rwv47-medium-004",
+    "rwv47-medium-006",
+    "rwv47-medium-008",
+    "rwv47-medium-010",
+    "rwv47-medium-012",
+    "rwv47-medium-014",
+    "rwv47-medium-016",
+    "rwv47-medium-020",
+    "rwv47-medium-022"
+  ],
+  "dedup_id_skips": 0,
+  "dedup_msg_skips": 0,
+  "train_rows": 766,
+  "train_sha256": "67d2bbbd61b9a4328fd17329436ab8c35e9bd034f1dd4654bff1f1e3059470c1",
+  "dev_rows": 24,
+  "dev_sha256": "4454d0f194c41bea29b3098d5aee6d8b9305db841272e73eee7010bebf1ac22a",
+  "source_counts": {
+    "v47_filtered": 680,
+    "proposal_v47_rewindow_22": 22,
+    "addenda_b1": 4,
+    "addenda_b2": 4,
+    "addenda_b3": 4,
+    "addenda_b4": 4,
+    "addenda_b5": 4,
+    "deriver_b6_7": 6,
+    "deriver_b8": 4,
+    "deriver_b9_10": 6,
+    "deriver_b11_12": 6,
+    "deriver_b13_14": 4,
+    "deriver_b15_16": 4,
+    "deriver_b17_18": 4,
+    "deriver_b19_20": 4,
+    "deriver_b21": 4,
+    "deriver_b22": 2
+  },
+  "files": {
+    "train.sft.jsonl": {
+      "rows": 766,
+      "sha256": "67d2bbbd61b9a4328fd17329436ab8c35e9bd034f1dd4654bff1f1e3059470c1",
+      "sources": {
+        "v47_filtered": 680,
+        "proposal_v47_rewindow_22": 22,
+        "addenda_b1": 4,
+        "addenda_b2": 4,
+        "addenda_b3": 4,
+        "addenda_b4": 4,
+        "addenda_b5": 4,
+        "deriver_b6_7": 6,
+        "deriver_b8": 4,
+        "deriver_b9_10": 6,
+        "deriver_b11_12": 6,
+        "deriver_b13_14": 4,
+        "deriver_b15_16": 4,
+        "deriver_b17_18": 4,
+        "deriver_b19_20": 4,
+        "deriver_b21": 4,
+        "deriver_b22": 2
+      }
+    },
+    "dev.sft.jsonl": {
+      "rows": 24,
+      "sha256": "4454d0f194c41bea29b3098d5aee6d8b9305db841272e73eee7010bebf1ac22a"
+    }
+  }
+}

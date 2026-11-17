@@ -1,0 +1,14 @@
+{
+  "rank": 0,
+  "local_rank": 0,
+  "world_size": 1,
+  "logical_device": 0,
+  "device_name": "NVIDIA L4",
+  "device_uuid": "9d2894ed-4e22-3a77-d052-2bd2753dc831",
+  "gpu_uuid": "9d2894ed-4e22-3a77-d052-2bd2753dc831",
+  "total_memory": 23659151360,
+  "cuda_visible_devices": "0",
+  "torch_version": "2.14.1+cu130",
+  "cuda_runtime": "13.0",
+  "pid": 7955
+}
