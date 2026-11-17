@@ -1,0 +1,23 @@
+# pruner-candidate-v1: proposed, not deployed
+
+This bounded synthetic demonstration dataset is NOT a verified drop-in production dataset. It adapts the public pruner README and eight illustrative examples from average-user-887/botok-training at commit 6d7240f3dd46fa9cea426a99ca1880984b906039. Public README blob b63897b5bc718c31cec5aeedecbb52d3f2d58d3f; examples blob 4387973b7e54c2fd775ccad600f675953806aab9. Exact source copies and the inspection report are in ../si-lab-role-contracts/.
+
+## Explicit candidate choices
+- JSONL rows contain id, kind, prompt, completion, note; source-only metadata and rationales live separately, not in model targets.
+- Prompt uses the public GOAL / TOOL OUTPUT / numbered-lines / KEEP: layout. Each example is one local agent goal with one invented tool result, not a conversation serialization or an executed tool receipt.
+- Completion has exactly one leading ASCII space, then KEEP and one selection string, without a trailing newline. For checking the public regex, remove precisely that first space. This follows all eight public examples. The alternative interpretation, applying the README's anchored regex to the raw completion, would reject that space. A deployed consumer must settle this; no claim of compatibility is made.
+- Partial selections use 1-based inclusive ranges. This candidate validator additionally requires ascending, unique, in-bounds indices and ranges. These are explicit local restrictions, NOT claimed upstream validation rules.
+- all is used only for <=40-line outputs with essentially every line relevant. none selects no lines. No output summary or explanation is emitted by the model; a consumer would copy selected lines verbatim.
+- Error lines and their immediate context are retained in these cases. The public README leaves neighbour width undefined; this candidate uses at least one immediate line on each side of the diagnostic/error block where present, with additional context selected by the goal.
+- Goal <=300 tokenizer tokens, records in the public 10–4000-token illustrative range. These examples are deliberately short; no long-context coverage or 12-hour training sufficiency is claimed.
+- Concatenate prompt+completion, with loss intended only on completion per public README. No chat template, EOS policy, training script or GPU run is supplied or assumed. Exact concatenation tokenization can merge boundary tokens, so a future trainer must derive completion masking correctly rather than blindly combining separate token counts.
+
+## Alignment and limits
+Public tasks use pytest/git/df/grep/make/logs and other operational output; these candidates cover the same task interface with new invented content, plus cancellation, validation, archive and scheduler output. No public illustrative row is copied into training. No deriver/judge/scribe/log-analyser source is reused. There are 16 training and 4 development rows, deliberately separated by source scenario, not an independent test set. Similar domains across splits remain; this is not a strong generalization benchmark.
+
+Across 20 rows there are 3 none (15%), 2 all (10%), 15 partial. Public approximate targets are17% none/10% all. A 70% token-removal target is not imposed on every row and is not claimed achieved by this small set. Error-context preservation and task usefulness take priority over an invented compression score. Rows are authored source-first: source-only files were successfully written before label creation; provenance hashes bind labels to those snapshots. Source snapshots are not additional training records or negative samples.
+
+Public absence examples motivate none when no relevant matching lines exist. This does not assert that a missing package is globally uninstalled or an unshown setting is unset. All environment paths, process IDs, outputs and test results are synthetic, not real observations. No private evaluation data, GPU operations, external changes or V11 pilot edits were used.
+
+## Validation status
+validate_candidate.py is a newly written candidate structural checker, not an upstream or production validator. It checks IDs, layout, sequential line numbering, completion syntax and candidate range rules. It does not assess relevance, truth, neighbour adequacy, token limits, semantic completeness or deployment compatibility. CPU-only token audit uses the already pinned Base tokenizer revision7bca5038823c0d0f14efe06439109354a10e014c without loading a model: 3,096 prompt+completion tokens without EOS across20 rows,103–199 per row, maximum goal31 tokens. Independent semantic review is required before delivery.
